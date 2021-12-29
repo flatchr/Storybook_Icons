@@ -32,6 +32,8 @@ npm install -g yarn
 This project has a storybook to see and test your icons.
 #### `yarn storybook`
 
+It will be accessible at [http://localhost:6006/](http://localhost:6006/)
+
 ## Build the package
 
 #### `yarn build`
@@ -44,7 +46,7 @@ __⚠️ Don't forget to update `package.json` with the new version of the packa
 
 Commit and push your work, and when your code is on `main` branch, you can launch:
 
-#### `yarn publish`
+#### `git pull origin main && yarn && cd ./dist && yarn publish`
 
 All the published versions are here : https://gitlab.com/flatchr/shared/icons/-/packages
 
@@ -56,6 +58,8 @@ If you want to add a dependency to get more efficient, it's possible! Add it as 
 ```
 yarn add --peer DEPENDENCY_NAME
 ```
+
+In package.json, copy the line from peer and paste it into __devDependencies__
 
 Then, you will need to add your icon to Storybook, go to `/src/stories.js` and add the new story for your icon.
 
