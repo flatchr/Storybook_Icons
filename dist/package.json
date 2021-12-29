@@ -1,8 +1,8 @@
 {
   "name": "@flatchr/icons",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "version": "1.0.0",
+  "main": "./index.cjs.js",
+  "module": "./index.esm.js",
+  "version": "1.0.4",
   "description": "All the Flatchr™'s icons 🐙",
   "dependencies": {
     "prop-types": "^15.8.0",
