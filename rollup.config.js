@@ -20,8 +20,8 @@ const config = {
     generatePackageJson({
       baseContents: (pkg) => ({
         name: pkg.name,
-        main: pkg.main.replace('src/', ''),
-        module: pkg.module.replace('src/', ''),
+        main: pkg.main.replace('dist', '.'),
+        module: pkg.module.replace('dist', '.'),
         version: pkg.version,
         description: pkg.description,
         dependencies: pkg.peerDependencies,
