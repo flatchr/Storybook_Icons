@@ -1,12 +1,10 @@
 import React from "react";
+// Icons import
+import PeopleIcon from './icons/People';
+import ErrorIcon from './icons/Error';
 
-// Import icons
-import FlatchrIcon from './icons/Flatchr';
-import HeadIcon from './icons/Head';
-import HomeIcon from "./icons/Home";
-
-const iconography = {
-  title: "Iconography",
+const icons = {
+  title: "Iconography/Icons",
   argTypes: {
     width: {
       description: "Width (in px) of the icon",
@@ -50,20 +48,16 @@ const iconography = {
   },
 };
 
-export default iconography;
+export default icons;
 
-const FlatchrIconStory = args => <FlatchrIcon {...args} />;
-FlatchrIconStory.storyName = 'Flatchr';
+const PeopleIconStory = args => <PeopleIcon {...args} />;
+PeopleIconStory.storyName = 'People';
 
-const HeadIconStory = args => <HeadIcon {...args} />;
-HeadIconStory.storyName = 'Head';
-
-const HomeIconStory = args => <HomeIcon {...args} />;
-HomeIconStory.storyName = 'Home';
+const ErrorIconStory = args => <ErrorIcon {...args} />;
+ErrorIconStory.storyName = 'Error';
 
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
-  FlatchrIconStory,
-  HeadIconStory,
-  HomeIconStory,
+  ErrorIconStory,
+  PeopleIconStory,
 };

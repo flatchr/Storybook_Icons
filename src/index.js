@@ -1,3 +1,5 @@
+// Logo
 export { default as FlatchrIcon } from './icons/Flatchr';
-export { default as HeadIcon } from './icons/Head';
-export { default as HomeIcon } from './icons/Home';
+// Icons
+export { default as PeopleIcon } from './icons/People';
+export { default as ErrorIcon } from './icons/Error';
