@@ -81,7 +81,8 @@ Default.storyName = 'Full Logo';
 const TextColored = args => (
   <FlatchrIcon
     {...args}
-    textColor="red"
+    color="#01aec8"
+    textColor="black"
   />
 );
 TextColored.storyName = 'Full Logo colored text';
@@ -89,6 +90,7 @@ TextColored.storyName = 'Full Logo colored text';
 const OnlyPaulStory = args => (
   <FlatchrIcon
     {...args}
+    color="#01aec8"
     onlyPaul
   />
 );

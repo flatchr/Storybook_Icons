@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const PeopleIcon = ({
+const Circle = ({
   color = '#000000',
   height = null,
   width = null,
 }) => {
-
   return (
     <Svg
       width={width || height || 16}
@@ -17,15 +16,14 @@ const PeopleIcon = ({
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"
-        stroke="none"
+        d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
         fill={color}
       />
     </Svg>
   );
 };
 
-PeopleIcon.propTypes = {
+Circle.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +32,4 @@ PeopleIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default PeopleIcon;
+export default Circle;

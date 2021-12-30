@@ -1,31 +1,35 @@
-import React from 'react';
+import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const PeopleIcon = ({
+const CollectionsBookmark = ({
   color = '#000000',
   height = null,
   width = null,
 }) => {
-
   return (
     <Svg
       width={width || height || 16}
       height={height || width || 16}
-      viewBox="0 0 512 512"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <Path fill="none" d="M0 0h24v24H0V0z" />
+      <Path fill="none" d="M0 0h24v24H0V0z" />
       <Path
-        d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"
-        stroke="none"
+        d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"
+        fill={color}
+      />
+      <Path
+        d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 10l-2.5-1.5L15 12V4h5v8z"
         fill={color}
       />
     </Svg>
   );
 };
 
-PeopleIcon.propTypes = {
+CollectionsBookmark.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +38,4 @@ PeopleIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default PeopleIcon;
+export default CollectionsBookmark;
