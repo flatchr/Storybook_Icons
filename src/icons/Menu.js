@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const PeopleIcon = ({
+const Menu = ({
   color = '#000000',
   height = null,
   width = null,
 }) => {
-
   return (
     <Svg
       width={width || height || 16}
@@ -16,16 +15,16 @@ const PeopleIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <Path fill="none" d="M0 0h24v24H0z" />
       <Path
-        d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"
-        stroke="none"
+        d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"
         fill={color}
       />
     </Svg>
   );
 };
 
-PeopleIcon.propTypes = {
+Menu.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +33,4 @@ PeopleIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default PeopleIcon;
+export default Menu;

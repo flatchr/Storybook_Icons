@@ -1,23 +1,22 @@
-import React from 'react';
+import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const PeopleIcon = ({
+const Notifications = ({
   color = '#000000',
   height = null,
   width = null,
 }) => {
-
   return (
     <Svg
       width={width || height || 16}
       height={height || width || 16}
-      viewBox="0 0 512 512"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M256 288c79.5 0 144-64.5 144-144S335.5 0 256 0 112 64.5 112 144s64.5 144 144 144zm128 32h-55.1c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16H128C57.3 320 0 377.3 0 448v16c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48v-16c0-70.7-57.3-128-128-128z"
+        d="M12 22c1.1 0 2-.9 2-2h-4a2 2 0 0 0 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
         stroke="none"
         fill={color}
       />
@@ -25,7 +24,7 @@ const PeopleIcon = ({
   );
 };
 
-PeopleIcon.propTypes = {
+Notifications.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +33,4 @@ PeopleIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default PeopleIcon;
+export default Notifications;
