@@ -2,7 +2,7 @@
   "name": "@flatchr/icons",
   "main": "./index.cjs.js",
   "module": "./index.esm.js",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "All the Flatchr™'s icons 🐙",
   "dependencies": {
     "prop-types": "^15.8.0",

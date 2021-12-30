@@ -48,6 +48,8 @@ Commit and push your work, and when your code is on `main` branch, you can launc
 
 #### `git pull origin main && yarn && cd ./dist && yarn publish`
 
+When your new icons has been published, you will need to create a new branch `update-version-X.X.X`, update the version for the correct version in the package.json at the root directory.
+
 All the published versions are here : https://gitlab.com/flatchr/shared/icons/-/packages
 
 ## How add a new icon?
