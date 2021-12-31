@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path, Rect } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const TrashBin = ({
+const TrashBinIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -24,7 +24,7 @@ const TrashBin = ({
   );
 };
 
-TrashBin.propTypes = {
+TrashBinIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -33,4 +33,4 @@ TrashBin.propTypes = {
   with: PropTypes.number,
 };
 
-export default TrashBin;
+export default TrashBinIcon;

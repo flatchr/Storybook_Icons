@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const MenuFold = ({
+const MenuFoldIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -23,7 +23,7 @@ const MenuFold = ({
   );
 };
 
-MenuFold.propTypes = {
+MenuFoldIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -32,4 +32,4 @@ MenuFold.propTypes = {
   with: PropTypes.number,
 };
 
-export default MenuFold;
+export default MenuFoldIcon;

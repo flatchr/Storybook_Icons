@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import Svg, { Path } from 'react-native-svg';
 import PropTypes from 'prop-types';
 
-const LogoFlatchr = props => {
+const FlatchrIcon = props => {
   const {
     color = '#ffffff',
     width:widthProp = null,
@@ -82,7 +82,7 @@ const LogoFlatchr = props => {
   );
 };
 
-LogoFlatchr.propTypes = {
+FlatchrIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -96,4 +96,4 @@ LogoFlatchr.propTypes = {
   onlyPaul: PropTypes.bool,
 };
 
-export default LogoFlatchr;
+export default FlatchrIcon;

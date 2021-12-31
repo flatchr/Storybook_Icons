@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const Notifications = ({
+const NotificationsIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -24,7 +24,7 @@ const Notifications = ({
   );
 };
 
-Notifications.propTypes = {
+NotificationsIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -33,4 +33,4 @@ Notifications.propTypes = {
   with: PropTypes.number,
 };
 
-export default Notifications;
+export default NotificationsIcon;
