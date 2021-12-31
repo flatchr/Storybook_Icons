@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const ArrowForward = ({
+const ArrowForwardIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -24,7 +24,7 @@ const ArrowForward = ({
   );
 };
 
-ArrowForward.propTypes = {
+ArrowForwardIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -33,4 +33,4 @@ ArrowForward.propTypes = {
   with: PropTypes.number,
 };
 
-export default ArrowForward;
+export default ArrowForwardIcon;

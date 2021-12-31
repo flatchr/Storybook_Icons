@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const ContentPaste = ({
+const ContentPasteIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -24,7 +24,7 @@ const ContentPaste = ({
   );
 };
 
-ContentPaste.propTypes = {
+ContentPasteIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -33,4 +33,4 @@ ContentPaste.propTypes = {
   with: PropTypes.number,
 };
 
-export default ContentPaste;
+export default ContentPasteIcon;

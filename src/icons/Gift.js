@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const Gift = ({
+const GiftIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -23,7 +23,7 @@ const Gift = ({
   );
 };
 
-Gift.propTypes = {
+GiftIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -32,4 +32,4 @@ Gift.propTypes = {
   with: PropTypes.number,
 };
 
-export default Gift;
+export default GiftIcon;

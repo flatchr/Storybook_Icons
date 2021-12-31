@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const CollectionsBookmark = ({
+const CollectionsBookmarkIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -29,7 +29,7 @@ const CollectionsBookmark = ({
   );
 };
 
-CollectionsBookmark.propTypes = {
+CollectionsBookmarkIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -38,4 +38,4 @@ CollectionsBookmark.propTypes = {
   with: PropTypes.number,
 };
 
-export default CollectionsBookmark;
+export default CollectionsBookmarkIcon;

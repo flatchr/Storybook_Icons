@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const ClipboardList = ({
+const ClipboardListIcon = ({
   color = '#000000',
   width: widthProp = null,
   height: heightProp = null,
@@ -47,7 +47,7 @@ const ClipboardList = ({
   );
 };
 
-ClipboardList.propTypes = {
+ClipboardListIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -56,4 +56,4 @@ ClipboardList.propTypes = {
   with: PropTypes.number,
 };
 
-export default ClipboardList;
+export default ClipboardListIcon;

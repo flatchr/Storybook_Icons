@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const ChevronRight = ({
+const ChevronRightIcon = ({
   color = '#000000',
   width: widthProp = null,
   height: heightProp = null,
@@ -47,7 +47,7 @@ const ChevronRight = ({
   );
 };
 
-ChevronRight.propTypes = {
+ChevronRightIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -56,4 +56,4 @@ ChevronRight.propTypes = {
   with: PropTypes.number,
 };
 
-export default ChevronRight;
+export default ChevronRightIcon;

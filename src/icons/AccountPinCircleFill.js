@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const AccountPinCircleFill = ({
+const AccountPinCircleFillIcon = ({
   color = '#000000',
   width = null,
   height = null,
@@ -25,7 +25,7 @@ const AccountPinCircleFill = ({
   );
 };
 
-AccountPinCircleFill.propTypes = {
+AccountPinCircleFillIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +34,4 @@ AccountPinCircleFill.propTypes = {
   with: PropTypes.number,
 };
 
-export default AccountPinCircleFill;
+export default AccountPinCircleFillIcon;
