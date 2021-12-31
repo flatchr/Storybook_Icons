@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import Svg, { Path, Rect } from 'react-native-svg';
 import PropTypes from 'prop-types';
 
-var LogoFlatchr = function LogoFlatchr(props) {
+var FlatchrIcon = function FlatchrIcon(props) {
   var _props$color = props.color,
       color = _props$color === void 0 ? '#ffffff' : _props$color,
       _props$width = props.width,
@@ -72,7 +72,7 @@ var LogoFlatchr = function LogoFlatchr(props) {
   })));
 };
 
-LogoFlatchr.propTypes = {
+FlatchrIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
@@ -140,7 +140,7 @@ ErrorIcon.propTypes = {
   with: PropTypes.number
 };
 
-var Notifications = function Notifications(_ref) {
+var NotificationsIcon = function NotificationsIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -160,14 +160,14 @@ var Notifications = function Notifications(_ref) {
   }));
 };
 
-Notifications.propTypes = {
+NotificationsIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var NotificationsActive = function NotificationsActive(_ref) {
+var NotificationsActiveIcon = function NotificationsActiveIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -191,14 +191,14 @@ var NotificationsActive = function NotificationsActive(_ref) {
   }));
 };
 
-NotificationsActive.propTypes = {
+NotificationsActiveIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var Heart = function Heart(_ref) {
+var HeartIcon = function HeartIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -217,14 +217,14 @@ var Heart = function Heart(_ref) {
   }));
 };
 
-Heart.propTypes = {
+HeartIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var ClipboardList = function ClipboardList(_ref) {
+var ClipboardListIcon = function ClipboardListIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$width = _ref.width,
@@ -267,14 +267,14 @@ var ClipboardList = function ClipboardList(_ref) {
   }));
 };
 
-ClipboardList.propTypes = {
+ClipboardListIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var Donut = function Donut(_ref) {
+var DonutIcon = function DonutIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -287,23 +287,23 @@ var Donut = function Donut(_ref) {
     viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/React.createElement("path", {
+  }, /*#__PURE__*/React.createElement(Path, {
     fill: "none",
     d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React.createElement("path", {
+  }), /*#__PURE__*/React.createElement(Path, {
     d: "M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z",
     fill: color
   }));
 };
 
-Donut.propTypes = {
+DonutIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var List = function List(_ref) {
+var ListIcon = function ListIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$width = _ref.width,
@@ -325,14 +325,14 @@ var List = function List(_ref) {
   }));
 };
 
-List.propTypes = {
+ListIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var ArrowForward = function ArrowForward(_ref) {
+var ArrowForwardIcon = function ArrowForwardIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -354,14 +354,14 @@ var ArrowForward = function ArrowForward(_ref) {
   }));
 };
 
-ArrowForward.propTypes = {
+ArrowForwardIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var Menu = function Menu(_ref) {
+var MenuIcon = function MenuIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -383,14 +383,14 @@ var Menu = function Menu(_ref) {
   }));
 };
 
-Menu.propTypes = {
+MenuIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var AccountPinCircleFill = function AccountPinCircleFill(_ref) {
+var AccountPinCircleFillIcon = function AccountPinCircleFillIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$width = _ref.width,
@@ -412,14 +412,14 @@ var AccountPinCircleFill = function AccountPinCircleFill(_ref) {
   }));
 };
 
-AccountPinCircleFill.propTypes = {
+AccountPinCircleFillIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var Gift = function Gift(_ref) {
+var GiftIcon = function GiftIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -438,14 +438,14 @@ var Gift = function Gift(_ref) {
   }));
 };
 
-Gift.propTypes = {
+GiftIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var Circle = function Circle(_ref) {
+var CircleIcon = function CircleIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -464,14 +464,14 @@ var Circle = function Circle(_ref) {
   }));
 };
 
-Circle.propTypes = {
+CircleIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var MenuUnfold = function MenuUnfold(_ref) {
+var MenuUnfoldIcon = function MenuUnfoldIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -490,14 +490,14 @@ var MenuUnfold = function MenuUnfold(_ref) {
   }));
 };
 
-MenuUnfold.propTypes = {
+MenuUnfoldIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var MenuFold = function MenuFold(_ref) {
+var MenuFoldIcon = function MenuFoldIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -516,14 +516,14 @@ var MenuFold = function MenuFold(_ref) {
   }));
 };
 
-MenuFold.propTypes = {
+MenuFoldIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var CollectionsBookmark = function CollectionsBookmark(_ref) {
+var CollectionsBookmarkIcon = function CollectionsBookmarkIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -551,14 +551,14 @@ var CollectionsBookmark = function CollectionsBookmark(_ref) {
   }));
 };
 
-CollectionsBookmark.propTypes = {
+CollectionsBookmarkIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var ContentPaste = function ContentPaste(_ref) {
+var ContentPasteIcon = function ContentPasteIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -580,14 +580,14 @@ var ContentPaste = function ContentPaste(_ref) {
   }));
 };
 
-ContentPaste.propTypes = {
+ContentPasteIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var TrashBin = function TrashBin(_ref) {
+var TrashBinIcon = function TrashBinIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -614,14 +614,14 @@ var TrashBin = function TrashBin(_ref) {
   }));
 };
 
-TrashBin.propTypes = {
+TrashBinIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var ChevronRight = function ChevronRight(_ref) {
+var ChevronRightIcon = function ChevronRightIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$width = _ref.width,
@@ -664,14 +664,14 @@ var ChevronRight = function ChevronRight(_ref) {
   }));
 };
 
-ChevronRight.propTypes = {
+ChevronRightIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var Bookmark = function Bookmark(_ref) {
+var BookmarkIcon = function BookmarkIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -690,14 +690,14 @@ var Bookmark = function Bookmark(_ref) {
   }));
 };
 
-Bookmark.propTypes = {
+BookmarkIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-var Folder = function Folder(_ref) {
+var FolderIcon = function FolderIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -716,11 +716,11 @@ var Folder = function Folder(_ref) {
   }));
 };
 
-Folder.propTypes = {
+FolderIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
   with: PropTypes.number
 };
 
-export { AccountPinCircleFill as AccountPinCircleFillIcon, ArrowForward as ArrowForwardIcon, Bookmark as BookmarkIcon, ChevronRight as ChevronRightIcon, Circle as CircleIcon, ClipboardList as ClipboardListIcon, CollectionsBookmark as CollectionsBookmarkIcon, ContentPaste as ContentPasteIcon, Donut as DonutIcon, ErrorIcon, LogoFlatchr as FlatchrIcon, Folder as FolderIcon, Gift as GiftIcon, Heart as HeartIcon, List as ListIcon, MenuFold as MenuFoldIcon, Menu as MenuIcon, MenuUnfold as MenuUnfoldIcon, NotificationsActive as NotificationsActiveIcon, Notifications as NotificationsIcon, PeopleIcon, TrashBin as TrashBinIcon };
+export { AccountPinCircleFillIcon, ArrowForwardIcon, BookmarkIcon, ChevronRightIcon, CircleIcon, ClipboardListIcon, CollectionsBookmarkIcon, ContentPasteIcon, DonutIcon, ErrorIcon, FlatchrIcon, FolderIcon, GiftIcon, HeartIcon, ListIcon, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, NotificationsActiveIcon, NotificationsIcon, PeopleIcon, TrashBinIcon };
