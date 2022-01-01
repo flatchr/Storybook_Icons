@@ -1,10 +1,13 @@
 import React from "react";
 
 // Import icons
-import FlatchrIcon from './icons/Flatchr';
+import LogoFlatchr from './icons/Flatchr';
 
 const logo = {
-  title: "Iconography/Logo",
+  title: "Logo",
+  parameters: {
+    options: { showPanel: true },
+  },
   argTypes: {
     width: {
       description: "Width (in px) of the icon",
@@ -69,17 +72,17 @@ const logo = {
     },
   },
   args: {
-    color: "#231F20",
+    color: "#989898",
   },
 };
 
 export default logo;
 
-const Default = args => <FlatchrIcon {...args} />;
+const Default = args => <LogoFlatchr {...args} />;
 Default.storyName = 'Full Logo';
 
 const TextColored = args => (
-  <FlatchrIcon
+  <LogoFlatchr
     {...args}
     color="#01aec8"
     textColor="black"
@@ -88,7 +91,7 @@ const TextColored = args => (
 TextColored.storyName = 'Full Logo colored text';
 
 const OnlyPaulStory = args => (
-  <FlatchrIcon
+  <LogoFlatchr
     {...args}
     color="#01aec8"
     onlyPaul

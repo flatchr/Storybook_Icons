@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const PeopleIcon = ({
+const ShieldAltIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -11,28 +11,23 @@ const PeopleIcon = ({
     <Svg
       width={width || height || 16}
       height={height || width || 16}
-      viewBox="0 0 16 16"
+      viewBox="0 0 512 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-        fill={color}
+        fill="none"
+        d="M0 0h24v24H0z"
       />
       <Path
-        fillRule="evenodd"
-        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
-        fill={color}
-      />
-      <Path
-        d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+        d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"
         fill={color}
       />
     </Svg>
   );
 };
 
-PeopleIcon.propTypes = {
+ShieldAltIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -41,4 +36,4 @@ PeopleIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default PeopleIcon;
+export default ShieldAltIcon;

@@ -2,7 +2,9 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        'Iconography', ['Logo', 'Icons']
+        'Logo',
+        'All icons',
+        'Icons',
       ],
     },
   },

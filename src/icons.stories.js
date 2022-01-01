@@ -1,6 +1,6 @@
 import React from "react";
 // Icons import
-import PeopleIcon from './icons/People';
+import UserIcon from './icons/User';
 import ErrorIcon from './icons/Error';
 import NotificationsIcon from './icons/Notifications';
 import NotificationsActiveIcon from './icons/NotificationsActive';
@@ -21,9 +21,30 @@ import TrashBinIcon from "./icons/TrashBin";
 import ChevronRightIcon from './icons/ChevronRight';
 import BookmarkIcon from './icons/Bookmark';
 import FolderIcon from './icons/Folder';
+import CommentAltIcon from './icons/CommentAlt';
+import BullhornIcon from './icons/Bullhorn';
+import FileIcon from './icons/File';
+import FilterIcon from './icons/Filter';
+import KeyIcon from './icons/Key';
+import RegisterListAltIcon from './icons/RegisterListAlt';
+import StarIcon from './icons/Star';
+import TagsIcon from './icons/Tags';
+import PeopleIcon from './icons/People';
+import BuildingIcon from './icons/Building';
+import ColumnsIcon from './icons/Columns';
+import StoreAltIcon from './icons/StoreAlt';
+import FileInvoiceDollarIcon from './icons/FileInvoiceDollar';
+import TachometerAltIcon from './icons/TachometerAlt';
+import LayerGroupIcon from './icons/LayerGroup';
+import ShieldAltIcon from './icons/ShieldAlt';
+import TableAltIcon from './icons/TableAlt';
+import UserLockIcon from './icons/UserLock';
 
 const icons = {
-  title: "Iconography/Icons",
+  title: "Icons",
+  parameters: {
+    options: { showPanel: true },
+  },
   argTypes: {
     width: {
       description: "Width (in px) of the icon",
@@ -63,16 +84,16 @@ const icons = {
     },
   },
   args: {
-    color: "#231F20",
+    color: "#989898",
   },
 };
 
 export default icons;
 
-const PeopleIconStory = args => (
-  <PeopleIcon {...args} />
+const UserIconStory = args => (
+  <UserIcon {...args} />
 );
-PeopleIconStory.storyName = 'People';
+UserIconStory.storyName = 'User';
 
 const ErrorIconStory = args => (
   <ErrorIcon {...args} />
@@ -174,21 +195,120 @@ const FolderIconStory = args => (
 );
 FolderIconStory.storyName = 'Folder';
 
+const CommentAltIconStory = args => (
+  <CommentAltIcon {...args} />
+);
+CommentAltIconStory.storyName = 'CommentAlt';
+// START
+const BullhornIconStory = args => (
+  <BullhornIcon {...args} />
+);
+BullhornIconStory.storyName = 'Bullhorn';
+
+const FileIconStory = args => (
+  <FileIcon {...args} />
+);
+FileIconStory.storyName = 'File';
+
+const FilterIconStory = args => (
+  <FilterIcon {...args} />
+);
+FilterIconStory.storyName = 'Filter';
+
+const KeyIconStory = args => (
+  <KeyIcon {...args} />
+);
+KeyIconStory.storyName = 'Key';
+
+const RegisterListAltIconStory = args => (
+  <RegisterListAltIcon {...args} />
+);
+RegisterListAltIconStory.storyName = 'Register List Alt';
+
+const StarIconStory = args => (
+  <StarIcon {...args} />
+);
+StarIconStory.storyName = 'Star';
+
+const TagsIconStory = args => (
+  <TagsIcon {...args} />
+);
+TagsIconStory.storyName = 'Tags';
+
+const PeopleIconStory = args => (
+  <PeopleIcon {...args} />
+);
+PeopleIconStory.storyName = 'People';
+
+const BuildingIconStory = args => (
+  <BuildingIcon {...args} />
+);
+BuildingIconStory.storyName = 'Building';
+
+const ColumnsIconStory = args => (
+  <ColumnsIcon {...args} />
+);
+ColumnsIconStory.storyName = 'Columns';
+
+const StoreAltIconStory = args => (
+  <StoreAltIcon {...args} />
+);
+StoreAltIconStory.storyName = 'Store Alt';
+
+const FileInvoiceDollarIconStory = args => (
+  <FileInvoiceDollarIcon {...args} />
+);
+FileInvoiceDollarIconStory.storyName = 'File Invoice Dollar';
+
+const TachometerAltIconStory = args => (
+  <TachometerAltIcon {...args} />
+);
+TachometerAltIconStory.storyName = 'Tachometer Alt';
+
+const LayerGroupIconStory = args => (
+  <LayerGroupIcon {...args} />
+);
+LayerGroupIconStory.storyName = 'Layer Group';
+
+const ShieldAltIconStory = args => (
+  <ShieldAltIcon {...args} />
+);
+ShieldAltIconStory.storyName = 'Shield Alt';
+
+const TableAltIconStory = args => (
+  <TableAltIcon {...args} />
+);
+TableAltIconStory.storyName = 'Table Alt';
+
+const UserLockIconStory = args => (
+  <UserLockIcon {...args} />
+);
+UserLockIconStory.storyName = 'User Lock';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
   ArrowForwardIconStory,
   BookmarkIconStory,
+  BuildingIconStory,
+  BullhornIconStory,
   ChevronRightIconStory,
   CircleIconStory,
   ClipboardListIconStory,
   CollectionsBookmarkIconStory,
+  ColumnsIconStory,
+  CommentAltIconStory,
   ContentPasteIconStory,
   DonutIconStory,
   ErrorIconStory,
+  FileIconStory,
+  FileInvoiceDollarIconStory,
+  FilterIconStory,
   FolderIconStory,
   GiftIconStory,
   HeartIconStory,
+  KeyIconStory,
+  LayerGroupIconStory,
   ListIconStory,
   MenuIconStory,
   MenuFoldIconStory,
@@ -196,5 +316,14 @@ export {
   NotificationsIconStory,
   NotificationsActiveIconStory,
   PeopleIconStory,
+  RegisterListAltIconStory,
+  ShieldAltIconStory,
+  StarIconStory,
+  StoreAltIconStory,
+  TableAltIconStory,
+  TachometerAltIconStory,
+  UserIconStory,
+  UserLockIconStory,
+  TagsIconStory,
   TrashBinIconStory,
 };

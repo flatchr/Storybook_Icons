@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const PeopleIcon = ({
+const FilterIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -11,28 +11,23 @@ const PeopleIcon = ({
     <Svg
       width={width || height || 16}
       height={height || width || 16}
-      viewBox="0 0 16 16"
+      viewBox="0 0 512 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
-        fill={color}
+        fill="none"
+        d="M0 0h24v24H0z"
       />
       <Path
-        fillRule="evenodd"
-        d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"
-        fill={color}
-      />
-      <Path
-        d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"
+        d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"
         fill={color}
       />
     </Svg>
   );
 };
 
-PeopleIcon.propTypes = {
+FilterIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -41,4 +36,4 @@ PeopleIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default PeopleIcon;
+export default FilterIcon;
