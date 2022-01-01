@@ -1,7 +1,7 @@
 // Logo
-export { default as FlatchrIcon } from './icons/Flatchr';
+export { default as LogoFlatchr } from './icons/Flatchr';
 // Icons
-export { default as PeopleIcon } from './icons/People';
+export { default as UserIcon } from './icons/User';
 export { default as ErrorIcon } from './icons/Error';
 export { default as NotificationsIcon } from './icons/Notifications';
 export { default as NotificationsActiveIcon } from './icons/NotificationsActive';
@@ -22,3 +22,21 @@ export { default as TrashBinIcon } from "./icons/TrashBin";
 export { default as ChevronRightIcon } from './icons/ChevronRight';
 export { default as BookmarkIcon } from './icons/Bookmark';
 export { default as FolderIcon } from './icons/Folder';
+export { default as CommentAltIcon } from './icons/CommentAlt';
+export { default as BullhornIcon } from './icons/Bullhorn';
+export { default as FileIcon } from './icons/File';
+export { default as FilterIcon } from './icons/Filter';
+export { default as KeyIcon } from './icons/Key';
+export { default as RegisterListAltIcon } from './icons/RegisterListAlt';
+export { default as StarIcon } from './icons/Star';
+export { default as TagsIcon } from './icons/Tags';
+export { default as PeopleIcon } from './icons/People';
+export { default as BuildingIcon } from './icons/Building';
+export { default as ColumnsIcon } from './icons/Columns';
+export { default as StoreAltIcon } from './icons/StoreAlt';
+export { default as FileInvoiceDollarIcon } from './icons/FileInvoiceDollar';
+export { default as TachometerAltIcon } from './icons/TachometerAlt';
+export { default as LayerGroupIcon } from './icons/LayerGroup';
+export { default as ShieldAltIcon } from './icons/ShieldAlt';
+export { default as TableAltIcon } from './icons/TableAlt';
+export { default as UserLockIcon } from './icons/UserLock';
