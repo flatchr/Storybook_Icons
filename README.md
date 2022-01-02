@@ -42,13 +42,12 @@ It will be accessible at [http://localhost:6006/](http://localhost:6006/)
 
 It's __required__ to commit the `/dist` directory.
 
-__⚠️ Don't forget to update `package.json` with the new version of the package!__
-
 Commit and push your work, and when your code is on `main` branch, you can launch:
 
-#### `git pull origin main && yarn && cd ./dist && yarn publish`
+#### `git pull origin main && yarn publish`
 
-When your new icons has been published, you will need to create a new branch `update-version-X.X.X`, update the version for the correct version in the package.json at the root directory.
+⚠️ When your new icons has been published, you will need to create a new branch `update-version-X.X.X`, update the version for the correct version in the package.json at the root directory.
+
 
 All the published versions are here : https://gitlab.com/flatchr/shared/icons/-/packages
 
@@ -58,10 +57,10 @@ Just add a new directory in `/src/icons`, create your new icon file `MyNewSVG.js
 
 If you want to add a dependency to get more efficient, it's possible! Add it as a peer-dependency:
 ```
-yarn add --peer DEPENDENCY_NAME
+yarn add DEPENDENCY_NAME
 ```
 
-In package.json, copy the line from peer and paste it into __devDependencies__
+In package.json, copy the line from peer and paste it into __peerDependencies__
 
 Then, you will need to add your icon to Storybook, go to `/src/stories.js` and add the new story for your icon.
 
@@ -92,5 +91,6 @@ yarn add @flatchr/icons
 
 🎉 __Enjoy your new icons!__ 🎉
 
-## TODO README
-- explain `yarn link` usage for testing
+## LINK
+
+- use [`yarn link`](https://classic.yarnpkg.com/en/docs/cli/link/) to test your new icons in an another webapp
