@@ -2,25 +2,25 @@ import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const BookmarkIcon = ({
+const ChevronUpIcon = ({
   color = '#000000',
   width: widthProp = null,
   height: heightProp = null,
 }) => {
 
   const dimensions = useMemo(() => {
-    let width = 384 * 16 / 512;
+    let width = 448 * 16 / 512;
     let height = 16;
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
     if (widthProp && !heightProp) {
-      height = widthProp * 512 / 384;
+      height = widthProp * 512 / 448;
       width = widthProp;
     }
     if (!widthProp && heightProp) {
-      width = 384 * heightProp / 512;
+      width = 448 * heightProp / 512;
       height = heightProp;
     }
     return {
@@ -35,19 +35,19 @@ const BookmarkIcon = ({
     <Svg
       width={dimensions.width}
       height={dimensions.height}
-      viewBox="0 0 384 512"
+      viewBox="0 0 448 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+        d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"
         fill={color}
       />
     </Svg>
   );
 };
 
-BookmarkIcon.propTypes = {
+ChevronUpIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -56,4 +56,4 @@ BookmarkIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default BookmarkIcon;
+export default ChevronUpIcon;

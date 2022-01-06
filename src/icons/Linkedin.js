@@ -2,25 +2,25 @@ import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const BookmarkIcon = ({
+const LinkedinIcon = ({
   color = '#000000',
   width: widthProp = null,
   height: heightProp = null,
 }) => {
 
   const dimensions = useMemo(() => {
-    let width = 384 * 16 / 512;
+    let width = 448 * 16 / 512;
     let height = 16;
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
     if (widthProp && !heightProp) {
-      height = widthProp * 512 / 384;
+      height = widthProp * 512 / 448;
       width = widthProp;
     }
     if (!widthProp && heightProp) {
-      width = 384 * heightProp / 512;
+      width = 448 * heightProp / 512;
       height = heightProp;
     }
     return {
@@ -35,19 +35,19 @@ const BookmarkIcon = ({
     <Svg
       width={dimensions.width}
       height={dimensions.height}
-      viewBox="0 0 384 512"
+      viewBox="0 0 448 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
         fill={color}
       />
     </Svg>
   );
 };
 
-BookmarkIcon.propTypes = {
+LinkedinIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -56,4 +56,4 @@ BookmarkIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default BookmarkIcon;
+export default LinkedinIcon;

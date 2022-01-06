@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const StarIcon = ({
+const GridIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -15,17 +15,19 @@ const StarIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path fill="none" d="M0 0h24v24H0z" />
       <Path
-        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <Path
+        d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z"
         fill={color}
       />
     </Svg>
   );
 };
 
-StarIcon.propTypes = {
+GridIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +36,4 @@ StarIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default StarIcon;
+export default GridIcon;

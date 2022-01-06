@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const StarIcon = ({
+const CheckCircleIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -15,17 +15,15 @@ const StarIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path fill="none" d="M0 0h24v24H0z" />
       <Path
-        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
         fill={color}
       />
     </Svg>
   );
 };
 
-StarIcon.propTypes = {
+CheckCircleIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +32,4 @@ StarIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default StarIcon;
+export default CheckCircleIcon;

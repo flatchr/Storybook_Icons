@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const StarIcon = ({
+const GoogleHangoutsIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -15,17 +15,15 @@ const StarIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path fill="none" d="M0 0h24v24H0z" />
       <Path
-        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        d="M12 0C6.2 0 1.5 4.7 1.5 10.5c0 5.5 5 10 10.5 10V24c6.35-3.1 10.5-8.2 10.5-13.5C22.5 4.7 17.8 0 12 0zm-.5 12c0 1.4-.9 2.5-2 2.5V12H7V7.5h4.5V12zm6 0c0 1.4-.9 2.5-2 2.5V12H13V7.5h4.5V12z"
         fill={color}
       />
     </Svg>
   );
 };
 
-StarIcon.propTypes = {
+GoogleHangoutsIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +32,4 @@ StarIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default StarIcon;
+export default GoogleHangoutsIcon;

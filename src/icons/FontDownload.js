@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const StarIcon = ({
+const FontDownloadIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -15,17 +15,15 @@ const StarIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path fill="none" d="M0 0h24v24H0z" />
       <Path
-        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        d="M9.93 13.5h4.14L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4.05 16.5l-1.14-3H9.17l-1.12 3H5.96l5.11-13h1.86l5.11 13h-2.09z"
         fill={color}
       />
     </Svg>
   );
 };
 
-StarIcon.propTypes = {
+FontDownloadIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +32,4 @@ StarIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default StarIcon;
+export default FontDownloadIcon;

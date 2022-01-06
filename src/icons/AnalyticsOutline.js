@@ -2,7 +2,7 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const StarIcon = ({
+const AnalyticsOutlineIcon = ({
   color = '#000000',
   height = null,
   width = null,
@@ -15,17 +15,23 @@ const StarIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path fill="none" d="M0 0h24v24H0z" />
-      <Path fill="none" d="M0 0h24v24H0z" />
       <Path
-        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <Path
+        d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"
+        fill={color}
+      />
+      <Path
+        d="M7 12h2v5H7zM15 7h2v10h-2zM11 14h2v3h-2zM11 10h2v2h-2z"
         fill={color}
       />
     </Svg>
   );
 };
 
-StarIcon.propTypes = {
+AnalyticsOutlineIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +40,4 @@ StarIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default StarIcon;
+export default AnalyticsOutlineIcon;

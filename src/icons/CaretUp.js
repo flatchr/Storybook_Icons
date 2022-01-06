@@ -2,25 +2,25 @@ import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const BookmarkIcon = ({
+const CaretUpIcon = ({
   color = '#000000',
   width: widthProp = null,
   height: heightProp = null,
 }) => {
 
   const dimensions = useMemo(() => {
-    let width = 384 * 16 / 512;
+    let width = 320 * 16 / 512;
     let height = 16;
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
     if (widthProp && !heightProp) {
-      height = widthProp * 512 / 384;
+      height = widthProp * 512 / 320;
       width = widthProp;
     }
     if (!widthProp && heightProp) {
-      width = 384 * heightProp / 512;
+      width = 320 * heightProp / 512;
       height = heightProp;
     }
     return {
@@ -35,19 +35,19 @@ const BookmarkIcon = ({
     <Svg
       width={dimensions.width}
       height={dimensions.height}
-      viewBox="0 0 384 512"
+      viewBox="0 0 320 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+        d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z"
         fill={color}
       />
     </Svg>
   );
 };
 
-BookmarkIcon.propTypes = {
+CaretUpIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -56,4 +56,4 @@ BookmarkIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default BookmarkIcon;
+export default CaretUpIcon;

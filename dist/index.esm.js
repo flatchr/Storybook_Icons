@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import Svg, { Path, Rect } from 'react-native-svg';
+import Svg, { Path, Rect, Circle } from 'react-native-svg';
 import PropTypes from 'prop-types';
 
 var LogoFlatchr = function LogoFlatchr(props) {
@@ -297,35 +297,6 @@ var DonutIcon = function DonutIcon(_ref) {
 };
 
 DonutIcon.propTypes = {
-  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
-  ]),
-  height: PropTypes.number,
-  with: PropTypes.number
-};
-
-var ListIcon = function ListIcon(_ref) {
-  var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height;
-  return /*#__PURE__*/React.createElement(Svg, {
-    width: width || height || 16,
-    height: height || width || 16,
-    viewBox: "0 0 24 24",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/React.createElement(Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React.createElement(Path, {
-    d: "M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z",
-    fill: color
-  }));
-};
-
-ListIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
@@ -674,18 +645,42 @@ ChevronRightIcon.propTypes = {
 var BookmarkIcon = function BookmarkIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 384 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 384;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 384 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
   return /*#__PURE__*/React.createElement(Svg, {
-    width: width || height || 16,
-    height: height || width || 16,
-    viewBox: "0 0 512 512",
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 384 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React.createElement(Path, {
-    d: "M400 480a16 16 0 01-10.63-4L256 357.41 122.63 476A16 16 0 0196 464V96a64.07 64.07 0 0164-64h192a64.07 64.07 0 0164 64v368a16 16 0 01-16 16z",
+    d: "M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z",
     fill: color
   }));
 };
@@ -723,7 +718,7 @@ FolderIcon.propTypes = {
   with: PropTypes.number
 };
 
-var CommentAltIcon = function CommentAltIcon(_ref) {
+var ChatBubbleIcon = function ChatBubbleIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
       _ref$height = _ref.height,
@@ -733,19 +728,19 @@ var CommentAltIcon = function CommentAltIcon(_ref) {
   return /*#__PURE__*/React.createElement(Svg, {
     width: width || height || 16,
     height: height || width || 16,
-    viewBox: "0 0 512 512",
+    viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React.createElement(Path, {
     fill: "none",
     d: "M0 0h24v24H0z"
   }), /*#__PURE__*/React.createElement(Path, {
-    d: "M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z",
+    d: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z",
     fill: color
   }));
 };
 
-CommentAltIcon.propTypes = {
+ChatBubbleIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
   height: PropTypes.number,
@@ -942,42 +937,24 @@ RegisterListAltIcon.propTypes = {
 var StarIcon = function StarIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? '#000000' : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = useMemo(function () {
-    var width = 576 * 16 / 512;
-    var height = 16;
-
-    if (widthProp && heightProp) {
-      height = heightProp;
-      width = widthProp;
-    }
-
-    if (widthProp && !heightProp) {
-      height = widthProp * 512 / 576;
-      width = widthProp;
-    }
-
-    if (!widthProp && heightProp) {
-      width = 576 * heightProp / 512;
-      height = heightProp;
-    }
-
-    return {
-      height: height,
-      width: width
-    };
-  }, [widthProp, heightProp]);
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React.createElement(Svg, {
-    width: dimensions.width,
-    height: dimensions.height,
-    viewBox: "0 0 576 512",
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React.createElement(Path, {
-    d: "M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z",
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }), /*#__PURE__*/React.createElement(Path, {
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z",
     fill: color
   }));
 };
@@ -1456,4 +1433,2651 @@ UserLockIcon.propTypes = {
   with: PropTypes.number
 };
 
-export { AccountPinCircleFillIcon, ArrowForwardIcon, BookmarkIcon, BuildingIcon, BullhornIcon, ChevronRightIcon, CircleIcon, ClipboardListIcon, CollectionsBookmarkIcon, ColumnsIcon, CommentAltIcon, ContentPasteIcon, DonutIcon, ErrorIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, GiftIcon, HeartIcon, KeyIcon, LayerGroupIcon, ListIcon, LogoFlatchr, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, NotificationsActiveIcon, NotificationsIcon, PeopleIcon, RegisterListAltIcon, ShieldAltIcon, StarIcon, StoreAltIcon, TableAltIcon, TachometerAltIcon, TagsIcon, TrashBinIcon, UserIcon, UserLockIcon };
+var PlusIcon = function PlusIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z",
+    fill: color
+  }));
+};
+
+PlusIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var PenIcon = function PenIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M290.74 93.24l128.02 128.02-277.99 277.99-114.14 12.6C11.35 513.54-1.56 500.62.14 485.34l12.7-114.22 277.9-277.88zm207.2-19.06l-60.11-60.11c-18.75-18.75-49.16-18.75-67.91 0l-56.55 56.55 128.02 128.02 56.55-56.55c18.75-18.76 18.75-49.16 0-67.91z",
+    fill: color
+  }));
+};
+
+PenIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CheckIcon = function CheckIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z",
+    fill: color
+  }));
+};
+
+CheckIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CloseIcon = function CloseIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
+    fill: color
+  }));
+};
+
+CloseIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CaretDownIcon = function CaretDownIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 320 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 320;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 320 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 320 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z",
+    fill: color
+  }));
+};
+
+CaretDownIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CaretUpIcon = function CaretUpIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 320 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 320;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 320 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 320 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z",
+    fill: color
+  }));
+};
+
+CaretUpIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var SearchIcon = function SearchIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z",
+    fill: color
+  }));
+};
+
+SearchIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var EyeIcon = function EyeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M256 105c-101.8 0-188.4 62.4-224 151 35.6 88.6 122.2 151 224 151s188.4-62.4 224-151c-35.6-88.6-122.2-151-224-151zm0 251.7c-56 0-101.8-45.3-101.8-100.7S200 155.3 256 155.3 357.8 200.6 357.8 256 312 356.7 256 356.7zm0-161.1c-33.6 0-61.1 27.2-61.1 60.4s27.5 60.4 61.1 60.4 61.1-27.2 61.1-60.4-27.5-60.4-61.1-60.4z",
+    fill: color
+  }));
+};
+
+EyeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var EyeOffIcon = function EyeOffIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M256.1 144.8c56.2 0 101.9 45.3 101.9 101.1 0 13.1-2.6 25.5-7.3 37l59.5 59c30.8-25.5 55-58.4 69.9-96-35.3-88.7-122.3-151.6-224.2-151.6-28.5 0-55.8 5.1-81.1 14.1l44 43.7c11.6-4.6 24.1-7.3 37.3-7.3zM52.4 89.7l46.5 46.1 9.4 9.3c-33.9 26-60.4 60.8-76.3 100.8 35.2 88.7 122.2 151.6 224.1 151.6 31.6 0 61.7-6.1 89.2-17l8.6 8.5 59.7 59 25.9-25.7L78.2 64 52.4 89.7zM165 201.4l31.6 31.3c-1 4.2-1.6 8.7-1.6 13.1 0 33.5 27.3 60.6 61.1 60.6 4.5 0 9-.6 13.2-1.6l31.6 31.3c-13.6 6.7-28.7 10.7-44.8 10.7-56.2 0-101.9-45.3-101.9-101.1 0-15.8 4.1-30.7 10.8-44.3zm87.8-15.7l64.2 63.7.4-3.2c0-33.5-27.3-60.6-61.1-60.6l-3.5.1z",
+    fill: color
+  }));
+};
+
+EyeOffIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var LockIcon = function LockIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z",
+    fill: color
+  }));
+};
+
+LockIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var LockOpenIcon = function LockOpenIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 576 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 576;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 576 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 576 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M423.5 0C339.5.3 272 69.5 272 153.5V224H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48h-48v-71.1c0-39.6 31.7-72.5 71.3-72.9 40-.4 72.7 32.1 72.7 72v80c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24v-80C576 68 507.5-.3 423.5 0z",
+    fill: color
+  }));
+};
+
+LockOpenIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CheckCircleIcon = function CheckCircleIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z",
+    fill: color
+  }));
+};
+
+CheckCircleIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var AddCircleOutlineIcon = function AddCircleOutlineIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z",
+    fill: color
+  }));
+};
+
+AddCircleOutlineIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var RemoveCircleOutlineIcon = function RemoveCircleOutlineIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z",
+    fill: color
+  }));
+};
+
+RemoveCircleOutlineIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ChevronLeftIcon = function ChevronLeftIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 320 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 320;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 320 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 320 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z",
+    fill: color
+  }));
+};
+
+ChevronLeftIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CogIcon = function CogIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z",
+    fill: color
+  }));
+};
+
+CogIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ColorPaletteIcon = function ColorPaletteIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M256 64C150.401 64 64 150.401 64 256c0 105.604 86.401 192 192 192 18.136 0 32-13.864 32-32 0-8.531-3.198-16-8.531-21.333-5.333-5.334-8.531-12.803-8.531-21.334 0-18.135 13.864-32 32-32h38.396c58.667 0 106.667-48 106.667-106.666C448 140.802 361.604 64 256 64zM138.667 256c-18.136 0-32-13.864-32-32s13.864-32 32-32c18.135 0 32 13.864 32 32s-13.865 32-32 32zm64-85.333c-18.136 0-32-13.865-32-32 0-18.136 13.864-32 32-32 18.135 0 32 13.864 32 32 0 18.135-13.865 32-32 32zm106.666 0c-18.135 0-32-13.865-32-32 0-18.136 13.865-32 32-32 18.136 0 32 13.864 32 32 0 18.135-13.864 32-32 32zm64 85.333c-18.135 0-32-13.864-32-32s13.865-32 32-32c18.136 0 32 13.864 32 32s-13.864 32-32 32z",
+    fill: color
+  }));
+};
+
+ColorPaletteIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FormatAlignLeftIcon = function FormatAlignLeftIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z",
+    fill: color
+  }));
+};
+
+FormatAlignLeftIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var PublishIcon = function PublishIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M5 4v2h14V4H5zm0 10h4v6h6v-6h4l-7-7-7 7z",
+    fill: color
+  }));
+};
+
+PublishIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CameraIcon = function CameraIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Circle, {
+    cx: "256",
+    cy: "280",
+    r: "63",
+    fill: color
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M440 96h-88l-32-32H192l-32 32H72c-22.092 0-40 17.908-40 40v272c0 22.092 17.908 40 40 40h368c22.092 0 40-17.908 40-40V136c0-22.092-17.908-40-40-40zM256 392c-61.855 0-112-50.145-112-112s50.145-112 112-112 112 50.145 112 112-50.145 112-112 112z",
+    fill: color
+  }));
+};
+
+CameraIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var PlayCircleIcon = function PlayCircleIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M256 48C141.2 48 48 141.2 48 256s93.2 208 208 208 208-93.2 208-208S370.8 48 256 48zm-41.6 301.6V162.4L339.2 256l-124.8 93.6z",
+    fill: color
+  }));
+};
+
+PlayCircleIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var AnalyticsOutlineIcon = function AnalyticsOutlineIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z",
+    fill: color
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M7 12h2v5H7zM15 7h2v10h-2zM11 14h2v3h-2zM11 10h2v2h-2z",
+    fill: color
+  }));
+};
+
+AnalyticsOutlineIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FacebookIcon = function FacebookIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 320 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 320;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 320 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 320 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z",
+    fill: color
+  }));
+};
+
+FacebookIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var TwitterIcon = function TwitterIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z",
+    fill: color
+  }));
+};
+
+TwitterIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var LinkedinIcon = function LinkedinIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z",
+    fill: color
+  }));
+};
+
+LinkedinIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var YoutubeIcon = function YoutubeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 576 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 576;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 576 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 576 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z",
+    fill: color
+  }));
+};
+
+YoutubeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var InstagramIcon = function InstagramIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z",
+    fill: color
+  }));
+};
+
+InstagramIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ChevronUpIcon = function ChevronUpIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z",
+    fill: color
+  }));
+};
+
+ChevronUpIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ChevronDownIcon = function ChevronDownIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z",
+    fill: color
+  }));
+};
+
+ChevronDownIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var LinkIcon = function LinkIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M74.6 256c0-38.3 31.1-69.4 69.4-69.4h88V144h-88c-61.8 0-112 50.2-112 112s50.2 112 112 112h88v-42.6h-88c-38.3 0-69.4-31.1-69.4-69.4zm85.4 22h192v-44H160v44zm208-134h-88v42.6h88c38.3 0 69.4 31.1 69.4 69.4s-31.1 69.4-69.4 69.4h-88V368h88c61.8 0 112-50.2 112-112s-50.2-112-112-112z",
+    fill: color
+  }));
+};
+
+LinkIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var MergeIcon = function MergeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z",
+    fill: color
+  }));
+};
+
+MergeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CloneIcon = function CloneIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M464 0c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48H176c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h288M176 416c-44.112 0-80-35.888-80-80V128H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-48H176z",
+    fill: color
+  }));
+};
+
+CloneIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var BookmarkAltIcon = function BookmarkAltIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 384 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 384;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 384 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 384 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z",
+    fill: color
+  }));
+};
+
+BookmarkAltIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var SourceTreeIcon = function SourceTreeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M427.2 203c0-112.1-90.9-203-203-203C112.1-.2 21.2 90.6 21 202.6A202.86 202.86 0 0 0 161.5 396v101.7a14.3 14.3 0 0 0 14.3 14.3h96.4a14.3 14.3 0 0 0 14.3-14.3V396.1A203.18 203.18 0 0 0 427.2 203zm-271.6 0c0-90.8 137.3-90.8 137.3 0-.1 89.9-137.3 91-137.3 0z",
+    fill: color
+  }));
+};
+
+SourceTreeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var VectorSquareIcon = function VectorSquareIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M512 128V32c0-17.67-14.33-32-32-32h-96c-17.67 0-32 14.33-32 32H160c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v96c0 17.67 14.33 32 32 32v192c-17.67 0-32 14.33-32 32v96c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32h192c0 17.67 14.33 32 32 32h96c17.67 0 32-14.33 32-32v-96c0-17.67-14.33-32-32-32V160c17.67 0 32-14.33 32-32zm-96-64h32v32h-32V64zM64 64h32v32H64V64zm32 384H64v-32h32v32zm352 0h-32v-32h32v32zm-32-96h-32c-17.67 0-32 14.33-32 32v32H160v-32c0-17.67-14.33-32-32-32H96V160h32c17.67 0 32-14.33 32-32V96h192v32c0 17.67 14.33 32 32 32h32v192z",
+    fill: color
+  }));
+};
+
+VectorSquareIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var SaveIcon = function SaveIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M433.941 129.941l-83.882-83.882A48 48 0 0 0 316.118 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V163.882a48 48 0 0 0-14.059-33.941zM272 80v80H144V80h128zm122 352H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h42v104c0 13.255 10.745 24 24 24h176c13.255 0 24-10.745 24-24V83.882l78.243 78.243a6 6 0 0 1 1.757 4.243V426a6 6 0 0 1-6 6zM224 232c-48.523 0-88 39.477-88 88s39.477 88 88 88 88-39.477 88-88-39.477-88-88-88zm0 128c-22.056 0-40-17.944-40-40s17.944-40 40-40 40 17.944 40 40-17.944 40-40 40z",
+    fill: color
+  }));
+};
+
+SaveIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var DownloadIcon = function DownloadIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z",
+    fill: color
+  }));
+};
+
+DownloadIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var PaperPlaneIcon = function PaperPlaneIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z",
+    fill: color
+  }));
+};
+
+PaperPlaneIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var RandomIcon = function RandomIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M504.971 359.029c9.373 9.373 9.373 24.569 0 33.941l-80 79.984c-15.01 15.01-40.971 4.49-40.971-16.971V416h-58.785a12.004 12.004 0 0 1-8.773-3.812l-70.556-75.596 53.333-57.143L352 336h32v-39.981c0-21.438 25.943-31.998 40.971-16.971l80 79.981zM12 176h84l52.781 56.551 53.333-57.143-70.556-75.596A11.999 11.999 0 0 0 122.785 96H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12zm372 0v39.984c0 21.46 25.961 31.98 40.971 16.971l80-79.984c9.373-9.373 9.373-24.569 0-33.941l-80-79.981C409.943 24.021 384 34.582 384 56.019V96h-58.785a12.004 12.004 0 0 0-8.773 3.812L96 336H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h110.785c3.326 0 6.503-1.381 8.773-3.812L352 176h32z",
+    fill: color
+  }));
+};
+
+RandomIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var RedoLoopIcon = function RedoLoopIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M500.33 0h-47.41a12 12 0 0 0-12 12.57l4 82.76A247.42 247.42 0 0 0 256 8C119.34 8 7.9 119.53 8 256.19 8.1 393.07 119.1 504 256 504a247.1 247.1 0 0 0 166.18-63.91 12 12 0 0 0 .48-17.43l-34-34a12 12 0 0 0-16.38-.55A176 176 0 1 1 402.1 157.8l-101.53-4.87a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12h200.33a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12z",
+    fill: color
+  }));
+};
+
+RedoLoopIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var AppsIcon = function AppsIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z",
+    fill: color
+  }));
+};
+
+AppsIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var GridIcon = function GridIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z",
+    fill: color
+  }));
+};
+
+GridIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var CalendarIcon = function CalendarIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z",
+    fill: color
+  }));
+};
+
+CalendarIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var EnvelopeIcon = function EnvelopeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z",
+    fill: color
+  }));
+};
+
+EnvelopeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var GlobeIcon = function GlobeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 496 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 496;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 496 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 496 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z",
+    fill: color
+  }));
+};
+
+GlobeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var GlobeEuropeIcon = function GlobeEuropeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 496 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 496;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 496 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 496 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm200 248c0 22.5-3.9 44.2-10.8 64.4h-20.3c-4.3 0-8.4-1.7-11.4-4.8l-32-32.6c-4.5-4.6-4.5-12.1.1-16.7l12.5-12.5v-8.7c0-3-1.2-5.9-3.3-8l-9.4-9.4c-2.1-2.1-5-3.3-8-3.3h-16c-6.2 0-11.3-5.1-11.3-11.3 0-3 1.2-5.9 3.3-8l9.4-9.4c2.1-2.1 5-3.3 8-3.3h32c6.2 0 11.3-5.1 11.3-11.3v-9.4c0-6.2-5.1-11.3-11.3-11.3h-36.7c-8.8 0-16 7.2-16 16v4.5c0 6.9-4.4 13-10.9 15.2l-31.6 10.5c-3.3 1.1-5.5 4.1-5.5 7.6v2.2c0 4.4-3.6 8-8 8h-16c-4.4 0-8-3.6-8-8s-3.6-8-8-8H247c-3 0-5.8 1.7-7.2 4.4l-9.4 18.7c-2.7 5.4-8.2 8.8-14.3 8.8H194c-8.8 0-16-7.2-16-16V199c0-4.2 1.7-8.3 4.7-11.3l20.1-20.1c4.6-4.6 7.2-10.9 7.2-17.5 0-3.4 2.2-6.5 5.5-7.6l40-13.3c1.7-.6 3.2-1.5 4.4-2.7l26.8-26.8c2.1-2.1 3.3-5 3.3-8 0-6.2-5.1-11.3-11.3-11.3H258l-16 16v8c0 4.4-3.6 8-8 8h-16c-4.4 0-8-3.6-8-8v-20c0-2.5 1.2-4.9 3.2-6.4l28.9-21.7c1.9-.1 3.8-.3 5.7-.3C358.3 56 448 145.7 448 256zM130.1 149.1c0-3 1.2-5.9 3.3-8l25.4-25.4c2.1-2.1 5-3.3 8-3.3 6.2 0 11.3 5.1 11.3 11.3v16c0 3-1.2 5.9-3.3 8l-9.4 9.4c-2.1 2.1-5 3.3-8 3.3h-16c-6.2 0-11.3-5.1-11.3-11.3zm128 306.4v-7.1c0-8.8-7.2-16-16-16h-20.2c-10.8 0-26.7-5.3-35.4-11.8l-22.2-16.7c-11.5-8.6-18.2-22.1-18.2-36.4v-23.9c0-16 8.4-30.8 22.1-39l42.9-25.7c7.1-4.2 15.2-6.5 23.4-6.5h31.2c10.9 0 21.4 3.9 29.6 10.9l43.2 37.1h18.3c8.5 0 16.6 3.4 22.6 9.4l17.3 17.3c3.4 3.4 8.1 5.3 12.9 5.3H423c-32.4 58.9-93.8 99.5-164.9 103.1z",
+    fill: color
+  }));
+};
+
+GlobeEuropeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var NetworkWiredIcon = function NetworkWiredIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 640 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 640;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 640 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 640 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z",
+    fill: color
+  }));
+};
+
+NetworkWiredIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var RegDotCircleIcon = function RegDotCircleIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M256 56c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m0-48C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 168c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z",
+    fill: color
+  }));
+};
+
+RegDotCircleIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var UniversityIcon = function UniversityIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M496 128v16a8 8 0 0 1-8 8h-24v12c0 6.627-5.373 12-12 12H60c-6.627 0-12-5.373-12-12v-12H24a8 8 0 0 1-8-8v-16a8 8 0 0 1 4.941-7.392l232-88a7.996 7.996 0 0 1 6.118 0l232 88A8 8 0 0 1 496 128zm-24 304H40c-13.255 0-24 10.745-24 24v16a8 8 0 0 0 8 8h464a8 8 0 0 0 8-8v-16c0-13.255-10.745-24-24-24zM96 192v192H60c-6.627 0-12 5.373-12 12v20h416v-20c0-6.627-5.373-12-12-12h-36V192h-64v192h-64V192h-64v192h-64V192H96z",
+    fill: color
+  }));
+};
+
+UniversityIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var StreetViewIcon = function StreetViewIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M367.9 329.76c-4.62 5.3-9.78 10.1-15.9 13.65v22.94c66.52 9.34 112 28.05 112 49.65 0 30.93-93.12 56-208 56S48 446.93 48 416c0-21.6 45.48-40.3 112-49.65v-22.94c-6.12-3.55-11.28-8.35-15.9-13.65C58.87 345.34 0 378.05 0 416c0 53.02 114.62 96 256 96s256-42.98 256-96c0-37.95-58.87-70.66-144.1-86.24zM256 128c35.35 0 64-28.65 64-64S291.35 0 256 0s-64 28.65-64 64 28.65 64 64 64zm-64 192v96c0 17.67 14.33 32 32 32h64c17.67 0 32-14.33 32-32v-96c17.67 0 32-14.33 32-32v-96c0-26.51-21.49-48-48-48h-11.8c-11.07 5.03-23.26 8-36.2 8s-25.13-2.97-36.2-8H208c-26.51 0-48 21.49-48 48v96c0 17.67 14.33 32 32 32z",
+    fill: color
+  }));
+};
+
+StreetViewIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var UserClockIcon = function UserClockIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 640 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 640;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 640 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 640 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M496 224c-79.6 0-144 64.4-144 144s64.4 144 144 144 144-64.4 144-144-64.4-144-144-144zm64 150.3c0 5.3-4.4 9.7-9.7 9.7h-60.6c-5.3 0-9.7-4.4-9.7-9.7v-76.6c0-5.3 4.4-9.7 9.7-9.7h12.6c5.3 0 9.7 4.4 9.7 9.7V352h38.3c5.3 0 9.7 4.4 9.7 9.7v12.6zM320 368c0-27.8 6.7-54.1 18.2-77.5-8-1.5-16.2-2.5-24.6-2.5h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h347.1c-45.3-31.9-75.1-84.5-75.1-144zm-96-112c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128z",
+    fill: color
+  }));
+};
+
+UserClockIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var GraduateIcon = function GraduateIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M319.4 320.6L224 416l-95.4-95.4C57.1 323.7 0 382.2 0 454.4v9.6c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-9.6c0-72.2-57.1-130.7-128.6-133.8zM13.6 79.8l6.4 1.5v58.4c-7 4.2-12 11.5-12 20.3 0 8.4 4.6 15.4 11.1 19.7L3.5 242c-1.7 6.9 2.1 14 7.6 14h41.8c5.5 0 9.3-7.1 7.6-14l-15.6-62.3C51.4 175.4 56 168.4 56 160c0-8.8-5-16.1-12-20.3V87.1l66 15.9c-8.6 17.2-14 36.4-14 57 0 70.7 57.3 128 128 128s128-57.3 128-128c0-20.6-5.3-39.8-14-57l96.3-23.2c18.2-4.4 18.2-27.1 0-31.5l-190.4-46c-13-3.1-26.7-3.1-39.7 0L13.6 48.2c-18.1 4.4-18.1 27.2 0 31.6z",
+    fill: color
+  }));
+};
+
+GraduateIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ChatBubblesIcon = function ChatBubblesIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M132.8 368c-20.2 0-44.8-24.6-44.8-44.8V160h-9.6C61.7 160 48 173.7 48 190.4V464l58.5-58h215.1c16.7 0 30.4-14.1 30.4-30.9V368H132.8z",
+    fill: color
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M429.1 48H149.9C130.7 48 115 63.7 115 82.9V309c0 19.2 15.7 35 34.9 35h238.2l75.9 53V82.9c0-19.2-15.7-34.9-34.9-34.9z",
+    fill: color
+  }));
+};
+
+ChatBubblesIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FacebookSquareIcon = function FacebookSquareIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z",
+    fill: color
+  }));
+};
+
+FacebookSquareIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var LinkedinSquareIcon = function LinkedinSquareIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z",
+    fill: color
+  }));
+};
+
+LinkedinSquareIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var AttachFileIcon = function AttachFileIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5a2.5 2.5 0 015 0v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5a2.5 2.5 0 005 0V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z",
+    fill: color
+  }));
+};
+
+AttachFileIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var StarHalfIcon = function StarHalfIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z",
+    fill: color
+  }));
+};
+
+StarHalfIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var StarBorderIcon = function StarBorderIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    fill: "none",
+    d: "M0 0h24v24H0z"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z",
+    fill: color
+  }));
+};
+
+StarBorderIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var GithubSquareIcon = function GithubSquareIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z",
+    fill: color
+  }));
+};
+
+GithubSquareIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var TwitterSquareIcon = function TwitterSquareIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z",
+    fill: color
+  }));
+};
+
+TwitterSquareIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ExternalLinkIcon = function ExternalLinkIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z",
+    fill: color
+  }));
+};
+
+ExternalLinkIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FileAltIcon = function FileAltIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 384 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 384;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 384 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 384 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z",
+    fill: color
+  }));
+};
+
+FileAltIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var PhoneIcon = function PhoneIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z",
+    fill: color
+  }));
+};
+
+PhoneIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var SkypeIcon = function SkypeIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+  var dimensions = useMemo(function () {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  }, [widthProp, heightProp]);
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions.width,
+    height: dimensions.height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z",
+    fill: color
+  }));
+};
+
+SkypeIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ShareIcon = function ShareIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M383.822 344.427c-16.045 0-31.024 5.326-41.721 15.979l-152.957-88.42c1.071-5.328 2.142-9.593 2.142-14.919 0-5.328-1.071-9.593-2.142-14.919l150.826-87.35c11.762 10.653 26.741 17.041 43.852 17.041 35.295 0 64.178-28.766 64.178-63.92C448 72.767 419.117 44 383.822 44c-35.297 0-64.179 28.767-64.179 63.92 0 5.327 1.065 9.593 2.142 14.919l-150.821 87.35c-11.767-10.654-26.741-17.041-43.856-17.041-35.296 0-63.108 28.766-63.108 63.92 0 35.153 28.877 63.92 64.178 63.92 17.115 0 32.089-6.389 43.856-17.042l151.891 88.421c-1.076 4.255-2.141 8.521-2.141 13.847 0 34.094 27.806 61.787 62.037 61.787 34.229 0 62.036-27.693 62.036-61.787.001-34.094-27.805-61.787-62.035-61.787z",
+    fill: color
+  }));
+};
+
+ShareIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var GoogleHangoutsIcon = function GoogleHangoutsIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M12 0C6.2 0 1.5 4.7 1.5 10.5c0 5.5 5 10 10.5 10V24c6.35-3.1 10.5-8.2 10.5-13.5C22.5 4.7 17.8 0 12 0zm-.5 12c0 1.4-.9 2.5-2 2.5V12H7V7.5h4.5V12zm6 0c0 1.4-.9 2.5-2 2.5V12H13V7.5h4.5V12z",
+    fill: color
+  }));
+};
+
+GoogleHangoutsIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FontDownloadIcon = function FontDownloadIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M9.93 13.5h4.14L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4.05 16.5l-1.14-3H9.17l-1.12 3H5.96l5.11-13h1.86l5.11 13h-2.09z",
+    fill: color
+  }));
+};
+
+FontDownloadIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FormatBoldIcon = function FormatBoldIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M15.6 10.79c.97-.67 1.65-1.77 1.65-2.79 0-2.26-1.75-4-4-4H7v14h7.04c2.09 0 3.71-1.7 3.71-3.79 0-1.52-.86-2.82-2.15-3.42zM10 6.5h3c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-3v-3zm3.5 9H10v-3h3.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5z",
+    fill: color
+  }));
+};
+
+FormatBoldIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FormatClearIcon = function FormatClearIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M3.27 5L2 6.27l6.97 6.97L6.5 19h3l1.57-3.66L16.73 21 18 19.73 3.55 5.27 3.27 5zM6 5v.18L8.82 8h2.4l-.72 1.68 2.1 2.1L14.21 8H20V5H6z",
+    fill: color
+  }));
+};
+
+FormatClearIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FormatItalicIcon = function FormatItalicIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M10 4v3h2.21l-3.42 8H6v3h8v-3h-2.21l3.42-8H18V4z",
+    fill: color
+  }));
+};
+
+FormatItalicIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FormatListBulletedIcon = function FormatListBulletedIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M4 10.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-6c-.83 0-1.5.67-1.5 1.5S3.17 7.5 4 7.5 5.5 6.83 5.5 6 4.83 4.5 4 4.5zm0 12c-.83 0-1.5.68-1.5 1.5s.68 1.5 1.5 1.5 1.5-.68 1.5-1.5-.67-1.5-1.5-1.5zM7 19h14v-2H7v2zm0-6h14v-2H7v2zm0-8v2h14V5H7z",
+    fill: color
+  }));
+};
+
+FormatListBulletedIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FormatListNumberedIcon = function FormatListNumberedIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M2 17h2v.5H3v1h1v.5H2v1h3v-4H2v1zm1-9h1V4H2v1h1v3zm-1 3h1.8L2 13.1v.9h3v-1H3.2L5 10.9V10H2v1zm5-6v2h14V5H7zm0 14h14v-2H7v2zm0-6h14v-2H7v2z",
+    fill: color
+  }));
+};
+
+FormatListNumberedIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var FormatUnderlineIcon = function FormatUnderlineIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M0 0h24v24H0z",
+    fill: "none"
+  }), /*#__PURE__*/React.createElement(Path, {
+    d: "M12 17c3.31 0 6-2.69 6-6V3h-2.5v8c0 1.93-1.57 3.5-3.5 3.5S8.5 12.93 8.5 11V3H6v8c0 3.31 2.69 6 6 6zm-7 2v2h14v-2H5z",
+    fill: color
+  }));
+};
+
+FormatUnderlineIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var ImageIcon = function ImageIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z",
+    fill: color
+  }));
+};
+
+ImageIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var RedoIcon = function RedoIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16a8.002 8.002 0 017.6-5.5c1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z",
+    fill: color
+  }));
+};
+
+RedoIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+var UndoIcon = function UndoIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z",
+    fill: color
+  }));
+};
+
+UndoIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+export { AccountPinCircleFillIcon, AddCircleOutlineIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, AttachFileIcon, BookmarkAltIcon, BookmarkIcon, BuildingIcon, BullhornIcon, CalendarIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, ContentPasteIcon, DonutIcon, DownloadIcon, EnvelopeIcon, ErrorIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HeartIcon, ImageIcon, InstagramIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, LockIcon, LockOpenIcon, LogoFlatchr, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsIcon, PaperPlaneIcon, PenIcon, PeopleIcon, PhoneIcon, PlayCircleIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, SaveIcon, SearchIcon, ShareIcon, ShieldAltIcon, SkypeIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StoreAltIcon, StreetViewIcon, TableAltIcon, TachometerAltIcon, TagsIcon, TrashBinIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UserClockIcon, UserIcon, UserLockIcon, VectorSquareIcon, YoutubeIcon };

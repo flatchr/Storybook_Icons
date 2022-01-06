@@ -2,32 +2,33 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const CommentAltIcon = ({
+const AttachFileIcon = ({
   color = '#000000',
   height = null,
   width = null,
 }) => {
+
   return (
     <Svg
       width={width || height || 16}
       height={height || width || 16}
-      viewBox="0 0 512 512"
+      viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        fill="none"
         d="M0 0h24v24H0z"
+        fill="none"
       />
       <Path
-        d="M448 0H64C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h96v84c0 9.8 11.2 15.5 19.1 9.7L304 416h144c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64z"
+        d="M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5a2.5 2.5 0 015 0v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5a2.5 2.5 0 005 0V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z"
         fill={color}
       />
     </Svg>
   );
 };
 
-CommentAltIcon.propTypes = {
+AttachFileIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -36,4 +37,4 @@ CommentAltIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default CommentAltIcon;
+export default AttachFileIcon;
