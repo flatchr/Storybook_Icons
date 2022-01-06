@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const BookmarkIcon = ({
+const BookmarkAltIcon = ({
   color = '#000000',
   width: widthProp = null,
   height: heightProp = null,
@@ -40,14 +40,14 @@ const BookmarkIcon = ({
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+        d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z"
         fill={color}
       />
     </Svg>
   );
 };
 
-BookmarkIcon.propTypes = {
+BookmarkAltIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -56,4 +56,4 @@ BookmarkIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default BookmarkIcon;
+export default BookmarkAltIcon;

@@ -7,7 +7,6 @@ import NotificationsActiveIcon from './icons/NotificationsActive';
 import HeartIcon from './icons/Heart';
 import ClipboardListIcon from './icons/ClipboardList';
 import DonutIcon from './icons/Donut';
-import ListIcon from './icons/List';
 import ArrowForwardIcon from './icons/ArrowForward';
 import MenuIcon from './icons/Menu';
 import AccountPinCircleFillIcon from './icons/AccountPinCircleFill';
@@ -21,7 +20,7 @@ import TrashBinIcon from "./icons/TrashBin";
 import ChevronRightIcon from './icons/ChevronRight';
 import BookmarkIcon from './icons/Bookmark';
 import FolderIcon from './icons/Folder';
-import CommentAltIcon from './icons/CommentAlt';
+import ChatBubbleIcon from './icons/ChatBubble';
 import BullhornIcon from './icons/Bullhorn';
 import FileIcon from './icons/File';
 import FilterIcon from './icons/Filter';
@@ -39,6 +38,82 @@ import LayerGroupIcon from './icons/LayerGroup';
 import ShieldAltIcon from './icons/ShieldAlt';
 import TableAltIcon from './icons/TableAlt';
 import UserLockIcon from './icons/UserLock';
+import PlusIcon from './icons/Plus';
+import PenIcon from './icons/Pen';
+import CheckIcon from './icons/Check';
+import CloseIcon from './icons/Close';
+import CaretDownIcon from './icons/CaretDown';
+import CaretUpIcon from './icons/CaretUp';
+import SearchIcon from './icons/Search';
+import EyeIcon from './icons/Eye';
+import EyeOffIcon from './icons/EyeOff';
+import LockIcon from './icons/Lock';
+import LockOpenIcon from './icons/LockOpen';
+import CheckCircleIcon from './icons/CheckCircle';
+import AddCircleOutlineIcon from './icons/AddCircleOutline';
+import RemoveCircleOutlineIcon from './icons/RemoveCircleOutline';
+import ChevronLeftIcon from './icons/ChevronLeft';
+import CogIcon from './icons/Cog';
+import ColorPaletteIcon from './icons/ColorPalette';
+import FormatAlignLeftIcon from './icons/FormatAlignLeft';
+import PublishIcon from './icons/Publish';
+import CameraIcon from './icons/Camera';
+import PlayCircleIcon from './icons/PlayCircle';
+import AnalyticsOutlineIcon from './icons/AnalyticsOutline';
+import FacebookIcon from './icons/Facebook';
+import TwitterIcon from './icons/Twitter';
+import LinkedinIcon from './icons/Linkedin';
+import YoutubeIcon from './icons/Youtube';
+import InstagramIcon from './icons/Instagram';
+import ChevronUpIcon from './icons/ChevronUp';
+import ChevronDownIcon from './icons/ChevronDown';
+import LinkIcon from './icons/Link';
+import MergeIcon from './icons/Merge';
+import CloneIcon from './icons/Clone';
+import BookmarkAltIcon from './icons/BookmarkAlt';
+import SourceTreeIcon from './icons/SourceTree';
+import VectorSquareIcon from './icons/VectorSquare';
+import SaveIcon from './icons/Save';
+import DownloadIcon from './icons/Download';
+import PaperPlaneIcon from './icons/PaperPlane';
+import RandomIcon from './icons/Random';
+import RedoLoopIcon from './icons/RedoLoop';
+import AppsIcon from './icons/Apps';
+import GridIcon from './icons/Grid';
+import CalendarIcon from './icons/Calendar';
+import EnvelopeIcon from './icons/Envelope';
+import GlobeIcon from './icons/Globe';
+import GlobeEuropeIcon from './icons/GlobeEurope';
+import NetworkWiredIcon from './icons/NetworkWired';
+import RegDotCircleIcon from './icons/RegDotCircle';
+import UniversityIcon from './icons/University';
+import StreetViewIcon from './icons/StreetView';
+import UserClockIcon from './icons/UserClock';
+import GraduateIcon from './icons/Graduate';
+import ChatBubblesIcon from './icons/ChatBubbles';
+import FacebookSquareIcon from './icons/FacebookSquare';
+import LinkedinSquareIcon from './icons/LinkedinSquare';
+import AttachFileIcon from './icons/AttachFile';
+import StarHalfIcon from './icons/StarHalf';
+import StarBorderIcon from './icons/StarBorder';
+import GithubSquareIcon from './icons/GithubSquare';
+import TwitterSquareIcon from './icons/TwitterSquare';
+import ExternalLinkIcon from './icons/ExternalLink';
+import FileAltIcon from './icons/FileAlt';
+import PhoneIcon from './icons/Phone';
+import SkypeIcon from './icons/Skype';
+import ShareIcon from './icons/Share';
+import GoogleHangoutsIcon from './icons/GoogleHangouts';
+import FontDownloadIcon from './icons/FontDownload';
+import FormatBoldIcon from './icons/FormatBold';
+import FormatClearIcon from './icons/FormatClear';
+import FormatItalicIcon from './icons/FormatItalic';
+import FormatListBulletedIcon from './icons/FormatListBulleted';
+import FormatListNumberedIcon from './icons/FormatListNumbered';
+import FormatUnderlineIcon from './icons/FormatUnderline';
+import ImageIcon from './icons/Image';
+import RedoIcon from './icons/Redo';
+import UndoIcon from './icons/Undo';
 
 const icons = {
   title: "Icons",
@@ -125,11 +200,6 @@ const DonutIconStory = args => (
 );
 DonutIconStory.storyName = 'Donut';
 
-const ListIconStory = args => (
-  <ListIcon {...args} />
-);
-ListIconStory.storyName = 'List';
-
 const ArrowForwardIconStory = args => (
   <ArrowForwardIcon {...args} />
 );
@@ -195,10 +265,10 @@ const FolderIconStory = args => (
 );
 FolderIconStory.storyName = 'Folder';
 
-const CommentAltIconStory = args => (
-  <CommentAltIcon {...args} />
+const ChatBubbleIconStory = args => (
+  <ChatBubbleIcon {...args} />
 );
-CommentAltIconStory.storyName = 'CommentAlt';
+ChatBubbleIconStory.storyName = 'ChatBubble';
 // START
 const BullhornIconStory = args => (
   <BullhornIcon {...args} />
@@ -285,45 +355,500 @@ const UserLockIconStory = args => (
 );
 UserLockIconStory.storyName = 'User Lock';
 
+const PlusIconStory = args => (
+  <PlusIcon {...args} />
+);
+PlusIconStory.storyName = 'Plus';
+
+const PenIconStory = args => (
+  <PenIcon {...args} />
+);
+PenIconStory.storyName = 'Pen';
+
+const CheckIconStory = args => (
+  <CheckIcon {...args} />
+);
+CheckIconStory.storyName = 'Check';
+
+const CloseIconStory = args => (
+  <CloseIcon {...args} />
+);
+CloseIconStory.storyName = 'Close';
+
+const CaretDownIconStory = args => (
+  <CaretDownIcon {...args} />
+);
+CaretDownIconStory.storyName = 'Caret Down';
+
+const CaretUpIconStory = args => (
+  <CaretUpIcon {...args} />
+);
+CaretUpIconStory.storyName = 'Caret Up';
+
+const SearchIconStory = args => (
+  <SearchIcon {...args} />
+);
+SearchIconStory.storyName = 'Search';
+
+const EyeIconStory = args => (
+  <EyeIcon {...args} />
+);
+EyeIconStory.storyName = 'Eye';
+
+const EyeOffIconStory = args => (
+  <EyeOffIcon {...args} />
+);
+EyeOffIconStory.storyName = 'Eye Off';
+
+const LockIconStory = args => (
+  <LockIcon {...args} />
+);
+LockIconStory.storyName = 'Lock';
+
+const LockOpenIconStory = args => (
+  <LockOpenIcon {...args} />
+);
+LockOpenIconStory.storyName = 'Lock Open';
+
+const CheckCircleIconStory = args => (
+  <CheckCircleIcon {...args} />
+);
+CheckCircleIconStory.storyName = 'Check Circle';
+
+const AddCircleOutlineIconStory = args => (
+  <AddCircleOutlineIcon {...args} />
+);
+AddCircleOutlineIconStory.storyName = 'Add Circle Outline';
+
+const RemoveCircleOutlineIconStory = args => (
+  <RemoveCircleOutlineIcon {...args} />
+);
+RemoveCircleOutlineIconStory.storyName = 'Remove Circle Outline';
+
+const ChevronLeftIconStory = args => (
+  <ChevronLeftIcon {...args} />
+);
+ChevronLeftIconStory.storyName = 'Chevron Left';
+
+const CogIconStory = args => (
+  <CogIcon {...args} />
+);
+CogIconStory.storyName = 'Cog';
+
+const ColorPaletteIconStory = args => (
+  <ColorPaletteIcon {...args} />
+);
+ColorPaletteIconStory.storyName = 'Color Palette';
+
+const FormatAlignLeftIconStory = args => (
+  <FormatAlignLeftIcon {...args} />
+);
+FormatAlignLeftIconStory.storyName = 'Format Align Left';
+
+const PublishIconStory = args => (
+  <PublishIcon {...args} />
+);
+PublishIconStory.storyName = 'Publish';
+
+const CameraIconStory = args => (
+  <CameraIcon {...args} />
+);
+CameraIconStory.storyName = 'Camera';
+
+const PlayCircleIconStory = args => (
+  <PlayCircleIcon {...args} />
+);
+PlayCircleIconStory.storyName = 'Play Circle';
+
+const AnalyticsOutlineIconStory = args => (
+  <AnalyticsOutlineIcon {...args} />
+);
+AnalyticsOutlineIconStory.storyName = 'Analytics Outline';
+
+const FacebookIconStory = args => (
+  <FacebookIcon {...args} />
+);
+FacebookIconStory.storyName = 'Facebook';
+
+const TwitterIconStory = args => (
+  <TwitterIcon {...args} />
+);
+TwitterIconStory.storyName = 'Twitter';
+
+const LinkedinIconStory = args => (
+  <LinkedinIcon {...args} />
+);
+LinkedinIconStory.storyName = 'Linkedin';
+
+const YoutubeIconStory = args => (
+  <YoutubeIcon {...args} />
+);
+YoutubeIconStory.storyName = 'Youtube';
+
+const InstagramIconStory = args => (
+  <InstagramIcon {...args} />
+);
+InstagramIconStory.storyName = 'Instagram';
+
+const ChevronUpIconStory = args => (
+  <ChevronUpIcon {...args} />
+);
+ChevronUpIconStory.storyName = 'Chevron Up';
+
+const ChevronDownIconStory = args => (
+  <ChevronDownIcon {...args} />
+);
+ChevronDownIconStory.storyName = 'Chevron Down';
+
+const LinkIconStory = args => (
+  <LinkIcon {...args} />
+);
+LinkIconStory.storyName = 'Link';
+
+const MergeIconStory = args => (
+  <MergeIcon {...args} />
+);
+MergeIconStory.storyName = 'Merge';
+
+const CloneIconStory = args => (
+  <CloneIcon {...args} />
+);
+CloneIconStory.storyName = 'Clone';
+
+const BookmarkAltIconStory = args => (
+  <BookmarkAltIcon {...args} />
+);
+BookmarkAltIconStory.storyName = 'Bookmark Alt';
+
+const SourceTreeIconStory = args => (
+  <SourceTreeIcon {...args} />
+);
+SourceTreeIconStory.storyName = 'Source Tree';
+
+const VectorSquareIconStory = args => (
+  <VectorSquareIcon {...args} />
+);
+VectorSquareIconStory.storyName = 'Vector Square';
+
+const SaveIconStory = args => (
+  <SaveIcon {...args} />
+);
+SaveIconStory.storyName = 'Save';
+
+const DownloadIconStory = args => (
+  <DownloadIcon {...args} />
+);
+DownloadIconStory.storyName = 'Download';
+
+const PaperPlaneIconStory = args => (
+  <PaperPlaneIcon {...args} />
+);
+PaperPlaneIconStory.storyName = 'Paper Plane';
+
+const RandomIconStory = args => (
+  <RandomIcon {...args} />
+);
+RandomIconStory.storyName = 'Random';
+
+const RedoLoopIconStory = args => (
+  <RedoLoopIcon {...args} />
+);
+RedoLoopIconStory.storyName = 'Redo Loop';
+
+const AppsIconStory = args => (
+  <AppsIcon {...args} />
+);
+AppsIconStory.storyName = 'Apps';
+
+const GridIconStory = args => (
+  <GridIcon {...args} />
+);
+GridIconStory.storyName = 'Grid';
+
+const CalendarIconStory = args => (
+  <CalendarIcon {...args} />
+);
+CalendarIconStory.storyName = 'Calendar';
+
+const EnvelopeIconStory = args => (
+  <EnvelopeIcon {...args} />
+);
+EnvelopeIconStory.storyName = 'Envelope';
+
+const GlobeIconStory = args => (
+  <GlobeIcon {...args} />
+);
+GlobeIconStory.storyName = 'Globe';
+
+const GlobeEuropeIconStory = args => (
+  <GlobeEuropeIcon {...args} />
+);
+GlobeEuropeIconStory.storyName = 'Globe Europe';
+
+const NetworkWiredIconStory = args => (
+  <NetworkWiredIcon {...args} />
+);
+NetworkWiredIconStory.storyName = 'Network Wired';
+
+const RegDotCircleIconStory = args => (
+  <RegDotCircleIcon {...args} />
+);
+RegDotCircleIconStory.storyName = 'Reg Dot Circle';
+
+const UniversityIconStory = args => (
+  <UniversityIcon {...args} />
+);
+UniversityIconStory.storyName = 'University';
+
+const StreetViewIconStory = args => (
+  <StreetViewIcon {...args} />
+);
+StreetViewIconStory.storyName = 'Street View';
+
+const UserClockIconStory = args => (
+  <UserClockIcon {...args} />
+);
+UserClockIconStory.storyName = 'User clock';
+
+const GraduateIconStory = args => (
+  <GraduateIcon {...args} />
+);
+GraduateIconStory.storyName = 'Graduate';
+
+const ChatBubblesIconStory = args => (
+  <ChatBubblesIcon {...args} />
+);
+ChatBubblesIconStory.storyName = 'Chat Bubbles';
+
+const FacebookSquareIconStory = args => (
+  <FacebookSquareIcon {...args} />
+);
+FacebookSquareIconStory.storyName = 'Facebook Square';
+
+const LinkedinSquareIconStory = args => (
+  <LinkedinSquareIcon {...args} />
+);
+LinkedinSquareIconStory.storyName = 'Linkedin Square';
+
+const AttachFileIconStory = args => (
+  <AttachFileIcon {...args} />
+);
+AttachFileIconStory.storyName = 'Attach File';
+
+const StarHalfIconStory = args => (
+  <StarHalfIcon {...args} />
+);
+StarHalfIconStory.storyName = 'Star Half';
+
+const StarBorderIconStory = args => (
+  <StarBorderIcon {...args} />
+);
+StarBorderIconStory.storyName = 'Star Border';
+
+const GithubSquareIconStory = args => (
+  <GithubSquareIcon {...args} />
+);
+GithubSquareIconStory.storyName = 'Github Square';
+
+const TwitterSquareIconStory = args => (
+  <TwitterSquareIcon {...args} />
+);
+TwitterSquareIconStory.storyName = 'Twitter Square';
+
+const ExternalLinkIconStory = args => (
+  <ExternalLinkIcon {...args} />
+);
+ExternalLinkIconStory.storyName = 'External Link';
+
+const FileAltIconStory = args => (
+  <FileAltIcon {...args} />
+);
+FileAltIconStory.storyName = 'File Alt';
+
+const PhoneIconStory = args => (
+  <PhoneIcon {...args} />
+);
+PhoneIconStory.storyName = 'Phone';
+
+const SkypeIconStory = args => (
+  <SkypeIcon {...args} />
+);
+SkypeIconStory.storyName = 'Skype';
+
+const ShareIconStory = args => (
+  <ShareIcon {...args} />
+);
+ShareIconStory.storyName = 'Share';
+
+const GoogleHangoutsIconStory = args => (
+  <GoogleHangoutsIcon {...args} />
+);
+GoogleHangoutsIconStory.storyName = 'Google Hangouts';
+
+const FontDownloadIconStory = args => (
+  <FontDownloadIcon {...args} />
+);
+FontDownloadIconStory.storyName = 'Font Download';
+
+const FormatBoldIconStory = args => (
+  <FormatBoldIcon {...args} />
+);
+FormatBoldIconStory.storyName = 'Format Bold';
+
+const FormatClearIconStory = args => (
+  <FormatClearIcon {...args} />
+);
+FormatClearIconStory.storyName = 'Format Clear';
+
+const FormatItalicIconStory = args => (
+  <FormatItalicIcon {...args} />
+);
+FormatItalicIconStory.storyName = 'Format Italic';
+
+const FormatListBulletedIconStory = args => (
+  <FormatListBulletedIcon {...args} />
+);
+FormatListBulletedIconStory.storyName = 'Format List Bulleted';
+
+const FormatListNumberedIconStory = args => (
+  <FormatListNumberedIcon {...args} />
+);
+FormatListNumberedIconStory.storyName = 'Format List Numbered';
+
+const FormatUnderlineIconStory = args => (
+  <FormatUnderlineIcon {...args} />
+);
+FormatUnderlineIconStory.storyName = 'Format Underline';
+
+const ImageIconStory = args => (
+  <ImageIcon {...args} />
+);
+ImageIconStory.storyName = 'Image';
+
+const RedoIconStory = args => (
+  <RedoIcon {...args} />
+);
+RedoIconStory.storyName = 'Redo';
+
+const UndoIconStory = args => (
+  <UndoIcon {...args} />
+);
+UndoIconStory.storyName = 'Undo';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
+  AddCircleOutlineIconStory,
+  AnalyticsOutlineIconStory,
+  AppsIconStory,
   ArrowForwardIconStory,
+  AttachFileIconStory,
+  BookmarkAltIconStory,
   BookmarkIconStory,
   BuildingIconStory,
   BullhornIconStory,
+  CalendarIconStory,
+  CameraIconStory,
+  CaretDownIconStory,
+  CaretUpIconStory,
+  ChatBubbleIconStory,
+  ChatBubblesIconStory,
+  CheckCircleIconStory,
+  CheckIconStory,
+  ChevronDownIconStory,
+  ChevronLeftIconStory,
   ChevronRightIconStory,
+  ChevronUpIconStory,
   CircleIconStory,
   ClipboardListIconStory,
+  CloneIconStory,
+  CloseIconStory,
+  CogIconStory,
   CollectionsBookmarkIconStory,
+  ColorPaletteIconStory,
   ColumnsIconStory,
-  CommentAltIconStory,
   ContentPasteIconStory,
   DonutIconStory,
+  DownloadIconStory,
+  EnvelopeIconStory,
   ErrorIconStory,
+  ExternalLinkIconStory,
+  EyeIconStory,
+  EyeOffIconStory,
+  FacebookIconStory,
+  FacebookSquareIconStory,
+  FileAltIconStory,
   FileIconStory,
   FileInvoiceDollarIconStory,
   FilterIconStory,
   FolderIconStory,
+  FontDownloadIconStory,
+  FormatAlignLeftIconStory,
+  FormatBoldIconStory,
+  FormatClearIconStory,
+  FormatItalicIconStory,
+  FormatListBulletedIconStory,
+  FormatListNumberedIconStory,
+  FormatUnderlineIconStory,
   GiftIconStory,
+  GithubSquareIconStory,
+  GlobeEuropeIconStory,
+  GlobeIconStory,
+  GoogleHangoutsIconStory,
+  GraduateIconStory,
+  GridIconStory,
   HeartIconStory,
+  ImageIconStory,
+  InstagramIconStory,
   KeyIconStory,
   LayerGroupIconStory,
-  ListIconStory,
+  LinkedinIconStory,
+  LinkedinSquareIconStory,
+  LinkIconStory,
+  LockIconStory,
+  LockOpenIconStory,
   MenuIconStory,
   MenuFoldIconStory,
   MenuUnfoldIconStory,
+  MergeIconStory,
+  NetworkWiredIconStory,
   NotificationsIconStory,
   NotificationsActiveIconStory,
+  PaperPlaneIconStory,
+  PenIconStory,
   PeopleIconStory,
+  PhoneIconStory,
+  PlayCircleIconStory,
+  PlusIconStory,
+  PublishIconStory,
+  RandomIconStory,
+  RedoIconStory,
+  RedoLoopIconStory,
+  RegDotCircleIconStory,
   RegisterListAltIconStory,
+  RemoveCircleOutlineIconStory,
+  SaveIconStory,
+  SearchIconStory,
+  ShareIconStory,
   ShieldAltIconStory,
+  SkypeIconStory,
+  SourceTreeIconStory,
+  StarBorderIconStory,
+  StarHalfIconStory,
   StarIconStory,
   StoreAltIconStory,
+  StreetViewIconStory,
   TableAltIconStory,
   TachometerAltIconStory,
-  UserIconStory,
-  UserLockIconStory,
   TagsIconStory,
   TrashBinIconStory,
+  TwitterIconStory,
+  TwitterSquareIconStory,
+  UndoIconStory,
+  UniversityIconStory,
+  UserClockIconStory,
+  UserIconStory,
+  UserLockIconStory,
+  VectorSquareIconStory,
+  YoutubeIconStory,
 };

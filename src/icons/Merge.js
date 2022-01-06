@@ -2,12 +2,11 @@ import React from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const ListIcon = ({
+const MergeIcon = ({
   color = '#000000',
-  width = null,
   height = null,
+  width = null,
 }) => {
-
   return (
     <Svg
       width={width || height || 16}
@@ -16,16 +15,19 @@ const ListIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path fill="none" d="M0 0h24v24H0z" />
       <Path
-        d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <Path
+        d="M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z"
         fill={color}
       />
     </Svg>
   );
 };
 
-ListIcon.propTypes = {
+MergeIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -34,4 +36,4 @@ ListIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default ListIcon;
+export default MergeIcon;

@@ -2,25 +2,25 @@ import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 
-const BookmarkIcon = ({
+const LockOpenIcon = ({
   color = '#000000',
   width: widthProp = null,
   height: heightProp = null,
 }) => {
 
   const dimensions = useMemo(() => {
-    let width = 384 * 16 / 512;
+    let width = 576 * 16 / 512;
     let height = 16;
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
     if (widthProp && !heightProp) {
-      height = widthProp * 512 / 384;
+      height = widthProp * 512 / 576;
       width = widthProp;
     }
     if (!widthProp && heightProp) {
-      width = 384 * heightProp / 512;
+      width = 576 * heightProp / 512;
       height = heightProp;
     }
     return {
@@ -35,19 +35,19 @@ const BookmarkIcon = ({
     <Svg
       width={dimensions.width}
       height={dimensions.height}
-      viewBox="0 0 384 512"
+      viewBox="0 0 576 512"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"
+        d="M423.5 0C339.5.3 272 69.5 272 153.5V224H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48h-48v-71.1c0-39.6 31.7-72.5 71.3-72.9 40-.4 72.7 32.1 72.7 72v80c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24v-80C576 68 507.5-.3 423.5 0z"
         fill={color}
       />
     </Svg>
   );
 };
 
-BookmarkIcon.propTypes = {
+LockOpenIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -56,4 +56,4 @@ BookmarkIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default BookmarkIcon;
+export default LockOpenIcon;
