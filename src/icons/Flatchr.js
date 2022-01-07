@@ -5,7 +5,7 @@ import { theme } from '@flatchr/system-design';
 
 const LogoFlatchr = props => {
   const {
-    color = '#ffffff',
+    color = theme.colors.primary400,
     width:widthProp = null,
     height:heightProp = null,
     textColor = null,
