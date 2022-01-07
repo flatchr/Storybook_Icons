@@ -13,13 +13,13 @@ export const Wrapper = styled.div`
 
 export const Item = styled.div`
   align-items: center;
-  border: 1px solid #f0f4f9;
+  border: 1px solid ${p => p.theme.colors.neutral200};
   border-radius: 5px;
   cursor: pointer;
   display: flex;
   height: 50px;
   justify-content: center;
   &:hover {
-    border-color: #01AEC8;
+    border-color: ${p => p.theme.colors.primary400};
   }
 `;

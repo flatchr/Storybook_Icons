@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import Svg, { Path, Rect, Circle } from 'react-native-svg';
 import PropTypes from 'prop-types';
+import { theme } from '@flatchr/system-design';
 
 var LogoFlatchr = function LogoFlatchr(props) {
   var _props$color = props.color,
@@ -84,7 +85,7 @@ LogoFlatchr.propTypes = {
 
 var UserIcon = function UserIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -111,7 +112,7 @@ UserIcon.propTypes = {
 
 var ErrorIcon = function ErrorIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       width = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -142,7 +143,7 @@ ErrorIcon.propTypes = {
 
 var NotificationsIcon = function NotificationsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -169,7 +170,7 @@ NotificationsIcon.propTypes = {
 
 var NotificationsActiveIcon = function NotificationsActiveIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -200,7 +201,7 @@ NotificationsActiveIcon.propTypes = {
 
 var HeartIcon = function HeartIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -226,7 +227,7 @@ HeartIcon.propTypes = {
 
 var ClipboardListIcon = function ClipboardListIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -276,7 +277,7 @@ ClipboardListIcon.propTypes = {
 
 var DonutIcon = function DonutIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -305,7 +306,7 @@ DonutIcon.propTypes = {
 
 var ArrowForwardIcon = function ArrowForwardIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -334,7 +335,7 @@ ArrowForwardIcon.propTypes = {
 
 var MenuIcon = function MenuIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -363,7 +364,7 @@ MenuIcon.propTypes = {
 
 var AccountPinCircleFillIcon = function AccountPinCircleFillIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       width = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -392,7 +393,7 @@ AccountPinCircleFillIcon.propTypes = {
 
 var GiftIcon = function GiftIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -418,7 +419,7 @@ GiftIcon.propTypes = {
 
 var CircleIcon = function CircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -444,7 +445,7 @@ CircleIcon.propTypes = {
 
 var MenuUnfoldIcon = function MenuUnfoldIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -470,7 +471,7 @@ MenuUnfoldIcon.propTypes = {
 
 var MenuFoldIcon = function MenuFoldIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -496,7 +497,7 @@ MenuFoldIcon.propTypes = {
 
 var CollectionsBookmarkIcon = function CollectionsBookmarkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -531,7 +532,7 @@ CollectionsBookmarkIcon.propTypes = {
 
 var ContentPasteIcon = function ContentPasteIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -560,7 +561,7 @@ ContentPasteIcon.propTypes = {
 
 var TrashBinIcon = function TrashBinIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -594,7 +595,7 @@ TrashBinIcon.propTypes = {
 
 var ChevronRightIcon = function ChevronRightIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -644,7 +645,7 @@ ChevronRightIcon.propTypes = {
 
 var BookmarkIcon = function BookmarkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -694,7 +695,7 @@ BookmarkIcon.propTypes = {
 
 var FolderIcon = function FolderIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -720,7 +721,7 @@ FolderIcon.propTypes = {
 
 var ChatBubbleIcon = function ChatBubbleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -749,7 +750,7 @@ ChatBubbleIcon.propTypes = {
 
 var BullhornIcon = function BullhornIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -799,7 +800,7 @@ BullhornIcon.propTypes = {
 
 var FileIcon = function FileIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -849,7 +850,7 @@ FileIcon.propTypes = {
 
 var FilterIcon = function FilterIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -878,7 +879,7 @@ FilterIcon.propTypes = {
 
 var KeyIcon = function KeyIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -907,7 +908,7 @@ KeyIcon.propTypes = {
 
 var RegisterListAltIcon = function RegisterListAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -936,7 +937,7 @@ RegisterListAltIcon.propTypes = {
 
 var StarIcon = function StarIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -968,7 +969,7 @@ StarIcon.propTypes = {
 
 var TagsIcon = function TagsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1018,7 +1019,7 @@ TagsIcon.propTypes = {
 
 var PeopleIcon = function PeopleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1051,7 +1052,7 @@ PeopleIcon.propTypes = {
 
 var BuildingIcon = function BuildingIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1101,7 +1102,7 @@ BuildingIcon.propTypes = {
 
 var ColumnsIcon = function ColumnsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1127,7 +1128,7 @@ ColumnsIcon.propTypes = {
 
 var StoreAltIcon = function StoreAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1177,7 +1178,7 @@ StoreAltIcon.propTypes = {
 
 var FileInvoiceDollarIcon = function FileInvoiceDollarIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1227,7 +1228,7 @@ FileInvoiceDollarIcon.propTypes = {
 
 var TachometerAltIcon = function TachometerAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1277,7 +1278,7 @@ TachometerAltIcon.propTypes = {
 
 var LayerGroupIcon = function LayerGroupIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1306,7 +1307,7 @@ LayerGroupIcon.propTypes = {
 
 var ShieldAltIcon = function ShieldAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1335,7 +1336,7 @@ ShieldAltIcon.propTypes = {
 
 var TableAltIcon = function TableAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1385,7 +1386,7 @@ TableAltIcon.propTypes = {
 
 var UserLockIcon = function UserLockIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1435,7 +1436,7 @@ UserLockIcon.propTypes = {
 
 var PlusIcon = function PlusIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1485,7 +1486,7 @@ PlusIcon.propTypes = {
 
 var PenIcon = function PenIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1511,7 +1512,7 @@ PenIcon.propTypes = {
 
 var CheckIcon = function CheckIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1537,7 +1538,7 @@ CheckIcon.propTypes = {
 
 var CloseIcon = function CloseIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1563,7 +1564,7 @@ CloseIcon.propTypes = {
 
 var CaretDownIcon = function CaretDownIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1613,7 +1614,7 @@ CaretDownIcon.propTypes = {
 
 var CaretUpIcon = function CaretUpIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1663,7 +1664,7 @@ CaretUpIcon.propTypes = {
 
 var SearchIcon = function SearchIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1689,7 +1690,7 @@ SearchIcon.propTypes = {
 
 var EyeIcon = function EyeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1715,7 +1716,7 @@ EyeIcon.propTypes = {
 
 var EyeOffIcon = function EyeOffIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1741,7 +1742,7 @@ EyeOffIcon.propTypes = {
 
 var LockIcon = function LockIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1791,7 +1792,7 @@ LockIcon.propTypes = {
 
 var LockOpenIcon = function LockOpenIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1841,7 +1842,7 @@ LockOpenIcon.propTypes = {
 
 var CheckCircleIcon = function CheckCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1867,7 +1868,7 @@ CheckCircleIcon.propTypes = {
 
 var AddCircleOutlineIcon = function AddCircleOutlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1893,7 +1894,7 @@ AddCircleOutlineIcon.propTypes = {
 
 var RemoveCircleOutlineIcon = function RemoveCircleOutlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1922,7 +1923,7 @@ RemoveCircleOutlineIcon.propTypes = {
 
 var ChevronLeftIcon = function ChevronLeftIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -1972,7 +1973,7 @@ ChevronLeftIcon.propTypes = {
 
 var CogIcon = function CogIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -1998,7 +1999,7 @@ CogIcon.propTypes = {
 
 var ColorPaletteIcon = function ColorPaletteIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2024,7 +2025,7 @@ ColorPaletteIcon.propTypes = {
 
 var FormatAlignLeftIcon = function FormatAlignLeftIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2053,7 +2054,7 @@ FormatAlignLeftIcon.propTypes = {
 
 var PublishIcon = function PublishIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2082,7 +2083,7 @@ PublishIcon.propTypes = {
 
 var CameraIcon = function CameraIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2113,7 +2114,7 @@ CameraIcon.propTypes = {
 
 var PlayCircleIcon = function PlayCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2139,7 +2140,7 @@ PlayCircleIcon.propTypes = {
 
 var AnalyticsOutlineIcon = function AnalyticsOutlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2171,7 +2172,7 @@ AnalyticsOutlineIcon.propTypes = {
 
 var FacebookIcon = function FacebookIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2221,7 +2222,7 @@ FacebookIcon.propTypes = {
 
 var TwitterIcon = function TwitterIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2247,7 +2248,7 @@ TwitterIcon.propTypes = {
 
 var LinkedinIcon = function LinkedinIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2297,7 +2298,7 @@ LinkedinIcon.propTypes = {
 
 var YoutubeIcon = function YoutubeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2347,7 +2348,7 @@ YoutubeIcon.propTypes = {
 
 var InstagramIcon = function InstagramIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2376,7 +2377,7 @@ InstagramIcon.propTypes = {
 
 var ChevronUpIcon = function ChevronUpIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2426,7 +2427,7 @@ ChevronUpIcon.propTypes = {
 
 var ChevronDownIcon = function ChevronDownIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2476,7 +2477,7 @@ ChevronDownIcon.propTypes = {
 
 var LinkIcon = function LinkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2502,7 +2503,7 @@ LinkIcon.propTypes = {
 
 var MergeIcon = function MergeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2531,7 +2532,7 @@ MergeIcon.propTypes = {
 
 var CloneIcon = function CloneIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2557,7 +2558,7 @@ CloneIcon.propTypes = {
 
 var BookmarkAltIcon = function BookmarkAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2607,7 +2608,7 @@ BookmarkAltIcon.propTypes = {
 
 var SourceTreeIcon = function SourceTreeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2657,7 +2658,7 @@ SourceTreeIcon.propTypes = {
 
 var VectorSquareIcon = function VectorSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2683,7 +2684,7 @@ VectorSquareIcon.propTypes = {
 
 var SaveIcon = function SaveIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2733,7 +2734,7 @@ SaveIcon.propTypes = {
 
 var DownloadIcon = function DownloadIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2759,7 +2760,7 @@ DownloadIcon.propTypes = {
 
 var PaperPlaneIcon = function PaperPlaneIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2785,7 +2786,7 @@ PaperPlaneIcon.propTypes = {
 
 var RandomIcon = function RandomIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2811,7 +2812,7 @@ RandomIcon.propTypes = {
 
 var RedoLoopIcon = function RedoLoopIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2837,7 +2838,7 @@ RedoLoopIcon.propTypes = {
 
 var AppsIcon = function AppsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2866,7 +2867,7 @@ AppsIcon.propTypes = {
 
 var GridIcon = function GridIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2895,7 +2896,7 @@ GridIcon.propTypes = {
 
 var CalendarIcon = function CalendarIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -2945,7 +2946,7 @@ CalendarIcon.propTypes = {
 
 var EnvelopeIcon = function EnvelopeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -2971,7 +2972,7 @@ EnvelopeIcon.propTypes = {
 
 var GlobeIcon = function GlobeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3021,7 +3022,7 @@ GlobeIcon.propTypes = {
 
 var GlobeEuropeIcon = function GlobeEuropeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3071,7 +3072,7 @@ GlobeEuropeIcon.propTypes = {
 
 var NetworkWiredIcon = function NetworkWiredIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3121,7 +3122,7 @@ NetworkWiredIcon.propTypes = {
 
 var RegDotCircleIcon = function RegDotCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3147,7 +3148,7 @@ RegDotCircleIcon.propTypes = {
 
 var UniversityIcon = function UniversityIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3173,7 +3174,7 @@ UniversityIcon.propTypes = {
 
 var StreetViewIcon = function StreetViewIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3199,7 +3200,7 @@ StreetViewIcon.propTypes = {
 
 var UserClockIcon = function UserClockIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3249,7 +3250,7 @@ UserClockIcon.propTypes = {
 
 var GraduateIcon = function GraduateIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3299,7 +3300,7 @@ GraduateIcon.propTypes = {
 
 var ChatBubblesIcon = function ChatBubblesIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3328,7 +3329,7 @@ ChatBubblesIcon.propTypes = {
 
 var FacebookSquareIcon = function FacebookSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3378,7 +3379,7 @@ FacebookSquareIcon.propTypes = {
 
 var LinkedinSquareIcon = function LinkedinSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3428,7 +3429,7 @@ LinkedinSquareIcon.propTypes = {
 
 var AttachFileIcon = function AttachFileIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3457,7 +3458,7 @@ AttachFileIcon.propTypes = {
 
 var StarHalfIcon = function StarHalfIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3486,7 +3487,7 @@ StarHalfIcon.propTypes = {
 
 var StarBorderIcon = function StarBorderIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3515,7 +3516,7 @@ StarBorderIcon.propTypes = {
 
 var GithubSquareIcon = function GithubSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3565,7 +3566,7 @@ GithubSquareIcon.propTypes = {
 
 var TwitterSquareIcon = function TwitterSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3615,7 +3616,7 @@ TwitterSquareIcon.propTypes = {
 
 var ExternalLinkIcon = function ExternalLinkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3641,7 +3642,7 @@ ExternalLinkIcon.propTypes = {
 
 var FileAltIcon = function FileAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
@@ -3691,7 +3692,7 @@ FileAltIcon.propTypes = {
 
 var PhoneIcon = function PhoneIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3767,7 +3768,7 @@ SkypeIcon.propTypes = {
 
 var ShareIcon = function ShareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3793,7 +3794,7 @@ ShareIcon.propTypes = {
 
 var GoogleHangoutsIcon = function GoogleHangoutsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3819,7 +3820,7 @@ GoogleHangoutsIcon.propTypes = {
 
 var FontDownloadIcon = function FontDownloadIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3845,7 +3846,7 @@ FontDownloadIcon.propTypes = {
 
 var FormatBoldIcon = function FormatBoldIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3871,7 +3872,7 @@ FormatBoldIcon.propTypes = {
 
 var FormatClearIcon = function FormatClearIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3897,7 +3898,7 @@ FormatClearIcon.propTypes = {
 
 var FormatItalicIcon = function FormatItalicIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3923,7 +3924,7 @@ FormatItalicIcon.propTypes = {
 
 var FormatListBulletedIcon = function FormatListBulletedIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3949,7 +3950,7 @@ FormatListBulletedIcon.propTypes = {
 
 var FormatListNumberedIcon = function FormatListNumberedIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -3975,7 +3976,7 @@ FormatListNumberedIcon.propTypes = {
 
 var FormatUnderlineIcon = function FormatUnderlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -4004,7 +4005,7 @@ FormatUnderlineIcon.propTypes = {
 
 var ImageIcon = function ImageIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -4030,7 +4031,7 @@ ImageIcon.propTypes = {
 
 var RedoIcon = function RedoIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,
@@ -4056,7 +4057,7 @@ RedoIcon.propTypes = {
 
 var UndoIcon = function UndoIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$height = _ref.height,
       height = _ref$height === void 0 ? null : _ref$height,
       _ref$width = _ref.width,

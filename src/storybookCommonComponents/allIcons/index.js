@@ -7,7 +7,8 @@ import {
   Item,
 } from './style';
 
-const AllIcons = () => {
+const AllIcons = props => {
+  const { color } = props;
   const keys = Object.keys(allIcons)
     .filter(x => x !== 'LogoFlatchr')
     .sort((a, b) => a.toLowerCase() === b.toLowerCase()
@@ -19,7 +20,7 @@ const AllIcons = () => {
       {keys
         .map((iconName, iconIndex) => {
           const iconComponent = allIcons[iconName]
-            ({ color: '#989898', height: 30 });
+            ({ color, height: 30 });
 
         return (
           <Item

@@ -1,4 +1,5 @@
 import React from "react";
+import { theme } from '@flatchr/system-design';
 // Icons import
 import UserIcon from './icons/User';
 import ErrorIcon from './icons/Error';
@@ -159,7 +160,7 @@ const icons = {
     },
   },
   args: {
-    color: "#989898",
+    color: theme.colors.textPrimary,
   },
 };
 

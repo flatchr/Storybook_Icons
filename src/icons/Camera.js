@@ -1,9 +1,10 @@
 import React from "react";
 import Svg, { Path, Circle } from "react-native-svg";
 import PropTypes from 'prop-types';
+import { theme } from '@flatchr/system-design';
 
 const CameraIcon = ({
-  color = '#000000',
+  color = theme.colors.textPrimary,
   height = null,
   width = null,
 }) => {

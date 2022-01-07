@@ -1,10 +1,11 @@
 import React from "react";
+import { theme } from '@flatchr/system-design';
 import AllIcons from '.';
 
 const allIcons = {
   title: "All icons",
   args: {
-    color: "#231F20",
+    color: theme.colors.textPrimary,
   },
   parameters: {
     options: { showPanel: false },

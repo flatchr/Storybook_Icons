@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
+import { theme } from '@flatchr/system-design';
 
 const SkypeIcon = ({
   color = '#000000',

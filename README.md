@@ -55,7 +55,7 @@ All the published versions are here : https://gitlab.com/flatchr/shared/icons/-/
 
 Just add a new directory in `/src/icons`, create your new icon file `MyNewSVG.js` 🐙
 
-If you want to add a dependency to get more efficient, it's possible! Add it as a peer-dependency:
+If you want to add a dependency to get more efficient, it's possible! 
 ```
 yarn add DEPENDENCY_NAME
 ```
