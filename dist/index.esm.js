@@ -5,7 +5,7 @@ import { theme } from '@flatchr/system-design';
 
 var LogoFlatchr = function LogoFlatchr(props) {
   var _props$color = props.color,
-      color = _props$color === void 0 ? '#ffffff' : _props$color,
+      color = _props$color === void 0 ? theme.colors.primary400 : _props$color,
       _props$width = props.width,
       widthProp = _props$width === void 0 ? null : _props$width,
       _props$height = props.height,
