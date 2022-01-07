@@ -1,5 +1,5 @@
 import React from "react";
-
+import { theme } from '@flatchr/system-design'
 // Import icons
 import LogoFlatchr from './icons/Flatchr';
 
@@ -72,7 +72,7 @@ const logo = {
     },
   },
   args: {
-    color: "#989898",
+    color: theme.colors.textPrimary,
   },
 };
 
@@ -84,8 +84,8 @@ Default.storyName = 'Full Logo';
 const TextColored = args => (
   <LogoFlatchr
     {...args}
-    color="#01aec8"
-    textColor="black"
+    color={theme.colors.primary400}
+    textColor={theme.colors.specialPrimary}
   />
 );
 TextColored.storyName = 'Full Logo colored text';
@@ -93,7 +93,7 @@ TextColored.storyName = 'Full Logo colored text';
 const OnlyPaulStory = args => (
   <LogoFlatchr
     {...args}
-    color="#01aec8"
+    color={theme.colors.primary400}
     onlyPaul
   />
 );
