@@ -3,7 +3,7 @@ import { theme } from '@flatchr/system-design';
 import AllIcons from '.';
 
 const allIcons = {
-  title: "All icons",
+  title: "Iconography/All",
   args: {
     color: theme.colors.textPrimary,
   },
@@ -25,7 +25,7 @@ const allIcons = {
 export default allIcons;
 
 const Default = args => <AllIcons {...args} />;
-Default.storyName = 'All icons';
+Default.storyName = 'All';
 
 export {
   Default,

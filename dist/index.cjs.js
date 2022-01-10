@@ -13,6 +13,72 @@ var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 var Svg__default = /*#__PURE__*/_interopDefaultLegacy(Svg);
 var PropTypes__default = /*#__PURE__*/_interopDefaultLegacy(PropTypes);
 
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+var stylePathDropShadow = {
+  style: {
+    filter: 'drop-shadow(rgba(10, 31, 51, 0.4) -57px 29px 33px)'
+  }
+};
+
+var RenderEvent = function RenderEvent(_ref) {
+  var event = _ref.event;
+
+  if (event === 'prideMonth') {
+    return /*#__PURE__*/React__default["default"].createElement(Svg.G, _extends({
+      rotation: 18,
+      scale: 0.065,
+      translate: "38,25"
+    }, stylePathDropShadow), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+      d: "M251.332 420.609C251.332 420.609 296.591 394.083 348.517 353.313H154.148C206.075 394.083 251.332 420.609 251.332 420.609",
+      fill: "#68329A"
+    }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+      d: "M154.148 353.313H348.517C374.869 332.624 402.936 308.268 427.68 281.845H74.9867C99.7307 308.268 127.797 332.624 154.148 353.313",
+      fill: "#385FB5"
+    }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+      d: "M74.9867 281.845H427.68C448.885 259.201 467.648 235.043 480.793 210.376H21.8729C35.0188 235.043 53.7813 259.201 74.9867 281.845",
+      fill: "#11AB51"
+    }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+      d: "M4.36506 162.664C7.34586 178.599 13.4599 194.592 21.8729 210.376H480.793C489.207 194.592 495.32 178.599 498.3 162.664C499.817 154.555 500.84 146.628 501.373 138.908H1.29266C1.82653 146.628 2.84839 154.555 4.36506 162.664Z",
+      fill: "#FEE314"
+    }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+      d: "M1.29265 138.908H501.373C503.224 112.167 499.141 87.936 488.836 67.4387H13.8312C3.52545 87.936 -0.557351 112.167 1.29265 138.908Z",
+      fill: "#F3622A"
+    }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+      d: "M383.963 1.68137C289.749 -12.0386 251.332 65.6654 251.332 65.6654C251.332 65.6654 212.916 -12.0386 118.703 1.68137C65.544 9.4227 31.0292 33.2347 13.8312 67.4387H488.836C471.639 33.2347 437.123 9.4227 383.963 1.68137",
+      fill: "#EE2544"
+    }));
+  }
+
+  if (event === 'saintPatrick') {
+    return /*#__PURE__*/React__default["default"].createElement(Svg.G, {
+      scale: 0.047,
+      translate: "36,23"
+    }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, _extends({}, stylePathDropShadow, {
+      fill: "#00A651",
+      d: "M138.6,164.2c1.4-42,51.5-67.9,88.5-69.7c24.1-1.2,46.8-6.3,64.7-24.4C306,55.7,324,48.4,343.4,44.8    c15.5-2.8,31.7-5.2,46.5,1.2c24.5,10.7,38,31.6,45.3,56.3c12.6,43.5,0,84-13.5,125.5c-2.1,6.6-18.1,45.9,3.9,39.9    c8.1-2.2,12.6-17.8,16.4-24.4c14.7-25.2,27.4-51.7,47.9-73.2c12.8-13.5,27.7-23.6,44.9-30.1c31.3-11.8,66.8-11,88.7,18.1    c15,19.9,25,40.8,24.9,66.1c-0.1,26,10.3,43.5,25.9,62.9c14.7,18.4,23.3,41.5,24.6,65c1.5,28.6-8.8,50.4-33.7,65.3    c-18.6,11.2-39.4,17-61.6,16.7c-26.9-0.3-52.4-7.6-77.8-15.3c-10.9-3.3-21.5-7.6-32.3-11.4c-4-1.4-9.5-3.6-11.5,1.3    c-3.3,7.9,32.6,18.6,38.4,21.2c16.6,7.1,33.2,14.6,48.9,23.6c16.5,9.4,31.6,21.1,42.5,36c9.2,12.6,15.7,27.9,18.8,43.9    c4.8,24.5-0.8,46.5-19.5,63.2c-20.3,18.1-43.8,30-72,32.2c-16.7,1.4-31.2,10.2-42.6,22.4c-16.9,18.2-35.5,33-60.4,38.2    c-15.7,3.3-31.7,7.7-47.1,0c-35.4-17.8-50.7-48.9-54.3-86.4c-3-30.7,3.1-60.8,9.7-90.7c2.4-10.8,5.6-21.5,8.3-32.2    c0.9-3.8,0.6-7.9-3.5-9.5c-2.8-1.1-3.9,0.1-5.8,1.8c-5.5,5.1-7.6,20.6-10.3,27.7c-3.8,9.8-7.8,19.6-12.2,29.2    c-8.7,19.2-18.6,37.8-29.7,55.7c-22.1,35.6-49.2,68.2-81.4,95.1C192.3,695,171.2,708.8,148,708c-8.9-0.3-18.2-3.1-24-9.9    c-5.8-6.8-6.5-18.2,0-24.2c3.3-3,7.8-4.3,12-5.6c13.9-4.3,27.4-9.8,40.4-16.5c71.6-36.6,117.5-103.4,143.3-177.7    c1.3-3.9,3.3-9.1-2.1-11.4c-4.8-2-6.8,2.6-9,6c-15.4,23.9-32.1,46.7-50.7,68.2c-24.2,28-53.5,46.3-91.3,48.1    c-18.6,0.9-37.3-0.6-50.5-15.4c-20.8-23.2-34.3-49.9-30-82.4c2.8-21.4-0.2-41.7-11.9-59.8c-22.4-34.7-34.3-77.2-10-114.6    c14.2-21.8,45.1-30.1,69.5-32.6c20.8-2.1,41.2,3,60.7,10c18.5,6.7,35.5,16.7,53.9,23.1c2.7,0.9,22.4,7.4,17.4-1.5    c-0.7-1.2-1.9-2.1-3-2.9c-19.2-13.8-40.9-24.1-60.7-37c-16.5-10.7-32.2-22.6-42.9-39.9c-7.3-11.8-13.3-24.8-16.9-38.3    C139.6,184.2,138.3,174.3,138.6,164.2z"
+    })));
+  }
+
+  return null;
+};
+
 var LogoFlatchr = function LogoFlatchr(props) {
   var _props$color = props.color,
       color = _props$color === void 0 ? systemDesign.theme.colors.primary400 : _props$color,
@@ -23,8 +89,11 @@ var LogoFlatchr = function LogoFlatchr(props) {
       _props$textColor = props.textColor,
       textColor = _props$textColor === void 0 ? null : _props$textColor,
       _props$onlyPaul = props.onlyPaul,
-      onlyPaul = _props$onlyPaul === void 0 ? false : _props$onlyPaul;
-  var dimensions = React.useMemo(function () {
+      onlyPaul = _props$onlyPaul === void 0 ? false : _props$onlyPaul,
+      _props$event = props.event,
+      event = _props$event === void 0 ? null : _props$event;
+
+  var dimensions = function dimensions() {
     var width = 347;
     var height = 90;
 
@@ -52,16 +121,19 @@ var LogoFlatchr = function LogoFlatchr(props) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp, onlyPaul]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 ".concat(onlyPaul ? '75 90' : '347 90'),
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M71.7865 75.1941C69.5333 74.7516 68.3645 73.7274 68.3645 73.7274C66.4385 72.3343 66.0909 69.4054 66.0909 69.4054L64.9648 61.4726C64.9249 60.2108 63.9787 56.6611 63.9787 56.6611C61.4586 46.3031 52.8075 45.8774 52.8075 45.8774C52.5893 45.8428 52.6053 45.5467 52.6053 45.5467C52.2719 43.1525 53.8858 39.5949 53.8858 39.5949L56.8635 34.0642C60.0903 27.9661 60.0265 23.7124 60.0265 23.7124C60.7359 13.6744 54.3619 7.61264 54.3619 7.61264C47.1359 -0.260765 38.1239 0.198563 37.5156 0.240242C36.9073 0.198563 27.8944 -0.260765 20.6683 7.61264C20.6683 7.61264 14.2953 13.6744 15.0047 23.7124C15.0047 23.7124 14.94 27.9661 18.1677 34.0642L21.1454 39.5949C21.1454 39.5949 22.7584 43.1525 22.425 45.5467C22.425 45.5467 22.4409 45.8428 22.2228 45.8774C22.2228 45.8774 13.5717 46.3031 11.0516 56.6611C11.0516 56.6611 10.1054 60.2108 10.0655 61.4726L8.93847 69.4054C8.93847 69.4054 8.59175 72.3343 6.66574 73.7274C6.66574 73.7274 5.4979 74.7516 3.2438 75.1941C3.2438 75.1941 -0.327125 76.0232 0.309558 79.6012C0.309558 79.6012 0.890378 82.5319 4.25823 82.4024C4.25823 82.4024 8.63254 82.6809 12.9341 79.611C12.9341 79.611 17.0983 77.129 19.0208 69.8124C19.0208 69.8124 21.6313 60.9477 22.5482 59.7709C22.5482 59.7709 22.8027 59.2158 23.3827 59.2017L23.85 59.1786C23.85 59.1786 24.2188 59.1103 24.2188 59.9643C24.2188 59.9643 24.7917 66.5457 24.4193 69.3017C24.4193 69.3017 24.1036 76.9756 20.5619 82.3616C20.5619 82.3616 19.395 84.1041 19.1617 84.5413C19.1617 84.5413 18.0249 86.7014 20.0112 88.7427C20.0112 88.7427 22.5979 91.0996 25.3149 88.701C25.3149 88.701 31.6507 83.4825 34.678 73.9136C34.678 73.9136 37.0704 66.3337 37.4748 61.6774V61.6331L37.5555 61.6774C37.9598 66.3337 40.3523 73.9136 40.3523 73.9136C43.3796 83.4825 49.7145 88.701 49.7145 88.701C52.4315 91.0996 55.0181 88.7427 55.0181 88.7427C57.0062 86.7014 55.8685 84.5413 55.8685 84.5413C55.6344 84.1041 54.4684 82.3616 54.4684 82.3616C50.9276 76.9756 50.6119 69.3017 50.6119 69.3017C50.2386 66.5457 50.8114 59.9643 50.8114 59.9643C50.8105 59.0296 51.1812 59.1759 51.1812 59.1759L51.6476 59.2017C52.2276 59.2158 52.4821 59.7709 52.4821 59.7709C53.3989 60.9477 56.0104 69.8124 56.0104 69.8124C57.932 77.129 62.0952 79.611 62.0952 79.611C66.3977 82.6809 70.7712 82.4024 70.7712 82.4024C74.1399 82.5319 74.7207 79.6012 74.7207 79.6012C75.3574 76.0232 71.7865 75.1941 71.7865 75.1941Z",
     fill: color
+  }), /*#__PURE__*/React__default["default"].createElement(RenderEvent, {
+    event: event
   }), !onlyPaul && /*#__PURE__*/React__default["default"].createElement(React__default["default"].Fragment, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M133.81 74.4773C130.763 74.4773 128.325 72.0419 128.325 68.9905V20.749C128.325 17.7875 130.763 15.3491 133.985 15.3491C136.946 15.3491 139.384 17.7875 139.384 20.749V68.9905C139.384 72.0419 136.946 74.4773 133.81 74.4773ZM119.703 23.7093H118.744C115.697 23.7093 113.433 25.7116 113.433 29.6298V31.8943H117.788C120.312 31.8943 122.49 34.0723 122.49 36.7705C122.49 39.3823 120.312 41.5597 117.788 41.5597H113.433V68.9905C113.433 72.0419 110.995 74.4773 107.773 74.4773C104.725 74.4773 102.288 72.0419 102.288 68.9905V41.5597H99.5872C96.9742 41.5597 94.7968 39.3823 94.7968 36.5965C94.7968 34.0723 96.9742 31.8943 99.5872 31.8943H102.288V29.6298C102.288 20.4869 108.208 15 116.481 15C121.271 15 123.536 16.3053 123.536 19.4407C123.536 21.6188 122.142 23.7093 119.703 23.7093Z",
     fill: textColor || color
@@ -85,6 +157,8 @@ var LogoFlatchr = function LogoFlatchr(props) {
 
 LogoFlatchr.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  event: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number,
@@ -134,10 +208,6 @@ var ErrorIcon = function ErrorIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z",
-    stroke: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z",
     stroke: "none",
     fill: color
@@ -192,10 +262,6 @@ var NotificationsActiveIcon = function NotificationsActiveIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z",
-    stroke: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M7.58 4.08 6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2a8.445 8.445 0 0 1 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43a8.495 8.495 0 0 1 3.54 6.42zM18 11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-6 11c.14 0 .27-.01.4-.04.65-.14 1.18-.58 1.44-1.18.1-.24.15-.5.15-.78h-4c.01 1.1.9 2 2.01 2z",
     stroke: "none",
     fill: color
@@ -242,7 +308,8 @@ var ClipboardListIcon = function ClipboardListIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
 
@@ -265,10 +332,11 @@ var ClipboardListIcon = function ClipboardListIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 384 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -299,9 +367,6 @@ var DonutIcon = function DonutIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z",
     fill: color
   }));
@@ -328,9 +393,6 @@ var ArrowForwardIcon = function ArrowForwardIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z",
     fill: color
   }));
@@ -357,9 +419,6 @@ var MenuIcon = function MenuIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z",
     fill: color
   }));
@@ -386,9 +445,6 @@ var AccountPinCircleFillIcon = function AccountPinCircleFillIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M14.256 21.744L12 24l-2.256-2.256C5.31 20.72 2 16.744 2 12 2 6.48 6.48 2 12 2s10 4.48 10 10c0 4.744-3.31 8.72-7.744 9.744zm-8.233-6.328C7.491 17.606 9.695 19 12.16 19c2.464 0 4.669-1.393 6.136-3.584A8.968 8.968 0 0 0 12.16 13a8.968 8.968 0 0 0-6.137 2.416zM12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z",
     fill: color
   }));
@@ -519,12 +575,6 @@ var CollectionsBookmarkIcon = function CollectionsBookmarkIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0V0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0V0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z",
     fill: color
   }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
@@ -554,9 +604,6 @@ var ContentPasteIcon = function ContentPasteIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z",
     fill: color
   }));
@@ -610,7 +657,8 @@ var ChevronRightIcon = function ChevronRightIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
 
@@ -633,10 +681,11 @@ var ChevronRightIcon = function ChevronRightIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 320 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -660,7 +709,8 @@ var BookmarkIcon = function BookmarkIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
 
@@ -683,10 +733,11 @@ var BookmarkIcon = function BookmarkIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 384 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -743,9 +794,6 @@ var ChatBubbleIcon = function ChatBubbleIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z",
     fill: color
   }));
@@ -765,7 +813,8 @@ var BullhornIcon = function BullhornIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
 
@@ -788,10 +837,11 @@ var BullhornIcon = function BullhornIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 576 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -815,7 +865,8 @@ var FileIcon = function FileIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
 
@@ -838,10 +889,11 @@ var FileIcon = function FileIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 384 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -901,9 +953,6 @@ var KeyIcon = function KeyIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M512 176.001C512 273.203 433.202 352 336 352c-11.22 0-22.19-1.062-32.827-3.069l-24.012 27.014A23.999 23.999 0 0 1 261.223 384H224v40c0 13.255-10.745 24-24 24h-40v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-78.059c0-6.365 2.529-12.47 7.029-16.971l161.802-161.802C163.108 213.814 160 195.271 160 176 160 78.798 238.797.001 335.999 0 433.488-.001 512 78.511 512 176.001zM336 128c0 26.51 21.49 48 48 48s48-21.49 48-48-21.49-48-48-48-48 21.49-48 48z",
     fill: color
   }));
@@ -930,9 +979,6 @@ var RegisterListAltIcon = function RegisterListAltIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h404a6 6 0 0 1 6 6v340a6 6 0 0 1-6 6zm-42-92v24c0 6.627-5.373 12-12 12H204c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h200c6.627 0 12 5.373 12 12zm0-96v24c0 6.627-5.373 12-12 12H204c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h200c6.627 0 12 5.373 12 12zm0-96v24c0 6.627-5.373 12-12 12H204c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h200c6.627 0 12 5.373 12 12zm-252 12c0 19.882-16.118 36-36 36s-36-16.118-36-36 16.118-36 36-36 36 16.118 36 36zm0 96c0 19.882-16.118 36-36 36s-36-16.118-36-36 16.118-36 36-36 36 16.118 36 36zm0 96c0 19.882-16.118 36-36 36s-36-16.118-36-36 16.118-36 36-36 36 16.118 36 36z",
     fill: color
   }));
@@ -959,12 +1005,6 @@ var StarIcon = function StarIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z",
     fill: color
   }));
@@ -984,7 +1024,8 @@ var TagsIcon = function TagsIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
 
@@ -1007,10 +1048,11 @@ var TagsIcon = function TagsIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 640 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1067,7 +1109,8 @@ var BuildingIcon = function BuildingIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -1090,10 +1133,11 @@ var BuildingIcon = function BuildingIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1143,7 +1187,8 @@ var StoreAltIcon = function StoreAltIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
 
@@ -1166,10 +1211,11 @@ var StoreAltIcon = function StoreAltIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 640 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1193,7 +1239,8 @@ var FileInvoiceDollarIcon = function FileInvoiceDollarIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
 
@@ -1216,10 +1263,11 @@ var FileInvoiceDollarIcon = function FileInvoiceDollarIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 384 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1243,7 +1291,8 @@ var TachometerAltIcon = function TachometerAltIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
 
@@ -1266,10 +1315,11 @@ var TachometerAltIcon = function TachometerAltIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 576 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1300,9 +1350,6 @@ var LayerGroupIcon = function LayerGroupIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12.41 148.02l232.94 105.67c6.8 3.09 14.49 3.09 21.29 0l232.94-105.67c16.55-7.51 16.55-32.52 0-40.03L266.65 2.31a25.607 25.607 0 0 0-21.29 0L12.41 107.98c-16.55 7.51-16.55 32.53 0 40.04zm487.18 88.28l-58.09-26.33-161.64 73.27c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.51 209.97l-58.1 26.33c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 276.3c16.55-7.5 16.55-32.5 0-40zm0 127.8l-57.87-26.23-161.86 73.37c-7.56 3.43-15.59 5.17-23.86 5.17s-16.29-1.74-23.86-5.17L70.29 337.87 12.41 364.1c-16.55 7.5-16.55 32.5 0 40l232.94 105.59c6.8 3.08 14.49 3.08 21.29 0L499.59 404.1c16.55-7.5 16.55-32.5 0-40z",
     fill: color
   }));
@@ -1329,9 +1376,6 @@ var ShieldAltIcon = function ShieldAltIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z",
     fill: color
   }));
@@ -1351,7 +1395,8 @@ var TableAltIcon = function TableAltIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -1374,10 +1419,11 @@ var TableAltIcon = function TableAltIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1401,7 +1447,8 @@ var UserLockIcon = function UserLockIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
 
@@ -1424,10 +1471,11 @@ var UserLockIcon = function UserLockIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 640 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1451,7 +1499,8 @@ var PlusIcon = function PlusIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -1474,10 +1523,11 @@ var PlusIcon = function PlusIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1579,7 +1629,8 @@ var CaretDownIcon = function CaretDownIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
 
@@ -1602,10 +1653,11 @@ var CaretDownIcon = function CaretDownIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 320 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1629,7 +1681,8 @@ var CaretUpIcon = function CaretUpIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
 
@@ -1652,10 +1705,11 @@ var CaretUpIcon = function CaretUpIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 320 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1757,7 +1811,8 @@ var LockIcon = function LockIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -1780,10 +1835,11 @@ var LockIcon = function LockIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1807,7 +1863,8 @@ var LockOpenIcon = function LockOpenIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
 
@@ -1830,10 +1887,11 @@ var LockOpenIcon = function LockOpenIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 576 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -1916,9 +1974,6 @@ var RemoveCircleOutlineIcon = function RemoveCircleOutlineIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z",
     fill: color
   }));
@@ -1938,7 +1993,8 @@ var ChevronLeftIcon = function ChevronLeftIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
 
@@ -1961,10 +2017,11 @@ var ChevronLeftIcon = function ChevronLeftIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 320 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2076,9 +2133,6 @@ var PublishIcon = function PublishIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M5 4v2h14V4H5zm0 10h4v6h6v-6h4l-7-7-7 7z",
     fill: color
   }));
@@ -2162,9 +2216,6 @@ var AnalyticsOutlineIcon = function AnalyticsOutlineIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z",
     fill: color
   }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
@@ -2187,7 +2238,8 @@ var FacebookIcon = function FacebookIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
 
@@ -2210,10 +2262,11 @@ var FacebookIcon = function FacebookIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 320 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2263,7 +2316,8 @@ var LinkedinIcon = function LinkedinIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -2286,10 +2340,11 @@ var LinkedinIcon = function LinkedinIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2313,7 +2368,8 @@ var YoutubeIcon = function YoutubeIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
 
@@ -2336,10 +2392,11 @@ var YoutubeIcon = function YoutubeIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 576 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2370,9 +2427,6 @@ var InstagramIcon = function InstagramIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z",
     fill: color
   }));
@@ -2392,7 +2446,8 @@ var ChevronUpIcon = function ChevronUpIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -2415,10 +2470,11 @@ var ChevronUpIcon = function ChevronUpIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2442,7 +2498,8 @@ var ChevronDownIcon = function ChevronDownIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -2465,10 +2522,11 @@ var ChevronDownIcon = function ChevronDownIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2525,9 +2583,6 @@ var MergeIcon = function MergeIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M17 20.41L18.41 19 15 15.59 13.59 17 17 20.41zM7.5 8H11v5.59L5.59 19 7 20.41l6-6V8h3.5L12 3.5 7.5 8z",
     fill: color
   }));
@@ -2573,7 +2628,8 @@ var BookmarkAltIcon = function BookmarkAltIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
 
@@ -2596,10 +2652,11 @@ var BookmarkAltIcon = function BookmarkAltIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 384 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2623,7 +2680,8 @@ var SourceTreeIcon = function SourceTreeIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -2646,10 +2704,11 @@ var SourceTreeIcon = function SourceTreeIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2699,7 +2758,8 @@ var SaveIcon = function SaveIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -2722,10 +2782,11 @@ var SaveIcon = function SaveIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2860,9 +2921,6 @@ var AppsIcon = function AppsIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z",
     fill: color
   }));
@@ -2889,9 +2947,6 @@ var GridIcon = function GridIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z",
     fill: color
   }));
@@ -2911,7 +2966,8 @@ var CalendarIcon = function CalendarIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -2934,10 +2990,11 @@ var CalendarIcon = function CalendarIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -2987,7 +3044,8 @@ var GlobeIcon = function GlobeIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
 
@@ -3010,10 +3068,11 @@ var GlobeIcon = function GlobeIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 496 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3037,7 +3096,8 @@ var GlobeEuropeIcon = function GlobeEuropeIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
 
@@ -3060,10 +3120,11 @@ var GlobeEuropeIcon = function GlobeEuropeIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 496 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3087,7 +3148,8 @@ var NetworkWiredIcon = function NetworkWiredIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
 
@@ -3110,10 +3172,11 @@ var NetworkWiredIcon = function NetworkWiredIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 640 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3215,7 +3278,8 @@ var UserClockIcon = function UserClockIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
 
@@ -3238,10 +3302,11 @@ var UserClockIcon = function UserClockIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 640 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3265,7 +3330,8 @@ var GraduateIcon = function GraduateIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -3288,10 +3354,11 @@ var GraduateIcon = function GraduateIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3344,7 +3411,8 @@ var FacebookSquareIcon = function FacebookSquareIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -3367,10 +3435,11 @@ var FacebookSquareIcon = function FacebookSquareIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3394,7 +3463,8 @@ var LinkedinSquareIcon = function LinkedinSquareIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -3417,10 +3487,11 @@ var LinkedinSquareIcon = function LinkedinSquareIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3451,9 +3522,6 @@ var AttachFileIcon = function AttachFileIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M16.5 6v11.5c0 2.21-1.79 4-4 4s-4-1.79-4-4V5a2.5 2.5 0 015 0v10.5c0 .55-.45 1-1 1s-1-.45-1-1V6H10v9.5a2.5 2.5 0 005 0V5c0-2.21-1.79-4-4-4S7 2.79 7 5v12.5c0 3.04 2.46 5.5 5.5 5.5s5.5-2.46 5.5-5.5V6h-1.5z",
     fill: color
   }));
@@ -3480,9 +3548,6 @@ var StarHalfIcon = function StarHalfIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z",
     fill: color
   }));
@@ -3509,9 +3574,6 @@ var StarBorderIcon = function StarBorderIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    fill: "none",
-    d: "M0 0h24v24H0z"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z",
     fill: color
   }));
@@ -3531,7 +3593,8 @@ var GithubSquareIcon = function GithubSquareIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -3554,10 +3617,11 @@ var GithubSquareIcon = function GithubSquareIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3581,7 +3645,8 @@ var TwitterSquareIcon = function TwitterSquareIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -3604,10 +3669,11 @@ var TwitterSquareIcon = function TwitterSquareIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3657,7 +3723,8 @@ var FileAltIcon = function FileAltIcon(_ref) {
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
 
@@ -3680,10 +3747,11 @@ var FileAltIcon = function FileAltIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 384 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
@@ -3728,12 +3796,13 @@ PhoneIcon.propTypes = {
 
 var SkypeIcon = function SkypeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? '#000000' : _ref$color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
       widthProp = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
       heightProp = _ref$height === void 0 ? null : _ref$height;
-  var dimensions = React.useMemo(function () {
+
+  var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
 
@@ -3756,10 +3825,11 @@ var SkypeIcon = function SkypeIcon(_ref) {
       height: height,
       width: width
     };
-  }, [widthProp, heightProp]);
+  };
+
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
-    width: dimensions.width,
-    height: dimensions.height,
+    width: dimensions().width,
+    height: dimensions().height,
     viewBox: "0 0 448 512",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"

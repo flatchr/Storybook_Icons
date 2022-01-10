@@ -26,7 +26,9 @@ const AllIcons = props => {
           <Item
             key={`icon-${iconName}-${iconIndex}`}
             title={iconName}
-            onClick={linkTo(`icons-${iconName.replace(/([A-Z])/g, '-$1').toLowerCase()}-story`)}
+            onClick={
+              linkTo(`iconography-icons-${iconName.replace(/([A-Z])/g, '-$1').toLowerCase()}-story`)
+            }
           >
             {iconComponent}
           </Item>
