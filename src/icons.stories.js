@@ -1,5 +1,4 @@
 import React from "react";
-import { theme } from '@flatchr/system-design';
 // Icons import
 import UserIcon from './icons/User';
 import ErrorIcon from './icons/Error';
@@ -117,7 +116,7 @@ import RedoIcon from './icons/Redo';
 import UndoIcon from './icons/Undo';
 
 const icons = {
-  title: "Icons",
+  title: "Iconography/Icons",
   parameters: {
     options: { showPanel: true },
   },
@@ -158,9 +157,6 @@ const icons = {
         type: { summary: "text" },
       },
     },
-  },
-  args: {
-    color: theme.colors.textPrimary,
   },
 };
 

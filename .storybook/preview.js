@@ -22,13 +22,31 @@ export const decorators = [
     </ThemeProvider>
   ),
 ];
+
 export const parameters = {
+  backgrounds: {
+    default: 'light',
+    values: [
+      {
+        name: 'light',
+        value: '#FFFFFF',
+      },
+      {
+        name: 'dark',
+        value: '#373737',
+      },
+      {
+        name: 'Flatchr',
+        value: theme.colors.primary400,
+      },
+    ],
+  },
   options: {
     storySort: {
       order: [
         'Logo',
-        'All icons',
-        'Icons',
+        'Iconography',
+        ['All', 'Icons']
       ],
     },
   },

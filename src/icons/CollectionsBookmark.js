@@ -16,8 +16,6 @@ const CollectionsBookmarkIcon = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <Path fill="none" d="M0 0h24v24H0V0z" />
-      <Path fill="none" d="M0 0h24v24H0V0z" />
       <Path
         d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"
         fill={color}
