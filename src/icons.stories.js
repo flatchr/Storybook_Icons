@@ -114,6 +114,7 @@ import FormatUnderlineIcon from './icons/FormatUnderline';
 import ImageIcon from './icons/Image';
 import RedoIcon from './icons/Redo';
 import UndoIcon from './icons/Undo';
+import TrashIcon from './icons/Trash';
 
 const icons = {
   title: "Iconography/Icons",
@@ -732,6 +733,11 @@ const UndoIconStory = args => (
 );
 UndoIconStory.storyName = 'Undo';
 
+const TrashIconStory = args => (
+  <TrashIcon {...args} />
+);
+TrashIconStory.storyName = 'Trash';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -838,6 +844,7 @@ export {
   TableAltIconStory,
   TachometerAltIconStory,
   TagsIconStory,
+  TrashIconStory,
   TrashBinIconStory,
   TwitterIconStory,
   TwitterSquareIconStory,

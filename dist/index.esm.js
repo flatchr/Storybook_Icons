@@ -4151,4 +4151,56 @@ UndoIcon.propTypes = {
   with: PropTypes.number
 };
 
-export { AccountPinCircleFillIcon, AddCircleOutlineIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, AttachFileIcon, BookmarkAltIcon, BookmarkIcon, BuildingIcon, BullhornIcon, CalendarIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, ContentPasteIcon, DonutIcon, DownloadIcon, EnvelopeIcon, ErrorIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HeartIcon, ImageIcon, InstagramIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, LockIcon, LockOpenIcon, LogoFlatchr, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsIcon, PaperPlaneIcon, PenIcon, PeopleIcon, PhoneIcon, PlayCircleIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, SaveIcon, SearchIcon, ShareIcon, ShieldAltIcon, SkypeIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StoreAltIcon, StreetViewIcon, TableAltIcon, TachometerAltIcon, TagsIcon, TrashBinIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UserClockIcon, UserIcon, UserLockIcon, VectorSquareIcon, YoutubeIcon };
+var TrashIcon = function TrashIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+
+  var dimensions = function dimensions() {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  };
+
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions().width,
+    height: dimensions().height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z",
+    fill: color
+  }));
+};
+
+TrashIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+export { AccountPinCircleFillIcon, AddCircleOutlineIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, AttachFileIcon, BookmarkAltIcon, BookmarkIcon, BuildingIcon, BullhornIcon, CalendarIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, ContentPasteIcon, DonutIcon, DownloadIcon, EnvelopeIcon, ErrorIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HeartIcon, ImageIcon, InstagramIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, LockIcon, LockOpenIcon, LogoFlatchr, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsIcon, PaperPlaneIcon, PenIcon, PeopleIcon, PhoneIcon, PlayCircleIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, SaveIcon, SearchIcon, ShareIcon, ShieldAltIcon, SkypeIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StoreAltIcon, StreetViewIcon, TableAltIcon, TachometerAltIcon, TagsIcon, TrashBinIcon, TrashIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UserClockIcon, UserIcon, UserLockIcon, VectorSquareIcon, YoutubeIcon };
