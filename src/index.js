@@ -115,3 +115,4 @@ export { default as FormatUnderlineIcon } from './icons/FormatUnderline';
 export { default as ImageIcon } from './icons/Image';
 export { default as RedoIcon } from './icons/Redo';
 export { default as UndoIcon } from './icons/Undo';
+export { default as TrashIcon } from './icons/Trash';
