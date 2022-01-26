@@ -115,6 +115,7 @@ import ImageIcon from './icons/Image';
 import RedoIcon from './icons/Redo';
 import UndoIcon from './icons/Undo';
 import TrashIcon from './icons/Trash';
+import CalendarCheckIcon from './icons/CalendarCheck';
 
 const icons = {
   title: "Iconography/Icons",
@@ -738,6 +739,11 @@ const TrashIconStory = args => (
 );
 TrashIconStory.storyName = 'Trash';
 
+const CalendarCheckIconStory = args => (
+  <CalendarCheckIcon {...args} />
+);
+CalendarCheckIconStory.storyName = 'Calendar Check';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -750,6 +756,7 @@ export {
   BookmarkIconStory,
   BuildingIconStory,
   BullhornIconStory,
+  CalendarCheckIconStory,
   CalendarIconStory,
   CameraIconStory,
   CaretDownIconStory,
