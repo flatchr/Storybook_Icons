@@ -117,6 +117,7 @@ import UndoIcon from './icons/Undo';
 import TrashIcon from './icons/Trash';
 import CalendarCheckIcon from './icons/CalendarCheck';
 import BanIcon from './icons/Ban';
+import SignInIcon from './icons/SignIn';
 
 const icons = {
   title: "Iconography/Icons",
@@ -750,6 +751,11 @@ const BanIconStory = args => (
 );
 BanIconStory.storyName = 'Ban';
 
+const SignInIconStory = args => (
+  <SignInIcon {...args} />
+);
+SignInIconStory.storyName = 'Sign In';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -848,6 +854,7 @@ export {
   SearchIconStory,
   ShareIconStory,
   ShieldAltIconStory,
+  SignInIconStory,
   SkypeIconStory,
   SourceTreeIconStory,
   StarBorderIconStory,
