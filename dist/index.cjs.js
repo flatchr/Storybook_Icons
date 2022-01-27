@@ -4266,12 +4266,39 @@ CalendarCheckIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var BanIcon = function BanIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M256 8C119.034 8 8 119.033 8 256s111.034 248 248 248 248-111.034 248-248S392.967 8 256 8zm130.108 117.892c65.448 65.448 70 165.481 20.677 235.637L150.47 105.216c70.204-49.356 170.226-44.735 235.638 20.676zM125.892 386.108c-65.448-65.448-70-165.481-20.677-235.637L361.53 406.784c-70.203 49.356-170.226 44.736-235.638-20.676z",
+    fill: color
+  }));
+};
+
+BanIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
 exports.AnalyticsOutlineIcon = AnalyticsOutlineIcon;
 exports.AppsIcon = AppsIcon;
 exports.ArrowForwardIcon = ArrowForwardIcon;
 exports.AttachFileIcon = AttachFileIcon;
+exports.BanIcon = BanIcon;
 exports.BookmarkAltIcon = BookmarkAltIcon;
 exports.BookmarkIcon = BookmarkIcon;
 exports.BuildingIcon = BuildingIcon;
