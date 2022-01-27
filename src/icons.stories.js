@@ -118,6 +118,7 @@ import TrashIcon from './icons/Trash';
 import CalendarCheckIcon from './icons/CalendarCheck';
 import BanIcon from './icons/Ban';
 import SignInIcon from './icons/SignIn';
+import InfoCircleIcon from './icons/InfoCircle';
 
 const icons = {
   title: "Iconography/Icons",
@@ -756,6 +757,11 @@ const SignInIconStory = args => (
 );
 SignInIconStory.storyName = 'Sign In';
 
+const InfoCircleIconStory = args => (
+  <InfoCircleIcon {...args} />
+);
+InfoCircleIconStory.storyName = 'Info Circle';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -822,6 +828,7 @@ export {
   GridIconStory,
   HeartIconStory,
   ImageIconStory,
+  InfoCircleIconStory,
   InstagramIconStory,
   KeyIconStory,
   LayerGroupIconStory,
