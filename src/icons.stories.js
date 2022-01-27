@@ -116,6 +116,7 @@ import RedoIcon from './icons/Redo';
 import UndoIcon from './icons/Undo';
 import TrashIcon from './icons/Trash';
 import CalendarCheckIcon from './icons/CalendarCheck';
+import BanIcon from './icons/Ban';
 
 const icons = {
   title: "Iconography/Icons",
@@ -744,6 +745,11 @@ const CalendarCheckIconStory = args => (
 );
 CalendarCheckIconStory.storyName = 'Calendar Check';
 
+const BanIconStory = args => (
+  <BanIcon {...args} />
+);
+BanIconStory.storyName = 'Ban';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -752,6 +758,7 @@ export {
   AppsIconStory,
   ArrowForwardIconStory,
   AttachFileIconStory,
+  BanIconStory,
   BookmarkAltIconStory,
   BookmarkIconStory,
   BuildingIconStory,

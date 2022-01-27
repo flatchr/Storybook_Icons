@@ -117,3 +117,4 @@ export { default as RedoIcon } from './icons/Redo';
 export { default as UndoIcon } from './icons/Undo';
 export { default as TrashIcon } from './icons/Trash';
 export { default as CalendarCheckIcon } from './icons/CalendarCheck';
+export { default as BanIcon } from './icons/Ban';
