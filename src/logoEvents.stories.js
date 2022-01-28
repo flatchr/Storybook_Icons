@@ -46,9 +46,19 @@ const PaulEasterEggStory = args => (
 );
 PaulEasterEggStory.storyName = 'Easter';
 
+const PaulSpringStory = args => (
+  <LogoFlatchr
+    {...args}
+    onlyPaul
+    event="spring"
+  />
+);
+PaulSpringStory.storyName = 'Spring';
+
 export {
   PaulPrideMonthStory,
   PaulSaintPatrickStory,
   PaulSaintValentineStory,
   PaulEasterEggStory,
+  PaulSpringStory,
 };
