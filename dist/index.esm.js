@@ -2,6 +2,7 @@ import React from 'react';
 import Svg, { Path, G, Rect, Circle } from 'react-native-svg';
 import PropTypes from 'prop-types';
 import { theme } from '@flatchr/system-design';
+import { date } from '@flatchr/helper';
 
 function _extends() {
   _extends = Object.assign || function (target) {
@@ -82,7 +83,9 @@ var LogoFlatchr = function LogoFlatchr(props) {
       _props$onlyPaul = props.onlyPaul,
       onlyPaul = _props$onlyPaul === void 0 ? false : _props$onlyPaul,
       _props$event = props.event,
-      event = _props$event === void 0 ? null : _props$event;
+      event = _props$event === void 0 ? null : _props$event,
+      _props$noEventRender = props.noEventRender,
+      noEventRender = _props$noEventRender === void 0 ? false : _props$noEventRender;
 
   var dimensions = function dimensions() {
     var width = 347;
@@ -123,8 +126,8 @@ var LogoFlatchr = function LogoFlatchr(props) {
   }, /*#__PURE__*/React.createElement(Path, {
     d: "M71.7865 75.1941C69.5333 74.7516 68.3645 73.7274 68.3645 73.7274C66.4385 72.3343 66.0909 69.4054 66.0909 69.4054L64.9648 61.4726C64.9249 60.2108 63.9787 56.6611 63.9787 56.6611C61.4586 46.3031 52.8075 45.8774 52.8075 45.8774C52.5893 45.8428 52.6053 45.5467 52.6053 45.5467C52.2719 43.1525 53.8858 39.5949 53.8858 39.5949L56.8635 34.0642C60.0903 27.9661 60.0265 23.7124 60.0265 23.7124C60.7359 13.6744 54.3619 7.61264 54.3619 7.61264C47.1359 -0.260765 38.1239 0.198563 37.5156 0.240242C36.9073 0.198563 27.8944 -0.260765 20.6683 7.61264C20.6683 7.61264 14.2953 13.6744 15.0047 23.7124C15.0047 23.7124 14.94 27.9661 18.1677 34.0642L21.1454 39.5949C21.1454 39.5949 22.7584 43.1525 22.425 45.5467C22.425 45.5467 22.4409 45.8428 22.2228 45.8774C22.2228 45.8774 13.5717 46.3031 11.0516 56.6611C11.0516 56.6611 10.1054 60.2108 10.0655 61.4726L8.93847 69.4054C8.93847 69.4054 8.59175 72.3343 6.66574 73.7274C6.66574 73.7274 5.4979 74.7516 3.2438 75.1941C3.2438 75.1941 -0.327125 76.0232 0.309558 79.6012C0.309558 79.6012 0.890378 82.5319 4.25823 82.4024C4.25823 82.4024 8.63254 82.6809 12.9341 79.611C12.9341 79.611 17.0983 77.129 19.0208 69.8124C19.0208 69.8124 21.6313 60.9477 22.5482 59.7709C22.5482 59.7709 22.8027 59.2158 23.3827 59.2017L23.85 59.1786C23.85 59.1786 24.2188 59.1103 24.2188 59.9643C24.2188 59.9643 24.7917 66.5457 24.4193 69.3017C24.4193 69.3017 24.1036 76.9756 20.5619 82.3616C20.5619 82.3616 19.395 84.1041 19.1617 84.5413C19.1617 84.5413 18.0249 86.7014 20.0112 88.7427C20.0112 88.7427 22.5979 91.0996 25.3149 88.701C25.3149 88.701 31.6507 83.4825 34.678 73.9136C34.678 73.9136 37.0704 66.3337 37.4748 61.6774V61.6331L37.5555 61.6774C37.9598 66.3337 40.3523 73.9136 40.3523 73.9136C43.3796 83.4825 49.7145 88.701 49.7145 88.701C52.4315 91.0996 55.0181 88.7427 55.0181 88.7427C57.0062 86.7014 55.8685 84.5413 55.8685 84.5413C55.6344 84.1041 54.4684 82.3616 54.4684 82.3616C50.9276 76.9756 50.6119 69.3017 50.6119 69.3017C50.2386 66.5457 50.8114 59.9643 50.8114 59.9643C50.8105 59.0296 51.1812 59.1759 51.1812 59.1759L51.6476 59.2017C52.2276 59.2158 52.4821 59.7709 52.4821 59.7709C53.3989 60.9477 56.0104 69.8124 56.0104 69.8124C57.932 77.129 62.0952 79.611 62.0952 79.611C66.3977 82.6809 70.7712 82.4024 70.7712 82.4024C74.1399 82.5319 74.7207 79.6012 74.7207 79.6012C75.3574 76.0232 71.7865 75.1941 71.7865 75.1941Z",
     fill: color
-  }), /*#__PURE__*/React.createElement(RenderEvent, {
-    event: event
+  }), !noEventRender && /*#__PURE__*/React.createElement(RenderEvent, {
+    event: event || date.getEventName(new Date())
   }), !onlyPaul && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Path, {
     d: "M133.81 74.4773C130.763 74.4773 128.325 72.0419 128.325 68.9905V20.749C128.325 17.7875 130.763 15.3491 133.985 15.3491C136.946 15.3491 139.384 17.7875 139.384 20.749V68.9905C139.384 72.0419 136.946 74.4773 133.81 74.4773ZM119.703 23.7093H118.744C115.697 23.7093 113.433 25.7116 113.433 29.6298V31.8943H117.788C120.312 31.8943 122.49 34.0723 122.49 36.7705C122.49 39.3823 120.312 41.5597 117.788 41.5597H113.433V68.9905C113.433 72.0419 110.995 74.4773 107.773 74.4773C104.725 74.4773 102.288 72.0419 102.288 68.9905V41.5597H99.5872C96.9742 41.5597 94.7968 39.3823 94.7968 36.5965C94.7968 34.0723 96.9742 31.8943 99.5872 31.8943H102.288V29.6298C102.288 20.4869 108.208 15 116.481 15C121.271 15 123.536 16.3053 123.536 19.4407C123.536 21.6188 122.142 23.7093 119.703 23.7093Z",
     fill: textColor || color
@@ -151,6 +154,7 @@ LogoFlatchr.propTypes = {
   ]),
   event: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
+  noEventRender: PropTypes.bool,
   height: PropTypes.number,
   with: PropTypes.number,
   textColor: PropTypes.PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
@@ -5325,4 +5329,30 @@ ArrowRepeatIcon.propTypes = {
   with: PropTypes.number
 };
 
-export { AccountPinCircleFillIcon, AddCircleOutlineIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, ArrowRepeatIcon, AttachFileIcon, BanIcon, BatteryThreeQuartersIcon, BinocularsIcon, BoltIcon, BookmarkAltIcon, BookmarkIcon, BriefCaseIcon, BuildingIcon, BullhornIcon, CalculatorIcon, CalendarCheckIcon, CalendarIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, CompassIcon, ContentPasteIcon, CreditCardIcon, DonutIcon, DownloadIcon, DumbbellIcon, EnvelopeIcon, ErrorIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HandHoldingHeartIcon, HeartIcon, ImageIcon, InfoCircleIcon, InstagramIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, LockIcon, LockOpenIcon, LogoFlatchr, MapSignsIcon, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, MoutainIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsIcon, OctopussDeployIcon, PaperPlaneIcon, PauseIcon, PenIcon, PeopleIcon, PhoneIcon, PlayCircleIcon, PlayIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, SaveIcon, SearchIcon, ShareIcon, ShieldAltIcon, ShieldCheckmarkIcon, ShoppingCartIcon, SignInIcon, SkypeIcon, SmileGrinHeartsIcon, SmileIcon, SmileWinkIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StoreAltIcon, StreetViewIcon, TableAltIcon, TachometerAltIcon, TagsIcon, ThumbsUpIcon, ToolsIcon, TrashBinIcon, TrashIcon, TrophyIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UserClockIcon, UserIcon, UserLockIcon, VectorSquareIcon, YoutubeIcon };
+var AddCircleIcon = function AddCircleIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z",
+    fill: color
+  }));
+};
+
+AddCircleIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+export { AccountPinCircleFillIcon, AddCircleIcon, AddCircleOutlineIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, ArrowRepeatIcon, AttachFileIcon, BanIcon, BatteryThreeQuartersIcon, BinocularsIcon, BoltIcon, BookmarkAltIcon, BookmarkIcon, BriefCaseIcon, BuildingIcon, BullhornIcon, CalculatorIcon, CalendarCheckIcon, CalendarIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, CompassIcon, ContentPasteIcon, CreditCardIcon, DonutIcon, DownloadIcon, DumbbellIcon, EnvelopeIcon, ErrorIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HandHoldingHeartIcon, HeartIcon, ImageIcon, InfoCircleIcon, InstagramIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, LockIcon, LockOpenIcon, LogoFlatchr, MapSignsIcon, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, MoutainIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsIcon, OctopussDeployIcon, PaperPlaneIcon, PauseIcon, PenIcon, PeopleIcon, PhoneIcon, PlayCircleIcon, PlayIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, SaveIcon, SearchIcon, ShareIcon, ShieldAltIcon, ShieldCheckmarkIcon, ShoppingCartIcon, SignInIcon, SkypeIcon, SmileGrinHeartsIcon, SmileIcon, SmileWinkIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StoreAltIcon, StreetViewIcon, TableAltIcon, TachometerAltIcon, TagsIcon, ThumbsUpIcon, ToolsIcon, TrashBinIcon, TrashIcon, TrophyIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UserClockIcon, UserIcon, UserLockIcon, VectorSquareIcon, YoutubeIcon };

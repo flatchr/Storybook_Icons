@@ -71,7 +71,7 @@ const logoStoryData = {
       control: {
         type: "select",
       },
-      options: ['prideMonth', 'saintPatrick'],
+      options: ['prideMonth', 'saintPatrick', 'saintValentine'],
       table: {
         defaultValue: {
           summary: null,
@@ -79,6 +79,18 @@ const logoStoryData = {
         type: { summary: "text" },
       },
     },
+    noEventRender: {
+      description: "Never render event for Paul",
+      control: {
+        type: "boolean",
+      },
+      table: {
+        defaultValue: {
+          summary: false,
+        },
+        type: { summary: "boolean" },
+      },
+    }
   },
 };
 
