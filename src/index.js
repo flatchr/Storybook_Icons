@@ -144,3 +144,4 @@ export { default as ShoppingCartIcon } from './icons/ShoppingCart';
 export { default as ShieldCheckmarkIcon } from './icons/ShieldCheckmark';
 export { default as ArrowRepeatIcon } from './icons/ArrowRepeat';
 export { default as AddCircleIcon } from './icons/AddCircle';
+export { default as EyedropperIcon } from './icons/Eyedropper';
