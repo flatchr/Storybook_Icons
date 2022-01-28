@@ -119,6 +119,7 @@ import CalendarCheckIcon from './icons/CalendarCheck';
 import BanIcon from './icons/Ban';
 import SignInIcon from './icons/SignIn';
 import InfoCircleIcon from './icons/InfoCircle';
+import AddCircleIcon from './icons/AddCircle';
 
 const icons = {
   title: "Iconography/Icons",
@@ -762,9 +763,15 @@ const InfoCircleIconStory = args => (
 );
 InfoCircleIconStory.storyName = 'Info Circle';
 
+const AddCircleIconStory = args => (
+  <AddCircleIcon {...args} />
+);
+AddCircleIconStory.storyName = 'Add Circle';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
+  AddCircleIconStory,
   AddCircleOutlineIconStory,
   AnalyticsOutlineIconStory,
   AppsIconStory,
