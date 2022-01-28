@@ -120,6 +120,7 @@ import BanIcon from './icons/Ban';
 import SignInIcon from './icons/SignIn';
 import InfoCircleIcon from './icons/InfoCircle';
 import AddCircleIcon from './icons/AddCircle';
+import EyedropperIcon from './icons/Eyedropper';
 
 const icons = {
   title: "Iconography/Icons",
@@ -768,6 +769,11 @@ const AddCircleIconStory = args => (
 );
 AddCircleIconStory.storyName = 'Add Circle';
 
+const EyedropperIconStory = args => (
+  <EyedropperIcon {...args} />
+);
+EyedropperIconStory.storyName = 'Eyedropper';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -809,6 +815,7 @@ export {
   EnvelopeIconStory,
   ErrorIconStory,
   ExternalLinkIconStory,
+  EyedropperIconStory,
   EyeIconStory,
   EyeOffIconStory,
   FacebookIconStory,

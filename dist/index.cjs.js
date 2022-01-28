@@ -2109,9 +2109,6 @@ var FormatAlignLeftIcon = function FormatAlignLeftIcon(_ref) {
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M0 0h24v24H0z",
-    fill: "none"
-  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z",
     fill: color
   }));
@@ -5365,6 +5362,32 @@ AddCircleIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var EyedropperIcon = function EyedropperIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 16 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M15.414 0.586c-0.781-0.781-2.047-0.781-2.828 0l-2.689 2.689-1.896-1.896-2.121 2.121 1.663 1.663-7.377 7.377c-0.126 0.126-0.179 0.296-0.161 0.46h-0.004v2.5c0 0.276 0.224 0.5 0.5 0.5h2.5c0 0 0.042 0 0.063 0 0.144 0 0.288-0.055 0.398-0.165l7.377-7.377 1.663 1.663 2.121-2.121-1.896-1.896 2.689-2.689c0.781-0.781 0.781-2.047 0-2.828zM2.705 15h-1.705v-1.705l7.337-7.337 1.704 1.704-7.337 7.337z",
+    fill: color
+  }));
+};
+
+EyedropperIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleIcon = AddCircleIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
@@ -5415,6 +5438,7 @@ exports.ErrorIcon = ErrorIcon;
 exports.ExternalLinkIcon = ExternalLinkIcon;
 exports.EyeIcon = EyeIcon;
 exports.EyeOffIcon = EyeOffIcon;
+exports.EyedropperIcon = EyedropperIcon;
 exports.FacebookIcon = FacebookIcon;
 exports.FacebookSquareIcon = FacebookSquareIcon;
 exports.FileAltIcon = FileAltIcon;
