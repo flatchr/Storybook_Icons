@@ -26,7 +26,7 @@ const PaulSaintValentineStory = args => (
     event="saintValentine"
   />
 );
-PaulSaintValentineStory.storyName = 'Saint Valentine';
+PaulSaintValentineStory.storyName = `Valentine's Day`;
 
 const PaulSaintPatrickStory = args => (
   <LogoFlatchr
@@ -37,8 +37,18 @@ const PaulSaintPatrickStory = args => (
 );
 PaulSaintPatrickStory.storyName = 'Saint Patrick';
 
+const PaulEasterEggStory = args => (
+  <LogoFlatchr
+    {...args}
+    onlyPaul
+    event="easter"
+  />
+);
+PaulEasterEggStory.storyName = 'Easter';
+
 export {
   PaulPrideMonthStory,
   PaulSaintPatrickStory,
   PaulSaintValentineStory,
+  PaulEasterEggStory,
 };

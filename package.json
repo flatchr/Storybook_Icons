@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@flatchr/helper": "^2.0.0",
-    "@flatchr/system-design": "^1.0.3",
+    "@flatchr/system-design": "^1.1.1",
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -86,8 +86,6 @@
     "styled-components": "^5.3.3"
   },
   "peerDependencies": {
-    "@flatchr/helper": "^2.0.0",
-    "@flatchr/system-design": "^1.0.3",
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
