@@ -121,6 +121,7 @@ import SignInIcon from './icons/SignIn';
 import InfoCircleIcon from './icons/InfoCircle';
 import AddCircleIcon from './icons/AddCircle';
 import EyedropperIcon from './icons/Eyedropper';
+import ImageEditIcon from './icons/ImageEdit';
 
 const icons = {
   title: "Iconography/Icons",
@@ -774,6 +775,11 @@ const EyedropperIconStory = args => (
 );
 EyedropperIconStory.storyName = 'Eyedropper';
 
+const ImageEditIconStory = args => (
+  <ImageEditIcon {...args} />
+);
+ImageEditIconStory.storyName = 'Image Edit';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -841,6 +847,7 @@ export {
   GraduateIconStory,
   GridIconStory,
   HeartIconStory,
+  ImageEditIconStory,
   ImageIconStory,
   InfoCircleIconStory,
   InstagramIconStory,
