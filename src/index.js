@@ -156,3 +156,4 @@ export { default as CheckSquareIcon } from './icons/CheckSquare';
 export { default as CallSplitIcon } from './icons/CallSplit';
 export { default as EuroIcon } from './icons/Euro';
 export { default as MapMarkerIcon } from './icons/MapMarker';
+export { default as HistoryIcon } from './icons/History';
