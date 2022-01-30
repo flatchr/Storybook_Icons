@@ -157,3 +157,5 @@ export { default as CallSplitIcon } from './icons/CallSplit';
 export { default as EuroIcon } from './icons/Euro';
 export { default as MapMarkerIcon } from './icons/MapMarker';
 export { default as HistoryIcon } from './icons/History';
+export { default as EnveloppeCheckIcon } from './icons/EnveloppeCheck';
+export { default as UserPlusIcon } from './icons/UserPlus';

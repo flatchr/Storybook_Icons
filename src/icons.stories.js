@@ -133,6 +133,8 @@ import CallSplitIcon from './icons/CallSplit';
 import EuroIcon from './icons/Euro';
 import MapMarkerIcon from './icons/MapMarker';
 import HistoryIcon from './icons/History';
+import EnveloppeCheckIcon from './icons/EnveloppeCheck';
+import UserPlusIcon from './icons/UserPlus';
 
 const icons = {
   title: "Iconography/Icons",
@@ -846,6 +848,16 @@ const HistoryIconStory = args => (
 );
 HistoryIconStory.storyName = 'History';
 
+const EnveloppeCheckIconStory = args => (
+  <EnveloppeCheckIcon {...args} />
+);
+EnveloppeCheckIconStory.storyName = 'Enveloppe Check';
+
+const UserPlusIconStory = args => (
+  <UserPlusIcon {...args} />
+);
+UserPlusIconStory.storyName = 'User Plus';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -930,6 +942,7 @@ export {
   LinkIconStory,
   LockIconStory,
   LockOpenIconStory,
+  EnveloppeCheckIconStory,
   MapMarkerIconStory,
   MenuIconStory,
   MenuFoldIconStory,
@@ -979,6 +992,7 @@ export {
   UserClockIconStory,
   UserIconStory,
   UserLockIconStory,
+  UserPlusIconStory,
   VectorSquareIconStory,
   YoutubeIconStory,
 };
