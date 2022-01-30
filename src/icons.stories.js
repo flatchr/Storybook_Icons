@@ -132,6 +132,7 @@ import CheckSquareIcon from './icons/CheckSquare';
 import CallSplitIcon from './icons/CallSplit';
 import EuroIcon from './icons/Euro';
 import MapMarkerIcon from './icons/MapMarker';
+import HistoryIcon from './icons/History';
 
 const icons = {
   title: "Iconography/Icons",
@@ -840,6 +841,11 @@ const MapMarkerIconStory = args => (
 );
 MapMarkerIconStory.storyName = 'Map Marker';
 
+const HistoryIconStory = args => (
+  <HistoryIcon {...args} />
+);
+HistoryIconStory.storyName = 'History';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -912,6 +918,7 @@ export {
   GraduateIconStory,
   GridIconStory,
   HeartIconStory,
+  HistoryIconStory,
   ImageEditIconStory,
   ImageIconStory,
   InfoCircleIconStory,
