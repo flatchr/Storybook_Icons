@@ -122,6 +122,16 @@ import InfoCircleIcon from './icons/InfoCircle';
 import AddCircleIcon from './icons/AddCircle';
 import EyedropperIcon from './icons/Eyedropper';
 import ImageEditIcon from './icons/ImageEdit';
+import ReplyIcon from './icons/Reply';
+import MoreVerticalIcon from './icons/MoreVertical';
+import MicrophoneIcon from './icons/Microphone';
+import StopIcon from './icons/Stop';
+import ControlPointDuplicateIcon from './icons/ControlPointDuplicate';
+import EditIcon from './icons/Edit';
+import CheckSquareIcon from './icons/CheckSquare';
+import CallSplitIcon from './icons/CallSplit';
+import EuroIcon from './icons/Euro';
+import MapMarkerIcon from './icons/MapMarker';
 
 const icons = {
   title: "Iconography/Icons",
@@ -780,6 +790,56 @@ const ImageEditIconStory = args => (
 );
 ImageEditIconStory.storyName = 'Image Edit';
 
+const ReplyIconStory = args => (
+  <ReplyIcon {...args} />
+);
+ReplyIconStory.storyName = 'Reply';
+
+const MoreVerticalIconStory = args => (
+  <MoreVerticalIcon {...args} />
+);
+MoreVerticalIconStory.storyName = 'More Vertical';
+
+const MicrophoneIconStory = args => (
+  <MicrophoneIcon {...args} />
+);
+MicrophoneIconStory.storyName = 'Microphone';
+
+const StopIconStory = args => (
+  <StopIcon {...args} />
+);
+StopIconStory.storyName = 'Stop';
+
+const ControlPointDuplicateIconStory = args => (
+  <ControlPointDuplicateIcon {...args} />
+);
+ControlPointDuplicateIconStory.storyName = 'Control Point Duplicate';
+
+const EditIconStory = args => (
+  <EditIcon {...args} />
+);
+EditIconStory.storyName = 'Edit';
+
+const CheckSquareIconStory = args => (
+  <CheckSquareIcon {...args} />
+);
+CheckSquareIconStory.storyName = 'Check Square';
+
+const CallSplitIconStory = args => (
+  <CallSplitIcon {...args} />
+);
+CallSplitIconStory.storyName = 'Call Split';
+
+const EuroIconStory = args => (
+  <EuroIcon {...args} />
+);
+EuroIconStory.storyName = 'Euro';
+
+const MapMarkerIconStory = args => (
+  <MapMarkerIcon {...args} />
+);
+MapMarkerIconStory.storyName = 'Map Marker';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -796,6 +856,7 @@ export {
   BullhornIconStory,
   CalendarCheckIconStory,
   CalendarIconStory,
+  CallSplitIconStory,
   CameraIconStory,
   CaretDownIconStory,
   CaretUpIconStory,
@@ -803,6 +864,7 @@ export {
   ChatBubblesIconStory,
   CheckCircleIconStory,
   CheckIconStory,
+  CheckSquareIconStory,
   ChevronDownIconStory,
   ChevronLeftIconStory,
   ChevronRightIconStory,
@@ -816,10 +878,13 @@ export {
   ColorPaletteIconStory,
   ColumnsIconStory,
   ContentPasteIconStory,
+  ControlPointDuplicateIconStory,
   DonutIconStory,
   DownloadIconStory,
+  EditIconStory,
   EnvelopeIconStory,
   ErrorIconStory,
+  EuroIconStory,
   ExternalLinkIconStory,
   EyedropperIconStory,
   EyeIconStory,
@@ -858,10 +923,13 @@ export {
   LinkIconStory,
   LockIconStory,
   LockOpenIconStory,
+  MapMarkerIconStory,
   MenuIconStory,
   MenuFoldIconStory,
   MenuUnfoldIconStory,
   MergeIconStory,
+  MicrophoneIconStory,
+  MoreVerticalIconStory,
   NetworkWiredIconStory,
   NotificationsIconStory,
   NotificationsActiveIconStory,
@@ -878,6 +946,7 @@ export {
   RegDotCircleIconStory,
   RegisterListAltIconStory,
   RemoveCircleOutlineIconStory,
+  ReplyIconStory,
   SaveIconStory,
   SearchIconStory,
   ShareIconStory,
@@ -888,6 +957,7 @@ export {
   StarBorderIconStory,
   StarHalfIconStory,
   StarIconStory,
+  StopIconStory,
   StoreAltIconStory,
   StreetViewIconStory,
   TableAltIconStory,

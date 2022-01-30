@@ -3,7 +3,7 @@ import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 import { theme } from '@flatchr/system-design';
 
-const StarIcon = ({
+const CallSplitIcon = ({
   color = theme.colors.textPrimary,
   height = null,
   width = null,
@@ -17,14 +17,14 @@ const StarIcon = ({
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        d="M14 4l2.29 2.29-2.88 2.88 1.42 1.42 2.88-2.88L20 10V4zm-4 0H4v6l2.29-2.29 4.71 4.7V20h2v-8.41l-5.29-5.3z"
         fill={color}
       />
     </Svg>
   );
 };
 
-StarIcon.propTypes = {
+CallSplitIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -33,4 +33,4 @@ StarIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default StarIcon;
+export default CallSplitIcon;
