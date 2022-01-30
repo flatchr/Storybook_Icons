@@ -3,7 +3,7 @@ import Svg, { Path } from "react-native-svg";
 import PropTypes from 'prop-types';
 import { theme } from '@flatchr/system-design';
 
-const StarIcon = ({
+const MoreVerticalIcon = ({
   color = theme.colors.textPrimary,
   height = null,
   width = null,
@@ -17,14 +17,14 @@ const StarIcon = ({
       xmlns="http://www.w3.org/2000/svg"
     >
       <Path
-        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
         fill={color}
       />
     </Svg>
   );
 };
 
-StarIcon.propTypes = {
+MoreVerticalIcon.propTypes = {
   color: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.number, // used for null
@@ -33,4 +33,4 @@ StarIcon.propTypes = {
   with: PropTypes.number,
 };
 
-export default StarIcon;
+export default MoreVerticalIcon;
