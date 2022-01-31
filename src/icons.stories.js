@@ -135,6 +135,7 @@ import MapMarkerIcon from './icons/MapMarker';
 import HistoryIcon from './icons/History';
 import EnveloppeCheckIcon from './icons/EnveloppeCheck';
 import UserPlusIcon from './icons/UserPlus';
+import CodeBranchIcon from './icons/CodeBranch';
 
 const icons = {
   title: "Iconography/Icons",
@@ -858,6 +859,11 @@ const UserPlusIconStory = args => (
 );
 UserPlusIconStory.storyName = 'User Plus';
 
+const CodeBranchIconStory = args => (
+  <CodeBranchIcon {...args} />
+);
+CodeBranchIconStory.storyName = 'Code Branch';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -891,6 +897,7 @@ export {
   ClipboardListIconStory,
   CloneIconStory,
   CloseIconStory,
+  CodeBranchIconStory,
   CogIconStory,
   CollectionsBookmarkIconStory,
   ColorPaletteIconStory,
