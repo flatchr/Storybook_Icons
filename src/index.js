@@ -162,3 +162,4 @@ export { default as UserPlusIcon } from './icons/UserPlus';
 export { default as CodeBranchIcon } from './icons/CodeBranch';
 export { default as UserAssignmentIcon } from './icons/UserAssignment';
 export { default as CloseCircleIcon } from './icons/CloseCircle';
+export { default as ListAltIcon } from './icons/ListAlt';

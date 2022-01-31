@@ -6137,6 +6137,32 @@ CloseCircleIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var ListAltIcon = function ListAltIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M464 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zM128 120c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm0 96c-22.091 0-40 17.909-40 40s17.909 40 40 40 40-17.909 40-40-17.909-40-40-40zm288-136v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12zm0 96v-32c0-6.627-5.373-12-12-12H204c-6.627 0-12 5.373-12 12v32c0 6.627 5.373 12 12 12h200c6.627 0 12-5.373 12-12z",
+    fill: color
+  }));
+};
+
+ListAltIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleIcon = AddCircleIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
@@ -6230,6 +6256,7 @@ exports.LayerGroupIcon = LayerGroupIcon;
 exports.LinkIcon = LinkIcon;
 exports.LinkedinIcon = LinkedinIcon;
 exports.LinkedinSquareIcon = LinkedinSquareIcon;
+exports.ListAltIcon = ListAltIcon;
 exports.LockIcon = LockIcon;
 exports.LockOpenIcon = LockOpenIcon;
 exports.LogoFlatchr = LogoFlatchr;
