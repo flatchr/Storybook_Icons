@@ -137,6 +137,7 @@ import EnveloppeCheckIcon from './icons/EnveloppeCheck';
 import UserPlusIcon from './icons/UserPlus';
 import CodeBranchIcon from './icons/CodeBranch';
 import UserAssignmentIcon from './icons/UserAssignment';
+import CloseCircleIcon from './icons/CloseCircle';
 
 const icons = {
   title: "Iconography/Icons",
@@ -870,6 +871,11 @@ const UserAssignmentIconStory = args => (
 );
 UserAssignmentIconStory.storyName = 'User Assignment';
 
+const CloseCircleIconStory = args => (
+  <CloseCircleIcon {...args} />
+);
+CloseCircleIconStory.storyName = 'Close Circle';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -902,6 +908,7 @@ export {
   CircleIconStory,
   ClipboardListIconStory,
   CloneIconStory,
+  CloseCircleIconStory,
   CloseIconStory,
   CodeBranchIconStory,
   CogIconStory,
