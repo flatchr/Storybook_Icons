@@ -7,7 +7,7 @@
     "registry": "https://gitlab.com/api/v4/projects/30455429/packages/npm/"
   },
   "repository": "git://gitlab.com/flatchr/shared/icons",
-  "version": "1.14.0",
+  "version": "1.15.0",
   "description": "All the Flatchr™'s icons 🐙",
   "author": "Benjamin Relat <benjamin@flatchr.io>",
   "license": "MIT",

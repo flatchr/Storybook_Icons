@@ -136,6 +136,7 @@ import HistoryIcon from './icons/History';
 import EnveloppeCheckIcon from './icons/EnveloppeCheck';
 import UserPlusIcon from './icons/UserPlus';
 import CodeBranchIcon from './icons/CodeBranch';
+import UserAssignmentIcon from './icons/UserAssignment';
 
 const icons = {
   title: "Iconography/Icons",
@@ -864,6 +865,11 @@ const CodeBranchIconStory = args => (
 );
 CodeBranchIconStory.storyName = 'Code Branch';
 
+const UserAssignmentIconStory = args => (
+  <UserAssignmentIcon {...args} />
+);
+UserAssignmentIconStory.storyName = 'User Assignment';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -996,6 +1002,7 @@ export {
   TwitterSquareIconStory,
   UndoIconStory,
   UniversityIconStory,
+  UserAssignmentIconStory,
   UserClockIconStory,
   UserIconStory,
   UserLockIconStory,
