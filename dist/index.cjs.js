@@ -6111,6 +6111,32 @@ UserAssignmentIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var CloseCircleIcon = function CloseCircleIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 512 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm121.6 313.1c4.7 4.7 4.7 12.3 0 17L338 377.6c-4.7 4.7-12.3 4.7-17 0L256 312l-65.1 65.6c-4.7 4.7-12.3 4.7-17 0L134.4 338c-4.7-4.7-4.7-12.3 0-17l65.6-65-65.6-65.1c-4.7-4.7-4.7-12.3 0-17l39.6-39.6c4.7-4.7 12.3-4.7 17 0l65 65.7 65.1-65.6c4.7-4.7 12.3-4.7 17 0l39.6 39.6c4.7 4.7 4.7 12.3 0 17L312 256l65.6 65.1z",
+    fill: color
+  }));
+};
+
+CloseCircleIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleIcon = AddCircleIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
@@ -6147,6 +6173,7 @@ exports.ChevronUpIcon = ChevronUpIcon;
 exports.CircleIcon = CircleIcon;
 exports.ClipboardListIcon = ClipboardListIcon;
 exports.CloneIcon = CloneIcon;
+exports.CloseCircleIcon = CloseCircleIcon;
 exports.CloseIcon = CloseIcon;
 exports.CodeBranchIcon = CodeBranchIcon;
 exports.CogIcon = CogIcon;

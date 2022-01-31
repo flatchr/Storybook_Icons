@@ -161,3 +161,4 @@ export { default as EnveloppeCheckIcon } from './icons/EnveloppeCheck';
 export { default as UserPlusIcon } from './icons/UserPlus';
 export { default as CodeBranchIcon } from './icons/CodeBranch';
 export { default as UserAssignmentIcon } from './icons/UserAssignment';
+export { default as CloseCircleIcon } from './icons/CloseCircle';
