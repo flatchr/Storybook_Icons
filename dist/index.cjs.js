@@ -6085,6 +6085,32 @@ CodeBranchIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var UserAssignmentIcon = function UserAssignmentIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z",
+    fill: color
+  }));
+};
+
+UserAssignmentIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleIcon = AddCircleIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
@@ -6239,6 +6265,7 @@ exports.TwitterIcon = TwitterIcon;
 exports.TwitterSquareIcon = TwitterSquareIcon;
 exports.UndoIcon = UndoIcon;
 exports.UniversityIcon = UniversityIcon;
+exports.UserAssignmentIcon = UserAssignmentIcon;
 exports.UserClockIcon = UserClockIcon;
 exports.UserIcon = UserIcon;
 exports.UserLockIcon = UserLockIcon;
