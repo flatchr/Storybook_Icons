@@ -138,6 +138,7 @@ import UserPlusIcon from './icons/UserPlus';
 import CodeBranchIcon from './icons/CodeBranch';
 import UserAssignmentIcon from './icons/UserAssignment';
 import CloseCircleIcon from './icons/CloseCircle';
+import ListAltIcon from './icons/ListAlt';
 
 const icons = {
   title: "Iconography/Icons",
@@ -876,6 +877,11 @@ const CloseCircleIconStory = args => (
 );
 CloseCircleIconStory.storyName = 'Close Circle';
 
+const ListAltIconStory = args => (
+  <ListAltIcon {...args} />
+);
+ListAltIconStory.storyName = 'List Alt';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -957,6 +963,7 @@ export {
   InstagramIconStory,
   KeyIconStory,
   LayerGroupIconStory,
+  ListAltIconStory,
   LinkedinIconStory,
   LinkedinSquareIconStory,
   LinkIconStory,
