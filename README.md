@@ -94,3 +94,5 @@ yarn add @flatchr/icons
 ## LINK
 
 - use [`yarn link`](https://classic.yarnpkg.com/en/docs/cli/link/) to test your new icons in an another webapp
+
+And so ?
