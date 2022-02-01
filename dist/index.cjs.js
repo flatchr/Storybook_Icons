@@ -6163,6 +6163,58 @@ ListAltIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var MinusIcon = function MinusIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+
+  var dimensions = function dimensions() {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  };
+
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: dimensions().width,
+    height: dimensions().height,
+    viewBox: "0 0 448 512",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z",
+    fill: color
+  }));
+};
+
+MinusIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleIcon = AddCircleIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
@@ -6267,6 +6319,7 @@ exports.MenuIcon = MenuIcon;
 exports.MenuUnfoldIcon = MenuUnfoldIcon;
 exports.MergeIcon = MergeIcon;
 exports.MicrophoneIcon = MicrophoneIcon;
+exports.MinusIcon = MinusIcon;
 exports.MoreVerticalIcon = MoreVerticalIcon;
 exports.MoutainIcon = MoutainIcon;
 exports.NetworkWiredIcon = NetworkWiredIcon;
