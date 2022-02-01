@@ -140,6 +140,7 @@ import UserAssignmentIcon from './icons/UserAssignment';
 import CloseCircleIcon from './icons/CloseCircle';
 import ListAltIcon from './icons/ListAlt';
 import MinusIcon from './icons/Minus';
+import FolderOpenedIcon from './icons/FolderOpened';
 
 const icons = {
   title: "Iconography/Icons",
@@ -888,6 +889,11 @@ const MinusIconStory = args => (
 );
 MinusIconStory.storyName = 'Minus';
 
+const FolderOpenedIconStory = args => (
+  <FolderOpenedIcon {...args} />
+);
+FolderOpenedIconStory.storyName = 'Folder Opened';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -946,6 +952,7 @@ export {
   FileInvoiceDollarIconStory,
   FilterIconStory,
   FolderIconStory,
+  FolderOpenedIconStory,
   FontDownloadIconStory,
   FormatAlignLeftIconStory,
   FormatBoldIconStory,
