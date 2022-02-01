@@ -139,6 +139,7 @@ import CodeBranchIcon from './icons/CodeBranch';
 import UserAssignmentIcon from './icons/UserAssignment';
 import CloseCircleIcon from './icons/CloseCircle';
 import ListAltIcon from './icons/ListAlt';
+import MinusIcon from './icons/Minus';
 
 const icons = {
   title: "Iconography/Icons",
@@ -882,6 +883,11 @@ const ListAltIconStory = args => (
 );
 ListAltIconStory.storyName = 'List Alt';
 
+const MinusIconStory = args => (
+  <MinusIcon {...args} />
+);
+MinusIconStory.storyName = 'Minus';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -976,6 +982,7 @@ export {
   MenuUnfoldIconStory,
   MergeIconStory,
   MicrophoneIconStory,
+  MinusIconStory,
   MoreVerticalIconStory,
   NetworkWiredIconStory,
   NotificationsIconStory,
