@@ -55,10 +55,50 @@ const PaulSpringStory = args => (
 );
 PaulSpringStory.storyName = 'Spring';
 
+const PaulSummerStory = args => (
+  <LogoFlatchr
+    {...args}
+    onlyPaul
+    event="summer"
+  />
+);
+PaulSummerStory.storyName = 'Summer';
+
+const PaulFrenchFlagStory = args => (
+  <LogoFlatchr
+    {...args}
+    onlyPaul
+    event="frenchNationalDay"
+  />
+);
+PaulFrenchFlagStory.storyName = 'French Flag';
+
+const PaulMusicStory = args => (
+  <LogoFlatchr
+    {...args}
+    onlyPaul
+    event="frenchMusicDay"
+  />
+);
+PaulMusicStory.storyName = 'Music';
+
+const PaulHalloweenStory = args => (
+  <LogoFlatchr
+    {...args}
+    onlyPaul
+    event="halloween"
+  />
+);
+PaulHalloweenStory.storyName = 'Halloween';
+
 export {
   PaulPrideMonthStory,
   PaulSaintPatrickStory,
   PaulSaintValentineStory,
   PaulEasterEggStory,
   PaulSpringStory,
+  PaulSummerStory,
+  PaulFrenchFlagStory,
+  PaulMusicStory,
+  PaulHalloweenStory,
 };
