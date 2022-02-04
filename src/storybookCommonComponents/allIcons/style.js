@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding-right: 0;
-  max-width: 650px;
+  max-width: 80%;
   > p {
     color: ${p => p.theme.colors.textPrimary};
     font-size: ${p => p.theme.typography.sizes.regular};
