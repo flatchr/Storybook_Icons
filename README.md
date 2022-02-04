@@ -89,7 +89,7 @@ or
 yarn add @flatchr/icons
 ```
 
-🎉 __Enjoy your new icons!__ 🎉🎉
+🎉 __Enjoy your new icons!__ 🎉
 
 ## LINK
 
