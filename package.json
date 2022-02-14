@@ -9,6 +9,7 @@
   },
   "repository": "git://gitlab.com/flatchr/shared/icons",
   "version": "1.21.0",
+  "type": "module",
   "description": "All the Flatchr™'s icons 🐙",
   "author": "Benjamin Relat <benjamin@flatchr.io>",
   "license": "MIT",
