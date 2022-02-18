@@ -26,7 +26,12 @@ jobs:
         cache: 'npm'
     - run : git config --global user.name "Alexis Colonna"
     - run : git config --global user.email "alexis.c@flatchr.io"
-    - run: npm install
+    # - run: npm config set @flatchr:registry https://gitlab.com/api/v4/projects/27159206/packages/npm/
+    # - run: npm config set -- "//gitlab.com/api/v4/projects/27159206/packages/npm/:_authToken=3Hn1Zs5yA8SeYEmjJyo1"
+    # - run: npm config set @flatchr:registry https://gitlab.com/api/v4/projects/32444154/packages/npm/
+    # - run: npm config set -- "//gitlab.com/api/v4/projects/32444154/packages/npm/:_authToken=glpat-GzA7zW-iwKH5wLHHhsir"
+    # - run: npm config set @flatchr:registry https://gitlab.com/api/v4/projects/30455429/packages/npm/
+    # - run: npm config set -- "//gitlab.com/api/v4/projects/30455429/packages/npm/:_authToken=utMhyAKFkJdBKxXGonJe"
     - run: npm i @storybook/storybook-deployer --save-dev
     - run: npx -p @storybook/storybook-deployer storybook-to-ghpages
       env:

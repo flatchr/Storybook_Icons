@@ -7,6 +7,7 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "../customAddons/download-svg/register.js"
   ],
   webpackFinal: async (config) => {
     config.resolve.alias = {
