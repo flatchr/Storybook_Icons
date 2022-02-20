@@ -1,5 +1,3 @@
-import { theme } from '@flatchr/system-design'
-
 const logoStoryData = {
   parameters: {
     options: { showPanel: true },
@@ -71,7 +69,17 @@ const logoStoryData = {
       control: {
         type: "select",
       },
-      options: ['prideMonth', 'saintPatrick', 'saintValentine'],
+      options: [
+        'prideMonth',
+        'saintPatrick',
+        'saintValentine',
+        'easter',
+        'spring',
+        'summer',
+        'frenchMusicDay',
+        'frenchNationalDay',
+        'halloween',
+      ],
       table: {
         defaultValue: {
           summary: null,

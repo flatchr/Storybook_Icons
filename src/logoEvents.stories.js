@@ -71,7 +71,7 @@ const PaulFrenchFlagStory = args => (
     event="frenchNationalDay"
   />
 );
-PaulFrenchFlagStory.storyName = 'French Flag';
+PaulFrenchFlagStory.storyName = 'French National Day';
 
 const PaulMusicStory = args => (
   <LogoFlatchr
@@ -80,7 +80,7 @@ const PaulMusicStory = args => (
     event="frenchMusicDay"
   />
 );
-PaulMusicStory.storyName = 'Music';
+PaulMusicStory.storyName = 'French Music Day';
 
 const PaulHalloweenStory = args => (
   <LogoFlatchr
