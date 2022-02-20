@@ -7,11 +7,12 @@ import { useStorybookState } from '@storybook/api';
 import { Icons, IconButton } from '@storybook/components';
 
 const DownloadButton = ({ active }) => {
-  const { storyId } = useStorybookState();
+  const { storyId, viewMode: viewModeState } = useStorybookState();
   const downloadURI = (uri) => {
     const link = document.createElement('a');
-    const name = storyId.replace('-story', '').replace('iconography-icons--', '');
-    console.log('name', name);
+    const name = storyId.replace('-story', '')
+      .replace('iconography-icons--', '')
+      .replace('iconography-career--', '');
     link.download = `${camelCase(name, { pascalCase: true })}.svg`;
     link.href = uri;
     document.body.appendChild(link);
@@ -44,15 +45,18 @@ const DownloadButton = ({ active }) => {
     return;
   };
 
-  return (
-    <IconButton
-      active={active}
-      title="Download as SVG"
-      onClick={onDownload}
-    >
-      <Icons icon="download" />
-    </IconButton>
-  );
+  if (storyId !== 'iconography-all--default' && viewModeState === 'story') {
+    return (
+      <IconButton
+        active={active}
+        title="Download as SVG"
+        onClick={onDownload}
+      >
+        <Icons icon="download" />
+      </IconButton>
+    );
+  }
+  return null;
 };
 
 addons.register("flatch/downloadSvg", () => {
@@ -62,7 +66,6 @@ addons.register("flatch/downloadSvg", () => {
     type: types.TOOL,
     //👇 Shows the Toolbar UI element if either the Canvas or Docs tab is active
     match: ({ viewMode }) => {
-      console.log('viewMode', viewMode)
       return !!(viewMode && viewMode.match(/^(story|docs)$/))
     },
     render: ({ active }) => (
