@@ -165,3 +165,4 @@ export { default as CloseCircleIcon } from './icons/CloseCircle';
 export { default as ListAltIcon } from './icons/ListAlt';
 export { default as MinusIcon } from './icons/Minus';
 export { default as FolderOpenedIcon } from './icons/FolderOpened';
+export { default as HandsHelpingIcon } from './icons/HandsHelping';
