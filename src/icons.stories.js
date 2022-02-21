@@ -141,6 +141,7 @@ import CloseCircleIcon from './icons/CloseCircle';
 import ListAltIcon from './icons/ListAlt';
 import MinusIcon from './icons/Minus';
 import FolderOpenedIcon from './icons/FolderOpened';
+import HandsHelpingIcon from './icons/HandsHelping';
 
 const icons = {
   title: "Iconography/Icons",
@@ -894,6 +895,11 @@ const FolderOpenedIconStory = args => (
 );
 FolderOpenedIconStory.storyName = 'Folder Opened';
 
+const HandsHelpingIconStory = args => (
+  <HandsHelpingIcon {...args} />
+);
+HandsHelpingIconStory.storyName = 'Hands Helping';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -968,6 +974,7 @@ export {
   GoogleHangoutsIconStory,
   GraduateIconStory,
   GridIconStory,
+  HandsHelpingIconStory,
   HeartIconStory,
   HistoryIconStory,
   ImageEditIconStory,
