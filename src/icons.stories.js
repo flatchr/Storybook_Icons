@@ -142,6 +142,7 @@ import ListAltIcon from './icons/ListAlt';
 import MinusIcon from './icons/Minus';
 import FolderOpenedIcon from './icons/FolderOpened';
 import HandsHelpingIcon from './icons/HandsHelping';
+import MobileIcon from "./icons/Mobile";
 
 const icons = {
   title: "Iconography/Icons",
@@ -900,6 +901,11 @@ const HandsHelpingIconStory = args => (
 );
 HandsHelpingIconStory.storyName = 'Hands Helping';
 
+const MobileIconStory = args => (
+  <MobileIcon {...args} />
+);
+MobileIconStory.storyName = 'Mobile';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -997,6 +1003,7 @@ export {
   MergeIconStory,
   MicrophoneIconStory,
   MinusIconStory,
+  MobileIconStory,
   MoreVerticalIconStory,
   NetworkWiredIconStory,
   NotificationsIconStory,
