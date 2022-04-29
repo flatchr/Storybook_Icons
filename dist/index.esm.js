@@ -6408,4 +6408,56 @@ HandsHelpingIcon.propTypes = {
   with: PropTypes.number
 };
 
-export { AccountPinCircleFillIcon, AddCircleIcon, AddCircleOutlineIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, ArrowRepeatIcon, AttachFileIcon, BanIcon, BatteryThreeQuartersIcon, BinocularsIcon, BoltIcon, BookmarkAltIcon, BookmarkIcon, BriefCaseIcon, BuildingIcon, BullhornIcon, CalculatorIcon, CalendarCheckIcon, CalendarIcon, CallSplitIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, CheckSquareIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseCircleIcon, CloseIcon, CodeBranchIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, CompassIcon, ContentPasteIcon, ControlPointDuplicateIcon, CreditCardIcon, DonutIcon, DownloadIcon, DumbbellIcon, EditIcon, EnvelopeIcon, EnveloppeCheckIcon, ErrorIcon, EuroIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, EyedropperIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FolderOpenedIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HandHoldingHeartIcon, HandsHelpingIcon, HeartIcon, HistoryIcon, ImageEditIcon, ImageIcon, InfoCircleIcon, InstagramIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, ListAltIcon, LockIcon, LockOpenIcon, LogoFlatchr, MapMarkerIcon, MapSignsIcon, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, MicrophoneIcon, MinusIcon, MoreVerticalIcon, MoutainIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsIcon, OctopussDeployIcon, PaperPlaneIcon, PauseIcon, PenIcon, PeopleIcon, PhoneIcon, PlayCircleIcon, PlayIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, ReplyIcon, SaveIcon, SearchIcon, ShareIcon, ShieldAltIcon, ShieldCheckmarkIcon, ShoppingCartIcon, SignInIcon, SkypeIcon, SmileGrinHeartsIcon, SmileIcon, SmileWinkIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StopIcon, StoreAltIcon, StreetViewIcon, TableAltIcon, TachometerAltIcon, TagsIcon, ThumbsUpIcon, ToolsIcon, TrashBinIcon, TrashIcon, TrophyIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UserAssignmentIcon, UserClockIcon, UserIcon, UserLockIcon, UserPlusIcon, VectorSquareIcon, YoutubeIcon };
+var MobileIcon = function MobileIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+
+  var dimensions = function dimensions() {
+    var width = 10 * 16 / 14;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 14 / 10;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 10 * heightProp / 14;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  };
+
+  return /*#__PURE__*/React.createElement(Svg, {
+    width: dimensions().width,
+    height: dimensions().height,
+    viewBox: "0 0 10 14",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React.createElement(Path, {
+    d: "M7.33329 0.583333H2.66663C1.69829 0.583333 0.916626 1.365 0.916626 2.33333V11.6667C0.916626 12.635 1.69829 13.4167 2.66663 13.4167H7.33329C8.30163 13.4167 9.08329 12.635 9.08329 11.6667V2.33333C9.08329 1.365 8.30163 0.583333 7.33329 0.583333ZM6.16663 12.25H3.83329V11.6667H6.16663V12.25ZM8.06246 10.5H1.93746V2.33333H8.06246V10.5Z",
+    fill: color
+  }));
+};
+
+MobileIcon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  height: PropTypes.number,
+  with: PropTypes.number
+};
+
+export { AccountPinCircleFillIcon, AddCircleIcon, AddCircleOutlineIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, ArrowRepeatIcon, AttachFileIcon, BanIcon, BatteryThreeQuartersIcon, BinocularsIcon, BoltIcon, BookmarkAltIcon, BookmarkIcon, BriefCaseIcon, BuildingIcon, BullhornIcon, CalculatorIcon, CalendarCheckIcon, CalendarIcon, CallSplitIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, CheckSquareIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseCircleIcon, CloseIcon, CodeBranchIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, CompassIcon, ContentPasteIcon, ControlPointDuplicateIcon, CreditCardIcon, DonutIcon, DownloadIcon, DumbbellIcon, EditIcon, EnvelopeIcon, EnveloppeCheckIcon, ErrorIcon, EuroIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, EyedropperIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FolderOpenedIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HandHoldingHeartIcon, HandsHelpingIcon, HeartIcon, HistoryIcon, ImageEditIcon, ImageIcon, InfoCircleIcon, InstagramIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, ListAltIcon, LockIcon, LockOpenIcon, LogoFlatchr, MapMarkerIcon, MapSignsIcon, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, MicrophoneIcon, MinusIcon, MobileIcon, MoreVerticalIcon, MoutainIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsIcon, OctopussDeployIcon, PaperPlaneIcon, PauseIcon, PenIcon, PeopleIcon, PhoneIcon, PlayCircleIcon, PlayIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, ReplyIcon, SaveIcon, SearchIcon, ShareIcon, ShieldAltIcon, ShieldCheckmarkIcon, ShoppingCartIcon, SignInIcon, SkypeIcon, SmileGrinHeartsIcon, SmileIcon, SmileWinkIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StopIcon, StoreAltIcon, StreetViewIcon, TableAltIcon, TachometerAltIcon, TagsIcon, ThumbsUpIcon, ToolsIcon, TrashBinIcon, TrashIcon, TrophyIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UserAssignmentIcon, UserClockIcon, UserIcon, UserLockIcon, UserPlusIcon, VectorSquareIcon, YoutubeIcon };
