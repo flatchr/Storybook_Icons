@@ -143,6 +143,7 @@ import MinusIcon from './icons/Minus';
 import FolderOpenedIcon from './icons/FolderOpened';
 import HandsHelpingIcon from './icons/HandsHelping';
 import MobileIcon from "./icons/Mobile";
+import SignatureIcon from "./icons/Signature";
 
 const icons = {
   title: "Iconography/Icons",
@@ -906,6 +907,11 @@ const MobileIconStory = args => (
 );
 MobileIconStory.storyName = 'Mobile';
 
+const SignatureIconStory = args => (
+  <SignatureIcon {...args} />
+);
+SignatureIconStory.storyName = 'Signature';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -1026,6 +1032,7 @@ export {
   SearchIconStory,
   ShareIconStory,
   ShieldAltIconStory,
+  SignatureIconStory,
   SignInIconStory,
   SkypeIconStory,
   SourceTreeIconStory,
