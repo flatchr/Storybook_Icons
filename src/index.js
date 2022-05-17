@@ -167,3 +167,4 @@ export { default as MinusIcon } from './icons/Minus';
 export { default as FolderOpenedIcon } from './icons/FolderOpened';
 export { default as HandsHelpingIcon } from './icons/HandsHelping';
 export { default as MobileIcon } from './icons/Mobile';
+export { default as SignatureIcon } from './icons/Signature';
