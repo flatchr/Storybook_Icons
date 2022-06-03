@@ -6463,43 +6463,17 @@ var SignatureIcon = function SignatureIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
       _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
+      width = _ref$width === void 0 ? null : _ref$width,
       _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
-  var dimensions = function dimensions() {
-    var width = 640 * 16 / 512;
-    var height = 16;
-
-    if (widthProp && heightProp) {
-      height = heightProp;
-      width = widthProp;
-    }
-
-    if (widthProp && !heightProp) {
-      height = widthProp * 512 / 640;
-      width = widthProp;
-    }
-
-    if (!widthProp && heightProp) {
-      width = 640 * heightProp / 512;
-      height = heightProp;
-    }
-
-    return {
-      height: height,
-      width: width
-    };
-  };
-
+      height = _ref$height === void 0 ? null : _ref$height;
   return /*#__PURE__*/React.createElement(Svg, {
-    width: dimensions().width,
-    height: dimensions().height,
-    viewBox: "0 0 640 512",
+    width: width || height || 48,
+    height: height || width || 48,
+    viewBox: "0 0 48 48",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
   }, /*#__PURE__*/React.createElement(Path, {
-    d: "M623.2 192c-51.8 3.5-125.7 54.7-163.1 71.5-29.1 13.1-54.2 24.4-76.1 24.4-22.6 0-26-16.2-21.3-51.9 1.1-8 11.7-79.2-42.7-76.1-25.1 1.5-64.3 24.8-169.5 126L192 182.2c30.4-75.9-53.2-151.5-129.7-102.8L7.4 116.3C0 121-2.2 130.9 2.5 138.4l17.2 27c4.7 7.5 14.6 9.7 22.1 4.9l58-38.9c18.4-11.7 40.7 7.2 32.7 27.1L34.3 404.1C27.5 421 37 448 64 448c8.3 0 16.5-3.2 22.6-9.4 42.2-42.2 154.7-150.7 211.2-195.8-2.2 28.5-2.1 58.9 20.6 83.8 15.3 16.8 37.3 25.3 65.5 25.3 35.6 0 68-14.6 102.3-30 33-14.8 99-62.6 138.4-65.8 8.5-.7 15.2-7.3 15.2-15.8v-32.1c.2-9.1-7.5-16.8-16.6-16.2z",
+    d: "M28 42Q27.4 42 26.95 41.55Q26.5 41.1 26.5 40.5Q26.5 39.85 26.95 39.425Q27.4 39 28 39Q30.95 39 32.975 37.8Q35 36.6 35 35Q35 33.85 33.525 32.75Q32.05 31.65 29.55 31.05L31.9 28.7Q35.05 29.65 36.525 31.325Q38 33 38 35Q38 38.35 34.95 40.175Q31.9 42 28 42ZM12 27.3Q8.8 26.6 7.4 25.1Q6 23.6 6 22Q6 20.25 7.3 18.85Q8.6 17.45 13.3 15.75Q16.6 14.55 17.55 13.8Q18.5 13.05 18.5 12.05Q18.5 10.8 17.4 9.9Q16.3 9 14 9Q12.65 9 11.7 9.35Q10.75 9.7 10 10.45Q9.6 10.85 8.975 10.925Q8.35 11 7.85 10.6Q7.3 10.2 7.275 9.6Q7.25 9 7.65 8.55Q8.5 7.45 10.2 6.725Q11.9 6 14 6Q17.4 6 19.45 7.625Q21.5 9.25 21.5 12.05Q21.5 14.1 20.075 15.525Q18.65 16.95 14.5 18.5Q11.15 19.75 10.075 20.475Q9 21.2 9 22Q9 22.8 10.35 23.525Q11.7 24.25 14.4 24.9ZM36.8 19.6 30.4 13.2 32.65 10.95Q33.55 10.05 34.65 10.05Q35.75 10.05 36.65 10.95L39.05 13.35Q39.95 14.25 39.95 15.35Q39.95 16.45 39.05 17.35ZM11 39H13.1L30.35 21.75L28.25 19.65L11 36.9ZM8 42V35.6L28.25 15.35L34.65 21.75L14.4 42ZM28.25 19.65 30.35 21.75Z",
     fill: color
   }));
 };
