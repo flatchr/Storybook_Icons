@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var React$1 = require('react');
+var React = require('react');
 var Svg = require('react-native-svg');
 var PropTypes = require('prop-types');
 var systemDesign = require('@flatchr/system-design');
@@ -10,45 +10,45 @@ var helper = require('@flatchr/helper');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var React__default = /*#__PURE__*/_interopDefaultLegacy(React$1);
+var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 var Svg__default = /*#__PURE__*/_interopDefaultLegacy(Svg);
 var PropTypes__default = /*#__PURE__*/_interopDefaultLegacy(PropTypes);
 
 var PinkOctoberVariant = function PinkOctoberVariant() {
-  return /*#__PURE__*/React.createElement(Svg.G, {
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, {
     translate: "37, 23"
-  }, /*#__PURE__*/React.createElement(Svg.Path, {
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12.4215 5.87906C13.7856 5.87906 15.0893 6.09635 16.3085 6.49471L19.085 1.14705C17.0207 0.398617 14.7634 -0.0118125 12.4095 0.000258921C10.0555 0.000258921 7.81022 0.42276 5.746 1.17119L8.53452 6.50678C9.75374 6.10842 11.0575 5.87906 12.4215 5.87906Z",
     fill: "#CC296B"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M8.53453 6.51881L5.74601 1.18323C5.73394 1.18323 5.73394 1.18323 5.73394 1.18323L2.20908 7.26725C1.62965 8.25711 1.60551 9.44011 2.13665 10.4541L2.47465 11.106L8.23274 22.091L12.4457 13.9669L8.53453 6.51881Z",
     fill: "#FF5396"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M25 37.9529L16.6827 22.0789L12.4819 30.203L16.5379 37.9529H25Z",
     fill: "#FF5396"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M8.46209 37.9529L12.4819 30.2031L16.6948 22.079L22.4046 11.0698L22.7426 10.4179C23.2738 9.40393 23.2376 8.22092 22.6581 7.23106L19.1091 1.15912C19.1091 1.15912 19.1091 1.15912 19.0971 1.15912L16.3206 6.50678L12.4457 13.979L8.23275 22.1031L0 37.9529H8.46209Z",
     fill: "#FF5396"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12.4457 13.9669L8.23273 22.091L7.13422 20.0147L11.3472 11.8906L12.4457 13.9669Z",
     fill: "#CC296B"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M18.0227 24.6139L13.8097 32.738L12.4698 30.203L16.6828 22.0789L18.0227 24.6139Z",
     fill: "#CC296B"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M12.4457 13.9669L8.23273 22.091L7.13422 20.0147L11.3472 11.8906L12.4457 13.9669Z",
     fill: "#CC296B"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M18.0227 24.6139L13.8097 32.738L12.4698 30.203L16.6828 22.0789L18.0227 24.6139Z",
     fill: "#CC296B"
   }));
 };
 
 var HalloweenVariant = function HalloweenVariant() {
-  return /*#__PURE__*/React.createElement(Svg.G, {
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, {
     scale: 0.1,
     translate: "11.5, -2"
-  }, /*#__PURE__*/React.createElement(Svg.Path, {
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#000",
     d: "m237.512 229.211-91.756-38.709 37.698 76.722 54.07-38.013h-.012zM274.474 229.211l91.756-38.709-37.698 76.722-54.07-38.013h.012zM120.211 278.188l45.345 15.552 1.024 22.42 15.866 4.751 7.005-22.734 35.882 11.005.054 28.606 36.115.778 1.024-26.38h6.664l1.024 20.372 28.414-4.37-.765-17.6 31.882-5.899 2.567 20.782 14.883-3.277 1.543-21.874 54.153-19.416-49.018 61.512-34.886 9.845-4.751-15.334-9.448 4.888-2.417 13.34s-36.743 4.765-50.602 4.765-35.924-3.824-35.924-3.824l-1.543-16.399-20.208-1.516-5.325 12.726-25.219-9.531-43.324-63.15-.015-.038z"
   }));
@@ -73,61 +73,61 @@ function _extends() {
 
 var SpringVariant = function SpringVariant(_ref) {
   var stylePathDropShadow = _ref.stylePathDropShadow;
-  return /*#__PURE__*/React.createElement(Svg.G, _extends({
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, _extends({
     rotation: 18,
     scale: 0.07,
     translate: "40,20"
-  }, stylePathDropShadow), /*#__PURE__*/React.createElement(Svg.Path, {
+  }, stylePathDropShadow), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#ffdb2d",
     d: "M445.707 264.589c-5.99-3.459-14.401-6.323-25.167-8.589 10.767-2.267 19.176-5.13 25.167-8.589 20.22-11.675 34.685-30.525 40.729-53.079s2.941-46.111-8.733-66.331c-11.674-20.22-30.525-34.685-53.078-40.729-22.554-6.042-46.11-2.942-66.331 8.733-5.99 3.459-12.675 9.311-20.023 17.502 3.418-10.459 5.144-19.174 5.144-26.091C343.414 39.214 304.2 0 256 0s-87.415 39.214-87.415 87.415c0 6.917 1.726 15.632 5.145 26.091-7.347-8.191-14.033-14.043-20.023-17.502C111.966 71.905 58.399 86.256 34.297 128c-11.675 20.22-14.777 43.779-8.733 66.331s20.507 41.405 40.729 53.079c5.99 3.459 14.401 6.323 25.167 8.589-10.767 2.267-19.176 5.13-25.167 8.589-20.22 11.675-34.685 30.525-40.729 53.079S22.624 363.78 34.297 384s30.525 34.685 53.078 40.729a87.944 87.944 0 0 0 22.768 3.016c15.146 0 30.096-3.972 43.565-11.749 5.99-3.459 12.675-9.311 20.023-17.502-3.42 10.459-5.146 19.174-5.146 26.091 0 48.2 39.214 87.415 87.415 87.415s87.415-39.214 87.415-87.415c0-6.917-1.726-15.632-5.145-26.091 7.347 8.191 14.033 14.043 20.023 17.502 13.733 7.928 28.738 11.694 43.56 11.694 30.232 0 59.678-15.68 75.85-43.69 11.675-20.22 14.777-43.779 8.733-66.331-6.046-22.553-20.509-41.405-40.729-53.08z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#ffdb2d",
     d: "M445.707 264.589c-5.99-3.459-14.401-6.323-25.167-8.589 10.767-2.267 19.176-5.13 25.167-8.589 20.22-11.675 34.685-30.525 40.729-53.079s2.941-46.111-8.733-66.331c-11.674-20.22-30.525-34.685-53.078-40.729-22.554-6.042-46.11-2.942-66.331 8.733-5.99 3.459-12.675 9.311-20.023 17.502 3.418-10.459 5.144-19.174 5.144-26.091C343.414 39.214 304.2 0 256 0v512c48.2 0 87.415-39.214 87.415-87.415 0-6.917-1.726-15.632-5.145-26.091 7.347 8.191 14.033 14.043 20.023 17.502 13.733 7.928 28.738 11.694 43.56 11.694 30.232 0 59.678-15.68 75.85-43.69 11.675-20.22 14.777-43.779 8.733-66.331-6.046-22.553-20.509-41.405-40.729-53.08z"
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#bf256b",
     cx: 256,
     cy: 137.366,
     r: 18.732
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#bf256b",
     cx: 153.262,
     cy: 196.683,
     r: 18.732
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#bf256b",
     cx: 153.262,
     cy: 315.317,
     r: 18.732
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#bf256b",
     cx: 256,
     cy: 374.634,
     r: 18.732
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#bf256b",
     cx: 358.737,
     cy: 315.317,
     r: 18.732
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#bf256b",
     cx: 358.737,
     cy: 196.683,
     r: 18.732
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#bf256b",
     cx: 256,
     cy: 256,
     r: 62.439
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#bf256b",
     d: "M256 193.561c34.484 0 62.439 27.955 62.439 62.439S290.483 318.439 256 318.439"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#ffae33",
     d: "M256 337.171c-44.758 0-81.171-36.413-81.171-81.171s36.413-81.171 81.171-81.171 81.17 36.413 81.17 81.171-36.413 81.171-81.17 81.171zm0-124.878c-24.1 0-43.707 19.607-43.707 43.707S231.9 299.707 256 299.707 299.707 280.1 299.707 256 280.1 212.293 256 212.293z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#ffae33",
     d: "M256 174.829v37.463c24.1 0 43.707 19.607 43.707 43.707S280.1 299.707 256 299.707v37.463c44.758 0 81.171-36.413 81.171-81.171s-36.414-81.17-81.171-81.17z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#f90",
     d: "M256 174.829v37.463c24.1 0 43.707 19.607 43.707 43.707S280.1 299.707 256 299.707v37.463c44.758 0 81.171-36.413 81.171-81.171s-36.414-81.17-81.171-81.17z"
   }));
@@ -135,36 +135,36 @@ var SpringVariant = function SpringVariant(_ref) {
 
 var EasterVariant = function EasterVariant(_ref) {
   var stylePathDropShadow = _ref.stylePathDropShadow;
-  return /*#__PURE__*/React.createElement(Svg.G, _extends({
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, _extends({
     rotation: 18,
     scale: 0.085,
     translate: "45,20"
-  }, stylePathDropShadow), /*#__PURE__*/React.createElement(Svg.Path, {
+  }, stylePathDropShadow), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#FFDF96",
     d: "M381.23,384.488H130.772l-24.461,38.458C141.007,484.581,199.434,512,256.001,512   s114.994-27.419,149.69-89.054L381.23,384.488z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#FFDF96",
     d: "M256.001,0c-44.497,0-90.643,32.714-125.229,85.875l16.18,32.339h220.532l13.745-32.338   C346.643,32.714,300.497,0,256.001,0z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#b7d5ac",
     d: "M417.926,163.456l-50.442-45.242H146.953l-52.877,45.242c-12.12,36.912-19.236,78.278-19.236,122.187  c0,29.986,3.282,56.694,9.196,80.303l77.618,29.831h191.127l75.183-29.831c5.914-23.607,9.196-50.316,9.196-80.303  C437.162,241.734,430.046,200.368,417.926,163.456z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#FF7B78",
     d: "M333.02,108.08c-4.351,4.372-8.907,5.29-11.962,5.29c-3.056,0-7.612-0.918-11.963-5.29   c-14.368-14.435-33.223-22.386-53.096-22.386c-19.872,0-38.728,7.951-53.095,22.386c-4.351,4.372-8.906,5.29-11.962,5.29   c-3.056,0-7.611-0.918-11.962-5.289c-13.183-13.247-30.15-21.012-48.209-22.205c-14.641,22.504-27.205,48.672-36.697,77.581   c7.215-3.646,13.919-8.479,19.849-14.437c4.353-4.372,8.907-5.29,11.962-5.29c3.055,0,7.611,0.918,11.962,5.292   c14.367,14.435,33.223,22.385,53.095,22.385s38.728-7.949,53.096-22.386c4.351-4.372,8.906-5.29,11.961-5.29   s7.611,0.918,11.962,5.292c14.368,14.435,33.224,22.385,53.096,22.385c19.871,0,38.727-7.949,53.095-22.385   c4.351-4.373,8.907-5.29,11.963-5.29c3.055,0,7.609,0.918,11.961,5.292c5.93,5.958,12.634,10.791,19.849,14.437   c-9.492-28.909-22.056-55.076-36.697-77.581C363.171,87.068,346.203,94.834,333.02,108.08z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#FF7B78",
     d: "M386.116,352.921L386.116,352.921c-19.872,0-38.729,7.951-53.095,22.385   c-4.353,4.372-8.908,5.29-11.963,5.29c-3.056,0-7.612-0.918-11.963-5.29c-14.368-14.436-33.223-22.385-53.096-22.385   c-19.872,0-38.728,7.949-53.095,22.385c-4.351,4.372-8.907,5.29-11.962,5.29c-3.055,0-7.611-0.918-11.962-5.29   c-14.367-14.435-33.223-22.385-53.095-22.385c-0.001,0,0,0,0,0c-15.033,0-29.482,4.558-41.849,13.024   c5.396,21.54,12.983,40.498,22.275,57.002c2.65-2.052,5.2-4.277,7.613-6.701c4.353-4.373,8.907-5.29,11.962-5.29   c3.055,0,7.611,0.917,11.963,5.29c14.367,14.435,33.223,22.385,53.095,22.385s38.728-7.951,53.096-22.385   c4.351-4.373,8.906-5.29,11.961-5.29c3.055,0,7.611,0.917,11.963,5.29c14.367,14.435,33.223,22.385,53.095,22.385   c19.871,0,38.727-7.951,53.095-22.385c4.351-4.373,8.907-5.29,11.963-5.29c3.055,0,7.609,0.917,11.962,5.29   c2.413,2.425,4.963,4.65,7.613,6.701c9.29-16.504,16.877-35.461,22.273-57.001C415.599,357.478,401.151,352.921,386.116,352.921z"
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#FFDF96",
     cx: "143.739",
     cy: "263.659",
     r: "32.318"
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#FFFFFF",
     cx: "256",
     cy: "263.659",
     r: "32.318"
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#FFDF96",
     cx: "368.272",
     cy: "263.659",
@@ -174,71 +174,71 @@ var EasterVariant = function EasterVariant(_ref) {
 
 var FrenchMusicDayVariant = function FrenchMusicDayVariant(_ref) {
   var stylePathDropShadow = _ref.stylePathDropShadow;
-  return /*#__PURE__*/React.createElement(Svg.G, _extends({
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, _extends({
     rotation: 20,
     scale: 0.22,
     translate: "40,8"
-  }, stylePathDropShadow), /*#__PURE__*/React.createElement(Svg.Path, {
+  }, stylePathDropShadow), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#fd912c",
     d: "M196.58 211.812c-7.042-12.521-13.424-15.875-7.949-48.67 6.466-38.744-36.429-38.761-43.142-38.763-6.714-.003-49.609-.019-44.631 38.73 4.203 32.717.358 36.44-6.53 48.665-9.756 17.164-25.866 76.682 49.872 79.079v.03c.416 0 .814-.011 1.226-.015.411.004.81.016 1.226.016v-.03c75.74-2.341 59.67-61.871 49.928-79.042z"
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#d12200",
     cx: 145.467,
     cy: 184.456,
     r: 24.076
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#8e3300",
     cx: 145.467,
     cy: 184.455,
     r: 18.33
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     transform: "rotate(-180 145.442 235.55)",
     fill: "#8e3300",
     d: "M120.361 231.039h50.162v9.022h-50.162z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#8e3300",
     d: "M137.343 36.156h16.303v146.901h-16.303z"
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#8e3300",
     cx: 130.885,
     cy: 8.949,
     r: 2.904
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#8e3300",
     cx: 130.885,
     cy: 19.604,
     r: 2.904
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#8e3300",
     cx: 130.885,
     cy: 30.258,
     r: 2.904
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#8e3300",
     cx: 159.943,
     cy: 8.949,
     r: 2.904
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#8e3300",
     cx: 159.943,
     cy: 19.604,
     r: 2.904
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#8e3300",
     cx: 159.943,
     cy: 30.258,
     r: 2.904
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#8e3300",
     d: "M145.523 0c-6.448-.002-11.724.405-11.727 6.852l-.008 25.98c-.003 6.447 5.271 14.606 11.719 14.609 6.447.002 11.724-8.153 11.726-14.601l.009-25.98C157.244.414 151.971.003 145.523 0zm-3.405 33.438a2.562 2.562 0 0 1-2.555 2.555 2.562 2.562 0 0 1-2.554-2.555V8.356a2.562 2.562 0 0 1 2.554-2.554 2.562 2.562 0 0 1 2.555 2.554v25.082zm11.903 0a2.562 2.562 0 0 1-2.555 2.555 2.562 2.562 0 0 1-2.554-2.555V8.356a2.562 2.562 0 0 1 2.554-2.554 2.562 2.562 0 0 1 2.555 2.554v25.082z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     style: {
       stroke: "#e2dab3",
       strokeWidth: 0.5391,
       strokeMiterlimit: 10
     },
     d: "M138.969 35.273v198.122M143.284 35.273v198.122M147.6 35.273v198.122M151.915 35.273v198.122"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     transform: "rotate(-180 145.442 233.393)",
     fill: "#8e3300",
     d: "M127.98 230.252h34.924v6.281H127.98z"
@@ -247,23 +247,23 @@ var FrenchMusicDayVariant = function FrenchMusicDayVariant(_ref) {
 
 var SummerVariant = function SummerVariant(_ref) {
   var stylePathDropShadow = _ref.stylePathDropShadow;
-  return /*#__PURE__*/React.createElement(Svg.G, _extends({
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, _extends({
     rotation: 18,
     scale: 0.26,
     translate: "42,20"
-  }, stylePathDropShadow), /*#__PURE__*/React.createElement(Svg.Path, {
+  }, stylePathDropShadow), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#fcdd66",
     d: "M42.307 77.142 16.268 91.02l29.471 1.242-17.407 23.813 27.087-11.684-5.374 29.006 19.323-22.285 7.773 28.452 7.774-28.452 19.323 22.285-5.375-29.006 27.088 11.683-17.408-23.813 29.472-1.241-26.04-13.878 26.04-13.877-29.472-1.242 17.408-23.814-27.088 11.685 5.375-29.006-19.323 22.285-7.774-28.452-7.773 28.452-19.323-22.285 5.374 29.006L28.332 38.21l17.406 23.813-29.47 1.242z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#fcdd66",
     d: "m77.141 154.284-9.601-35.143-23.908 27.574 6.649-35.883-33.478 14.441 21.521-29.441-36.452-1.536 32.187-17.154L1.872 59.988l36.451-1.535-21.52-29.44 33.478 14.44-6.65-35.884L67.54 35.143 77.141 0l9.601 35.143 23.909-27.574-6.649 35.884 33.478-14.441-21.521 29.441 36.453 1.536-32.189 17.154 32.189 17.155-36.453 1.535 21.521 29.44-33.478-14.44 6.647 35.883-23.907-27.574-9.601 35.142zm-5.945-51.203 5.945 21.762 5.946-21.762 14.737 16.998-4.1-22.13 20.697 8.927-13.293-18.186 22.491-.948-19.893-10.601 19.893-10.601-22.491-.948 13.293-18.186-20.697 8.928 4.1-22.129-14.737 16.998-5.946-21.762-5.945 21.762-14.738-16.997 4.1 22.13-20.697-8.927 13.293 18.185-22.489.948 19.891 10.601-19.891 10.601 22.49.948-13.293 18.186 20.697-8.928-4.1 22.13 14.737-16.999z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#fbd009",
     d: "M48.271 77.142 25.447 88.927l25.667.746-15.423 20.532 23.447-10.478-5.007 25.188 16.567-19.619 6.443 24.856 6.443-24.856 16.569 19.619-5.008-25.189 23.445 10.478-15.422-20.531 25.668-.746-22.824-11.785 22.824-11.785-25.668-.746L118.59 44.08 95.144 54.558l5.007-25.188-16.567 19.618-6.443-24.856-6.443 24.856L54.13 29.37l5.008 25.189-23.447-10.478 15.423 20.531-25.667.746z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#fbd009",
     d: "m77.141 131.87-6.652-25.659-17.106 20.259 5.17-26.009-24.207 10.818L50.27 90.08l-26.503-.77 23.564-12.168-23.564-12.166 26.503-.771-15.924-21.198 24.207 10.818-5.17-26.009L70.49 48.074l6.652-25.659 6.651 25.659L100.9 27.815l-5.17 26.009 24.206-10.818-15.924 21.198 26.505.771-23.565 12.167 23.565 12.168-26.505.77 15.924 21.198L95.73 100.46l5.171 26.009-17.108-20.258-6.652 25.659zm-6.235-27.489 6.235 24.053 6.235-24.053 16.027 18.979-4.844-24.368 22.686 10.139-14.922-19.865 24.833-.721-22.084-11.403 22.084-11.403-24.833-.721 14.922-19.865-22.686 10.139 4.844-24.368-16.027 18.98-6.235-24.054-6.235 24.053-16.028-18.979 4.845 24.368-22.686-10.138 14.922 19.865-24.832.721L49.21 77.142 27.127 88.545l24.832.722-14.922 19.865 22.687-10.139-4.844 24.368 16.026-18.98z"
-  }), /*#__PURE__*/React.createElement(Svg.Circle, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Circle, {
     fill: "#fcdd66",
     cx: 77.141,
     cy: 77.142,
@@ -272,9 +272,9 @@ var SummerVariant = function SummerVariant(_ref) {
 };
 
 var MovemberVariant = function MovemberVariant() {
-  return /*#__PURE__*/React.createElement(Svg.G, {
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, {
     translate: "4 24"
-  }, /*#__PURE__*/React.createElement(Svg.Path, {
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M70 8.26097C70 8.26097 67.4041 20.2061 52.4751 19.8083C40.8483 19.5 36.4223 14.2385 34.99 10.6679C33.5578 14.2385 29.1319 19.5 17.505 19.8083C2.58596 20.2061 0 8.26097 0 8.26097C0 8.26097 4.63484 13.7611 11.0003 8.64886C14.3322 5.97338 16.1921 1.98504 20.4888 0.60254C23.9003 -0.501466 27.3316 0.314106 30.5044 1.73638C32.1753 2.48234 33.8463 3.56645 34.8011 5.16776C34.8707 5.27716 35.0298 5.27716 35.0895 5.16776C35.4078 4.63067 36.3129 3.77532 36.4919 3.61618C37.2975 2.89012 38.2424 2.3232 39.2171 1.86568C43.1458 0.00578126 48.0094 -1.06839 51.8088 1.60709C54.5737 3.55651 56.374 6.54031 58.9997 8.64886C65.3652 13.7611 70 8.26097 70 8.26097Z",
     fill: "#000"
   }));
@@ -282,17 +282,17 @@ var MovemberVariant = function MovemberVariant() {
 
 var FrenchNationalDayVariant = function FrenchNationalDayVariant(_ref) {
   var stylePathDropShadow = _ref.stylePathDropShadow;
-  return /*#__PURE__*/React.createElement(Svg.G, _extends({
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, _extends({
     rotation: 18,
     scale: 0.07,
     translate: "43,25"
-  }, stylePathDropShadow), /*#__PURE__*/React.createElement(Svg.Path, {
+  }, stylePathDropShadow), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#fff",
     d: "M160 80h176v336H160z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#3757A6",
     d: "M160 80H48C21.6 80 0 99.2 0 126.4v243.2C0 396.8 21.6 416 48 416h112V80z"
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     fill: "#f00020",
     d: "M448 80H336v336h112c26.4 0 48-19.2 48-46.4V126.4c0-27.2-21.6-46.4-48-46.4z"
   }));
@@ -300,10 +300,10 @@ var FrenchNationalDayVariant = function FrenchNationalDayVariant(_ref) {
 
 var SaintPatrickVariant = function SaintPatrickVariant(_ref) {
   var stylePathDropShadow = _ref.stylePathDropShadow;
-  return /*#__PURE__*/React.createElement(Svg.G, {
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, {
     scale: 0.047,
     translate: "36,23"
-  }, /*#__PURE__*/React.createElement(Svg.Path, _extends({}, stylePathDropShadow, {
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, _extends({}, stylePathDropShadow, {
     fill: "#00A651",
     d: "M138.6,164.2c1.4-42,51.5-67.9,88.5-69.7c24.1-1.2,46.8-6.3,64.7-24.4C306,55.7,324,48.4,343.4,44.8    c15.5-2.8,31.7-5.2,46.5,1.2c24.5,10.7,38,31.6,45.3,56.3c12.6,43.5,0,84-13.5,125.5c-2.1,6.6-18.1,45.9,3.9,39.9    c8.1-2.2,12.6-17.8,16.4-24.4c14.7-25.2,27.4-51.7,47.9-73.2c12.8-13.5,27.7-23.6,44.9-30.1c31.3-11.8,66.8-11,88.7,18.1    c15,19.9,25,40.8,24.9,66.1c-0.1,26,10.3,43.5,25.9,62.9c14.7,18.4,23.3,41.5,24.6,65c1.5,28.6-8.8,50.4-33.7,65.3    c-18.6,11.2-39.4,17-61.6,16.7c-26.9-0.3-52.4-7.6-77.8-15.3c-10.9-3.3-21.5-7.6-32.3-11.4c-4-1.4-9.5-3.6-11.5,1.3    c-3.3,7.9,32.6,18.6,38.4,21.2c16.6,7.1,33.2,14.6,48.9,23.6c16.5,9.4,31.6,21.1,42.5,36c9.2,12.6,15.7,27.9,18.8,43.9    c4.8,24.5-0.8,46.5-19.5,63.2c-20.3,18.1-43.8,30-72,32.2c-16.7,1.4-31.2,10.2-42.6,22.4c-16.9,18.2-35.5,33-60.4,38.2    c-15.7,3.3-31.7,7.7-47.1,0c-35.4-17.8-50.7-48.9-54.3-86.4c-3-30.7,3.1-60.8,9.7-90.7c2.4-10.8,5.6-21.5,8.3-32.2    c0.9-3.8,0.6-7.9-3.5-9.5c-2.8-1.1-3.9,0.1-5.8,1.8c-5.5,5.1-7.6,20.6-10.3,27.7c-3.8,9.8-7.8,19.6-12.2,29.2    c-8.7,19.2-18.6,37.8-29.7,55.7c-22.1,35.6-49.2,68.2-81.4,95.1C192.3,695,171.2,708.8,148,708c-8.9-0.3-18.2-3.1-24-9.9    c-5.8-6.8-6.5-18.2,0-24.2c3.3-3,7.8-4.3,12-5.6c13.9-4.3,27.4-9.8,40.4-16.5c71.6-36.6,117.5-103.4,143.3-177.7    c1.3-3.9,3.3-9.1-2.1-11.4c-4.8-2-6.8,2.6-9,6c-15.4,23.9-32.1,46.7-50.7,68.2c-24.2,28-53.5,46.3-91.3,48.1    c-18.6,0.9-37.3-0.6-50.5-15.4c-20.8-23.2-34.3-49.9-30-82.4c2.8-21.4-0.2-41.7-11.9-59.8c-22.4-34.7-34.3-77.2-10-114.6    c14.2-21.8,45.1-30.1,69.5-32.6c20.8-2.1,41.2,3,60.7,10c18.5,6.7,35.5,16.7,53.9,23.1c2.7,0.9,22.4,7.4,17.4-1.5    c-0.7-1.2-1.9-2.1-3-2.9c-19.2-13.8-40.9-24.1-60.7-37c-16.5-10.7-32.2-22.6-42.9-39.9c-7.3-11.8-13.3-24.8-16.9-38.3    C139.6,184.2,138.3,174.3,138.6,164.2z"
   })));
@@ -313,26 +313,26 @@ var HeartVariant = function HeartVariant(_ref) {
   var _ref$isSaintValentine = _ref.isSaintValentineEvent,
       isSaintValentineEvent = _ref$isSaintValentine === void 0 ? false : _ref$isSaintValentine,
       stylePathDropShadow = _ref.stylePathDropShadow;
-  return /*#__PURE__*/React.createElement(Svg.G, _extends({
+  return /*#__PURE__*/React__default["default"].createElement(Svg.G, _extends({
     rotation: 18,
     scale: 0.065,
     translate: "38,25"
-  }, stylePathDropShadow), /*#__PURE__*/React.createElement(Svg.Path, {
+  }, stylePathDropShadow), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M251.332 420.609C251.332 420.609 296.591 394.083 348.517 353.313H154.148C206.075 394.083 251.332 420.609 251.332 420.609",
     fill: isSaintValentineEvent ? '#F00020' : '#68329A'
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M154.148 353.313H348.517C374.869 332.624 402.936 308.268 427.68 281.845H74.9867C99.7307 308.268 127.797 332.624 154.148 353.313",
     fill: isSaintValentineEvent ? '#F00020' : '#385FB5'
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M74.9867 281.845H427.68C448.885 259.201 467.648 235.043 480.793 210.376H21.8729C35.0188 235.043 53.7813 259.201 74.9867 281.845",
     fill: isSaintValentineEvent ? '#F00020' : '#11AB51'
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M4.36506 162.664C7.34586 178.599 13.4599 194.592 21.8729 210.376H480.793C489.207 194.592 495.32 178.599 498.3 162.664C499.817 154.555 500.84 146.628 501.373 138.908H1.29266C1.82653 146.628 2.84839 154.555 4.36506 162.664Z",
     fill: isSaintValentineEvent ? '#F00020' : '#FEE314'
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M1.29265 138.908H501.373C503.224 112.167 499.141 87.936 488.836 67.4387H13.8312C3.52545 87.936 -0.557351 112.167 1.29265 138.908Z",
     fill: isSaintValentineEvent ? '#F00020' : '#F3622A'
-  }), /*#__PURE__*/React.createElement(Svg.Path, {
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M383.963 1.68137C289.749 -12.0386 251.332 65.6654 251.332 65.6654C251.332 65.6654 212.916 -12.0386 118.703 1.68137C65.544 9.4227 31.0292 33.2347 13.8312 67.4387H488.836C471.639 33.2347 437.123 9.4227 383.963 1.68137",
     fill: isSaintValentineEvent ? '#F00020' : '#EE2544'
   }));
