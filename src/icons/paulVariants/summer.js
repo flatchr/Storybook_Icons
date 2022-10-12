@@ -1,3 +1,4 @@
+import React from 'react';
 import { G, Path, Circle } from 'react-native-svg';
 
 const SummerVariant = ({ stylePathDropShadow }) => {
