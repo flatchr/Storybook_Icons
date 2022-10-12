@@ -91,6 +91,15 @@ const PaulHalloweenStory = args => (
 );
 PaulHalloweenStory.storyName = 'Halloween';
 
+const PaulPinkOctoberStory = args => (
+  <LogoFlatchr
+    {...args}
+    onlyPaul
+    event="pinkOctober"
+  />
+);
+PaulPinkOctoberStory.storyName = 'PinkOctober';
+
 const PaulMovemberStory = args => (
   <LogoFlatchr
     {...args}
@@ -110,5 +119,6 @@ export {
   PaulFrenchFlagStory,
   PaulMusicStory,
   PaulHalloweenStory,
+  PaulPinkOctoberStory,
   PaulMovemberStory,
 };
