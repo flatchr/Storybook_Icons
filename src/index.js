@@ -167,4 +167,15 @@ export { default as MinusIcon } from './icons/Minus';
 export { default as FolderOpenedIcon } from './icons/FolderOpened';
 export { default as HandsHelpingIcon } from './icons/HandsHelping';
 export { default as MobileIcon } from './icons/Mobile';
-export { default as SignatureIcon } from './icons/Signature';
+export { default as SignatureIcon } from './icons/Signature'
+
+export { default as SellIcon } from './icons/Sell';
+export { default as EditNoteIcon } from './icons/EditNote';
+export { default as RepeatIcon } from './icons/Repeat';
+export { default as IosShareIcon } from './icons/IosShare';
+export { default as StayCurrentPortraitIcon } from './icons/StayCurrentPortrait';
+export { default as SwapHorieIcon } from './icons/SwapHoriz';
+export { default as TaskIcon } from './icons/Task';
+export { default as StarRoundedIcon } from './icons/StarRounded';
+export { default as MailIcon } from './icons/Mail';
+export { default as PhotoCameraFrontIcon } from './icons/PhotoCameraFront';
