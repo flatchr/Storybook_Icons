@@ -155,6 +155,7 @@ import TaskIcon from "./icons/Task";
 import StarRoundedIcon from "./icons/StarRounded";
 import MailIcon from "./icons/Mail";
 import PhotoCameraFrontIcon from "./icons/PhotoCameraFront";
+import BlockIcon from "./icons/Block";
 
 const icons = {
   title: "Iconography/Icons",
@@ -973,6 +974,11 @@ const PhotoCameraFrontIconStory = args => (
 );
 PhotoCameraFrontIconStory.storyName = 'Photo Camera Front';
 
+const BlockIconStory = args => (
+  <BlockIcon {...args} />
+);
+BlockIconStory.storyName = 'Block';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -983,6 +989,7 @@ export {
   ArrowForwardIconStory,
   AttachFileIconStory,
   BanIconStory,
+  BlockIconStory,
   BookmarkAltIconStory,
   BookmarkIconStory,
   BuildingIconStory,
