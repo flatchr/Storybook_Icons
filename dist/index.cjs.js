@@ -6582,6 +6582,266 @@ SignatureIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var SellIcon = function SellIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 24 24",
+    fill: "none"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M14.25 21.4C13.8667 21.7833 13.3917 21.975 12.825 21.975C12.2583 21.975 11.7833 21.7833 11.4 21.4L2.6 12.6C2.41667 12.4167 2.271 12.2 2.163 11.95C2.05433 11.7 2 11.4333 2 11.15V4C2 3.45 2.196 2.979 2.588 2.587C2.97933 2.19567 3.45 2 4 2H11.15C11.4333 2 11.7 2.054 11.95 2.162C12.2 2.27067 12.4167 2.41667 12.6 2.6L21.4 11.425C21.7833 11.8083 21.975 12.279 21.975 12.837C21.975 13.3957 21.7833 13.8667 21.4 14.25L14.25 21.4ZM12.825 20L19.975 12.85L11.15 4H4V11.15L12.825 20ZM6.5 8C6.91667 8 7.27067 7.854 7.562 7.562C7.854 7.27067 8 6.91667 8 6.5C8 6.08333 7.854 5.72933 7.562 5.438C7.27067 5.146 6.91667 5 6.5 5C6.08333 5 5.72933 5.146 5.438 5.438C5.146 5.72933 5 6.08333 5 6.5C5 6.91667 5.146 7.27067 5.438 7.562C5.72933 7.854 6.08333 8 6.5 8Z",
+    fill: color
+  })));
+};
+
+SellIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var EditNoteIcon = function EditNoteIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 21 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M16.8621 12.5L15.0913 10.7292L15.6955 10.125C15.8483 9.97222 16.0427 9.89583 16.2788 9.89583C16.5149 9.89583 16.7094 9.97222 16.8621 10.125L17.4663 10.7292C17.6191 10.8819 17.6955 11.0764 17.6955 11.3125C17.6955 11.5486 17.6191 11.7431 17.4663 11.8958L16.8621 12.5ZM10.0913 17.5V15.7292L14.508 11.3125L16.2788 13.0833L11.8621 17.5H10.0913ZM2.59131 13.3333V11.6667H8.42464V13.3333H2.59131ZM2.59131 10V8.33333H11.758V10H2.59131ZM2.59131 6.66667V5H11.758V6.66667H2.59131Z",
+    fill: color
+  })));
+};
+
+EditNoteIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var RepeatIcon = function RepeatIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 18 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M12.75 14.1668V11.6668C12.75 11.4307 12.822 11.2327 12.966 11.0727C13.1095 10.9132 13.2875 10.8335 13.5 10.8335C13.7125 10.8335 13.8905 10.9099 14.034 11.0627C14.178 11.2154 14.25 11.4099 14.25 11.646V15.0002C14.25 15.2363 14.178 15.4341 14.034 15.5935C13.8905 15.7535 13.7125 15.8335 13.5 15.8335H5.13751L5.75626 16.521C5.90626 16.6877 5.98451 16.8891 5.99101 17.1252C5.99701 17.3613 5.92501 17.5627 5.77501 17.7293C5.62501 17.896 5.44701 17.9793 5.24101 17.9793C5.03451 17.9793 4.86251 17.9029 4.72501 17.7502L2.77501 15.5835C2.63751 15.4307 2.56876 15.2363 2.56876 15.0002C2.56876 14.7641 2.63751 14.5696 2.77501 14.4168L4.70626 12.271C4.85626 12.1043 5.03451 12.021 5.24101 12.021C5.44701 12.021 5.62501 12.1043 5.77501 12.271C5.92501 12.4377 6.00001 12.6357 6.00001 12.8652C6.00001 13.0941 5.92501 13.2918 5.77501 13.4585L5.13751 14.1668H12.75ZM5.25001 5.8335V8.3335C5.25001 8.56961 5.17826 8.76739 5.03476 8.92683C4.89076 9.08683 4.71251 9.16683 4.50001 9.16683C4.28751 9.16683 4.10926 9.09044 3.96526 8.93766C3.82176 8.78489 3.75001 8.59044 3.75001 8.35433V5.00016C3.75001 4.76405 3.82176 4.566 3.96526 4.406C4.10926 4.24655 4.28751 4.16683 4.50001 4.16683H12.8625L12.2438 3.47933C12.0938 3.31266 12.0158 3.11127 12.0098 2.87516C12.0033 2.63905 12.075 2.43766 12.225 2.271C12.375 2.10433 12.5533 2.021 12.7598 2.021C12.9658 2.021 13.1375 2.09739 13.275 2.25016L15.225 4.41683C15.3625 4.56961 15.4313 4.76405 15.4313 5.00016C15.4313 5.23627 15.3625 5.43072 15.225 5.5835L13.2938 7.72933C13.1438 7.896 12.9658 7.97933 12.7598 7.97933C12.5533 7.97933 12.375 7.896 12.225 7.72933C12.075 7.56266 12 7.36461 12 7.13516C12 6.90627 12.075 6.7085 12.225 6.54183L12.8625 5.8335H5.25001Z",
+    fill: color
+  })));
+};
+
+RepeatIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var IosShareIcon = function IosShareIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 21 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M10.0913 13.3333C9.85519 13.3333 9.65741 13.2533 9.49797 13.0933C9.33797 12.9339 9.25797 12.7361 9.25797 12.5V4.02083L8.50797 4.77083C8.35519 4.92361 8.16436 5 7.93547 5C7.70603 5 7.50797 4.91667 7.3413 4.75C7.18853 4.58333 7.11214 4.38528 7.11214 4.15583C7.11214 3.92694 7.18853 3.73611 7.3413 3.58333L9.50797 1.41667C9.57741 1.34722 9.66436 1.29167 9.7688 1.25C9.87269 1.20833 9.98019 1.1875 10.0913 1.1875C10.2024 1.1875 10.3102 1.20833 10.4146 1.25C10.5185 1.29167 10.6052 1.34722 10.6746 1.41667L12.8413 3.58333C13.008 3.75 13.0913 3.95139 13.0913 4.1875C13.0913 4.42361 13.008 4.61806 12.8413 4.77083C12.6746 4.92361 12.4769 5 12.248 5C12.0185 5 11.8274 4.92361 11.6746 4.77083L10.9246 4.02083V12.5C10.9246 12.7361 10.8449 12.9339 10.6855 13.0933C10.5255 13.2533 10.3274 13.3333 10.0913 13.3333ZM5.0913 19.1667C4.63297 19.1667 4.24075 19.0036 3.91464 18.6775C3.58797 18.3508 3.42464 17.9583 3.42464 17.5V8.33333C3.42464 7.875 3.58797 7.4825 3.91464 7.15583C4.24075 6.82972 4.63297 6.66667 5.0913 6.66667H6.75797C6.99408 6.66667 7.19214 6.74639 7.35214 6.90583C7.51158 7.06583 7.5913 7.26389 7.5913 7.5C7.5913 7.73611 7.51158 7.93389 7.35214 8.09333C7.19214 8.25333 6.99408 8.33333 6.75797 8.33333H5.0913V17.5H15.0913V8.33333H13.4246C13.1885 8.33333 12.9907 8.25333 12.8313 8.09333C12.6713 7.93389 12.5913 7.73611 12.5913 7.5C12.5913 7.26389 12.6713 7.06583 12.8313 6.90583C12.9907 6.74639 13.1885 6.66667 13.4246 6.66667H15.0913C15.5496 6.66667 15.9421 6.82972 16.2688 7.15583C16.5949 7.4825 16.758 7.875 16.758 8.33333V17.5C16.758 17.9583 16.5949 18.3508 16.2688 18.6775C15.9421 19.0036 15.5496 19.1667 15.0913 19.1667H5.0913Z",
+    fill: color
+  })));
+};
+
+IosShareIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var StayCurrentPortraitIcon = function StayCurrentPortraitIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 20 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M5.83333 19.1666C5.375 19.1666 4.98278 19.0035 4.65666 18.6774C4.33 18.3508 4.16666 17.9583 4.16666 17.4999V2.49992C4.16666 2.04159 4.33 1.64909 4.65666 1.32242C4.98278 0.996308 5.375 0.833252 5.83333 0.833252H14.1667C14.625 0.833252 15.0175 0.996308 15.3442 1.32242C15.6703 1.64909 15.8333 2.04159 15.8333 2.49992V17.4999C15.8333 17.9583 15.6703 18.3508 15.3442 18.6774C15.0175 19.0035 14.625 19.1666 14.1667 19.1666H5.83333ZM5.83333 16.6666V17.4999H14.1667V16.6666H5.83333ZM5.83333 14.9999H14.1667V4.99992H5.83333V14.9999ZM5.83333 3.33325H14.1667V2.49992H5.83333V3.33325Z",
+    fill: color
+  })));
+};
+
+StayCurrentPortraitIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var SwapHorizIcon = function SwapHorizIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 20 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M13.5833 11.0625C13.4306 10.9097 13.3542 10.7153 13.3542 10.4792C13.3542 10.2431 13.4306 10.0486 13.5833 9.89583L15.1458 8.33333H10C9.76389 8.33333 9.56611 8.25333 9.40667 8.09333C9.24667 7.93389 9.16667 7.73611 9.16667 7.5C9.16667 7.26389 9.24667 7.06583 9.40667 6.90583C9.56611 6.74639 9.76389 6.66667 10 6.66667H15.1458L13.5833 5.10417C13.4306 4.95139 13.3542 4.75333 13.3542 4.51C13.3542 4.26722 13.4306 4.06944 13.5833 3.91667C13.7361 3.76389 13.9306 3.6875 14.1667 3.6875C14.4028 3.6875 14.5972 3.76389 14.75 3.91667L17.75 6.91667C17.8333 7 17.8925 7.09028 17.9275 7.1875C17.9619 7.28472 17.9792 7.38889 17.9792 7.5C17.9792 7.61111 17.9619 7.71528 17.9275 7.8125C17.8925 7.90972 17.8333 8 17.75 8.08333L14.75 11.0833C14.5972 11.2361 14.4028 11.3089 14.1667 11.3017C13.9306 11.295 13.7361 11.2153 13.5833 11.0625ZM5.25 16.0833L2.25 13.0833C2.16667 13 2.10778 12.9097 2.07334 12.8125C2.03834 12.7153 2.02084 12.6111 2.02084 12.5C2.02084 12.3889 2.03834 12.2847 2.07334 12.1875C2.10778 12.0903 2.16667 12 2.25 11.9167L5.25 8.91667C5.40278 8.76389 5.59722 8.6875 5.83334 8.6875C6.06945 8.6875 6.26389 8.76389 6.41667 8.91667C6.56945 9.06944 6.64584 9.26722 6.64584 9.51C6.64584 9.75333 6.56945 9.95139 6.41667 10.1042L4.85417 11.6667H10C10.2361 11.6667 10.4342 11.7464 10.5942 11.9058C10.7536 12.0658 10.8333 12.2639 10.8333 12.5C10.8333 12.7361 10.7536 12.9339 10.5942 13.0933C10.4342 13.2533 10.2361 13.3333 10 13.3333H4.85417L6.41667 14.8958C6.56945 15.0486 6.64584 15.2431 6.64584 15.4792C6.64584 15.7153 6.56945 15.9097 6.41667 16.0625C6.26389 16.2153 6.06945 16.295 5.83334 16.3017C5.59722 16.3089 5.40278 16.2361 5.25 16.0833Z",
+    fill: color
+  })));
+};
+
+SwapHorizIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var TaskIcon = function TaskIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 20 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M9.10417 12.6042L7.9375 11.4376C7.85417 11.3542 7.76389 11.2917 7.66667 11.2501C7.56945 11.2084 7.46889 11.1876 7.365 11.1876C7.26056 11.1876 7.15639 11.2084 7.0525 11.2501C6.94806 11.2917 6.85417 11.3542 6.77084 11.4376C6.60417 11.6042 6.52084 11.8023 6.52084 12.0317C6.52084 12.2606 6.60417 12.4584 6.77084 12.6251L8.54167 14.4167C8.625 14.5001 8.71528 14.559 8.8125 14.5934C8.90972 14.6284 9.01389 14.6459 9.125 14.6459C9.23611 14.6459 9.34028 14.6284 9.4375 14.5934C9.53472 14.559 9.625 14.5001 9.70834 14.4167L13.2292 10.8959C13.3958 10.7292 13.4792 10.5279 13.4792 10.2917C13.4792 10.0556 13.3958 9.85425 13.2292 9.68758C13.0625 9.52091 12.8611 9.43758 12.625 9.43758C12.3889 9.43758 12.1875 9.52091 12.0208 9.68758L9.10417 12.6042ZM5 18.3334C4.54167 18.3334 4.14945 18.1704 3.82334 17.8442C3.49667 17.5176 3.33334 17.1251 3.33334 16.6667V3.33341C3.33334 2.87508 3.49667 2.48258 3.82334 2.15591C4.14945 1.8298 4.54167 1.66675 5 1.66675H10.9792C11.2014 1.66675 11.4133 1.70841 11.615 1.79175C11.8161 1.87508 11.9931 1.99314 12.1458 2.14591L16.1875 6.18758C16.3403 6.34036 16.4583 6.5173 16.5417 6.71841C16.625 6.92008 16.6667 7.13203 16.6667 7.35425V16.6667C16.6667 17.1251 16.5036 17.5176 16.1775 17.8442C15.8508 18.1704 15.4583 18.3334 15 18.3334H5ZM10.8333 6.66675V3.33341H5V16.6667H15V7.50008H11.6667C11.4306 7.50008 11.2328 7.42008 11.0733 7.26008C10.9133 7.10064 10.8333 6.90286 10.8333 6.66675Z",
+    fill: color
+  })));
+};
+
+TaskIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var StarRoundedIcon = function StarRoundedIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 21 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M7.46631 14.8542L10.0913 13.2708L12.7163 14.875L12.0288 11.875L14.3413 9.875L11.2996 9.60417L10.0913 6.77083L8.88297 9.58333L5.84131 9.85417L8.15381 11.875L7.46631 14.8542ZM10.0913 15.2292L6.63297 17.3125C6.4802 17.4097 6.32047 17.4514 6.15381 17.4375C5.98714 17.4236 5.84131 17.3681 5.71631 17.2708C5.59131 17.1736 5.49408 17.0522 5.42464 16.9067C5.3552 16.7606 5.34131 16.5972 5.38297 16.4167L6.29964 12.4792L3.23714 9.83333C3.09825 9.70833 3.01158 9.56583 2.97714 9.40583C2.94214 9.24639 2.95242 9.09028 3.00797 8.9375C3.06353 8.78472 3.14686 8.65972 3.25797 8.5625C3.36908 8.46528 3.52186 8.40278 3.71631 8.375L7.75797 8.02083L9.32047 4.3125C9.38992 4.14583 9.4977 4.02083 9.64381 3.9375C9.78936 3.85417 9.93853 3.8125 10.0913 3.8125C10.2441 3.8125 10.3935 3.85417 10.5396 3.9375C10.6852 4.02083 10.7927 4.14583 10.8621 4.3125L12.4246 8.02083L16.4663 8.375C16.6608 8.40278 16.8135 8.46528 16.9246 8.5625C17.0358 8.65972 17.1191 8.78472 17.1746 8.9375C17.2302 9.09028 17.2408 9.24639 17.2063 9.40583C17.1713 9.56583 17.0844 9.70833 16.9455 9.83333L13.883 12.4792L14.7996 16.4167C14.8413 16.5972 14.8274 16.7606 14.758 16.9067C14.6885 17.0522 14.5913 17.1736 14.4663 17.2708C14.3413 17.3681 14.1955 17.4236 14.0288 17.4375C13.8621 17.4514 13.7024 17.4097 13.5496 17.3125L10.0913 15.2292Z",
+    fill: color
+  })));
+};
+
+StarRoundedIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var MailIcon = function MailIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 21 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M3.42465 16.6666C2.96631 16.6666 2.57409 16.5035 2.24798 16.1774C1.92131 15.8508 1.75798 15.4583 1.75798 14.9999V4.99992C1.75798 4.54159 1.92131 4.14936 2.24798 3.82325C2.57409 3.49659 2.96631 3.33325 3.42465 3.33325H16.758C17.2163 3.33325 17.6088 3.49659 17.9355 3.82325C18.2616 4.14936 18.4246 4.54159 18.4246 4.99992V14.9999C18.4246 15.4583 18.2616 15.8508 17.9355 16.1774C17.6088 16.5035 17.2163 16.6666 16.758 16.6666H3.42465ZM16.758 6.66659L10.5288 10.5624C10.4594 10.6041 10.3863 10.6352 10.3096 10.6558C10.2335 10.6769 10.1608 10.6874 10.0913 10.6874C10.0219 10.6874 9.94909 10.6769 9.87298 10.6558C9.79631 10.6352 9.72326 10.6041 9.65381 10.5624L3.42465 6.66659V14.9999H16.758V6.66659ZM10.0913 9.16658L16.758 4.99992H3.42465L10.0913 9.16658ZM3.42465 6.87492V5.64575V5.66659V5.65575V6.87492Z",
+    fill: color
+  })));
+};
+
+MailIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var PhotoCameraFrontIcon = function PhotoCameraFrontIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || 24,
+    height: height || 24,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M8 17H16V16.45C16 15.7 15.6333 15.104 14.9 14.662C14.1667 14.2207 13.2 14 12 14C10.8 14 9.83333 14.2207 9.1 14.662C8.36667 15.104 8 15.7 8 16.45V17ZM12 13C12.55 13 13.021 12.804 13.413 12.412C13.8043 12.0207 14 11.55 14 11C14 10.45 13.8043 9.979 13.413 9.587C13.021 9.19567 12.55 9 12 9C11.45 9 10.9793 9.19567 10.588 9.587C10.196 9.979 10 10.45 10 11C10 11.55 10.196 12.0207 10.588 12.412C10.9793 12.804 11.45 13 12 13ZM4 21C3.45 21 2.97933 20.8043 2.588 20.413C2.196 20.021 2 19.55 2 19V7C2 6.45 2.196 5.97933 2.588 5.588C2.97933 5.196 3.45 5 4 5H7.15L8.4 3.65C8.58333 3.43333 8.804 3.27067 9.062 3.162C9.32067 3.054 9.59167 3 9.875 3H14.125C14.4083 3 14.6793 3.054 14.938 3.162C15.196 3.27067 15.4167 3.43333 15.6 3.65L16.85 5H20C20.55 5 21.021 5.196 21.413 5.588C21.8043 5.97933 22 6.45 22 7V19C22 19.55 21.8043 20.021 21.413 20.413C21.021 20.8043 20.55 21 20 21H4ZM20 19V7H4V19H20Z",
+    fill: color
+  })));
+};
+
+PhotoCameraFrontIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleIcon = AddCircleIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
@@ -6633,6 +6893,7 @@ exports.DonutIcon = DonutIcon;
 exports.DownloadIcon = DownloadIcon;
 exports.DumbbellIcon = DumbbellIcon;
 exports.EditIcon = EditIcon;
+exports.EditNoteIcon = EditNoteIcon;
 exports.EnvelopeIcon = EnvelopeIcon;
 exports.EnveloppeCheckIcon = EnveloppeCheckIcon;
 exports.ErrorIcon = ErrorIcon;
@@ -6672,6 +6933,7 @@ exports.ImageEditIcon = ImageEditIcon;
 exports.ImageIcon = ImageIcon;
 exports.InfoCircleIcon = InfoCircleIcon;
 exports.InstagramIcon = InstagramIcon;
+exports.IosShareIcon = IosShareIcon;
 exports.KeyIcon = KeyIcon;
 exports.LayerGroupIcon = LayerGroupIcon;
 exports.LinkIcon = LinkIcon;
@@ -6681,6 +6943,7 @@ exports.ListAltIcon = ListAltIcon;
 exports.LockIcon = LockIcon;
 exports.LockOpenIcon = LockOpenIcon;
 exports.LogoFlatchr = LogoFlatchr;
+exports.MailIcon = MailIcon;
 exports.MapMarkerIcon = MapMarkerIcon;
 exports.MapSignsIcon = MapSignsIcon;
 exports.MenuFoldIcon = MenuFoldIcon;
@@ -6701,6 +6964,7 @@ exports.PauseIcon = PauseIcon;
 exports.PenIcon = PenIcon;
 exports.PeopleIcon = PeopleIcon;
 exports.PhoneIcon = PhoneIcon;
+exports.PhotoCameraFrontIcon = PhotoCameraFrontIcon;
 exports.PlayCircleIcon = PlayCircleIcon;
 exports.PlayIcon = PlayIcon;
 exports.PlusIcon = PlusIcon;
@@ -6711,9 +6975,11 @@ exports.RedoLoopIcon = RedoLoopIcon;
 exports.RegDotCircleIcon = RegDotCircleIcon;
 exports.RegisterListAltIcon = RegisterListAltIcon;
 exports.RemoveCircleOutlineIcon = RemoveCircleOutlineIcon;
+exports.RepeatIcon = RepeatIcon;
 exports.ReplyIcon = ReplyIcon;
 exports.SaveIcon = SaveIcon;
 exports.SearchIcon = SearchIcon;
+exports.SellIcon = SellIcon;
 exports.ShareIcon = ShareIcon;
 exports.ShieldAltIcon = ShieldAltIcon;
 exports.ShieldCheckmarkIcon = ShieldCheckmarkIcon;
@@ -6728,12 +6994,16 @@ exports.SourceTreeIcon = SourceTreeIcon;
 exports.StarBorderIcon = StarBorderIcon;
 exports.StarHalfIcon = StarHalfIcon;
 exports.StarIcon = StarIcon;
+exports.StarRoundedIcon = StarRoundedIcon;
+exports.StayCurrentPortraitIcon = StayCurrentPortraitIcon;
 exports.StopIcon = StopIcon;
 exports.StoreAltIcon = StoreAltIcon;
 exports.StreetViewIcon = StreetViewIcon;
+exports.SwapHorieIcon = SwapHorizIcon;
 exports.TableAltIcon = TableAltIcon;
 exports.TachometerAltIcon = TachometerAltIcon;
 exports.TagsIcon = TagsIcon;
+exports.TaskIcon = TaskIcon;
 exports.ThumbsUpIcon = ThumbsUpIcon;
 exports.ToolsIcon = ToolsIcon;
 exports.TrashBinIcon = TrashBinIcon;

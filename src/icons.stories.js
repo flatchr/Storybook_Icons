@@ -144,6 +144,17 @@ import FolderOpenedIcon from './icons/FolderOpened';
 import HandsHelpingIcon from './icons/HandsHelping';
 import MobileIcon from "./icons/Mobile";
 import SignatureIcon from "./icons/Signature";
+import SellIcon from "./icons/Sell";
+
+import EditNoteIcon from "./icons/EditNote";
+import RepeatIcon from "./icons/Repeat";
+import IosShareIcon from "./icons/IosShare";
+import StayCurrentPortraitIcon from "./icons/StayCurrentPortrait";
+import SwapHorieIcon from "./icons/SwapHoriz";
+import TaskIcon from "./icons/Task";
+import StarRoundedIcon from "./icons/StarRounded";
+import MailIcon from "./icons/Mail";
+import PhotoCameraFrontIcon from "./icons/PhotoCameraFront";
 
 const icons = {
   title: "Iconography/Icons",
@@ -912,6 +923,56 @@ const SignatureIconStory = args => (
 );
 SignatureIconStory.storyName = 'Signature';
 
+const SellIconStory = args => (
+  <SellIcon {...args} />
+);
+SellIconStory.storyName = 'Sell';
+
+const EditNoteIconIconStory = args => (
+  <EditNoteIcon {...args} />
+);
+EditNoteIconIconStory.storyName = 'Edit note';
+
+const RepeatIconStory = args => (
+  <RepeatIcon {...args} />
+);
+RepeatIconStory.storyName = 'Repeat';
+
+const IosShareIconStory = args => (
+  <IosShareIcon {...args} />
+);
+IosShareIconStory.storyName = 'Ios Share';
+
+const StayCurrentPortraitIconStory = args => (
+  <StayCurrentPortraitIcon {...args} />
+);
+StayCurrentPortraitIconStory.storyName = 'Stay Current Portrait';
+
+const SwapHorizIconStory = args => (
+  <SwapHorieIcon {...args} />
+);
+SwapHorizIconStory.storyName = 'Swap Horiz';
+
+const TaskIconStory = args => (
+  <TaskIcon {...args} />
+);
+TaskIconStory.storyName = 'Task';
+
+const StarRoundedIconStory = args => (
+  <StarRoundedIcon {...args} />
+);
+StarRoundedIconStory.storyName = 'Star Rounded';
+
+const MailIconStory = args => (
+  <MailIcon {...args} />
+);
+MailIconStory.storyName = 'Mail';
+
+const PhotoCameraFrontIconStory = args => (
+  <PhotoCameraFrontIcon {...args} />
+);
+PhotoCameraFrontIconStory.storyName = 'Photo Camera Front';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -956,6 +1017,7 @@ export {
   DonutIconStory,
   DownloadIconStory,
   EditIconStory,
+  EditNoteIconIconStory,
   EnvelopeIconStory,
   ErrorIconStory,
   EuroIconStory,
@@ -993,6 +1055,7 @@ export {
   ImageIconStory,
   InfoCircleIconStory,
   InstagramIconStory,
+  IosShareIconStory,
   KeyIconStory,
   LayerGroupIconStory,
   ListAltIconStory,
@@ -1003,6 +1066,7 @@ export {
   LockOpenIconStory,
   EnveloppeCheckIconStory,
   MapMarkerIconStory,
+  MailIconStory,
   MenuIconStory,
   MenuFoldIconStory,
   MenuUnfoldIconStory,
@@ -1018,6 +1082,7 @@ export {
   PenIconStory,
   PeopleIconStory,
   PhoneIconStory,
+  PhotoCameraFrontIconStory,
   PlayCircleIconStory,
   PlusIconStory,
   PublishIconStory,
@@ -1027,9 +1092,11 @@ export {
   RegDotCircleIconStory,
   RegisterListAltIconStory,
   RemoveCircleOutlineIconStory,
+  RepeatIconStory,
   ReplyIconStory,
   SaveIconStory,
   SearchIconStory,
+  SellIconStory,
   ShareIconStory,
   ShieldAltIconStory,
   SignatureIconStory,
@@ -1039,12 +1106,16 @@ export {
   StarBorderIconStory,
   StarHalfIconStory,
   StarIconStory,
+  StarRoundedIconStory,
+  StayCurrentPortraitIconStory,
   StopIconStory,
   StoreAltIconStory,
   StreetViewIconStory,
+  SwapHorizIconStory,
   TableAltIconStory,
   TachometerAltIconStory,
   TagsIconStory,
+  TaskIconStory,
   TrashIconStory,
   TrashBinIconStory,
   TwitterIconStory,

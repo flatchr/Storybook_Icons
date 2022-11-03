@@ -23,11 +23,10 @@ const AllIcons = props => {
         The librairy contains {keys.length} icons.
       </p>
       <ItemsWrapper>
-      {keys
-        .map((iconName, iconIndex) => {
-          const iconComponent = allIcons[iconName]
-            ({ color, height: 30 });
-          const isCareerSpecific = careerSpecific.includes(iconName);
+      {keys.map((iconName, iconIndex) => {
+
+        const iconComponent = allIcons[iconName]({ color, height: 30 });
+        const isCareerSpecific = careerSpecific.includes(iconName);
 
         return (
           <Item
