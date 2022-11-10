@@ -6582,6 +6582,58 @@ SignatureIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var AutoPayIcon = function AutoPayIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? 24 : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? 24 : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width,
+    height: height,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M12.25 23C10.3833 23 8.66667 22.5707 7.1 21.712C5.53333 20.854 4.25 19.7167 3.25 18.3V20H1.25V15H6.25V17H4.8C5.6 18.2 6.65 19.1667 7.95 19.9C9.25 20.6333 10.6833 21 12.25 21C13.5 21 14.671 20.7627 15.763 20.288C16.8543 19.8127 17.8043 19.1707 18.613 18.362C19.421 17.554 20.0627 16.604 20.538 15.512C21.0127 14.4207 21.25 13.25 21.25 12H23.25C23.25 13.5167 22.9627 14.9417 22.388 16.275C21.8127 17.6083 21.025 18.775 20.025 19.775C19.025 20.775 17.8583 21.5623 16.525 22.137C15.1917 22.7123 13.7667 23 12.25 23ZM7.6 4.325L6.75 2.475C7.6 1.99167 8.46267 1.625 9.338 1.375C10.2127 1.125 11.1833 1 12.25 1C14.1167 1 15.8333 1.429 17.4 2.287C18.9667 3.14567 20.25 4.28333 21.25 5.7V4H23.25V9H18.25V7H19.7C18.9 5.8 17.85 4.83333 16.55 4.1C15.25 3.36667 13.8167 3 12.25 3C11.3667 3 10.546 3.12067 9.788 3.362C9.02933 3.604 8.3 3.925 7.6 4.325ZM4.25 12L3 9.25L0.25 8L3 6.75L4.25 4L5.5 6.75L8.25 8L5.5 9.25L4.25 12ZM8.05 16L11.45 7H13.05L16.45 16H14.9L14.1 13.7H10.45L9.65 16H8.05ZM10.9 12.4H13.6L12.3 8.65H12.2L10.9 12.4Z",
+    fill: color
+  }));
+};
+
+AutoPayIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var BlockIcon = function BlockIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? 24 : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? 24 : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width,
+    height: height,
+    viewBox: "0 0 20 20",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.G, null, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M10 18.3334C8.84722 18.3334 7.76389 18.1145 6.75 17.6767C5.73611 17.2395 4.85416 16.6459 4.10416 15.8959C3.35416 15.1459 2.76055 14.264 2.32333 13.2501C1.88555 12.2362 1.66666 11.1529 1.66666 10.0001C1.66666 8.8473 1.88555 7.76397 2.32333 6.75008C2.76055 5.73619 3.35416 4.85425 4.10416 4.10425C4.85416 3.35425 5.73611 2.76036 6.75 2.32258C7.76389 1.88536 8.84722 1.66675 10 1.66675C11.1528 1.66675 12.2361 1.88536 13.25 2.32258C14.2639 2.76036 15.1458 3.35425 15.8958 4.10425C16.6458 4.85425 17.2394 5.73619 17.6767 6.75008C18.1144 7.76397 18.3333 8.8473 18.3333 10.0001C18.3333 11.1529 18.1144 12.2362 17.6767 13.2501C17.2394 14.264 16.6458 15.1459 15.8958 15.8959C15.1458 16.6459 14.2639 17.2395 13.25 17.6767C12.2361 18.1145 11.1528 18.3334 10 18.3334ZM10 16.6667C11.8611 16.6667 13.4375 16.0209 14.7292 14.7292C16.0208 13.4376 16.6667 11.8612 16.6667 10.0001C16.6667 9.25008 16.545 8.52786 16.3017 7.83341C16.0589 7.13897 15.7083 6.50008 15.25 5.91675L5.91666 15.2501C6.5 15.7084 7.13889 16.059 7.83333 16.3017C8.52777 16.5451 9.25 16.6667 10 16.6667ZM4.75 14.0834L14.0833 4.75008C13.5 4.29175 12.8611 3.94119 12.1667 3.69841C11.4722 3.45508 10.75 3.33341 10 3.33341C8.13889 3.33341 6.5625 3.97925 5.27083 5.27091C3.97916 6.56258 3.33333 8.13897 3.33333 10.0001C3.33333 10.7501 3.455 11.4723 3.69833 12.1667C3.94111 12.8612 4.29166 13.5001 4.75 14.0834Z",
+    fill: color
+  })));
+};
+
+BlockIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 var SellIcon = function SellIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
@@ -6850,9 +6902,11 @@ exports.AppsIcon = AppsIcon;
 exports.ArrowForwardIcon = ArrowForwardIcon;
 exports.ArrowRepeatIcon = ArrowRepeatIcon;
 exports.AttachFileIcon = AttachFileIcon;
+exports.AutoPayIcon = AutoPayIcon;
 exports.BanIcon = BanIcon;
 exports.BatteryThreeQuartersIcon = BatteryThreeQuartersIcon;
 exports.BinocularsIcon = BinocularsIcon;
+exports.BlockIcon = BlockIcon;
 exports.BoltIcon = BoltIcon;
 exports.BookmarkAltIcon = BookmarkAltIcon;
 exports.BookmarkIcon = BookmarkIcon;

@@ -156,6 +156,7 @@ import StarRoundedIcon from "./icons/StarRounded";
 import MailIcon from "./icons/Mail";
 import PhotoCameraFrontIcon from "./icons/PhotoCameraFront";
 import BlockIcon from "./icons/Block";
+import AutoPayIcon from "./icons/AutoPay";
 
 const icons = {
   title: "Iconography/Icons",
@@ -979,6 +980,11 @@ const BlockIconStory = args => (
 );
 BlockIconStory.storyName = 'Block';
 
+const AutoPayIconStory = args => (
+  <AutoPayIcon {...args} />
+);
+AutoPayIconStory.storyName = 'Auto Pay';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountPinCircleFillIconStory,
@@ -988,6 +994,7 @@ export {
   AppsIconStory,
   ArrowForwardIconStory,
   AttachFileIconStory,
+  AutoPayIconStory,
   BanIconStory,
   BlockIconStory,
   BookmarkAltIconStory,

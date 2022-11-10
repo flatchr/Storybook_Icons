@@ -168,7 +168,8 @@ export { default as FolderOpenedIcon } from './icons/FolderOpened';
 export { default as HandsHelpingIcon } from './icons/HandsHelping';
 export { default as MobileIcon } from './icons/Mobile';
 export { default as SignatureIcon } from './icons/Signature'
-
+export { default as AutoPayIcon } from './icons/AutoPay'
+export { default as BlockIcon } from './icons/Block'
 export { default as SellIcon } from './icons/Sell';
 export { default as EditNoteIcon } from './icons/EditNote';
 export { default as RepeatIcon } from './icons/Repeat';
