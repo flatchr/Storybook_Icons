@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { theme } from '@flatchr/system-design';
 import AllIcons from '.';
 

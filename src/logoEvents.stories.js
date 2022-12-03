@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import LogoFlatchr from './icons/Flatchr';
 import logoStoryData from './storybookCommonComponents/commonLogoStoryData';

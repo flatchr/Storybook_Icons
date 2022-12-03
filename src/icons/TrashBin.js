@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Svg, { Path, Rect } from "react-native-svg";
 import PropTypes from 'prop-types';
 import { theme } from '@flatchr/system-design';

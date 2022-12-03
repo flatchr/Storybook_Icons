@@ -1,9 +1,15 @@
-import React from "react";
+import React from 'react';
 // Icons import
 import UserIcon from './icons/User';
 import ErrorIcon from './icons/Error';
 import NotificationsIcon from './icons/Notifications';
 import NotificationsActiveIcon from './icons/NotificationsActive';
+import NotificationsCircleIcon from './icons/NotificationsCircle';
+import AlarmIcon from './icons/Alarm';
+import FaceIcon from './icons/Face';
+import MoveDownIcon from './icons/MoveDown';
+import PersonAddIcon from './icons/PersonAdd';
+import UpdateIcon from './icons/Update';
 import HeartIcon from './icons/Heart';
 import ClipboardListIcon from './icons/ClipboardList';
 import DonutIcon from './icons/Donut';
@@ -224,6 +230,36 @@ const NotificationsActiveIconStory = args => (
   <NotificationsActiveIcon {...args} />
 );
 NotificationsActiveIconStory.storyName = 'Notifications Active';
+
+const NotificationsCircleIconStory = args => (
+  <NotificationsCircleIcon {...args} />
+);
+NotificationsCircleIconStory.storyName = 'Notifications Circle';
+
+const AlarmIconStory = args => (
+  <AlarmIcon {...args} />
+);
+AlarmIconStory.storyName = 'Alarm';
+
+const FaceIconStory = args => (
+  <FaceIcon {...args} />
+);
+FaceIconStory.storyName = 'Face';
+
+const MoveDownIconStory = args => (
+  <MoveDownIcon {...args} />
+);
+MoveDownIconStory.storyName = 'Move Down';
+
+const PersonAddIconStory = args => (
+  <PersonAddIcon {...args} />
+);
+PersonAddIconStory.storyName = 'Person Add';
+
+const UpdateIconStory = args => (
+  <UpdateIcon {...args} />
+);
+UpdateIconStory.storyName = 'Update';
 
 const HeartIconStory = args => (
   <HeartIcon {...args} />
@@ -990,6 +1026,7 @@ export {
   AccountPinCircleFillIconStory,
   AddCircleIconStory,
   AddCircleOutlineIconStory,
+  AlarmIconStory,
   AnalyticsOutlineIconStory,
   AppsIconStory,
   ArrowForwardIconStory,
@@ -1039,6 +1076,7 @@ export {
   EyedropperIconStory,
   EyeIconStory,
   EyeOffIconStory,
+  FaceIconStory,
   FacebookIconStory,
   FacebookSquareIconStory,
   FileAltIconStory,
@@ -1089,12 +1127,15 @@ export {
   MinusIconStory,
   MobileIconStory,
   MoreVerticalIconStory,
+  MoveDownIconStory,
   NetworkWiredIconStory,
   NotificationsIconStory,
   NotificationsActiveIconStory,
+  NotificationsCircleIconStory,
   PaperPlaneIconStory,
   PenIconStory,
   PeopleIconStory,
+  PersonAddIconStory,
   PhoneIconStory,
   PhotoCameraFrontIconStory,
   PlayCircleIconStory,
@@ -1136,6 +1177,7 @@ export {
   TwitterSquareIconStory,
   UndoIconStory,
   UniversityIconStory,
+  UpdateIconStory,
   UserAssignmentIconStory,
   UserClockIconStory,
   UserIconStory,

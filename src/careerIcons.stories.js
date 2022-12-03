@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // Icons import
 import ThumbsUpIcon from './icons/ThumbsUp';
 import TrophyIcon from './icons/Trophy';

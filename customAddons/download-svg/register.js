@@ -1,6 +1,6 @@
 // customAddons/download-svg/register.js
 
-import React from "react";
+import React from 'react';
 import camelCase from 'camelcase';
 import { addons, types } from '@storybook/addons';
 import { useStorybookState } from '@storybook/api';
