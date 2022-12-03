@@ -55,7 +55,7 @@ var HalloweenVariant = function HalloweenVariant() {
 };
 
 function _extends() {
-  _extends = Object.assign ? Object.assign.bind() : function (target) {
+  _extends = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -68,6 +68,7 @@ function _extends() {
 
     return target;
   };
+
   return _extends.apply(this, arguments);
 }
 
@@ -584,6 +585,168 @@ var NotificationsActiveIcon = function NotificationsActiveIcon(_ref) {
 };
 
 NotificationsActiveIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var NotificationsCircleIcon = function NotificationsCircleIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M9.00008 14.4167C9.3473 14.4167 9.6423 14.2951 9.88508 14.0517C10.1284 13.809 10.2501 13.514 10.2501 13.1667H7.75008C7.75008 13.514 7.87175 13.809 8.11508 14.0517C8.35786 14.2951 8.65286 14.4167 9.00008 14.4167ZM5.68758 12.3334H12.3542C12.5904 12.3334 12.7848 12.2534 12.9376 12.0934C13.0904 11.934 13.1667 11.7362 13.1667 11.5001C13.1667 11.264 13.0867 11.0659 12.9267 10.9059C12.7673 10.7465 12.5695 10.6667 12.3334 10.6667V8.50008C12.3334 7.65286 12.1148 6.87842 11.6776 6.17675C11.2398 5.47564 10.6251 5.02786 9.83342 4.83341V4.41675C9.83342 4.18064 9.75369 3.98258 9.59425 3.82258C9.43425 3.66314 9.23619 3.58341 9.00008 3.58341C8.76397 3.58341 8.56619 3.66314 8.40675 3.82258C8.24675 3.98258 8.16675 4.18064 8.16675 4.41675V4.83341C7.37508 5.02786 6.76064 5.47564 6.32342 6.17675C5.88564 6.87842 5.66675 7.65286 5.66675 8.50008V10.6667C5.43064 10.6667 5.23619 10.7465 5.08342 10.9059C4.93064 11.0659 4.85425 11.264 4.85425 11.5001C4.85425 11.7362 4.93397 11.934 5.09341 12.0934C5.25341 12.2534 5.45147 12.3334 5.68758 12.3334ZM9.00008 17.3334C7.8473 17.3334 6.76397 17.1145 5.75008 16.6767C4.73619 16.2395 3.85425 15.6459 3.10425 14.8959C2.35425 14.1459 1.76064 13.264 1.32341 12.2501C0.885637 11.2362 0.666748 10.1529 0.666748 9.00008C0.666748 7.8473 0.885637 6.76397 1.32341 5.75008C1.76064 4.73619 2.35425 3.85425 3.10425 3.10425C3.85425 2.35425 4.73619 1.76036 5.75008 1.32258C6.76397 0.885359 7.8473 0.666748 9.00008 0.666748C10.1529 0.666748 11.2362 0.885359 12.2501 1.32258C13.264 1.76036 14.1459 2.35425 14.8959 3.10425C15.6459 3.85425 16.2395 4.73619 16.6767 5.75008C17.1145 6.76397 17.3334 7.8473 17.3334 9.00008C17.3334 10.1529 17.1145 11.2362 16.6767 12.2501C16.2395 13.264 15.6459 14.1459 14.8959 14.8959C14.1459 15.6459 13.264 16.2395 12.2501 16.6767C11.2362 17.1145 10.1529 17.3334 9.00008 17.3334ZM9.00008 15.6667C10.8473 15.6667 12.4204 15.0176 13.7192 13.7192C15.0176 12.4204 15.6667 10.8473 15.6667 9.00008C15.6667 7.15286 15.0176 5.5798 13.7192 4.28091C12.4204 2.98258 10.8473 2.33341 9.00008 2.33341C7.15286 2.33341 5.58008 2.98258 4.28175 4.28091C2.98286 5.5798 2.33341 7.15286 2.33341 9.00008C2.33341 10.8473 2.98286 12.4204 4.28175 13.7192C5.58008 15.0176 7.15286 15.6667 9.00008 15.6667ZM7.33342 10.6667V8.16675C7.33342 7.70842 7.49675 7.31591 7.82342 6.98925C8.14953 6.66314 8.54175 6.50008 9.00008 6.50008C9.45842 6.50008 9.85092 6.66314 10.1776 6.98925C10.5037 7.31591 10.6667 7.70842 10.6667 8.16675V10.6667H7.33342Z",
+    fill: color
+  }));
+};
+
+NotificationsCircleIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var AlarmIcon = function AlarmIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 20,
+    height: height || width || 20,
+    viewBox: "0 0 22 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M10.9999 20.1667C9.85404 20.1667 8.78093 19.9492 7.78054 19.514C6.77954 19.0783 5.9087 18.4898 5.16804 17.7485C4.42676 17.0079 3.83826 16.137 3.40254 15.136C2.96743 14.1357 2.74987 13.0625 2.74987 11.9167C2.74987 10.7709 2.96743 9.69746 3.40254 8.69646C3.83826 7.69607 4.42676 6.82523 5.16804 6.08396C5.9087 5.34329 6.77954 4.7554 7.78054 4.32029C8.78093 3.88457 9.85404 3.66671 10.9999 3.66671C12.1457 3.66671 13.2191 3.88457 14.2201 4.32029C15.2205 4.7554 16.0913 5.34329 16.8326 6.08396C17.5733 6.82523 18.1615 7.69607 18.5972 8.69646C19.0323 9.69746 19.2499 10.7709 19.2499 11.9167C19.2499 13.0625 19.0323 14.1357 18.5972 15.136C18.1615 16.137 17.5733 17.0079 16.8326 17.7485C16.0913 18.4898 15.2205 19.0783 14.2201 19.514C13.2191 19.9492 12.1457 20.1667 10.9999 20.1667ZM10.0832 8.25004V11.8938C10.0832 12.016 10.1061 12.1343 10.152 12.2485C10.1978 12.3634 10.2665 12.4667 10.3582 12.5584L12.9478 15.148C13.1158 15.316 13.3221 15.4 13.5665 15.4C13.811 15.4 14.0249 15.3084 14.2082 15.125C14.3763 14.957 14.4603 14.7431 14.4603 14.4834C14.4603 14.2237 14.3763 14.0098 14.2082 13.8417L11.9165 11.55V8.22712C11.9165 7.9674 11.8288 7.75351 11.6535 7.58546C11.4775 7.4174 11.2596 7.33337 10.9999 7.33337C10.7401 7.33337 10.5226 7.42107 10.3472 7.59646C10.1712 7.77246 10.0832 7.99032 10.0832 8.25004ZM3.13945 6.71462C2.9714 6.88268 2.76515 6.96671 2.5207 6.96671C2.27626 6.96671 2.06237 6.87504 1.87904 6.69171C1.71098 6.52365 1.62695 6.30976 1.62695 6.05004C1.62695 5.79032 1.71098 5.57643 1.87904 5.40837L4.51445 2.77296C4.68251 2.6049 4.88876 2.52087 5.1332 2.52087C5.37765 2.52087 5.59154 2.61254 5.77487 2.79587C5.94293 2.96393 6.02695 3.17782 6.02695 3.43754C6.02695 3.69726 5.94293 3.91115 5.77487 4.07921L3.13945 6.71462ZM18.8374 6.69171L16.202 4.05629C16.0339 3.88824 15.9499 3.68199 15.9499 3.43754C15.9499 3.1931 16.0415 2.97921 16.2249 2.79587C16.3929 2.62782 16.6068 2.54379 16.8665 2.54379C17.1263 2.54379 17.3401 2.62782 17.5082 2.79587L20.1436 5.43129C20.3117 5.59935 20.3957 5.8056 20.3957 6.05004C20.3957 6.29448 20.304 6.50837 20.1207 6.69171C19.9526 6.85976 19.7388 6.94379 19.479 6.94379C19.2193 6.94379 19.0054 6.85976 18.8374 6.69171ZM10.9999 18.3334C12.7874 18.3334 14.3035 17.7107 15.5484 16.4652C16.7938 15.2204 17.4165 13.7042 17.4165 11.9167C17.4165 10.1292 16.7938 8.61273 15.5484 7.36729C14.3035 6.12246 12.7874 5.50004 10.9999 5.50004C9.21237 5.50004 7.6962 6.12246 6.45137 7.36729C5.20593 8.61273 4.5832 10.1292 4.5832 11.9167C4.5832 13.7042 5.20593 15.2204 6.45137 16.4652C7.6962 17.7107 9.21237 18.3334 10.9999 18.3334Z",
+    fill: color
+  }));
+};
+
+AlarmIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var FaceIcon = function FaceIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 20,
+    height: height || width || 20,
+    viewBox: "0 0 22 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M7.85686 14.9285H14.1426V14.4964C14.1426 13.9071 13.8545 13.4388 13.2783 13.0915C12.7021 12.7448 11.9426 12.5714 10.9997 12.5714C10.0569 12.5714 9.29734 12.7448 8.72115 13.0915C8.14496 13.4388 7.85686 13.9071 7.85686 14.4964V14.9285ZM10.9997 11.7857C11.4319 11.7857 11.8019 11.6317 12.1099 11.3237C12.4174 11.0162 12.5711 10.6464 12.5711 10.2142C12.5711 9.7821 12.4174 9.41203 12.1099 9.10403C11.8019 8.79655 11.4319 8.64281 10.9997 8.64281C10.5676 8.64281 10.1978 8.79655 9.89029 9.10403C9.58229 9.41203 9.42829 9.7821 9.42829 10.2142C9.42829 10.6464 9.58229 11.0162 9.89029 11.3237C10.1978 11.6317 10.5676 11.7857 10.9997 11.7857ZM4.71401 18.0714C4.28186 18.0714 3.91205 17.9176 3.60458 17.6102C3.29658 17.3022 3.14258 16.9321 3.14258 16.5V7.07139C3.14258 6.63924 3.29658 6.26943 3.60458 5.96196C3.91205 5.65396 4.28186 5.49996 4.71401 5.49996H7.18901L8.17115 4.43924C8.3152 4.269 8.48858 4.14119 8.69129 4.05581C8.89453 3.97096 9.10746 3.92853 9.33008 3.92853H12.6694C12.892 3.92853 13.1049 3.97096 13.3081 4.05581C13.5109 4.14119 13.6842 4.269 13.8283 4.43924L14.8104 5.49996H17.2854C17.7176 5.49996 18.0876 5.65396 18.3956 5.96196C18.7031 6.26943 18.8569 6.63924 18.8569 7.07139V16.5C18.8569 16.9321 18.7031 17.3022 18.3956 17.6102C18.0876 17.9176 17.7176 18.0714 17.2854 18.0714H4.71401ZM17.2854 16.5V7.07139H4.71401V16.5H17.2854Z",
+    fill: color
+  }), /*#__PURE__*/React__default["default"].createElement(Svg.Defs, null, /*#__PURE__*/React__default["default"].createElement(Svg.ClipPath, {
+    id: "clip0_3033_143180"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Rect, {
+    width: width || height || 20,
+    height: height || width || 20,
+    fill: "white"
+  }))));
+};
+
+FaceIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var MoveDownIcon = function MoveDownIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 21 16",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M5.75192 15.5854C5.58387 15.4173 5.49984 15.2111 5.49984 14.9666C5.49984 14.7222 5.58387 14.5083 5.75192 14.325L6.57692 13.4541C4.97275 13.2708 3.62831 12.5757 2.54359 11.3687C1.45887 10.1618 0.916504 8.73329 0.916504 7.08329C0.916504 5.29579 1.53923 3.77932 2.78467 2.53388C4.0295 1.28904 5.54567 0.666626 7.33317 0.666626H9.1665C9.42623 0.666626 9.64409 0.754321 9.82009 0.929709C9.99548 1.10571 10.0832 1.32357 10.0832 1.58329C10.0832 1.84301 9.99548 2.06088 9.82009 2.23688C9.64409 2.41226 9.42623 2.49996 9.1665 2.49996H7.33317C6.06512 2.49996 4.98436 2.94668 4.09092 3.84013C3.19686 4.73418 2.74984 5.81524 2.74984 7.08329C2.74984 8.21385 3.10489 9.19162 3.815 10.0166C4.52573 10.8416 5.41581 11.3611 6.48525 11.575L5.77484 10.8645C5.60678 10.6965 5.52275 10.4866 5.52275 10.2348C5.52275 9.9824 5.60678 9.76454 5.77484 9.58121C5.95817 9.39788 6.17603 9.30621 6.42842 9.30621C6.6802 9.30621 6.89775 9.39788 7.08109 9.58121L9.4415 11.9416C9.53317 12.0333 9.59825 12.1326 9.63675 12.2395C9.67464 12.3465 9.69359 12.4611 9.69359 12.5833C9.69359 12.7055 9.67464 12.8201 9.63675 12.927C9.59825 13.034 9.53317 13.1333 9.4415 13.225L7.05817 15.6083C6.89011 15.7763 6.67623 15.8604 6.4165 15.8604C6.15678 15.8604 5.93525 15.7687 5.75192 15.5854ZM13.7498 7.08329C13.2457 7.08329 12.8142 6.90363 12.4555 6.54429C12.0962 6.18557 11.9165 5.75413 11.9165 5.24996V2.49996C11.9165 1.99579 12.0962 1.56435 12.4555 1.20563C12.8142 0.846292 13.2457 0.666626 13.7498 0.666626H18.3332C18.8373 0.666626 19.2691 0.846292 19.6284 1.20563C19.9871 1.56435 20.1665 1.99579 20.1665 2.49996V5.24996C20.1665 5.75413 19.9871 6.18557 19.6284 6.54429C19.2691 6.90363 18.8373 7.08329 18.3332 7.08329H13.7498ZM13.7498 5.24996H18.3332V2.49996H13.7498V5.24996ZM13.7498 15.3333C13.2457 15.3333 12.8142 15.1539 12.4555 14.7952C12.0962 14.4359 11.9165 14.0041 11.9165 13.5V10.75C11.9165 10.2458 12.0962 9.81404 12.4555 9.45471C12.8142 9.09599 13.2457 8.91663 13.7498 8.91663H18.3332C18.8373 8.91663 19.2691 9.09599 19.6284 9.45471C19.9871 9.81404 20.1665 10.2458 20.1665 10.75V13.5C20.1665 14.0041 19.9871 14.4359 19.6284 14.7952C19.2691 15.1539 18.8373 15.3333 18.3332 15.3333H13.7498Z",
+    fill: color
+  }));
+};
+
+MoveDownIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var PersonAddIcon = function PersonAddIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 22 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M17.4165 12.8333C17.1568 12.8333 16.9392 12.7453 16.7638 12.5693C16.5878 12.3939 16.4998 12.1763 16.4998 11.9166V10.0833H14.6665C14.4068 10.0833 14.1892 9.99529 14.0138 9.81929C13.8378 9.6439 13.7498 9.42635 13.7498 9.16663C13.7498 8.9069 13.8378 8.68904 14.0138 8.51304C14.1892 8.33765 14.4068 8.24996 14.6665 8.24996H16.4998V6.41663C16.4998 6.1569 16.5878 5.93904 16.7638 5.76304C16.9392 5.58765 17.1568 5.49996 17.4165 5.49996C17.6762 5.49996 17.8938 5.58765 18.0692 5.76304C18.2452 5.93904 18.3332 6.1569 18.3332 6.41663V8.24996H20.1665C20.4262 8.24996 20.6438 8.33765 20.8192 8.51304C20.9952 8.68904 21.0832 8.9069 21.0832 9.16663C21.0832 9.42635 20.9952 9.6439 20.8192 9.81929C20.6438 9.99529 20.4262 10.0833 20.1665 10.0833H18.3332V11.9166C18.3332 12.1763 18.2452 12.3939 18.0692 12.5693C17.8938 12.7453 17.6762 12.8333 17.4165 12.8333ZM8.24984 11C7.2415 11 6.37831 10.6409 5.66025 9.92288C4.9422 9.20482 4.58317 8.34163 4.58317 7.33329C4.58317 6.32496 4.9422 5.46177 5.66025 4.74371C6.37831 4.02565 7.2415 3.66663 8.24984 3.66663C9.25817 3.66663 10.1214 4.02565 10.8394 4.74371C11.5575 5.46177 11.9165 6.32496 11.9165 7.33329C11.9165 8.34163 11.5575 9.20482 10.8394 9.92288C10.1214 10.6409 9.25817 11 8.24984 11ZM1.83317 18.3333C1.57345 18.3333 1.35589 18.2453 1.1805 18.0693C1.0045 17.8939 0.916504 17.6763 0.916504 17.4166V15.7666C0.916504 15.2472 1.05034 14.7696 1.318 14.3339C1.58506 13.8988 1.94011 13.5666 2.38317 13.3375C3.33039 12.8638 4.29289 12.5085 5.27067 12.2714C6.24845 12.0349 7.2415 11.9166 8.24984 11.9166C9.25817 11.9166 10.2512 12.0349 11.229 12.2714C12.2068 12.5085 13.1693 12.8638 14.1165 13.3375C14.5596 13.5666 14.9146 13.8988 15.1817 14.3339C15.4493 14.7696 15.5832 15.2472 15.5832 15.7666V17.4166C15.5832 17.6763 15.4952 17.8939 15.3192 18.0693C15.1438 18.2453 14.9262 18.3333 14.6665 18.3333H1.83317ZM2.74984 16.5H13.7498V15.7666C13.7498 15.5986 13.708 15.4458 13.6243 15.3083C13.5399 15.1708 13.429 15.0638 13.2915 14.9875C12.4665 14.575 11.6339 14.2654 10.7936 14.0589C9.95331 13.8529 9.10539 13.75 8.24984 13.75C7.39428 13.75 6.54637 13.8529 5.70609 14.0589C4.86581 14.2654 4.03317 14.575 3.20817 14.9875C3.07067 15.0638 2.96006 15.1708 2.87634 15.3083C2.792 15.4458 2.74984 15.5986 2.74984 15.7666V16.5ZM8.24984 9.16663C8.754 9.16663 9.18575 8.98696 9.54509 8.62763C9.90381 8.2689 10.0832 7.83746 10.0832 7.33329C10.0832 6.82913 9.90381 6.39768 9.54509 6.03896C9.18575 5.67963 8.754 5.49996 8.24984 5.49996C7.74567 5.49996 7.31423 5.67963 6.9555 6.03896C6.59617 6.39768 6.4165 6.82913 6.4165 7.33329C6.4165 7.83746 6.59617 8.2689 6.9555 8.62763C7.31423 8.98696 7.74567 9.16663 8.24984 9.16663Z",
+    fill: color
+  }));
+};
+
+PersonAddIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
+var UpdateIcon = function UpdateIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$height = _ref.height,
+      height = _ref$height === void 0 ? null : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === void 0 ? null : _ref$width;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: width || height || 16,
+    height: height || width || 16,
+    viewBox: "0 0 22 22",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M12 10.6L14.5 13.1C14.6833 13.2833 14.775 13.5167 14.775 13.8C14.775 14.0833 14.6833 14.3167 14.5 14.5C14.3167 14.6833 14.0833 14.775 13.8 14.775C13.5167 14.775 13.2833 14.6833 13.1 14.5L10.3 11.7C10.2 11.6 10.125 11.4873 10.075 11.362C10.025 11.2373 10 11.1083 10 10.975V7C10 6.71667 10.096 6.479 10.288 6.287C10.4793 6.09567 10.7167 6 11 6C11.2833 6 11.521 6.09567 11.713 6.287C11.9043 6.479 12 6.71667 12 7V10.6ZM11 20C9.75 20 8.57933 19.7627 7.488 19.288C6.396 18.8127 5.446 18.1707 4.638 17.362C3.82933 16.554 3.18733 15.604 2.712 14.512C2.23733 13.4207 2 12.25 2 11C2 9.75 2.23733 8.579 2.712 7.487C3.18733 6.39567 3.82933 5.44567 4.638 4.637C5.446 3.829 6.396 3.18733 7.488 2.712C8.57933 2.23733 9.75 2 11 2C12.3667 2 13.6627 2.29167 14.888 2.875C16.1127 3.45833 17.15 4.28333 18 5.35V4C18 3.71667 18.096 3.479 18.288 3.287C18.4793 3.09567 18.7167 3 19 3C19.2833 3 19.5207 3.09567 19.712 3.287C19.904 3.479 20 3.71667 20 4V8C20 8.28333 19.904 8.52067 19.712 8.712C19.5207 8.904 19.2833 9 19 9H15C14.7167 9 14.4793 8.904 14.288 8.712C14.096 8.52067 14 8.28333 14 8C14 7.71667 14.096 7.479 14.288 7.287C14.4793 7.09567 14.7167 7 15 7H16.75C16.0667 6.06667 15.225 5.33333 14.225 4.8C13.225 4.26667 12.15 4 11 4C9.05 4 7.396 4.679 6.038 6.037C4.67933 7.39567 4 9.05 4 11C4 12.95 4.67933 14.604 6.038 15.962C7.396 17.3207 9.05 18 11 18C12.5333 18 13.921 17.55 15.163 16.65C16.4043 15.75 17.2417 14.5667 17.675 13.1C17.7583 12.8167 17.9127 12.579 18.138 12.387C18.3627 12.1957 18.6167 12.1333 18.9 12.2C19.2 12.2667 19.4207 12.4333 19.562 12.7C19.704 12.9667 19.7333 13.25 19.65 13.55C19.1 15.4667 18.025 17.0207 16.425 18.212C14.825 19.404 13.0167 20 11 20Z",
+    fill: color
+  }));
+};
+
+UpdateIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
   height: PropTypes__default["default"].number,
@@ -4509,13 +4672,26 @@ var TrashIcon = function TrashIcon(_ref) {
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
-    viewBox: "0 0 448 512",
+    viewBox: "0 0 22 22",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
-    d: "M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z",
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Mask, {
+    id: "mask0_3033_143326",
+    maskUnits: "userSpaceOnUse",
+    x: "0",
+    y: "0",
+    width: dimensions().width,
+    height: dimensions().height
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Rect, {
+    width: dimensions().width,
+    height: dimensions().height,
     fill: color
-  }));
+  })), /*#__PURE__*/React__default["default"].createElement(Svg.G, {
+    mask: "url(#mask0_3033_143326)"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M6.4165 19.25C5.91234 19.25 5.48089 19.0706 5.12217 18.7119C4.76284 18.3526 4.58317 17.9208 4.58317 17.4167V5.5C4.32345 5.5 4.10559 5.41231 3.92959 5.23692C3.7542 5.06092 3.6665 4.84306 3.6665 4.58333C3.6665 4.32361 3.7542 4.10575 3.92959 3.92975C4.10559 3.75436 4.32345 3.66667 4.58317 3.66667H8.24984C8.24984 3.40694 8.33784 3.18908 8.51384 3.01308C8.68923 2.83769 8.90678 2.75 9.1665 2.75H12.8332C13.0929 2.75 13.3108 2.83769 13.4868 3.01308C13.6621 3.18908 13.7498 3.40694 13.7498 3.66667H17.4165C17.6762 3.66667 17.8938 3.75436 18.0692 3.92975C18.2452 4.10575 18.3332 4.32361 18.3332 4.58333C18.3332 4.84306 18.2452 5.06092 18.0692 5.23692C17.8938 5.41231 17.6762 5.5 17.4165 5.5V17.4167C17.4165 17.9208 17.2371 18.3526 16.8784 18.7119C16.5191 19.0706 16.0873 19.25 15.5832 19.25H6.4165ZM6.4165 5.5V17.4167H15.5832V5.5H6.4165ZM8.24984 14.6667C8.24984 14.9264 8.33784 15.1439 8.51384 15.3193C8.68923 15.4953 8.90678 15.5833 9.1665 15.5833C9.42623 15.5833 9.64409 15.4953 9.82009 15.3193C9.99548 15.1439 10.0832 14.9264 10.0832 14.6667V8.25C10.0832 7.99028 9.99548 7.77242 9.82009 7.59642C9.64409 7.42103 9.42623 7.33333 9.1665 7.33333C8.90678 7.33333 8.68923 7.42103 8.51384 7.59642C8.33784 7.77242 8.24984 7.99028 8.24984 8.25V14.6667ZM11.9165 14.6667C11.9165 14.9264 12.0045 15.1439 12.1805 15.3193C12.3559 15.4953 12.5734 15.5833 12.8332 15.5833C13.0929 15.5833 13.3108 15.4953 13.4868 15.3193C13.6621 15.1439 13.7498 14.9264 13.7498 14.6667V8.25C13.7498 7.99028 13.6621 7.77242 13.4868 7.59642C13.3108 7.42103 13.0929 7.33333 12.8332 7.33333C12.5734 7.33333 12.3559 7.42103 12.1805 7.59642C12.0045 7.77242 11.9165 7.99028 11.9165 8.25V14.6667Z",
+    fill: color
+  })));
 };
 
 TrashIcon.propTypes = {
@@ -6897,6 +7073,7 @@ PhotoCameraFrontIcon.propTypes = {
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleIcon = AddCircleIcon;
 exports.AddCircleOutlineIcon = AddCircleOutlineIcon;
+exports.AlarmIcon = AlarmIcon;
 exports.AnalyticsOutlineIcon = AnalyticsOutlineIcon;
 exports.AppsIcon = AppsIcon;
 exports.ArrowForwardIcon = ArrowForwardIcon;
@@ -6956,6 +7133,7 @@ exports.ExternalLinkIcon = ExternalLinkIcon;
 exports.EyeIcon = EyeIcon;
 exports.EyeOffIcon = EyeOffIcon;
 exports.EyedropperIcon = EyedropperIcon;
+exports.FaceIcon = FaceIcon;
 exports.FacebookIcon = FacebookIcon;
 exports.FacebookSquareIcon = FacebookSquareIcon;
 exports.FileAltIcon = FileAltIcon;
@@ -7009,14 +7187,17 @@ exports.MinusIcon = MinusIcon;
 exports.MobileIcon = MobileIcon;
 exports.MoreVerticalIcon = MoreVerticalIcon;
 exports.MoutainIcon = MoutainIcon;
+exports.MoveDownIcon = MoveDownIcon;
 exports.NetworkWiredIcon = NetworkWiredIcon;
 exports.NotificationsActiveIcon = NotificationsActiveIcon;
+exports.NotificationsCircleIcon = NotificationsCircleIcon;
 exports.NotificationsIcon = NotificationsIcon;
 exports.OctopussDeployIcon = OctopussDeployIcon;
 exports.PaperPlaneIcon = PaperPlaneIcon;
 exports.PauseIcon = PauseIcon;
 exports.PenIcon = PenIcon;
 exports.PeopleIcon = PeopleIcon;
+exports.PersonAddIcon = PersonAddIcon;
 exports.PhoneIcon = PhoneIcon;
 exports.PhotoCameraFrontIcon = PhotoCameraFrontIcon;
 exports.PlayCircleIcon = PlayCircleIcon;
@@ -7067,6 +7248,7 @@ exports.TwitterIcon = TwitterIcon;
 exports.TwitterSquareIcon = TwitterSquareIcon;
 exports.UndoIcon = UndoIcon;
 exports.UniversityIcon = UniversityIcon;
+exports.UpdateIcon = UpdateIcon;
 exports.UserAssignmentIcon = UserAssignmentIcon;
 exports.UserClockIcon = UserClockIcon;
 exports.UserIcon = UserIcon;
