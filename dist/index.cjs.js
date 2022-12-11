@@ -4675,23 +4675,10 @@ var TrashIcon = function TrashIcon(_ref) {
     viewBox: "0 0 22 22",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/React__default["default"].createElement(Svg.Mask, {
-    id: "mask0_3033_143326",
-    maskUnits: "userSpaceOnUse",
-    x: "0",
-    y: "0",
-    width: dimensions().width,
-    height: dimensions().height
-  }, /*#__PURE__*/React__default["default"].createElement(Svg.Rect, {
-    width: dimensions().width,
-    height: dimensions().height,
-    fill: color
-  })), /*#__PURE__*/React__default["default"].createElement(Svg.G, {
-    mask: "url(#mask0_3033_143326)"
   }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
     d: "M6.4165 19.25C5.91234 19.25 5.48089 19.0706 5.12217 18.7119C4.76284 18.3526 4.58317 17.9208 4.58317 17.4167V5.5C4.32345 5.5 4.10559 5.41231 3.92959 5.23692C3.7542 5.06092 3.6665 4.84306 3.6665 4.58333C3.6665 4.32361 3.7542 4.10575 3.92959 3.92975C4.10559 3.75436 4.32345 3.66667 4.58317 3.66667H8.24984C8.24984 3.40694 8.33784 3.18908 8.51384 3.01308C8.68923 2.83769 8.90678 2.75 9.1665 2.75H12.8332C13.0929 2.75 13.3108 2.83769 13.4868 3.01308C13.6621 3.18908 13.7498 3.40694 13.7498 3.66667H17.4165C17.6762 3.66667 17.8938 3.75436 18.0692 3.92975C18.2452 4.10575 18.3332 4.32361 18.3332 4.58333C18.3332 4.84306 18.2452 5.06092 18.0692 5.23692C17.8938 5.41231 17.6762 5.5 17.4165 5.5V17.4167C17.4165 17.9208 17.2371 18.3526 16.8784 18.7119C16.5191 19.0706 16.0873 19.25 15.5832 19.25H6.4165ZM6.4165 5.5V17.4167H15.5832V5.5H6.4165ZM8.24984 14.6667C8.24984 14.9264 8.33784 15.1439 8.51384 15.3193C8.68923 15.4953 8.90678 15.5833 9.1665 15.5833C9.42623 15.5833 9.64409 15.4953 9.82009 15.3193C9.99548 15.1439 10.0832 14.9264 10.0832 14.6667V8.25C10.0832 7.99028 9.99548 7.77242 9.82009 7.59642C9.64409 7.42103 9.42623 7.33333 9.1665 7.33333C8.90678 7.33333 8.68923 7.42103 8.51384 7.59642C8.33784 7.77242 8.24984 7.99028 8.24984 8.25V14.6667ZM11.9165 14.6667C11.9165 14.9264 12.0045 15.1439 12.1805 15.3193C12.3559 15.4953 12.5734 15.5833 12.8332 15.5833C13.0929 15.5833 13.3108 15.4953 13.4868 15.3193C13.6621 15.1439 13.7498 14.9264 13.7498 14.6667V8.25C13.7498 7.99028 13.6621 7.77242 13.4868 7.59642C13.3108 7.42103 13.0929 7.33333 12.8332 7.33333C12.5734 7.33333 12.3559 7.42103 12.1805 7.59642C12.0045 7.77242 11.9165 7.99028 11.9165 8.25V14.6667Z",
     fill: color
-  })));
+  }));
 };
 
 TrashIcon.propTypes = {
@@ -6836,6 +6823,58 @@ SellIcon.propTypes = {
   with: PropTypes__default["default"].number
 };
 
+var DesktopIcon = function DesktopIcon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+      _ref$width = _ref.width,
+      widthProp = _ref$width === void 0 ? null : _ref$width,
+      _ref$height = _ref.height,
+      heightProp = _ref$height === void 0 ? null : _ref$height;
+
+  var dimensions = function dimensions() {
+    var width = 448 * 16 / 512;
+    var height = 16;
+
+    if (widthProp && heightProp) {
+      height = heightProp;
+      width = widthProp;
+    }
+
+    if (widthProp && !heightProp) {
+      height = widthProp * 512 / 448;
+      width = widthProp;
+    }
+
+    if (!widthProp && heightProp) {
+      width = 448 * heightProp / 512;
+      height = heightProp;
+    }
+
+    return {
+      height: height,
+      width: width
+    };
+  };
+
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: dimensions().width,
+    height: dimensions().height,
+    viewBox: "0 0 24 17",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M2 17C1.45 17 0.979333 16.8043 0.588 16.413C0.196 16.021 0 15.55 0 15H4C3.45 15 2.97933 14.8043 2.588 14.413C2.196 14.021 2 13.55 2 13V2C2 1.45 2.196 0.979 2.588 0.587C2.97933 0.195667 3.45 0 4 0H20C20.55 0 21.021 0.195667 21.413 0.587C21.8043 0.979 22 1.45 22 2V13C22 13.55 21.8043 14.021 21.413 14.413C21.021 14.8043 20.55 15 20 15H24C24 15.55 23.8043 16.021 23.413 16.413C23.021 16.8043 22.55 17 22 17H2ZM12 16C12.2833 16 12.521 15.904 12.713 15.712C12.9043 15.5207 13 15.2833 13 15C13 14.7167 12.9043 14.4793 12.713 14.288C12.521 14.096 12.2833 14 12 14C11.7167 14 11.4793 14.096 11.288 14.288C11.096 14.4793 11 14.7167 11 15C11 15.2833 11.096 15.5207 11.288 15.712C11.4793 15.904 11.7167 16 12 16ZM4 13H20V2H4V13Z",
+    fill: color
+  }));
+};
+
+DesktopIcon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  height: PropTypes__default["default"].number,
+  with: PropTypes__default["default"].number
+};
+
 var EditNoteIcon = function EditNoteIcon(_ref) {
   var _ref$color = _ref.color,
       color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
@@ -7120,6 +7159,7 @@ exports.CompassIcon = CompassIcon;
 exports.ContentPasteIcon = ContentPasteIcon;
 exports.ControlPointDuplicateIcon = ControlPointDuplicateIcon;
 exports.CreditCardIcon = CreditCardIcon;
+exports.DesktopIcon = DesktopIcon;
 exports.DonutIcon = DonutIcon;
 exports.DownloadIcon = DownloadIcon;
 exports.DumbbellIcon = DumbbellIcon;
