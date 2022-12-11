@@ -151,7 +151,7 @@ import HandsHelpingIcon from './icons/HandsHelping';
 import MobileIcon from "./icons/Mobile";
 import SignatureIcon from "./icons/Signature";
 import SellIcon from "./icons/Sell";
-
+import DesktopIcon from "./icons/Desktop";
 import EditNoteIcon from "./icons/EditNote";
 import RepeatIcon from "./icons/Repeat";
 import IosShareIcon from "./icons/IosShare";
@@ -966,6 +966,11 @@ const SellIconStory = args => (
 );
 SellIconStory.storyName = 'Sell';
 
+const DesktopIconIconStory = args => (
+  <DesktopIcon {...args} />
+);
+DesktopIconIconStory.storyName = 'Desktop';
+
 const EditNoteIconIconStory = args => (
   <EditNoteIcon {...args} />
 );
@@ -1065,6 +1070,7 @@ export {
   ColumnsIconStory,
   ContentPasteIconStory,
   ControlPointDuplicateIconStory,
+  DesktopIconIconStory,
   DonutIconStory,
   DownloadIconStory,
   EditIconStory,

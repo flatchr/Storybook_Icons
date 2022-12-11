@@ -177,6 +177,7 @@ export { default as SignatureIcon } from './icons/Signature'
 export { default as AutoPayIcon } from './icons/AutoPay'
 export { default as BlockIcon } from './icons/Block'
 export { default as SellIcon } from './icons/Sell';
+export { default as DesktopIcon } from './icons/Desktop';
 export { default as EditNoteIcon } from './icons/EditNote';
 export { default as RepeatIcon } from './icons/Repeat';
 export { default as IosShareIcon } from './icons/IosShare';
