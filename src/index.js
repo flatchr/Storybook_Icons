@@ -15,6 +15,7 @@ export { default as HeartIcon } from './icons/Heart';
 export { default as ClipboardListIcon } from './icons/ClipboardList';
 export { default as DonutIcon } from './icons/Donut';
 export { default as ArrowForwardIcon } from './icons/ArrowForward';
+export { default as CallPaulIcon } from './icons/CallPaul';
 export { default as MenuIcon } from './icons/Menu';
 export { default as AccountPinCircleFillIcon } from './icons/AccountPinCircleFill';
 export { default as GiftIcon } from './icons/Gift';

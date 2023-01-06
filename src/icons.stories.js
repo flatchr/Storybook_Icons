@@ -14,6 +14,7 @@ import HeartIcon from './icons/Heart';
 import ClipboardListIcon from './icons/ClipboardList';
 import DonutIcon from './icons/Donut';
 import ArrowForwardIcon from './icons/ArrowForward';
+import CallPaulIcon from './icons/CallPaulIcon';
 import MenuIcon from './icons/Menu';
 import AccountPinCircleFillIcon from './icons/AccountPinCircleFill';
 import GiftIcon from './icons/Gift';
@@ -966,6 +967,11 @@ const SellIconStory = args => (
 );
 SellIconStory.storyName = 'Sell';
 
+const CallPaulIconStory = args => (
+  <CallPaulIcon {...args} />
+);
+CallPaulIconStory.storyName = 'CallPaul';
+
 const DesktopIconIconStory = args => (
   <DesktopIcon {...args} />
 );
@@ -1045,6 +1051,7 @@ export {
   BullhornIconStory,
   CalendarCheckIconStory,
   CalendarIconStory,
+  CallPaulIcon,
   CallSplitIconStory,
   CameraIconStory,
   CaretDownIconStory,
