@@ -14,7 +14,7 @@ import HeartIcon from './icons/Heart';
 import ClipboardListIcon from './icons/ClipboardList';
 import DonutIcon from './icons/Donut';
 import ArrowForwardIcon from './icons/ArrowForward';
-import CallPaulIcon from './icons/CallPaulIcon';
+import CallPaulIcon from './icons/CallPaul';
 import MenuIcon from './icons/Menu';
 import AccountPinCircleFillIcon from './icons/AccountPinCircleFill';
 import GiftIcon from './icons/Gift';
@@ -1051,7 +1051,7 @@ export {
   BullhornIconStory,
   CalendarCheckIconStory,
   CalendarIconStory,
-  CallPaulIcon,
+  CallPaulIconStory,
   CallSplitIconStory,
   CameraIconStory,
   CaretDownIconStory,
