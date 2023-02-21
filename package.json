@@ -54,8 +54,8 @@
     ]
   },
   "dependencies": {
-    "@flatchr/helper": "^3.0.4",
-    "@flatchr/system-design": "^1.1.1",
+    "@flatchr/helper": "3.2.2",
+    "@flatchr/system-design": "2.1.3",
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
