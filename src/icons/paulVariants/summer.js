@@ -1,13 +1,12 @@
 import React from 'react';
 import { G, Path, Circle } from 'react-native-svg';
 
-const SummerVariant = ({ stylePathDropShadow }) => {
+const SummerVariant = () => {
   return (
     <G
       rotation={18}
       scale={0.26}
       translate="42,20"
-      {...stylePathDropShadow}
     >
       <Path
         fill="#fcdd66"

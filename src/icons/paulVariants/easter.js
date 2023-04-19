@@ -1,13 +1,12 @@
 import React from 'react';
 import { G, Path, Circle } from 'react-native-svg';
 
-const EasterVariant = ({ stylePathDropShadow }) => {
+const EasterVariant = () => {
   return (
     <G
       rotation={18}
       scale={0.085}
       translate="45,20"
-      {...stylePathDropShadow}
     >
       <Path
         fill="#FFDF96"

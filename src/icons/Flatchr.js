@@ -15,12 +15,24 @@ import MovemberVariant from './paulVariants/movember';
 import FrenchNationalDayVariant from './paulVariants/frenchNationalDay';
 import SaintPatrickVariant from './paulVariants/saintPatrick';
 import HeartVariant from './paulVariants/heart';
-
-const stylePathDropShadow = {
-  style: {
-    filter: 'drop-shadow(rgba(10, 31, 51, 0.4) -57px 29px 33px)'
-  }
-};
+import NewYearDayVariant from './paulVariants/newYearDay';
+import EpiphanyVariant from './paulVariants/epiphany';
+import CandlemasVariant from './paulVariants/candlemas';
+import CancerDayVariant from './paulVariants/cancerDay';
+import ShroveTuesdayVariant from './paulVariants/shroveTuesday';
+import AprilFoolDayVariant from './paulVariants/aprilFoolDay';
+import WorkersDayVariant from './paulVariants/workersDay';
+import EuropeanDayVariant from './paulVariants/europeanDay';
+import RolandGarrosVariant from './paulVariants/rolandGarros';
+import WorldBloodDonorDayVariant from './paulVariants/worldBloodDonorDay';
+import HolidaysVariant from './paulVariants/holidays';
+import BackToSchoolVariant from './paulVariants/backToSchool';
+import AutumnVariant from './paulVariants/autumn';
+import SpanishNationalDayVariant from './paulVariants/spanishNationalDay';
+import ArmisticeVariant from './paulVariants/armistice';
+import WinterVariant from './paulVariants/winter';
+import ChristmasSweaterDayVariant from './paulVariants/christmasSweaterDay';
+import ChristmasVariant from './paulVariants/christmas';
 
 const RenderEvent = ({ event }) => {
   switch (event) {
@@ -29,15 +41,14 @@ const RenderEvent = ({ event }) => {
       return (
         <HeartVariant
           isSaintValentineEvent={event === 'saintValentine'}
-          stylePathDropShadow={stylePathDropShadow}
         />
       );
     case 'saintPatrick':
-      return <SaintPatrickVariant stylePathDropShadow={stylePathDropShadow} />;
+      return <SaintPatrickVariant />;
     case 'easter':
       return <EasterVariant />;
     case 'spring':
-      return <SpringVariant stylePathDropShadow={stylePathDropShadow} />;
+      return <SpringVariant />;
     case 'summer':
       return <SummerVariant />;
     case 'frenchNationalDay':
@@ -50,6 +61,42 @@ const RenderEvent = ({ event }) => {
       return <PinkOctoberVariant />;
     case 'movember':
       return <MovemberVariant />;
+    case 'newYearDay':
+      return <NewYearDayVariant />;
+    case 'epiphany':
+      return <EpiphanyVariant />;
+    case 'candlemas':
+      return <CandlemasVariant />;
+    case 'cancerDay':
+      return <CancerDayVariant />;
+    case 'shroveTuesday':
+      return <ShroveTuesdayVariant />;
+    case 'aprilFoolDay':
+      return <AprilFoolDayVariant />;
+    case 'workersDay':
+      return <WorkersDayVariant />;
+    case 'europeanDay':
+      return <EuropeanDayVariant />;
+    case 'rolandGarros':
+      return <RolandGarrosVariant />;
+    case 'worldBloodDonorDay':
+      return <WorldBloodDonorDayVariant />;
+    case 'holidays':
+      return <HolidaysVariant />;
+    case 'backToSchool':
+      return <BackToSchoolVariant />;
+    case 'autumn':
+      return <AutumnVariant />;
+    case 'spanishNationalDay':
+      return <SpanishNationalDayVariant />;
+    case 'armistice':
+      return <ArmisticeVariant />;
+    case 'winter':
+      return <WinterVariant />;
+    case 'christmasSweaterDay':
+      return <ChristmasSweaterDayVariant />;
+    case 'christmas':
+      return <ChristmasVariant />;
     default:
       return null;
   }
@@ -95,7 +142,7 @@ const LogoFlatchr = props => {
     <Svg
       width={dimensions().width}
       height={dimensions().height}
-      viewBox={`0 0 ${onlyPaul ? '75 90' : '347 90'}`}
+      viewBox={onlyPaul ? '-7.5 -7.5 90 105' : '0 0 347 90'}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
