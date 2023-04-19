@@ -1,16 +1,12 @@
 import React from 'react';
 import { G, Path } from 'react-native-svg';
 
-const HeartVariant = ({
-  isSaintValentineEvent = false,
-  stylePathDropShadow
-}) => {
+const HeartVariant = ({ isSaintValentineEvent = false }) => {
   return (
     <G
       rotation={18}
       scale={0.065}
       translate="38,25"
-      {...stylePathDropShadow}
     >
       <Path
         d="M251.332 420.609C251.332 420.609 296.591 394.083 348.517 353.313H154.148C206.075 394.083 251.332 420.609 251.332 420.609"

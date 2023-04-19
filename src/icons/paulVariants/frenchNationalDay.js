@@ -1,13 +1,12 @@
 import React from 'react';
 import { G, Path } from 'react-native-svg';
 
-const FrenchNationalDayVariant = ({ stylePathDropShadow }) => {
+const FrenchNationalDayVariant = () => {
   return (
     <G
       rotation={18}
       scale={0.07}
       translate="43,25"
-      {...stylePathDropShadow}
     >
       <Path
         fill="#fff"

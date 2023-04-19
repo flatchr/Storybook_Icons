@@ -1,13 +1,12 @@
 import React from 'react';
 import { G, Path, Circle } from 'react-native-svg';
 
-const SpringVariant = ({ stylePathDropShadow }) => {
+const SpringVariant = () => {
   return (
     <G
       rotation={18}
       scale={0.07}
       translate="40,20"
-      {...stylePathDropShadow}
     >
       <Path
         fill="#ffdb2d"
