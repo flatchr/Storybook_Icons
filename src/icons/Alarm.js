@@ -29,8 +29,7 @@ AlarmIcon.propTypes = {
     PropTypes.string,
     PropTypes.number, // used for null
   ]),
-  height: PropTypes.number,
-  with: PropTypes.number,
+  size: PropTypes.number,
 };
 
 export default AlarmIcon;

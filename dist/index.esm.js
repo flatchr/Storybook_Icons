@@ -2347,8 +2347,7 @@ var AlarmIcon = function AlarmIcon(_ref) {
 AlarmIcon.propTypes = {
   color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
   ]),
-  height: PropTypes.number,
-  with: PropTypes.number
+  size: PropTypes.number
 };
 
 var FaceIcon = function FaceIcon(_ref) {
@@ -8875,4 +8874,3775 @@ PhotoCameraFrontIcon.propTypes = {
   with: PropTypes.number
 };
 
-export { AccountPinCircleFillIcon, AddCircleIcon, AddCircleOutlineIcon, AlarmIcon, AnalyticsOutlineIcon, AppsIcon, ArrowForwardIcon, ArrowRepeatIcon, AttachFileIcon, AutoPayIcon, BanIcon, BatteryThreeQuartersIcon, BinocularsIcon, BlockIcon, BoltIcon, BookmarkAltIcon, BookmarkIcon, BriefCaseIcon, BuildingIcon, BullhornIcon, CalculatorIcon, CalendarCheckIcon, CalendarIcon, CallPaulIcon, CallSplitIcon, CameraIcon, CaretDownIcon, CaretUpIcon, ChatBubbleIcon, ChatBubblesIcon, CheckCircleIcon, CheckIcon, CheckSquareIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, CircleIcon, ClipboardListIcon, CloneIcon, CloseCircleIcon, CloseIcon, CodeBranchIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColumnsIcon, CompassIcon, ContentPasteIcon, ControlPointDuplicateIcon, CreditCardIcon, DesktopIcon, DonutIcon, DownloadIcon, DumbbellIcon, EditIcon, EditNoteIcon, EnvelopeIcon, EnveloppeCheckIcon, ErrorIcon, EuroIcon, ExternalLinkIcon, EyeIcon, EyeOffIcon, EyedropperIcon, FaceIcon, FacebookIcon, FacebookSquareIcon, FileAltIcon, FileIcon, FileInvoiceDollarIcon, FilterIcon, FolderIcon, FolderOpenedIcon, FontDownloadIcon, FormatAlignLeftIcon, FormatBoldIcon, FormatClearIcon, FormatItalicIcon, FormatListBulletedIcon, FormatListNumberedIcon, FormatUnderlineIcon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, HandHoldingHeartIcon, HandsHelpingIcon, HeartIcon, HistoryIcon, ImageEditIcon, ImageIcon, InfoCircleIcon, InstagramIcon, IosShareIcon, KeyIcon, LayerGroupIcon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, ListAltIcon, LockIcon, LockOpenIcon, LogoFlatchr, MailIcon, MapMarkerIcon, MapSignsIcon, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, MicrophoneIcon, MinusIcon, MobileIcon, MoreVerticalIcon, MoutainIcon, MoveDownIcon, NetworkWiredIcon, NotificationsActiveIcon, NotificationsCircleIcon, NotificationsIcon, OctopussDeployIcon, PaperPlaneIcon, PauseIcon, PenIcon, PeopleIcon, PersonAddIcon, PhoneIcon, PhotoCameraFrontIcon, PlayCircleIcon, PlayIcon, PlusIcon, PublishIcon, RandomIcon, RedoIcon, RedoLoopIcon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, RepeatIcon, ReplyIcon, SaveIcon, SearchIcon, SellIcon, ShareIcon, ShieldAltIcon, ShieldCheckmarkIcon, ShoppingCartIcon, SignInIcon, SignatureIcon, SkypeIcon, SmileGrinHeartsIcon, SmileIcon, SmileWinkIcon, SourceTreeIcon, StarBorderIcon, StarHalfIcon, StarIcon, StarRoundedIcon, StayCurrentPortraitIcon, StopIcon, StoreAltIcon, StreetViewIcon, SwapHorizIcon as SwapHorieIcon, TableAltIcon, TachometerAltIcon, TagsIcon, TaskIcon, ThumbsUpIcon, ToolsIcon, TrashBinIcon, TrashIcon, TrophyIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UpdateIcon, UserAssignmentIcon, UserClockIcon, UserIcon, UserLockIcon, UserPlusIcon, VectorSquareIcon, YoutubeIcon };
+var AccountBalanceDs2Icon = function AccountBalanceDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 17C6.21667 17 5.979 16.904 5.787 16.712C5.59567 16.5207 5.5 16.2833 5.5 16V10.975C5.5 10.6917 5.59567 10.4583 5.787 10.275C5.979 10.0917 6.21667 10 6.5 10C6.78333 10 7.021 10.0957 7.213 10.287C7.40433 10.479 7.5 10.7167 7.5 11V16.025C7.5 16.3083 7.40433 16.5417 7.213 16.725C7.021 16.9083 6.78333 17 6.5 17ZM12.5 17C12.2167 17 11.9793 16.904 11.788 16.712C11.596 16.5207 11.5 16.2833 11.5 16V10.975C11.5 10.6917 11.596 10.4583 11.788 10.275C11.9793 10.0917 12.2167 10 12.5 10C12.7833 10 13.021 10.0957 13.213 10.287C13.4043 10.479 13.5 10.7167 13.5 11V16.025C13.5 16.3083 13.4043 16.5417 13.213 16.725C13.021 16.9083 12.7833 17 12.5 17ZM3.475 21C3.19167 21 2.95833 20.904 2.775 20.712C2.59167 20.5207 2.5 20.2833 2.5 20C2.5 19.7167 2.596 19.4793 2.788 19.288C2.97933 19.096 3.21667 19 3.5 19H21.525C21.8083 19 22.0417 19.096 22.225 19.288C22.4083 19.4793 22.5 19.7167 22.5 20C22.5 20.2833 22.404 20.5207 22.212 20.712C22.0207 20.904 21.7833 21 21.5 21H3.475ZM18.5 17C18.2167 17 17.9793 16.904 17.788 16.712C17.596 16.5207 17.5 16.2833 17.5 16V10.975C17.5 10.6917 17.596 10.4583 17.788 10.275C17.9793 10.0917 18.2167 10 18.5 10C18.7833 10 19.0207 10.0957 19.212 10.287C19.404 10.479 19.5 10.7167 19.5 11V16.025C19.5 16.3083 19.404 16.5417 19.212 16.725C19.0207 16.9083 18.7833 17 18.5 17ZM13.4 1.45L21.825 5.65C22.0417 5.76667 22.2083 5.929 22.325 6.137C22.4417 6.34567 22.5 6.575 22.5 6.825C22.5 7.15833 22.3793 7.43733 22.138 7.662C21.896 7.88733 21.6083 8 21.275 8H3.75C3.41667 8 3.125 7.88733 2.875 7.662C2.625 7.43733 2.5 7.15833 2.5 6.825C2.5 6.575 2.55433 6.34567 2.663 6.137C2.771 5.929 2.94167 5.775 3.175 5.675L11.6 1.45C11.8833 1.31667 12.1833 1.24 12.5 1.25C12.8167 1.24 13.1167 1.31667 13.4 1.45ZM6.95 6H18.05L12.5 3.25L6.95 6Z",
+    fill: color
+  }));
+};
+
+AccountBalanceDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var WorkspacePremiumDs2Icon = function WorkspacePremiumDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.425 12.75L12.5 11.925L13.55 12.75C13.7333 12.9 13.9333 12.904 14.15 12.762C14.3667 12.6207 14.4333 12.4333 14.35 12.2L13.925 10.85L15.125 9.9C15.3083 9.75 15.3627 9.56233 15.288 9.337C15.2127 9.11233 15.0583 9 14.825 9H13.4L12.975 7.675C12.8917 7.44167 12.7333 7.325 12.5 7.325C12.2667 7.325 12.1083 7.44167 12.025 7.675L11.6 9H10.175C9.94167 9 9.78333 9.11667 9.7 9.35C9.61667 9.58333 9.66667 9.76667 9.85 9.9L11.05 10.85L10.625 12.2C10.5417 12.4333 10.604 12.6207 10.812 12.762C11.0207 12.904 11.225 12.9 11.425 12.75ZM7.825 22.55C7.49167 22.6667 7.18733 22.625 6.912 22.425C6.63733 22.225 6.5 21.9583 6.5 21.625V15.275C5.86667 14.575 5.375 13.775 5.025 12.875C4.675 11.975 4.5 11.0167 4.5 10C4.5 7.76667 5.275 5.875 6.825 4.325C8.375 2.775 10.2667 2 12.5 2C14.7333 2 16.625 2.775 18.175 4.325C19.725 5.875 20.5 7.76667 20.5 10C20.5 11.0167 20.325 11.975 19.975 12.875C19.625 13.775 19.1333 14.575 18.5 15.275V21.625C18.5 21.9583 18.3623 22.225 18.087 22.425C17.8123 22.625 17.5083 22.6667 17.175 22.55L12.5 21L7.825 22.55ZM12.5 16C14.1667 16 15.5833 15.4167 16.75 14.25C17.9167 13.0833 18.5 11.6667 18.5 10C18.5 8.33333 17.9167 6.91667 16.75 5.75C15.5833 4.58333 14.1667 4 12.5 4C10.8333 4 9.41667 4.58333 8.24 5.75C7.08333 6.91667 6.5 8.33333 6.5 10C6.5 11.6667 7.08333 13.0833 8.24 14.25C9.41667 15.4167 10.8333 16 12.5 16ZM8.5 20.025L12.5 19L16.5 20.025V16.925C15.9167 17.2583 15.2877 17.5207 14.613 17.712C13.9377 17.904 13.2333 18 12.5 18C11.7667 18 11.0623 17.904 10.387 17.712C9.71233 17.5207 9.08333 17.2583 8.5 16.925V20.025Z",
+    fill: color
+  }));
+};
+
+WorkspacePremiumDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var WorkDs2Icon = function WorkDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 21C3.95 21 3.47933 20.8043 3.088 20.413C2.696 20.021 2.5 19.55 2.5 19V8C2.5 7.45 2.696 6.97933 3.088 6.588C3.47933 6.196 3.95 6 4.5 6H8.5V4C8.5 3.45 8.696 2.979 9.088 2.587C9.47933 2.19567 9.95 2 10.5 2H14.5C15.05 2 15.521 2.19567 15.913 2.587C16.3043 2.979 16.5 3.45 16.5 4V6H20.5C21.05 6 21.521 6.196 21.913 6.588C22.3043 6.97933 22.5 7.45 22.5 8V19C22.5 19.55 22.3043 20.021 21.913 20.413C21.521 20.8043 21.05 21 20.5 21H4.5ZM4.5 19H20.5V8H4.5V19ZM10.5 6H14.5V4H10.5V6Z",
+    fill: color
+  }));
+};
+
+WorkDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var VolunteerActivismDs2Icon = function VolunteerActivismDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M16.5 12.675C16.3833 12.675 16.271 12.6583 16.163 12.625C16.0543 12.5917 15.9583 12.5333 15.875 12.45C14.4417 11.15 13.1877 9.896 12.113 8.688C11.0377 7.47933 10.5 6.35 10.5 5.3C10.5 4.36667 10.8167 3.58333 11.45 2.95C12.0833 2.31667 12.8667 2 13.8 2C14.3333 2 14.8333 2.11233 15.3 2.337C15.7667 2.56233 16.1667 2.86667 16.5 3.25C16.8333 2.86667 17.2333 2.56233 17.7 2.337C18.1667 2.11233 18.6667 2 19.2 2C20.1333 2 20.9167 2.31667 21.55 2.95C22.1833 3.58333 22.5 4.36667 22.5 5.3C22.5 6.35 21.9627 7.47933 20.888 8.688C19.8127 9.896 18.5583 11.15 17.125 12.45C17.0417 12.5333 16.9457 12.5917 16.837 12.625C16.729 12.6583 16.6167 12.675 16.5 12.675ZM16.5 10.3C17.4833 9.36667 18.396 8.43733 19.238 7.512C20.0793 6.58733 20.5 5.85 20.5 5.3C20.5 4.91667 20.3793 4.604 20.138 4.362C19.896 4.12067 19.5833 4 19.2 4C18.9667 4 18.746 4.04567 18.538 4.137C18.3293 4.229 18.15 4.36667 18 4.55L16.5 6.35L15 4.55C14.85 4.36667 14.671 4.229 14.463 4.137C14.2543 4.04567 14.0333 4 13.8 4C13.4167 4 13.1043 4.12067 12.863 4.362C12.621 4.604 12.5 4.91667 12.5 5.3C12.5 5.85 12.9207 6.58733 13.762 7.512C14.604 8.43733 15.5167 9.36667 16.5 10.3ZM14.45 20.4L20.4 18.55C20.3167 18.4 20.196 18.271 20.038 18.163C19.8793 18.0543 19.7 18 19.5 18H14.45C14 18 13.6417 17.9833 13.375 17.95C13.1083 17.9167 12.8333 17.85 12.55 17.75L11.125 17.275C10.8583 17.1917 10.6667 17.025 10.55 16.775C10.4333 16.525 10.4167 16.2667 10.5 16C10.5833 15.7333 10.746 15.5373 10.988 15.412C11.2293 15.2873 11.4833 15.2667 11.75 15.35L12.8 15.7C13.0833 15.7833 13.4043 15.85 13.763 15.9C14.121 15.95 14.6083 15.9833 15.225 16H15.5C15.5 15.8167 15.446 15.6417 15.338 15.475C15.2293 15.3083 15.1 15.2 14.95 15.15L9.1 13H7.5V18.5L14.45 20.4ZM13.925 22.35L7.5 20.55C7.36667 20.9833 7.10433 21.3333 6.713 21.6C6.321 21.8667 5.91667 22 5.5 22H3.5C2.95 22 2.47933 21.8043 2.088 21.413C1.696 21.021 1.5 20.55 1.5 20V13C1.5 12.45 1.696 11.979 2.088 11.587C2.47933 11.1957 2.95 11 3.5 11H9.1C9.21667 11 9.33333 11.0123 9.45 11.037C9.56667 11.0623 9.675 11.0917 9.775 11.125L15.65 13.3C16.2 13.5 16.646 13.85 16.988 14.35C17.3293 14.85 17.5 15.4 17.5 16H19.5C20.3333 16 21.0417 16.275 21.625 16.825C22.2083 17.375 22.5 18.1 22.5 19C22.5 19.3667 22.404 19.6543 22.212 19.863C22.0207 20.071 21.725 20.2417 21.325 20.375L15.075 22.325C14.8917 22.3917 14.7 22.425 14.5 22.425C14.3 22.425 14.1083 22.4 13.925 22.35ZM3.5 20H5.5V13H3.5V20Z",
+    fill: color
+  }));
+};
+
+VolunteerActivismDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var VisibilityDs2Icon = function VisibilityDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 16C13.75 16 14.8127 15.5627 15.688 14.688C16.5627 13.8127 17 12.75 17 11.5C17 10.24 16.5627 9.18733 15.688 8.312C14.8127 7.43733 13.75 7 12.5 7C11.24 7 10.1874 7.43733 9.31205 8.312C8.43738 9.18733 8.00005 10.24 8.00005 11.5C8.00005 12.75 8.43738 13.8127 9.31205 14.688C10.1874 15.5627 11.24 16 12.5 16ZM12.5 14.2C11.75 14.2 11.1127 13.9373 10.588 13.412C10.0627 12.8873 9.80005 12.24 9.80005 11.5C9.80005 10.75 10.0627 10.1123 10.588 9.587C11.1127 9.06233 11.75 8.8 12.5 8.8C13.24 8.8 13.8877 9.06233 14.413 9.587C14.9377 10.1123 15.2 10.75 15.2 11.5C15.2 12.24 14.9377 12.8873 14.413 13.412C13.8877 13.9373 13.24 14.2 12.5 14.2ZM12.5 19C10.1834 19 8.06672 18.3877 6.15005 17.163C4.23338 15.9377 2.78338 14.2833 1.80005 12.2C1.75005 12.1167 1.71672 12.0123 1.70005 11.887C1.68338 11.7623 1.67505 11.6333 1.67505 11.5C1.67505 11.3667 1.68338 11.2373 1.70005 11.112C1.71672 10.9873 1.75005 10.8833 1.80005 10.8C2.78338 8.71667 4.23338 7.06267 6.15005 5.838C8.06672 4.61267 10.1834 4 12.5 4C14.8167 4 16.9334 4.61267 18.85 5.838C20.7667 7.06267 22.2167 8.71667 23.2001 10.8C23.24 10.8833 23.2834 10.9873 23.3 11.112C23.3167 11.2373 23.3251 11.3667 23.3251 11.5C23.3251 11.6333 23.3167 11.7623 23.3 11.887C23.2834 12.0123 23.24 12.1167 23.2001 12.2C22.2167 14.2833 20.7667 15.9377 18.85 17.163C16.9334 18.3877 14.8167 19 12.5 19ZM12.5 17C14.3834 17 16.1127 16.504 17.688 15.512C19.2627 14.5207 20.4667 13.1833 21.3 11.5C20.4667 9.81667 19.2627 8.479 17.688 7.487C16.1127 6.49567 14.3834 6 12.5 6C10.6167 6 8.88738 6.49567 7.31205 7.487C5.73738 8.479 4.53338 9.81667 3.70005 11.5C4.53338 13.1833 5.73738 14.5207 7.31205 15.512C8.88738 16.504 10.6167 17 12.5 17Z",
+    fill: color
+  }));
+};
+
+VisibilityDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var VisibilityOffDs2Icon = function VisibilityOffDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M16.6 13.3L15.15 11.85C15.3 11.0666 15.075 10.3333 14.475 9.64998C13.875 8.96664 13.1 8.69998 12.15 8.84998L10.7 7.39998C10.9834 7.26664 11.2707 7.16664 11.562 7.09998C11.854 7.03331 12.1667 6.99998 12.5 6.99998C13.75 6.99998 14.8127 7.43731 15.688 8.31198C16.5627 9.18731 17 10.24 17 11.5C17 11.8333 16.9667 12.146 16.9 12.438C16.8334 12.7293 16.7334 13.0166 16.6 13.3ZM19.8 16.45L18.35 15.05C18.9834 14.5666 19.546 14.0373 20.038 13.462C20.5294 12.8873 20.95 12.2333 21.3 11.5C20.4667 9.81664 19.2707 8.47898 17.712 7.48698C16.154 6.49564 14.4167 5.99998 12.5 5.99998C12.0167 5.99998 11.5417 6.03331 11.075 6.09998C10.6084 6.16664 10.15 6.26664 9.70005 6.39998L8.15005 4.84998C8.83338 4.56664 9.53338 4.35398 10.24 4.21198C10.9667 4.07064 11.7167 3.99998 12.5 3.99998C14.8834 3.99998 17.025 4.62898 18.925 5.88698C20.825 7.14564 22.24 8.78331 23.2001 10.8C23.24 10.8833 23.2834 10.9873 23.3 11.112C23.3167 11.2373 23.3251 11.3666 23.3251 11.5C23.3251 11.6333 23.3127 11.7623 23.288 11.887C23.2627 12.0123 23.2334 12.1166 23.2001 12.2C22.8167 13.05 22.3377 13.8333 21.7631 14.55C21.1877 15.2666 20.5334 15.9 19.8 16.45ZM19.6 21.9L16.1 18.45C15.5167 18.6333 14.9294 18.771 14.338 18.863C13.746 18.9543 13.1334 19 12.5 19C10.1167 19 7.97505 18.371 6.07505 17.113C4.17505 15.8543 2.75005 14.2166 1.80005 12.2C1.75005 12.1166 1.71672 12.0123 1.70005 11.887C1.68338 11.7623 1.67505 11.6333 1.67505 11.5C1.67505 11.3666 1.68338 11.2416 1.70005 11.125C1.71672 11.0083 1.75005 10.9083 1.80005 10.825C2.15005 10.075 2.56672 9.38331 3.05005 8.74998C3.53338 8.11664 4.06672 7.53331 4.65005 6.99998L2.57505 4.89998C2.39172 4.71664 2.30005 4.48731 2.30005 4.21198C2.30005 3.93731 2.40005 3.69998 2.60005 3.49998C2.78338 3.31664 3.01672 3.22498 3.30005 3.22498C3.58338 3.22498 3.81672 3.31664 4.00005 3.49998L21 20.5C21.1834 20.6833 21.2794 20.9126 21.288 21.188C21.296 21.4626 21.2001 21.7 21 21.9C20.8167 22.0833 20.5834 22.175 20.3 22.175C20.0167 22.175 19.7834 22.0833 19.6 21.9ZM6.05005 8.39998C5.56672 8.83331 5.12505 9.30831 4.72505 9.82498C4.32505 10.3416 3.98338 10.9 3.70005 11.5C4.53338 13.1833 5.72905 14.5206 7.28705 15.512C8.84572 16.504 10.5834 17 12.5 17C12.8334 17 13.1584 16.9793 13.475 16.938C13.7917 16.896 14.1167 16.85 14.45 16.8L13.55 15.85C13.3667 15.9 13.1917 15.9373 13.025 15.962C12.8584 15.9873 12.6834 16 12.5 16C11.24 16 10.1874 15.5626 9.31205 14.688C8.43738 13.8126 8.00005 12.75 8.00005 11.5C8.00005 11.3166 8.01238 11.1416 8.03705 10.975C8.06238 10.8083 8.10005 10.6333 8.15005 10.45L6.05005 8.39998Z",
+    fill: color
+  }));
+};
+
+VisibilityOffDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ViewWeekDs2Icon = function ViewWeekDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 18H8.5V6H4.5V18ZM10.5 18H14.5V6H10.5V18ZM16.5 18H20.5V6H16.5V18ZM4.5 20C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H20.5C21.05 4 21.521 4.196 21.913 4.588C22.3043 4.97933 22.5 5.45 22.5 6V18C22.5 18.55 22.3043 19.021 21.913 19.413C21.521 19.8043 21.05 20 20.5 20H4.5Z",
+    fill: color
+  }));
+};
+
+ViewWeekDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var VerifiedUserDs2Icon = function VerifiedUserDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.45 12.6999L10.075 11.2999C9.875 11.0999 9.63767 10.9999 9.363 10.9999C9.08767 10.9999 8.85 11.0999 8.65 11.2999C8.45 11.4999 8.346 11.7372 8.338 12.0119C8.32933 12.2872 8.425 12.5249 8.625 12.7249L10.75 14.8499C10.95 15.0499 11.1833 15.1499 11.45 15.1499C11.7167 15.1499 11.95 15.0499 12.15 14.8499L16.4 10.5999C16.6 10.3999 16.7 10.1622 16.7 9.8869C16.7 9.61224 16.6 9.3749 16.4 9.1749C16.2 8.9749 15.9627 8.8749 15.688 8.8749C15.4127 8.8749 15.175 8.9749 14.975 9.1749L11.45 12.6999ZM12.5 21.9249H12.25C12.1667 21.9249 12.0917 21.9082 12.025 21.8749C9.84167 21.1916 8.04167 19.8372 6.625 17.8119C5.20833 15.7872 4.5 13.5499 4.5 11.0999V6.3749C4.5 5.95824 4.621 5.58324 4.863 5.2499C5.10433 4.91657 5.41667 4.6749 5.8 4.5249L11.8 2.2749C12.0333 2.19157 12.2667 2.1499 12.5 2.1499C12.7333 2.1499 12.9667 2.19157 13.2 2.2749L19.2 4.5249C19.5833 4.6749 19.896 4.91657 20.138 5.2499C20.3793 5.58324 20.5 5.95824 20.5 6.3749V11.0999C20.5 13.5499 19.7917 15.7872 18.375 17.8119C16.9583 19.8372 15.1583 21.1916 12.975 21.8749C12.8917 21.9082 12.7333 21.9249 12.5 21.9249ZM12.5 19.8999C14.2333 19.3499 15.6667 18.2499 16.8 16.5999C17.9333 14.9499 18.5 13.1166 18.5 11.0999V6.3749L12.5 4.1249L6.5 6.3749V11.0999C6.5 13.1166 7.06667 14.9499 8.2 16.5999C9.33333 18.2499 10.7667 19.3499 12.5 19.8999Z",
+    fill: color
+  }));
+};
+
+VerifiedUserDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var UpdateDs2Icon = function UpdateDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M13.5 11.6L16 14.1C16.1833 14.2833 16.275 14.5167 16.275 14.8C16.275 15.0833 16.1833 15.3167 16 15.5C15.8167 15.6833 15.5833 15.775 15.3 15.775C15.0167 15.775 14.7833 15.6833 14.6 15.5L11.8 12.7C11.7 12.6 11.625 12.4873 11.575 12.362C11.525 12.2373 11.5 12.1083 11.5 11.975V8C11.5 7.71667 11.596 7.479 11.788 7.287C11.9793 7.09567 12.2167 7 12.5 7C12.7833 7 13.021 7.09567 13.213 7.287C13.4043 7.479 13.5 7.71667 13.5 8V11.6ZM12.5 21C11.24 21 10.0793 20.7627 8.988 20.288C7.896 19.8127 6.946 19.1707 6.138 18.362C5.32933 17.554 4.68733 16.604 4.212 15.512C3.73733 14.4207 3.5 13.24 3.5 12C3.5 10.75 3.73733 9.579 4.212 8.487C4.68733 7.39567 5.32933 6.44567 6.138 5.637C6.946 4.829 7.896 4.18733 8.988 3.712C10.0793 3.23733 11.24 3 12.5 3C13.8667 3 15.1627 3.29167 16.388 3.875C17.6127 4.45833 18.65 5.28333 19.5 6.35V5C19.5 4.71667 19.596 4.479 19.788 4.287C19.9793 4.09567 20.2167 4 20.5 4C20.7833 4 21.0207 4.09567 21.212 4.287C21.404 4.479 21.5 4.71667 21.5 5V9C21.5 9.28333 21.404 9.52067 21.212 9.712C21.0207 9.904 20.7833 10 20.5 10H16.5C16.2167 10 15.9793 9.904 15.788 9.712C15.596 9.52067 15.5 9.28333 15.5 9C15.5 8.71667 15.596 8.479 15.788 8.287C15.9793 8.09567 16.2167 8 16.5 8H18.25C17.5667 7.06667 16.725 6.33333 15.725 5.8C14.725 5.26667 13.65 5 12.5 5C10.55 5 8.896 5.679 7.538 7.037C6.17933 8.39567 5.5 10.05 5.5 12C5.5 13.95 6.17933 15.604 7.538 16.962C8.896 18.3207 10.55 19 12.5 19C14.0333 19 15.421 18.55 16.663 17.65C17.9043 16.75 18.7417 15.5667 19.175 14.1C19.2583 13.8167 19.4127 13.579 19.638 13.387C19.8627 13.1957 20.1167 13.1333 20.4 13.2C20.7 13.2667 20.9207 13.4333 21.062 13.7C21.204 13.9667 21.2333 14.24 21.15 14.55C20.6 16.4667 19.525 18.0207 17.925 19.212C16.325 20.404 14.5167 21 12.5 21Z",
+    fill: color
+  }));
+};
+
+UpdateDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var TopicDs2Icon = function TopicDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 12H17.5C17.7833 12 18.0207 11.904 18.212 11.712C18.404 11.5207 18.5 11.2833 18.5 11C18.5 10.7167 18.404 10.479 18.212 10.287C18.0207 10.0957 17.7833 10 17.5 10H7.5C7.21667 10 6.979 10.0957 6.787 10.287C6.59567 10.479 6.5 10.7167 6.5 11C6.5 11.2833 6.59567 11.5207 6.787 11.712C6.979 11.904 7.21667 12 7.5 12ZM7.5 16H13.5C13.7833 16 14.021 15.904 14.213 15.712C14.4043 15.5207 14.5 15.2833 14.5 15C14.5 14.7167 14.4043 14.479 14.213 14.287C14.021 14.0957 13.7833 14 13.5 14H7.5C7.21667 14 6.979 14.0957 6.787 14.287C6.59567 14.479 6.5 14.7167 6.5 15C6.5 15.2833 6.59567 15.5207 6.787 15.712C6.979 15.904 7.21667 16 7.5 16ZM4.5 20C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H9.675C9.94167 4 10.196 4.05 10.438 4.15C10.6793 4.24 10.8917 4.39167 11.075 4.575L12.5 6H20.5C21.05 6 21.521 6.196 21.913 6.588C22.3043 6.97933 22.5 7.45 22.5 8V18C22.5 18.55 22.3043 19.021 21.913 19.413C21.521 19.8043 21.05 20 20.5 20H4.5ZM4.5 6V18H20.5V8H11.675L9.675 6H4.5Z",
+    fill: color
+  }));
+};
+
+TopicDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ThumbUpDs2Icon = function ThumbUpDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 21V7.99999L13.5 2.04999C13.75 1.79999 14.0457 1.65399 14.387 1.61199C14.729 1.57066 15.0583 1.63332 15.375 1.79999C15.6917 1.96666 15.925 2.19999 16.075 2.49999C16.225 2.79999 16.2583 3.10832 16.175 3.42499L15.05 7.99999H21.5C22.0333 7.99999 22.5 8.19999 22.9 8.59999C23.3 8.99999 23.5 9.46666 23.5 9.99999V12C23.5 12.1167 23.4833 12.2417 23.45 12.375C23.4167 12.5083 23.3833 12.6333 23.35 12.75L20.35 19.8C20.2 20.1333 19.95 20.4167 19.6 20.65C19.24 20.8833 18.8833 21 18.5 21H7.5ZM9.5 8.84999V19H18.5L21.5 12V9.99999H12.5L13.85 4.49999L9.5 8.84999ZM4.5 21C3.95 21 3.47933 20.8043 3.088 20.413C2.696 20.021 2.5 19.55 2.5 19V9.99999C2.5 9.44999 2.696 8.97899 3.088 8.58699C3.47933 8.19566 3.95 7.99999 4.5 7.99999H7.5V9.99999H4.5V19H7.5V21H4.5Z",
+    fill: color
+  }));
+};
+
+ThumbUpDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var TaskDs2Icon = function TaskDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.425 15.125L10.025 13.725C9.925 13.625 9.81667 13.55 9.7 13.5C9.58333 13.45 9.46267 13.425 9.338 13.425C9.21267 13.425 9.08767 13.45 8.963 13.5C8.83767 13.55 8.725 13.625 8.625 13.725C8.425 13.925 8.325 14.1627 8.325 14.438C8.325 14.7127 8.425 14.95 8.625 15.15L10.75 17.3C10.85 17.4 10.9583 17.4707 11.075 17.512C11.1917 17.554 11.3167 17.575 11.45 17.575C11.5833 17.575 11.7083 17.554 11.825 17.512C11.9417 17.4707 12.05 17.4 12.15 17.3L16.375 13.075C16.575 12.875 16.675 12.6333 16.675 12.35C16.675 12.0667 16.575 11.825 16.375 11.625C16.175 11.425 15.9333 11.325 15.65 11.325C15.3667 11.325 15.125 11.425 14.925 11.625L11.425 15.125ZM6.5 22C5.95 22 5.47933 21.8043 5.088 21.413C4.696 21.021 4.5 20.55 4.5 20V4C4.5 3.45 4.696 2.979 5.088 2.587C5.47933 2.19567 5.95 2 6.5 2H13.675C13.9417 2 14.196 2.05 14.438 2.15C14.6793 2.24 14.8917 2.39167 15.075 2.575L19.925 7.425C20.1083 7.60833 20.24 7.82067 20.35 8.062C20.45 8.304 20.5 8.55833 20.5 8.825V20C20.5 20.55 20.3043 21.021 19.913 21.413C19.521 21.8043 19.05 22 18.5 22H6.5ZM13.5 8V4H6.5V20H18.5V9H14.5C14.2167 9 13.9793 8.904 13.788 8.712C13.596 8.52067 13.5 8.28333 13.5 8Z",
+    fill: color
+  }));
+};
+
+TaskDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var TabletMacDs2Icon = function TabletMacDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 20.5C12.7833 20.5 13.021 20.404 13.213 20.212C13.4043 20.0207 13.5 19.7833 13.5 19.5C13.5 19.2167 13.4043 18.9793 13.213 18.788C13.021 18.596 12.7833 18.5 12.5 18.5C12.2167 18.5 11.9793 18.596 11.788 18.788C11.596 18.9793 11.5 19.2167 11.5 19.5C11.5 19.7833 11.596 20.0207 11.788 20.212C11.9793 20.404 12.2167 20.5 12.5 20.5ZM5.5 23C4.95 23 4.479 22.8043 4.087 22.413C3.69567 22.021 3.5 21.55 3.5 21V3C3.5 2.45 3.69567 1.979 4.087 1.587C4.479 1.19567 4.95 1 5.5 1H19.5C20.05 1 20.521 1.19567 20.913 1.587C21.3043 1.979 21.5 2.45 21.5 3V21C21.5 21.55 21.3043 22.021 20.913 22.413C20.521 22.8043 20.05 23 19.5 23H5.5ZM5.5 18V21H19.5V18H5.5ZM5.5 16H19.5V6H5.5V16ZM5.5 4H19.5V3H5.5V4Z",
+    fill: color
+  }));
+};
+
+TabletMacDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var TableDs2Icon = function TableDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M3.5 21V3H21.5V21H3.5ZM5.5 9H19.5V5H5.5V9ZM10.825 14H14.175V11H10.825V14ZM10.825 19H14.175V16H10.825V19ZM5.5 14H8.825V11H5.5V14ZM16.175 14H19.5V11H16.175V14ZM5.5 19H8.825V16H5.5V19ZM16.175 19H19.5V16H16.175V19Z",
+    fill: color
+  }));
+};
+
+TableDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SwapHorizDs2Icon = function SwapHorizDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M16.8 13.275C16.6167 13.0917 16.525 12.8583 16.525 12.575C16.525 12.2917 16.6167 12.0583 16.8 11.875L18.675 9.99999H12.5C12.2167 9.99999 11.9793 9.90399 11.788 9.71199C11.596 9.52065 11.5 9.28332 11.5 8.99999C11.5 8.71665 11.596 8.47899 11.788 8.28699C11.9793 8.09565 12.2167 7.99999 12.5 7.99999H18.675L16.8 6.12499C16.6167 5.94165 16.525 5.70399 16.525 5.41199C16.525 5.12065 16.6167 4.88332 16.8 4.69999C16.9833 4.51665 17.2167 4.42499 17.5 4.42499C17.7833 4.42499 18.0167 4.51665 18.2 4.69999L21.8 8.29999C21.9 8.39999 21.971 8.50832 22.013 8.62499C22.0543 8.74165 22.075 8.86665 22.075 8.99999C22.075 9.13332 22.0543 9.25832 22.013 9.37499C21.971 9.49165 21.9 9.59999 21.8 9.69999L18.2 13.3C18.0167 13.4833 17.7833 13.5707 17.5 13.562C17.2167 13.554 16.9833 13.4583 16.8 13.275ZM6.79999 19.3L3.19999 15.7C3.09999 15.6 3.02932 15.4917 2.98799 15.375C2.94599 15.2583 2.92499 15.1333 2.92499 15C2.92499 14.8667 2.94599 14.7417 2.98799 14.625C3.02932 14.5083 3.09999 14.4 3.19999 14.3L6.79999 10.7C6.98332 10.5167 7.21665 10.425 7.49999 10.425C7.78332 10.425 8.01665 10.5167 8.19999 10.7C8.38332 10.8833 8.47499 11.1207 8.47499 11.412C8.47499 11.704 8.38332 11.9417 8.19999 12.125L6.32499 14H12.5C12.7833 14 13.021 14.0957 13.213 14.287C13.4043 14.479 13.5 14.7167 13.5 15C13.5 15.2833 13.4043 15.5207 13.213 15.712C13.021 15.904 12.7833 16 12.5 16H6.32499L8.19999 17.875C8.38332 18.0583 8.47499 18.2917 8.47499 18.575C8.47499 18.8583 8.38332 19.0917 8.19999 19.275C8.01665 19.4583 7.78332 19.554 7.49999 19.562C7.21665 19.5707 6.98332 19.4833 6.79999 19.3Z",
+    fill: color
+  }));
+};
+
+SwapHorizDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SupervisedUserCircleDs2Icon = function SupervisedUserCircleDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M10 13.5C9.03333 13.5 8.20833 13.1583 7.525 12.475C6.84167 11.7917 6.5 10.9667 6.5 10C6.5 9.03333 6.84167 8.20833 7.525 7.525C8.20833 6.84167 9.03333 6.5 10 6.5C10.9667 6.5 11.7917 6.84167 12.475 7.525C13.1583 8.20833 13.5 9.03333 13.5 10C13.5 10.9667 13.1583 11.7917 12.475 12.475C11.7917 13.1583 10.9667 13.5 10 13.5ZM10 11.5C10.4167 11.5 10.7707 11.354 11.062 11.062C11.354 10.7707 11.5 10.4167 11.5 10C11.5 9.58333 11.354 9.22933 11.062 8.938C10.7707 8.646 10.4167 8.5 10 8.5C9.58333 8.5 9.22933 8.646 8.938 8.938C8.646 9.22933 8.5 9.58333 8.5 10C8.5 10.4167 8.646 10.7707 8.938 11.062C9.22933 11.354 9.58333 11.5 10 11.5ZM17 14.5C16.3 14.5 15.7083 14.2583 15.225 13.775C14.7417 13.2917 14.5 12.7 14.5 12C14.5 11.3 14.7417 10.7083 15.225 10.225C15.7083 9.74167 16.3 9.5 17 9.5C17.7 9.5 18.2917 9.74167 18.775 10.225C19.2583 10.7083 19.5 11.3 19.5 12C19.5 12.7 19.2583 13.2917 18.775 13.775C18.2917 14.2583 17.7 14.5 17 14.5ZM10.8 19.8C11.55 18.2833 12.55 17.2707 13.8 16.762C15.05 16.254 16.1167 16 17 16C17.3833 16 17.7583 16.0333 18.125 16.1C18.4917 16.1667 18.85 16.24 19.2 16.35C19.6 15.7167 19.9167 15.0333 20.15 14.3C20.3833 13.5667 20.5 12.8 20.5 12C20.5 9.76667 19.725 7.875 18.175 6.325C16.625 4.775 14.7333 4 12.5 4C10.2667 4 8.375 4.775 6.825 6.325C5.275 7.875 4.5 9.76667 4.5 12C4.5 12.75 4.59567 13.4667 4.787 14.15C4.979 14.8333 5.26667 15.4667 5.65 16.05C6.3 15.7167 6.98767 15.4583 7.713 15.275C8.43767 15.0917 9.2 15 10 15C10.5333 15 11.046 15.0457 11.538 15.137C12.0293 15.229 12.5167 15.35 13 15.5C12.6167 15.7 12.2543 15.9333 11.913 16.2C11.571 16.4667 11.24 16.75 10.95 17.05C10.75 17.0167 10.5793 17 10.438 17H10C9.45 17 8.91667 17.0583 8.4 17.175C7.88333 17.2917 7.38333 17.4667 6.9 17.7C7.43333 18.2333 8.02933 18.6793 8.688 19.038C9.346 19.396 10.05 19.65 10.8 19.8ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22Z",
+    fill: color
+  }));
+};
+
+SupervisedUserCircleDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var StoreDs2Icon = function StoreDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.50001 6C5.21668 6 4.97901 5.90433 4.78701 5.713C4.59568 5.521 4.50001 5.28333 4.50001 5C4.50001 4.71667 4.59568 4.479 4.78701 4.287C4.97901 4.09567 5.21668 4 5.50001 4H19.5C19.7833 4 20.0207 4.09567 20.212 4.287C20.404 4.479 20.5 4.71667 20.5 5C20.5 5.28333 20.404 5.521 20.212 5.713C20.0207 5.90433 19.7833 6 19.5 6H5.50001ZM5.50001 20C5.21668 20 4.97901 19.904 4.78701 19.712C4.59568 19.5207 4.50001 19.2833 4.50001 19V14H4.32501C4.00835 14 3.75001 13.879 3.55001 13.637C3.35001 13.3957 3.28335 13.1167 3.35001 12.8L4.35001 7.8C4.40001 7.56667 4.51668 7.375 4.70001 7.225C4.88335 7.075 5.09168 7 5.32501 7H19.675C19.9083 7 20.1167 7.075 20.3 7.225C20.4833 7.375 20.6 7.56667 20.65 7.8L21.65 12.8C21.7167 13.1167 21.65 13.3957 21.45 13.637C21.24 13.879 20.9917 14 20.675 14H20.5V19C20.5 19.2833 20.404 19.5207 20.212 19.712C20.0207 19.904 19.7833 20 19.5 20C19.2167 20 18.9793 19.904 18.788 19.712C18.596 19.5207 18.5 19.2833 18.5 19V14H14.5V19C14.5 19.2833 14.4043 19.5207 14.213 19.712C14.021 19.904 13.7833 20 13.5 20H5.50001ZM6.50001 18H12.5V14H6.50001V18ZM5.55001 12H19.45L18.85 9H6.15001L5.55001 12Z",
+    fill: color
+  }));
+};
+
+StoreDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var StopDs2Icon = function StopDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M8.5 18C7.95 18 7.47933 17.8043 7.088 17.413C6.696 17.021 6.5 16.55 6.5 16V8C6.5 7.45 6.696 6.97933 7.088 6.588C7.47933 6.196 7.95 6 8.5 6H16.5C17.05 6 17.521 6.196 17.913 6.588C18.3043 6.97933 18.5 7.45 18.5 8V16C18.5 16.55 18.3043 17.021 17.913 17.413C17.521 17.8043 17.05 18 16.5 18H8.5ZM8.5 16H16.5V8H8.5V16Z",
+    fill: color
+  }));
+};
+
+StopDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var StayCurrentPortraitDs2Icon = function StayCurrentPortraitDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 23C6.95 23 6.47933 22.8043 6.088 22.413C5.696 22.021 5.5 21.55 5.5 21V3C5.5 2.45 5.696 1.979 6.088 1.587C6.47933 1.19567 6.95 1 7.5 1H17.5C18.05 1 18.521 1.19567 18.913 1.587C19.3043 1.979 19.5 2.45 19.5 3V21C19.5 21.55 19.3043 22.021 18.913 22.413C18.521 22.8043 18.05 23 17.5 23H7.5ZM7.5 20V21H17.5V20H7.5ZM7.5 18H17.5V6H7.5V18ZM7.5 4H17.5V3H7.5V4Z",
+    fill: color
+  }));
+};
+
+StayCurrentPortraitDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var StarDs2Icon = function StarDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 25 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M9.35007 17.825L12.5001 15.925L15.6501 17.85L14.8251 14.25L17.6001 11.85L13.9501 11.525L12.5001 8.12501L11.0501 11.5L7.40007 11.825L10.1751 14.25L9.35007 17.825ZM12.5001 18.275L8.35007 20.775C8.16674 20.8917 7.97507 20.9417 7.77507 20.925C7.57507 20.9083 7.40007 20.8417 7.25007 20.725C7.10007 20.6083 6.9834 20.4627 6.90007 20.288C6.81674 20.1127 6.80007 19.9167 6.85007 19.7L7.95007 14.975L4.27507 11.8C4.1084 11.65 4.0044 11.479 3.96307 11.287C3.92107 11.0957 3.9334 10.9083 4.00007 10.725C4.06674 10.5417 4.16674 10.3917 4.30007 10.275C4.4334 10.1583 4.61674 10.0833 4.85007 10.05L9.70007 9.62501L11.5751 5.17501C11.6584 4.97501 11.7877 4.82501 11.9631 4.72501C12.1377 4.62501 12.3167 4.57501 12.5001 4.57501C12.6834 4.57501 12.8627 4.62501 13.0381 4.72501C13.2127 4.82501 13.3417 4.97501 13.4251 5.17501L15.3001 9.62501L20.1501 10.05C20.3834 10.0833 20.5667 10.1583 20.7001 10.275C20.8334 10.3917 20.9334 10.5417 21.0001 10.725C21.0667 10.9083 21.0794 11.0957 21.0381 11.287C20.9961 11.479 20.8917 11.65 20.7251 11.8L17.0501 14.975L18.1501 19.7C18.2001 19.9167 18.1834 20.1127 18.1001 20.288C18.0167 20.4627 17.9001 20.6083 17.7501 20.725C17.6001 20.8417 17.4251 20.9083 17.2251 20.925C17.0251 20.9417 16.8334 20.8917 16.6501 20.775L12.5001 18.275Z",
+    fill: color
+  }));
+};
+
+StarDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var StarHalfDs2Icon = function StarHalfDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 8.12495V15.925L15.65 17.85L14.825 14.25L17.6 11.85L13.95 11.525L12.5 8.12495ZM12.5 18.275L8.35001 20.775C8.16668 20.8916 7.97501 20.9416 7.77501 20.9249C7.57501 20.9083 7.40001 20.8416 7.25001 20.725C7.10001 20.6083 6.98334 20.4626 6.90001 20.288C6.81668 20.1126 6.80001 19.9166 6.85001 19.7L7.95001 14.975L4.27501 11.8C4.10834 11.65 4.00434 11.479 3.96301 11.287C3.92101 11.0956 3.93334 10.9083 4.00001 10.725C4.06668 10.5416 4.16668 10.3916 4.30001 10.275C4.43334 10.1583 4.61668 10.0833 4.85001 10.05L9.70001 9.62495L11.575 5.17495C11.6583 4.97495 11.7877 4.82495 11.963 4.72495C12.1377 4.62495 12.3167 4.57495 12.5 4.57495C12.6833 4.57495 12.8627 4.62495 13.038 4.72495C13.2127 4.82495 13.3417 4.97495 13.425 5.17495L15.3 9.62495L20.15 10.05C20.3833 10.0833 20.5667 10.1583 20.7 10.275C20.8333 10.3916 20.9333 10.5416 21 10.725C21.0667 10.9083 21.0793 11.0956 21.038 11.287C20.996 11.479 20.8917 11.65 20.725 11.8L17.05 14.975L18.15 19.7C18.2 19.9166 18.1833 20.1126 18.1 20.288C18.0167 20.4626 17.9 20.6083 17.75 20.725C17.6 20.8416 17.425 20.9083 17.225 20.9249C17.025 20.9416 16.8333 20.8916 16.65 20.775L12.5 18.275Z",
+    fill: color
+  }));
+};
+
+StarHalfDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SpeedDs2Icon = function SpeedDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M10.95 15.5C11.35 15.9 11.8667 16.0957 12.5 16.087C13.1333 16.079 13.6 15.85 13.9 15.4L18.125 9.075C18.275 8.84167 18.254 8.62933 18.062 8.438C17.8707 8.246 17.6583 8.225 17.425 8.375L11.1 12.6C10.65 12.9 10.4127 13.3583 10.388 13.975C10.3627 14.5917 10.55 15.1 10.95 15.5ZM5.6 20C5.24 20 4.91667 19.9167 4.6 19.75C4.28333 19.5833 4.03333 19.35 3.85 19.05C3.41667 18.3 3.08333 17.5043 2.85 16.663C2.61667 15.821 2.5 14.9333 2.5 14C2.5 12.6167 2.76267 11.3207 3.288 10.112C3.81267 8.904 4.52933 7.84567 5.438 6.937C6.346 6.029 7.40833 5.31233 8.625 4.787C9.84167 4.26233 11.1333 4 12.5 4C13.24 4 13.975 4.079 14.675 4.237C15.375 4.39567 16.05 4.63333 16.7 4.95C17.05 5.13333 17.254 5.38333 17.312 5.7C17.3707 6.01667 17.2833 6.31667 17.05 6.6C16.9167 6.75 16.7333 6.84167 16.5 6.875C16.2667 6.90833 16.0583 6.88333 15.875 6.8C15.3417 6.53333 14.7917 6.33333 14.225 6.2C13.6583 6.06667 13.0833 6 12.5 6C10.2833 6 8.396 6.779 6.838 8.337C5.27933 9.89567 4.5 11.7833 4.5 14C4.5 14.7 4.59567 15.3917 4.787 16.075C4.979 16.7583 5.24 17.4 5.6 18H19.4C19.7833 17.3667 20.0627 16.7083 20.238 16.025C20.4127 15.3417 20.5 14.6333 20.5 13.9C20.5 13.3167 20.4293 12.746 20.288 12.188C20.146 11.6293 19.9417 11.0917 19.675 10.575C19.5583 10.3583 19.525 10.1333 19.575 9.9C19.625 9.66667 19.7417 9.475 19.925 9.325C20.1917 9.09167 20.4833 9.025 20.8 9.125C21.1167 9.225 21.35 9.44167 21.5 9.775C21.8 10.4083 22.0333 11.0627 22.2 11.738C22.3667 12.4127 22.4667 13.1167 22.5 13.85C22.5 14.8 22.3877 15.7083 22.163 16.575C21.9377 17.4417 21.6 18.2667 21.15 19.05C20.9667 19.35 20.7167 19.5833 20.4 19.75C20.0833 19.9167 19.75 20 19.4 20H5.6Z",
+    fill: color
+  }));
+};
+
+SpeedDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SmartphoneDs2Icon = function SmartphoneDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 23C6.95 23 6.47933 22.8043 6.088 22.413C5.696 22.021 5.5 21.55 5.5 21V3C5.5 2.45 5.696 1.979 6.088 1.587C6.47933 1.19567 6.95 1 7.5 1H17.5C18.05 1 18.521 1.19567 18.913 1.587C19.3043 1.979 19.5 2.45 19.5 3V21C19.5 21.55 19.3043 22.021 18.913 22.413C18.521 22.8043 18.05 23 17.5 23H7.5ZM7.5 20V21H17.5V20H7.5ZM7.5 18H17.5V6H7.5V18ZM7.5 4H17.5V3H7.5V4Z",
+    fill: color
+  }));
+};
+
+SmartphoneDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SignPostDs2Icon = function SignPostDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 22C12.2167 22 11.9793 21.904 11.788 21.712C11.596 21.5207 11.5 21.2833 11.5 21V18H7.125C6.925 18 6.729 17.9583 6.537 17.875C6.34567 17.7917 6.18333 17.6833 6.05 17.55L4.55 16.05C4.4 15.9 4.29167 15.7333 4.225 15.55C4.15833 15.3667 4.125 15.1833 4.125 15C4.125 14.8167 4.15833 14.6333 4.225 14.45C4.29167 14.2667 4.4 14.1 4.55 13.95L6.05 12.45C6.18333 12.3167 6.34567 12.2083 6.537 12.125C6.729 12.0417 6.925 12 7.125 12H11.5V10H6C5.58333 10 5.22933 9.854 4.938 9.562C4.646 9.27067 4.5 8.91667 4.5 8.5V5.5C4.5 5.08333 4.646 4.72933 4.938 4.438C5.22933 4.146 5.58333 4 6 4H11.5V3C11.5 2.71667 11.596 2.479 11.788 2.287C11.9793 2.09567 12.2167 2 12.5 2C12.7833 2 13.021 2.09567 13.213 2.287C13.4043 2.479 13.5 2.71667 13.5 3V4H17.875C18.075 4 18.2707 4.04167 18.462 4.125C18.654 4.20833 18.8167 4.31667 18.95 4.45L20.45 5.95C20.6 6.1 20.7083 6.26667 20.775 6.45C20.8417 6.63333 20.875 6.81667 20.875 7C20.875 7.18333 20.8417 7.36667 20.775 7.55C20.7083 7.73333 20.6 7.9 20.45 8.05L18.95 9.55C18.8167 9.68333 18.654 9.79167 18.462 9.875C18.2707 9.95833 18.075 10 17.875 10H13.5V12H19C19.4167 12 19.7707 12.146 20.062 12.438C20.354 12.7293 20.5 13.0833 20.5 13.5V16.5C20.5 16.9167 20.354 17.2707 20.062 17.562C19.7707 17.854 19.4167 18 19 18H13.5V21C13.5 21.2833 13.4043 21.5207 13.213 21.712C13.021 21.904 12.7833 22 12.5 22ZM6.5 8H17.675L18.675 7L17.675 6H6.5V8ZM7.325 16H18.5V14H7.325L6.325 15L7.325 16Z",
+    fill: color
+  }));
+};
+
+SignPostDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ShuffleDs2Icon = function ShuffleDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M9.67505 10.575L5.20005 6.1C5.01672 5.91667 4.92505 5.68333 4.92505 5.4C4.92505 5.11667 5.01672 4.88333 5.20005 4.7C5.38338 4.51667 5.61672 4.425 5.90005 4.425C6.18338 4.425 6.41672 4.51667 6.60005 4.7L11.075 9.175L9.67505 10.575ZM15.5 20C15.2167 20 14.9794 19.904 14.788 19.712C14.596 19.5207 14.5 19.2833 14.5 19C14.5 18.7167 14.596 18.4793 14.788 18.288C14.9794 18.096 15.2167 18 15.5 18H17.1L13.925 14.825L15.35 13.4L18.5 16.55V15C18.5 14.7167 18.596 14.479 18.788 14.287C18.9794 14.0957 19.2167 14 19.5 14C19.7834 14 20.0207 14.0957 20.212 14.287C20.404 14.479 20.5 14.7167 20.5 15V19C20.5 19.2833 20.404 19.5207 20.212 19.712C20.0207 19.904 19.7834 20 19.5 20H15.5ZM5.20005 19.3C5.01672 19.1167 4.92505 18.8833 4.92505 18.6C4.92505 18.3167 5.01672 18.0833 5.20005 17.9L17.1 6H15.5C15.2167 6 14.9794 5.90433 14.788 5.713C14.596 5.521 14.5 5.28333 14.5 5C14.5 4.71667 14.596 4.479 14.788 4.287C14.9794 4.09567 15.2167 4 15.5 4H19.5C19.7834 4 20.0207 4.09567 20.212 4.287C20.404 4.479 20.5 4.71667 20.5 5V9C20.5 9.28333 20.404 9.52067 20.212 9.712C20.0207 9.904 19.7834 10 19.5 10C19.2167 10 18.9794 9.904 18.788 9.712C18.596 9.52067 18.5 9.28333 18.5 9V7.4L6.60005 19.3C6.41672 19.4833 6.18338 19.575 5.90005 19.575C5.61672 19.575 5.38338 19.4833 5.20005 19.3Z",
+    fill: color
+  }));
+};
+
+ShuffleDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ShoppingCartDs2Icon = function ShoppingCartDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 22C6.95 22 6.47933 21.8043 6.088 21.413C5.696 21.021 5.5 20.55 5.5 20C5.5 19.45 5.696 18.979 6.088 18.587C6.47933 18.1957 6.95 18 7.5 18C8.05 18 8.52067 18.1957 8.912 18.587C9.304 18.979 9.5 19.45 9.5 20C9.5 20.55 9.304 21.021 8.912 21.413C8.52067 21.8043 8.05 22 7.5 22ZM17.5 22C16.95 22 16.4793 21.8043 16.088 21.413C15.696 21.021 15.5 20.55 15.5 20C15.5 19.45 15.696 18.979 16.088 18.587C16.4793 18.1957 16.95 18 17.5 18C18.05 18 18.521 18.1957 18.913 18.587C19.3043 18.979 19.5 19.45 19.5 20C19.5 20.55 19.3043 21.021 18.913 21.413C18.521 21.8043 18.05 22 17.5 22ZM6.65 6L9.05 11H16.05L18.8 6H6.65ZM7.5 17C6.75 17 6.18333 16.6707 5.8 16.012C5.41667 15.354 5.4 14.7 5.75 14.05L7.1 11.6L3.5 4H2.475C2.19167 4 1.95833 3.904 1.775 3.712C1.59167 3.52067 1.5 3.28333 1.5 3C1.5 2.71667 1.596 2.479 1.788 2.287C1.97933 2.09567 2.21667 2 2.5 2H4.125C4.30833 2 4.48333 2.05 4.65 2.15C4.81667 2.25 4.94167 2.39167 5.025 2.575L5.7 4H20.45C20.9 4 21.2083 4.16667 21.375 4.5C21.5417 4.83333 21.5333 5.18333 21.35 5.55L17.8 11.95C17.6167 12.2833 17.375 12.5417 17.075 12.725C16.775 12.9083 16.4333 13 16.05 13H8.6L7.5 15H18.525C18.8083 15 19.0417 15.0957 19.225 15.287C19.4083 15.479 19.5 15.7167 19.5 16C19.5 16.2833 19.404 16.5207 19.212 16.712C19.0207 16.904 18.7833 17 18.5 17H7.5Z",
+    fill: color
+  }));
+};
+
+ShoppingCartDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ShareDs2Icon = function ShareDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M18.5 22C17.6667 22 16.9583 21.7083 16.375 21.125C15.7917 20.5417 15.5 19.8333 15.5 19C15.5 18.8833 15.5083 18.7623 15.525 18.637C15.5417 18.5123 15.5667 18.4 15.6 18.3L8.55 14.2C8.26667 14.45 7.95 14.6457 7.6 14.787C7.24 14.929 6.88333 15 6.5 15C5.66667 15 4.95833 14.7083 4.375 14.125C3.79167 13.5417 3.5 12.8333 3.5 12C3.5 11.1667 3.79167 10.4583 4.375 9.875C4.95833 9.29167 5.66667 9 6.5 9C6.88333 9 7.24 9.07067 7.6 9.212C7.95 9.354 8.26667 9.55 8.55 9.8L15.6 5.7C15.5667 5.6 15.5417 5.48767 15.525 5.363C15.5083 5.23767 15.5 5.11667 15.5 5C15.5 4.16667 15.7917 3.45833 16.375 2.875C16.9583 2.29167 17.6667 2 18.5 2C19.3333 2 20.0417 2.29167 20.625 2.875C21.2083 3.45833 21.5 4.16667 21.5 5C21.5 5.83333 21.2083 6.54167 20.625 7.125C20.0417 7.70833 19.3333 8 18.5 8C18.1167 8 17.75 7.929 17.4 7.787C17.05 7.64567 16.7333 7.45 16.45 7.2L9.4 11.3C9.43333 11.4 9.45833 11.5123 9.475 11.637C9.49167 11.7623 9.5 11.8833 9.5 12C9.5 12.1167 9.49167 12.2373 9.475 12.362C9.45833 12.4873 9.43333 12.6 9.4 12.7L16.45 16.8C16.7333 16.55 17.05 16.354 17.4 16.212C17.75 16.0707 18.1167 16 18.5 16C19.3333 16 20.0417 16.2917 20.625 16.875C21.2083 17.4583 21.5 18.1667 21.5 19C21.5 19.8333 21.2083 20.5417 20.625 21.125C20.0417 21.7083 19.3333 22 18.5 22ZM18.5 6C18.7833 6 19.0207 5.90433 19.212 5.713C19.404 5.521 19.5 5.28333 19.5 5C19.5 4.71667 19.404 4.479 19.212 4.287C19.0207 4.09567 18.7833 4 18.5 4C18.2167 4 17.9793 4.09567 17.788 4.287C17.596 4.479 17.5 4.71667 17.5 5C17.5 5.28333 17.596 5.521 17.788 5.713C17.9793 5.90433 18.2167 6 18.5 6ZM6.5 13C6.78333 13 7.021 12.904 7.213 12.712C7.40433 12.5207 7.5 12.2833 7.5 12C7.5 11.7167 7.40433 11.479 7.213 11.287C7.021 11.0957 6.78333 11 6.5 11C6.21667 11 5.979 11.0957 5.787 11.287C5.59567 11.479 5.5 11.7167 5.5 12C5.5 12.2833 5.59567 12.5207 5.787 12.712C5.979 12.904 6.21667 13 6.5 13ZM18.5 20C18.7833 20 19.0207 19.904 19.212 19.712C19.404 19.5207 19.5 19.2833 19.5 19C19.5 18.7167 19.404 18.4793 19.212 18.288C19.0207 18.096 18.7833 18 18.5 18C18.2167 18 17.9793 18.096 17.788 18.288C17.596 18.4793 17.5 18.7167 17.5 19C17.5 19.2833 17.596 19.5207 17.788 19.712C17.9793 19.904 18.2167 20 18.5 20Z",
+    fill: color
+  }));
+};
+
+ShareDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SettingsDs2Icon = function SettingsDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M14.375 22H10.625C10.375 22 10.1583 21.9167 9.97497 21.75C9.79164 21.5833 9.6833 21.375 9.64997 21.125L9.34997 18.8C9.1333 18.7167 8.9293 18.6167 8.73797 18.5C8.54597 18.3833 8.3583 18.2583 8.17497 18.125L5.99997 19.025C5.76664 19.1083 5.5333 19.1167 5.29997 19.05C5.06664 18.9833 4.8833 18.8417 4.74997 18.625L2.89997 15.4C2.76664 15.1833 2.72497 14.95 2.77497 14.7C2.82497 14.45 2.94997 14.24 3.14997 14.1L5.02497 12.675C5.0083 12.5583 4.99997 12.4457 4.99997 12.337V11.662C4.99997 11.554 5.0083 11.4417 5.02497 11.325L3.14997 9.9C2.94997 9.75 2.82497 9.55 2.77497 9.3C2.72497 9.05 2.76664 8.81667 2.89997 8.6L4.74997 5.375C4.86664 5.14167 5.04564 4.99567 5.28697 4.937C5.52897 4.879 5.76664 4.89167 5.99997 4.975L8.17497 5.875C8.3583 5.74167 8.54997 5.61667 8.74997 5.5C8.94997 5.38333 9.14997 5.28333 9.34997 5.2L9.64997 2.875C9.6833 2.625 9.79164 2.41667 9.97497 2.25C10.1583 2.08333 10.375 2 10.625 2H14.375C14.625 2 14.8416 2.08333 15.025 2.25C15.2083 2.41667 15.3166 2.625 15.35 2.875L15.65 5.2C15.8666 5.28333 16.071 5.38333 16.263 5.5C16.4543 5.61667 16.6416 5.74167 16.825 5.875L19 4.975C19.2333 4.89167 19.4666 4.88333 19.7 4.95C19.9333 5.01667 20.1166 5.15833 20.24 5.375L22.1 8.6C22.2333 8.81667 22.275 9.05 22.225 9.3C22.175 9.55 22.05 9.75 21.85 9.9L19.975 11.325C19.9916 11.4417 20 11.554 20 11.662V12.337C20 12.4457 19.9833 12.5583 19.95 12.675L21.825 14.1C22.025 14.24 22.15 14.45 22.2 14.7C22.24 14.95 22.2083 15.1833 22.075 15.4L20.225 18.6C20.0916 18.8167 19.9043 18.9627 19.663 19.038C19.421 19.1127 19.1833 19.1083 18.95 19.025L16.825 18.125C16.6416 18.2583 16.45 18.3833 16.24 18.5C16.05 18.6167 15.85 18.7167 15.65 18.8L15.35 21.125C15.3166 21.375 15.2083 21.5833 15.025 21.75C14.8416 21.9167 14.625 22 14.375 22ZM12.55 15.5C13.5166 15.5 14.3416 15.1583 15.025 14.475C15.7083 13.7917 16.05 12.9667 16.05 12C16.05 11.0333 15.7083 10.2083 15.025 9.525C14.3416 8.84167 13.5166 8.5 12.55 8.5C11.5666 8.5 10.7373 8.84167 10.062 9.525C9.3873 10.2083 9.04997 11.0333 9.04997 12C9.04997 12.9667 9.3873 13.7917 10.062 14.475C10.7373 15.1583 11.5666 15.5 12.55 15.5ZM12.55 13.5C12.1333 13.5 11.7793 13.354 11.488 13.062C11.196 12.7707 11.05 12.4167 11.05 12C11.05 11.5833 11.196 11.2293 11.488 10.938C11.7793 10.646 12.1333 10.5 12.55 10.5C12.9666 10.5 13.321 10.646 13.613 10.938C13.9043 11.2293 14.05 11.5833 14.05 12C14.05 12.4167 13.9043 12.7707 13.613 13.062C13.321 13.354 12.9666 13.5 12.55 13.5ZM11.5 20H13.475L13.825 17.35C14.3416 17.2167 14.821 17.0207 15.263 16.762C15.7043 16.504 16.1083 16.1917 16.475 15.825L18.95 16.85L19.925 15.15L17.775 13.525C17.8583 13.2917 17.9166 13.0457 17.95 12.787C17.9833 12.529 18 12.2667 18 12C18 11.7333 17.9833 11.4707 17.95 11.212C17.9166 10.954 17.8583 10.7083 17.775 10.475L19.925 8.85L18.95 7.15L16.475 8.2C16.1083 7.81667 15.7043 7.49567 15.263 7.237C14.821 6.979 14.3416 6.78333 13.825 6.65L13.5 4H11.525L11.175 6.65C10.6583 6.78333 10.1793 6.979 9.73797 7.237C9.29597 7.49567 8.89164 7.80833 8.52497 8.175L6.04997 7.15L5.07497 8.85L7.22497 10.45C7.14164 10.7 7.0833 10.95 7.04997 11.2C7.01664 11.45 6.99997 11.7167 6.99997 12C6.99997 12.2667 7.01664 12.525 7.04997 12.775C7.0833 13.025 7.14164 13.275 7.22497 13.525L5.07497 15.15L6.04997 16.85L8.52497 15.8C8.89164 16.1833 9.29597 16.504 9.73797 16.762C10.1793 17.0207 10.6583 17.2167 11.175 17.35L11.5 20Z",
+    fill: color
+  }));
+};
+
+SettingsDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SentimentSatisfiedDs2Icon = function SentimentSatisfiedDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M16 11C16.4333 11 16.7917 10.8583 17.075 10.575C17.3583 10.2917 17.5 9.93333 17.5 9.5C17.5 9.06667 17.3583 8.70833 17.075 8.425C16.7917 8.14167 16.4333 8 16 8C15.5667 8 15.2083 8.14167 14.925 8.425C14.6417 8.70833 14.5 9.06667 14.5 9.5C14.5 9.93333 14.6417 10.2917 14.925 10.575C15.2083 10.8583 15.5667 11 16 11ZM9 11C9.43333 11 9.79167 10.8583 10.075 10.575C10.3583 10.2917 10.5 9.93333 10.5 9.5C10.5 9.06667 10.3583 8.70833 10.075 8.425C9.79167 8.14167 9.43333 8 9 8C8.56667 8 8.20833 8.14167 7.925 8.425C7.64167 8.70833 7.5 9.06667 7.5 9.5C7.5 9.93333 7.64167 10.2917 7.925 10.575C8.20833 10.8583 8.56667 11 9 11ZM12.5 17.5C13.45 17.5 14.3167 17.2877 15.1 16.863C15.8833 16.4377 16.4917 15.9 16.925 15.25C17.125 14.95 17.1543 14.6667 17.013 14.4C16.871 14.1333 16.65 14 16.35 14C16.2333 14 16.1167 14.0333 16 14.1C15.8833 14.1667 15.7917 14.24 15.725 14.35C15.3583 14.85 14.9 15.24 14.35 15.55C13.8 15.85 13.1833 16 12.5 16C11.8167 16 11.2 15.85 10.65 15.55C10.1 15.24 9.64167 14.85 9.275 14.35C9.20833 14.24 9.11267 14.1667 8.988 14.1C8.86267 14.0333 8.74167 14 8.625 14C8.34167 14 8.12933 14.129 7.988 14.387C7.846 14.6457 7.86667 14.9167 8.05 15.2C8.5 15.8833 9.11667 16.4377 9.9 16.863C10.6833 17.2877 11.55 17.5 12.5 17.5ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+SentimentSatisfiedDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SendDs2Icon = function SendDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M3.5 18.5V5.49999C3.5 5.13333 3.65 4.85399 3.95 4.66199C4.24 4.47066 4.56667 4.44166 4.9 4.57499L20.3 11.075C20.7167 11.2583 20.925 11.5667 20.925 12C20.925 12.4333 20.7167 12.7417 20.3 12.925L4.9 19.425C4.56667 19.5583 4.24 19.529 3.95 19.337C3.65 19.1457 3.5 18.8667 3.5 18.5ZM5.5 17L17.35 12L5.5 6.99999V10.5L11.5 12L5.5 13.5V17Z",
+    fill: color
+  }));
+};
+
+SendDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var RefreshDs2Icon = function RefreshDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 20C10.2667 20 8.375 19.225 6.825 17.675C5.275 16.125 4.5 14.2333 4.5 12C4.5 9.76667 5.275 7.875 6.825 6.325C8.375 4.775 10.2667 4 12.5 4C13.65 4 14.75 4.23767 15.8 4.713C16.85 5.18767 17.75 5.86667 18.5 6.75V5C18.5 4.71667 18.596 4.479 18.788 4.287C18.9793 4.09567 19.2167 4 19.5 4C19.7833 4 20.0207 4.09567 20.212 4.287C20.404 4.479 20.5 4.71667 20.5 5V10C20.5 10.2833 20.404 10.5207 20.212 10.712C20.0207 10.904 19.7833 11 19.5 11H14.5C14.2167 11 13.9793 10.904 13.788 10.712C13.596 10.5207 13.5 10.2833 13.5 10C13.5 9.71667 13.596 9.479 13.788 9.287C13.9793 9.09567 14.2167 9 14.5 9H17.7C17.1667 8.06667 16.4377 7.33333 15.513 6.8C14.5877 6.26667 13.5833 6 12.5 6C10.8333 6 9.41667 6.58333 8.25 7.75C7.08333 8.91667 6.5 10.3333 6.5 12C6.5 13.6667 7.08333 15.0833 8.25 16.25C9.41667 17.4167 10.8333 18 12.5 18C13.65 18 14.7127 17.6957 15.688 17.087C16.6627 16.479 17.3917 15.6667 17.875 14.65C17.9583 14.4667 18.096 14.3127 18.288 14.188C18.4793 14.0627 18.675 14 18.875 14C19.2583 14 19.546 14.1333 19.738 14.4C19.9293 14.6667 19.95 14.9667 19.8 15.3C19.1667 16.7167 18.1917 17.854 16.875 18.712C15.5583 19.5707 14.1 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+RefreshDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var RemoveDs2Icon = function RemoveDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 13C6.21667 13 5.979 12.904 5.787 12.712C5.59567 12.5207 5.5 12.2833 5.5 12C5.5 11.7167 5.59567 11.479 5.787 11.287C5.979 11.0957 6.21667 11 6.5 11H18.5C18.7833 11 19.0207 11.0957 19.212 11.287C19.404 11.479 19.5 11.7167 19.5 12C19.5 12.2833 19.404 12.5207 19.212 12.712C19.0207 12.904 18.7833 13 18.5 13H6.5Z",
+    fill: color
+  }));
+};
+
+RemoveDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var RepeatDs2Icon = function RepeatDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 22L3.5 18L7.5 14L8.9 15.45L7.35 17H17.5V13H19.5V19H7.35L8.9 20.55L7.5 22ZM5.5 11V5H17.65L16.1 3.45L17.5 2L21.5 6L17.5 10L16.1 8.55L17.65 7H7.5V11H5.5Z",
+    fill: color
+  }));
+};
+
+RepeatDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ReplyDs2Icon = function ReplyDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M20.5 18.9999C20.2167 18.9999 19.9794 18.9039 19.788 18.7119C19.596 18.5206 19.5 18.2832 19.5 17.9999V14.9999C19.5 14.1666 19.2084 13.4582 18.625 12.8749C18.0417 12.2916 17.3334 11.9999 16.5 11.9999H7.30005L10.225 14.9249C10.4084 15.1082 10.5 15.3332 10.5 15.5999C10.5 15.8666 10.4 16.0999 10.2 16.2999C10.0167 16.4832 9.78338 16.5749 9.50005 16.5749C9.21672 16.5749 8.98338 16.4832 8.80005 16.2999L4.20005 11.6999C4.10005 11.5999 4.02938 11.4916 3.98805 11.3749C3.94605 11.2582 3.92505 11.1332 3.92505 10.9999C3.92505 10.8666 3.94605 10.7416 3.98805 10.6249C4.02938 10.5082 4.10005 10.3999 4.20005 10.2999L8.82505 5.6749C9.00838 5.49157 9.23338 5.3999 9.50005 5.3999C9.76672 5.3999 10 5.4999 10.2 5.6999C10.3834 5.88324 10.475 6.11657 10.475 6.3999C10.475 6.68324 10.3834 6.91657 10.2 7.0999L7.30005 9.9999H16.5C17.8834 9.9999 19.0627 10.4872 20.038 11.4619C21.0127 12.4372 21.5 13.6166 21.5 14.9999V17.9999C21.5 18.2832 21.404 18.5206 21.212 18.7119C21.0207 18.9039 20.7834 18.9999 20.5 18.9999Z",
+    fill: color
+  }));
+};
+
+ReplyDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var RequestQuoteDs2Icon = function RequestQuoteDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 22C5.95 22 5.47933 21.8043 5.088 21.413C4.696 21.021 4.5 20.55 4.5 20V4C4.5 3.45 4.696 2.979 5.088 2.587C5.47933 2.19567 5.95 2 6.5 2H13.675C13.9417 2 14.196 2.05 14.438 2.15C14.6793 2.25 14.8917 2.39167 15.075 2.575L19.925 7.425C20.1083 7.60833 20.25 7.82067 20.35 8.062C20.45 8.304 20.5 8.55833 20.5 8.825V20C20.5 20.55 20.3043 21.021 19.913 21.413C19.521 21.8043 19.05 22 18.5 22H6.5ZM10.5 18C10.2167 18 9.97933 17.904 9.788 17.712C9.596 17.5207 9.5 17.2833 9.5 17C9.5 16.7167 9.596 16.4793 9.788 16.288C9.97933 16.096 10.2167 16 10.5 16H13.5V15H10.5C10.2167 15 9.97933 14.904 9.788 14.712C9.596 14.5207 9.5 14.2833 9.5 14V11C9.5 10.7167 9.596 10.479 9.788 10.287C9.97933 10.0957 10.2167 10 10.5 10H11.5C11.5 9.71667 11.596 9.479 11.788 9.287C11.9793 9.09567 12.2167 9 12.5 9C12.7833 9 13.021 9.09567 13.213 9.287C13.4043 9.479 13.5 9.71667 13.5 10H14.5C14.7833 10 15.021 10.0957 15.213 10.287C15.4043 10.479 15.5 10.7167 15.5 11C15.5 11.2833 15.4043 11.5207 15.213 11.712C15.021 11.904 14.7833 12 14.5 12H11.5V13H14.5C14.7833 13 15.021 13.0957 15.213 13.287C15.4043 13.479 15.5 13.7167 15.5 14V17C15.5 17.2833 15.4043 17.5207 15.213 17.712C15.021 17.904 14.7833 18 14.5 18H13.5C13.5 18.2833 13.4043 18.5207 13.213 18.712C13.021 18.904 12.7833 19 12.5 19C12.2167 19 11.9793 18.904 11.788 18.712C11.596 18.5207 11.5 18.2833 11.5 18H10.5ZM18.5 8H14.5C14.2167 8 13.9793 7.90433 13.788 7.713C13.596 7.521 13.5 7.28333 13.5 7V4H6.5V20H18.5V8Z",
+    fill: color
+  }));
+};
+
+RequestQuoteDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ScreenRotationDs2Icon = function ScreenRotationDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.675 21.4L4.25 13H7.1L14.1 20L19.1 15H16.5V13H22.5V19H20.5V16.4L15.5 21.4C15.1167 21.7834 14.646 21.975 14.088 21.975C13.5293 21.975 13.0583 21.7834 12.675 21.4ZM2.5 11V5.00002H4.5V7.60002L9.5 2.60002C9.88333 2.21669 10.3543 2.02502 10.913 2.02502C11.471 2.02502 11.9417 2.21669 12.325 2.60002L20.75 11H17.9L10.9 4.00002L5.9 9.00002H8.5V11H2.5Z",
+    fill: color
+  }));
+};
+
+ScreenRotationDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SearchDs2Icon = function SearchDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M19.4 20.3L13.8 14.7C13.3 15.1 12.725 15.4167 12.075 15.65C11.425 15.8833 10.7333 16 10 16C8.18333 16 6.646 15.371 5.388 14.113C4.12933 12.8543 3.5 11.3167 3.5 9.5C3.5 7.68333 4.12933 6.14567 5.388 4.887C6.646 3.629 8.18333 3 10 3C11.8167 3 13.3543 3.629 14.613 4.887C15.871 6.14567 16.5 7.68333 16.5 9.5C16.5 10.2333 16.3833 10.925 16.15 11.575C15.9167 12.225 15.6 12.8 15.2 13.3L20.825 18.925C21.0083 19.1083 21.1 19.3333 21.1 19.6C21.1 19.8667 21 20.1 20.8 20.3C20.6167 20.4833 20.3833 20.575 20.1 20.575C19.8167 20.575 19.5833 20.4833 19.4 20.3ZM10 14C11.25 14 12.3127 13.5627 13.188 12.688C14.0627 11.8127 14.5 10.75 14.5 9.5C14.5 8.25 14.0627 7.18733 13.188 6.312C12.3127 5.43733 11.25 5 10 5C8.75 5 7.68733 5.43733 6.812 6.312C5.93733 7.18733 5.5 8.25 5.5 9.5C5.5 10.75 5.93733 11.8127 6.812 12.688C7.68733 13.5627 8.75 14 10 14Z",
+    fill: color
+  }));
+};
+
+SearchDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var SellDs2Icon = function SellDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M14.75 21.4C14.3667 21.7833 13.8917 21.975 13.325 21.975C12.7583 21.975 12.2833 21.7833 11.9 21.4L3.1 12.6C2.91667 12.4167 2.771 12.2 2.663 11.95C2.55433 11.7 2.5 11.4333 2.5 11.15V4C2.5 3.45 2.696 2.979 3.088 2.587C3.47933 2.19567 3.95 2 4.5 2H11.65C11.9333 2 12.2 2.054 12.45 2.162C12.7 2.27067 12.9167 2.41667 13.1 2.6L21.9 11.425C22.2833 11.8083 22.475 12.279 22.475 12.837C22.475 13.3957 22.2833 13.8667 21.9 14.25L14.75 21.4ZM13.325 20L20.475 12.85L11.65 4H4.5V11.15L13.325 20ZM7 8C7.41667 8 7.77067 7.854 8.062 7.562C8.354 7.27067 8.5 6.91667 8.5 6.5C8.5 6.08333 8.354 5.72933 8.062 5.438C7.77067 5.146 7.41667 5 7 5C6.58333 5 6.22933 5.146 5.938 5.438C5.646 5.72933 5.5 6.08333 5.5 6.5C5.5 6.91667 5.646 7.27067 5.938 7.562C6.22933 7.854 6.58333 8 7 8Z",
+    fill: color
+  }));
+};
+
+SellDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var WorkHistoryDs2Icon = function WorkHistoryDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 21C3.95 21 3.47933 20.8043 3.088 20.413C2.696 20.021 2.5 19.55 2.5 19V8C2.5 7.45 2.696 6.97933 3.088 6.588C3.47933 6.196 3.95 6 4.5 6H8.5V4C8.5 3.45 8.696 2.979 9.088 2.587C9.47933 2.19567 9.95 2 10.5 2H14.5C15.05 2 15.521 2.19567 15.913 2.587C16.3043 2.979 16.5 3.45 16.5 4V6H20.5C21.05 6 21.521 6.196 21.913 6.588C22.3043 6.97933 22.5 7.45 22.5 8V12.275C22.2 12.0583 21.8833 11.8707 21.55 11.712C21.2167 11.554 20.8667 11.4167 20.5 11.3V8H4.5V19H11.575C11.625 19.35 11.7 19.6917 11.8 20.025C11.9 20.3583 12.025 20.6833 12.175 21H4.5ZM10.5 6H14.5V4H10.5V6ZM18.5 23C17.1167 23 15.9377 22.5127 14.963 21.538C13.9877 20.5627 13.5 19.3833 13.5 18C13.5 16.6167 13.9877 15.4373 14.963 14.462C15.9377 13.4873 17.1167 13 18.5 13C19.8833 13 21.0627 13.4873 22.038 14.462C23.0127 15.4373 23.5 16.6167 23.5 18C23.5 19.3833 23.0127 20.5627 22.038 21.538C21.0627 22.5127 19.8833 23 18.5 23ZM20.15 20.35L20.85 19.65L19 17.8V15H18V18.2L20.15 20.35Z",
+    fill: color
+  }));
+};
+
+WorkHistoryDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var MicDs2Icon = function MicDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5001 14C11.6667 14 10.9584 13.7083 10.3751 13.125C9.79173 12.5417 9.50006 11.8333 9.50006 11V5C9.50006 4.16667 9.79173 3.45833 10.3751 2.875C10.9584 2.29167 11.6667 2 12.5001 2C13.3334 2 14.0417 2.29167 14.6251 2.875C15.2084 3.45833 15.5001 4.16667 15.5001 5V11C15.5001 11.8333 15.2084 12.5417 14.6251 13.125C14.0417 13.7083 13.3334 14 12.5001 14ZM12.5001 21C12.2167 21 11.9794 20.904 11.7881 20.712C11.5961 20.5207 11.5001 20.2833 11.5001 20V17.925C9.95006 17.7083 8.63339 17.0583 7.55006 15.975C6.46673 14.8917 5.80839 13.5917 5.57506 12.075C5.52506 11.7917 5.60006 11.5417 5.80006 11.325C6.00006 11.1083 6.26673 11 6.60006 11C6.83339 11 7.04173 11.0873 7.22506 11.262C7.40839 11.4373 7.52506 11.65 7.57506 11.9C7.79173 13.0667 8.35839 14.0417 9.27506 14.825C10.1917 15.6083 11.2667 16 12.5001 16C13.7334 16 14.8084 15.6083 15.7251 14.825C16.6417 14.0417 17.2084 13.0667 17.4251 11.9C17.4751 11.65 17.5961 11.4373 17.7881 11.262C17.9794 11.0873 18.1917 11 18.4251 11C18.7417 11 19.0001 11.1083 19.2001 11.325C19.4001 11.5417 19.4751 11.7917 19.4251 12.075C19.1917 13.5917 18.5334 14.8917 17.4501 15.975C16.3667 17.0583 15.0501 17.7083 13.5001 17.925V20C13.5001 20.2833 13.4044 20.5207 13.2131 20.712C13.0211 20.904 12.7834 21 12.5001 21ZM12.5001 12C12.7834 12 13.0211 11.904 13.2131 11.712C13.4044 11.5207 13.5001 11.2833 13.5001 11V5C13.5001 4.71667 13.4044 4.479 13.2131 4.287C13.0211 4.09567 12.7834 4 12.5001 4C12.2167 4 11.9794 4.09567 11.7881 4.287C11.5961 4.479 11.5001 4.71667 11.5001 5V11C11.5001 11.2833 11.5961 11.5207 11.7881 11.712C11.9794 11.904 12.2167 12 12.5001 12Z",
+    fill: color
+  }));
+};
+
+MicDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var MoreVertDs2Icon = function MoreVertDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 20C11.95 20 11.4793 19.8043 11.088 19.413C10.696 19.021 10.5 18.55 10.5 18C10.5 17.45 10.696 16.979 11.088 16.587C11.4793 16.1957 11.95 16 12.5 16C13.05 16 13.521 16.1957 13.913 16.587C14.3043 16.979 14.5 17.45 14.5 18C14.5 18.55 14.3043 19.021 13.913 19.413C13.521 19.8043 13.05 20 12.5 20ZM12.5 14C11.95 14 11.4793 13.804 11.088 13.412C10.696 13.0207 10.5 12.55 10.5 12C10.5 11.45 10.696 10.979 11.088 10.587C11.4793 10.1957 11.95 10 12.5 10C13.05 10 13.521 10.1957 13.913 10.587C14.3043 10.979 14.5 11.45 14.5 12C14.5 12.55 14.3043 13.0207 13.913 13.412C13.521 13.804 13.05 14 12.5 14ZM12.5 8C11.95 8 11.4793 7.804 11.088 7.412C10.696 7.02067 10.5 6.55 10.5 6C10.5 5.45 10.696 4.97933 11.088 4.588C11.4793 4.196 11.95 4 12.5 4C13.05 4 13.521 4.196 13.913 4.588C14.3043 4.97933 14.5 5.45 14.5 6C14.5 6.55 14.3043 7.02067 13.913 7.412C13.521 7.804 13.05 8 12.5 8Z",
+    fill: color
+  }));
+};
+
+MoreVertDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var MoveDownDs2Icon = function MoveDownDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.775 20.275C6.59167 20.0917 6.5 19.8667 6.5 19.6C6.5 19.3333 6.59167 19.1 6.775 18.9L7.675 17.95C5.925 17.75 4.45833 16.9917 3.275 15.675C2.09167 14.3583 1.5 12.8 1.5 11C1.5 9.05 2.17933 7.39567 3.538 6.037C4.896 4.679 6.55 4 8.5 4H10.5C10.7833 4 11.021 4.09567 11.213 4.287C11.4043 4.479 11.5 4.71667 11.5 5C11.5 5.28333 11.4043 5.521 11.213 5.713C11.021 5.90433 10.7833 6 10.5 6H8.5C7.11667 6 5.93767 6.48733 4.963 7.462C3.98767 8.43733 3.5 9.61667 3.5 11C3.5 12.2333 3.88733 13.3 4.662 14.2C5.43733 15.1 6.40833 15.6667 7.575 15.9L6.8 15.125C6.61667 14.9417 6.525 14.7127 6.525 14.438C6.525 14.1627 6.61667 13.925 6.8 13.725C7 13.525 7.23767 13.425 7.513 13.425C7.78767 13.425 8.025 13.525 8.225 13.725L10.8 16.3C10.9 16.4 10.971 16.5083 11.013 16.625C11.0543 16.7417 11.075 16.8667 11.075 17C11.075 17.1333 11.0543 17.2583 11.013 17.375C10.971 17.4917 10.9 17.6 10.8 17.7L8.2 20.3C8.01667 20.4833 7.78333 20.575 7.5 20.575C7.21667 20.575 6.975 20.475 6.775 20.275ZM15.5 11C14.95 11 14.4793 10.804 14.088 10.412C13.696 10.0207 13.5 9.55 13.5 9V6C13.5 5.45 13.696 4.97933 14.088 4.588C14.4793 4.196 14.95 4 15.5 4H20.5C21.05 4 21.521 4.196 21.913 4.588C22.3043 4.97933 22.5 5.45 22.5 6V9C22.5 9.55 22.3043 10.0207 21.913 10.412C21.521 10.804 21.05 11 20.5 11H15.5ZM15.5 9H20.5V6H15.5V9ZM15.5 20C14.95 20 14.4793 19.8043 14.088 19.413C13.696 19.021 13.5 18.55 13.5 18V15C13.5 14.45 13.696 13.979 14.088 13.587C14.4793 13.1957 14.95 13 15.5 13H20.5C21.05 13 21.521 13.1957 21.913 13.587C22.3043 13.979 22.5 14.45 22.5 15V18C22.5 18.55 22.3043 19.021 21.913 19.413C21.521 19.8043 21.05 20 20.5 20H15.5Z",
+    fill: color
+  }));
+};
+
+MoveDownDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var NestHeatLinkEDs2 = function NestHeatLinkEDs2(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20ZM12.5 16C11.4 16 10.4583 15.6083 9.675 14.825C8.89167 14.0417 8.5 13.1 8.5 12C8.5 10.9 8.89167 9.95833 9.675 9.175C10.4583 8.39167 11.4 8 12.5 8C13.6 8 14.5417 8.39167 15.325 9.175C16.1083 9.95833 16.5 10.9 16.5 12C16.5 13.1 16.1083 14.0417 15.325 14.825C14.5417 15.6083 13.6 16 12.5 16Z",
+    fill: color
+  }));
+};
+
+NestHeatLinkEDs2.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var NotificationsActiveDs2Icon = function NotificationsActiveDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M3.50012 10C3.21679 10 2.97945 9.9 2.78812 9.7C2.59612 9.5 2.51679 9.26667 2.55012 9C2.66679 7.9 2.95445 6.84567 3.41312 5.837C3.87112 4.829 4.47512 3.925 5.22512 3.125C5.40845 2.94167 5.64179 2.85 5.92512 2.85C6.20845 2.85 6.45012 2.95 6.65012 3.15C6.83345 3.33333 6.92512 3.55833 6.92512 3.825C6.92512 4.09167 6.83345 4.33333 6.65012 4.55C6.06679 5.18333 5.59612 5.87067 5.23812 6.612C4.87945 7.354 4.65012 8.15 4.55012 9C4.51679 9.28333 4.40445 9.52067 4.21312 9.712C4.02112 9.904 3.78345 10 3.50012 10ZM21.5001 10C21.2335 10 21.0001 9.904 20.8001 9.712C20.6001 9.52067 20.4835 9.28333 20.4501 9C20.3501 8.15 20.1211 7.354 19.7631 6.612C19.4045 5.87067 18.9335 5.18333 18.3501 4.55C18.1668 4.33333 18.0751 4.09167 18.0751 3.825C18.0751 3.55833 18.1751 3.33333 18.3751 3.15C18.5751 2.95 18.8125 2.85 19.0871 2.85C19.3625 2.85 19.5918 2.94167 19.7751 3.125C20.5251 3.925 21.1295 4.829 21.5881 5.837C22.0461 6.84567 22.3335 7.9 22.4501 9C22.4835 9.26667 22.4041 9.5 22.2121 9.7C22.0208 9.9 21.7835 10 21.5001 10ZM5.50012 19C5.21679 19 4.97912 18.904 4.78712 18.712C4.59579 18.5207 4.50012 18.2833 4.50012 18C4.50012 17.7167 4.59579 17.4793 4.78712 17.288C4.97912 17.096 5.21679 17 5.50012 17H6.50012V10C6.50012 8.61667 6.91679 7.38733 7.75012 6.312C8.58345 5.23733 9.66679 4.53333 11.0001 4.2V3.5C11.0001 3.08333 11.1461 2.72933 11.4381 2.438C11.7295 2.146 12.0835 2 12.5001 2C12.9168 2 13.2708 2.146 13.5621 2.438C13.8541 2.72933 14.0001 3.08333 14.0001 3.5V4.2C15.3335 4.53333 16.4168 5.23733 17.2501 6.312C18.0835 7.38733 18.5001 8.61667 18.5001 10V17H19.5001C19.7835 17 20.0208 17.096 20.2121 17.288C20.4041 17.4793 20.5001 17.7167 20.5001 18C20.5001 18.2833 20.4041 18.5207 20.2121 18.712C20.0208 18.904 19.7835 19 19.5001 19H5.50012ZM12.5001 22C11.9501 22 11.4795 21.8043 11.0881 21.413C10.6961 21.021 10.5001 20.55 10.5001 20H14.5001C14.5001 20.55 14.3045 21.021 13.9131 21.413C13.5211 21.8043 13.0501 22 12.5001 22ZM8.50012 17H16.5001V10C16.5001 8.9 16.1085 7.95833 15.3251 7.175C14.5418 6.39167 13.6001 6 12.5001 6C11.4001 6 10.4585 6.39167 9.67512 7.175C8.89179 7.95833 8.50012 8.9 8.50012 10V17Z",
+    fill: color
+  }));
+};
+
+NotificationsActiveDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var NotificationsDs2Icon = function NotificationsDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 19C5.21667 19 4.979 18.904 4.787 18.712C4.59567 18.5207 4.5 18.2833 4.5 18C4.5 17.7167 4.59567 17.4793 4.787 17.288C4.979 17.096 5.21667 17 5.5 17H6.5V10C6.5 8.61667 6.91667 7.38733 7.75 6.312C8.58333 5.23733 9.66667 4.53333 11 4.2V3.5C11 3.08333 11.146 2.72933 11.438 2.438C11.7293 2.146 12.0833 2 12.5 2C12.9167 2 13.2707 2.146 13.562 2.438C13.854 2.72933 14 3.08333 14 3.5V4.2C15.3333 4.53333 16.4167 5.23733 17.25 6.312C18.0833 7.38733 18.5 8.61667 18.5 10V17H19.5C19.7833 17 20.0207 17.096 20.212 17.288C20.404 17.4793 20.5 17.7167 20.5 18C20.5 18.2833 20.404 18.5207 20.212 18.712C20.0207 18.904 19.7833 19 19.5 19H5.5ZM12.5 22C11.95 22 11.4793 21.8043 11.088 21.413C10.696 21.021 10.5 20.55 10.5 20H14.5C14.5 20.55 14.3043 21.021 13.913 21.413C13.521 21.8043 13.05 22 12.5 22ZM8.5 17H16.5V10C16.5 8.9 16.1083 7.95833 15.325 7.175C14.5417 6.39167 13.6 6 12.5 6C11.4 6 10.4583 6.39167 9.675 7.175C8.89167 7.95833 8.5 8.9 8.5 10V17Z",
+    fill: color
+  }));
+};
+
+NotificationsDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var OpenInNewDs2Icon = function OpenInNewDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H11.5C11.7833 3 12.021 3.09567 12.213 3.287C12.4043 3.479 12.5 3.71667 12.5 4C12.5 4.28333 12.4043 4.52067 12.213 4.712C12.021 4.904 11.7833 5 11.5 5H5.5V19H19.5V13C19.5 12.7167 19.596 12.479 19.788 12.287C19.9793 12.0957 20.2167 12 20.5 12C20.7833 12 21.0207 12.0957 21.212 12.287C21.404 12.479 21.5 12.7167 21.5 13V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H5.5ZM9.5 15C9.31667 14.8167 9.225 14.5833 9.225 14.3C9.225 14.0167 9.31667 13.7833 9.5 13.6L18.1 5H15.5C15.2167 5 14.9793 4.904 14.788 4.712C14.596 4.52067 14.5 4.28333 14.5 4C14.5 3.71667 14.596 3.479 14.788 3.287C14.9793 3.09567 15.2167 3 15.5 3H20.5C20.7833 3 21.0207 3.09567 21.212 3.287C21.404 3.479 21.5 3.71667 21.5 4V9C21.5 9.28333 21.404 9.52067 21.212 9.712C21.0207 9.904 20.7833 10 20.5 10C20.2167 10 19.9793 9.904 19.788 9.712C19.596 9.52067 19.5 9.28333 19.5 9V6.4L10.875 15.025C10.6917 15.2083 10.4667 15.3 10.2 15.3C9.93333 15.3 9.7 15.2 9.5 15Z",
+    fill: color
+  }));
+};
+
+OpenInNewDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PaletteDs2Icon = function PaletteDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? theme.colors.textPrimary : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 22C11.1333 22 9.84167 21.7373 8.625 21.212C7.40833 20.6873 6.346 19.9707 5.438 19.062C4.52933 18.154 3.81267 17.0917 3.288 15.875C2.76267 14.6583 2.5 13.3667 2.5 12C2.5 10.6167 2.77067 9.31667 3.312 8.1C3.854 6.88333 4.58767 5.825 5.513 4.925C6.43767 4.025 7.51667 3.31233 8.75 2.787C9.98333 2.26233 11.3 2 12.7 2C14.0333 2 15.2917 2.22933 16.475 2.688C17.6583 3.146 18.6957 3.77933 19.587 4.588C20.479 5.396 21.1873 6.35433 21.712 7.463C22.2373 8.571 22.5 9.76667 22.5 11.05C22.5 12.9667 21.9167 14.4373 20.75 15.462C19.5833 16.4873 18.1667 17 16.5 17H14.65C14.5 17 14.396 17.0417 14.338 17.125C14.2793 17.2083 14.25 17.3 14.25 17.4C14.25 17.6 14.375 17.8873 14.625 18.262C14.875 18.6373 15 19.0667 15 19.55C15 20.3833 14.7707 21 14.312 21.4C13.854 21.8 13.25 22 12.5 22ZM7 13C7.43333 13 7.79167 12.8583 8.075 12.575C8.35833 12.2917 8.5 11.9333 8.5 11.5C8.5 11.0667 8.35833 10.7083 8.075 10.425C7.79167 10.1417 7.43333 10 7 10C6.56667 10 6.20833 10.1417 5.925 10.425C5.64167 10.7083 5.5 11.0667 5.5 11.5C5.5 11.9333 5.64167 12.2917 5.925 12.575C6.20833 12.8583 6.56667 13 7 13ZM10 9C10.4333 9 10.7917 8.85833 11.075 8.575C11.3583 8.29167 11.5 7.93333 11.5 7.5C11.5 7.06667 11.3583 6.70833 11.075 6.425C10.7917 6.14167 10.4333 6 10 6C9.56667 6 9.20833 6.14167 8.925 6.425C8.64167 6.70833 8.5 7.06667 8.5 7.5C8.5 7.93333 8.64167 8.29167 8.925 8.575C9.20833 8.85833 9.56667 9 10 9ZM15 9C15.4333 9 15.7917 8.85833 16.075 8.575C16.3583 8.29167 16.5 7.93333 16.5 7.5C16.5 7.06667 16.3583 6.70833 16.075 6.425C15.7917 6.14167 15.4333 6 15 6C14.5667 6 14.2083 6.14167 13.925 6.425C13.6417 6.70833 13.5 7.06667 13.5 7.5C13.5 7.93333 13.6417 8.29167 13.925 8.575C14.2083 8.85833 14.5667 9 15 9ZM18 13C18.4333 13 18.7917 12.8583 19.075 12.575C19.3583 12.2917 19.5 11.9333 19.5 11.5C19.5 11.0667 19.3583 10.7083 19.075 10.425C18.7917 10.1417 18.4333 10 18 10C17.5667 10 17.2083 10.1417 16.925 10.425C16.6417 10.7083 16.5 11.0667 16.5 11.5C16.5 11.9333 16.6417 12.2917 16.925 12.575C17.2083 12.8583 17.5667 13 18 13ZM12.5 20C12.65 20 12.771 19.9583 12.863 19.875C12.9543 19.7917 13 19.6833 13 19.55C13 19.3167 12.875 19.0417 12.625 18.725C12.375 18.4083 12.25 17.9333 12.25 17.3C12.25 16.6 12.4917 16.0417 12.975 15.625C13.4583 15.2083 14.05 15 14.75 15H16.5C17.6 15 18.5417 14.679 19.325 14.037C20.1083 13.3957 20.5 12.4 20.5 11.05C20.5 9.03333 19.7293 7.354 18.188 6.012C16.646 4.67067 14.8167 4 12.7 4C10.4333 4 8.5 4.775 6.9 6.325C5.3 7.875 4.5 9.76667 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+PaletteDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PauseDs2Icon = function PauseDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M15.5 19C14.95 19 14.4793 18.8043 14.088 18.413C13.696 18.021 13.5 17.55 13.5 17V7C13.5 6.45 13.696 5.97933 14.088 5.588C14.4793 5.196 14.95 5 15.5 5H17.5C18.05 5 18.521 5.196 18.913 5.588C19.3043 5.97933 19.5 6.45 19.5 7V17C19.5 17.55 19.3043 18.021 18.913 18.413C18.521 18.8043 18.05 19 17.5 19H15.5ZM7.5 19C6.95 19 6.47933 18.8043 6.088 18.413C5.696 18.021 5.5 17.55 5.5 17V7C5.5 6.45 5.696 5.97933 6.088 5.588C6.47933 5.196 6.95 5 7.5 5H9.5C10.05 5 10.521 5.196 10.913 5.588C11.3043 5.97933 11.5 6.45 11.5 7V17C11.5 17.55 11.3043 18.021 10.913 18.413C10.521 18.8043 10.05 19 9.5 19H7.5ZM15.5 17H17.5V7H15.5V17ZM7.5 17H9.5V7H7.5V17Z",
+    fill: color
+  }));
+};
+
+PauseDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PersonAddDs2Icon = function PersonAddDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M19.5 14C19.2167 14 18.9793 13.904 18.788 13.712C18.596 13.5207 18.5 13.2833 18.5 13V11H16.5C16.2167 11 15.9793 10.904 15.788 10.712C15.596 10.5207 15.5 10.2833 15.5 10C15.5 9.71667 15.596 9.479 15.788 9.287C15.9793 9.09567 16.2167 9 16.5 9H18.5V7C18.5 6.71667 18.596 6.479 18.788 6.287C18.9793 6.09567 19.2167 6 19.5 6C19.7833 6 20.0207 6.09567 20.212 6.287C20.404 6.479 20.5 6.71667 20.5 7V9H22.5C22.7833 9 23.0207 9.09567 23.212 9.287C23.404 9.479 23.5 9.71667 23.5 10C23.5 10.2833 23.404 10.5207 23.212 10.712C23.0207 10.904 22.7833 11 22.5 11H20.5V13C20.5 13.2833 20.404 13.5207 20.212 13.712C20.0207 13.904 19.7833 14 19.5 14ZM9.5 12C8.4 12 7.45833 11.6083 6.675 10.825C5.89167 10.0417 5.5 9.1 5.5 8C5.5 6.9 5.89167 5.95833 6.675 5.175C7.45833 4.39167 8.4 4 9.5 4C10.6 4 11.5417 4.39167 12.325 5.175C13.1083 5.95833 13.5 6.9 13.5 8C13.5 9.1 13.1083 10.0417 12.325 10.825C11.5417 11.6083 10.6 12 9.5 12ZM2.5 20C2.21667 20 1.97933 19.904 1.788 19.712C1.596 19.5207 1.5 19.2833 1.5 19V17.2C1.5 16.6333 1.646 16.1123 1.938 15.637C2.22933 15.1623 2.61667 14.8 3.1 14.55C4.13333 14.0333 5.18333 13.6457 6.25 13.387C7.31667 13.129 8.4 13 9.5 13C10.6 13 11.6833 13.129 12.75 13.387C13.8167 13.6457 14.8667 14.0333 15.9 14.55C16.3833 14.8 16.7707 15.1623 17.062 15.637C17.354 16.1123 17.5 16.6333 17.5 17.2V19C17.5 19.2833 17.404 19.5207 17.212 19.712C17.0207 19.904 16.7833 20 16.5 20H2.5ZM3.5 18H15.5V17.2C15.5 17.0167 15.4543 16.85 15.363 16.7C15.271 16.55 15.15 16.4333 15 16.35C14.1 15.9 13.1917 15.5623 12.275 15.337C11.3583 15.1123 10.4333 15 9.5 15C8.56667 15 7.64167 15.1123 6.725 15.337C5.80833 15.5623 4.9 15.9 4 16.35C3.85 16.4333 3.72933 16.55 3.638 16.7C3.546 16.85 3.5 17.0167 3.5 17.2V18ZM9.5 10C10.05 10 10.521 9.804 10.913 9.412C11.3043 9.02067 11.5 8.55 11.5 8C11.5 7.45 11.3043 6.97933 10.913 6.588C10.521 6.196 10.05 6 9.5 6C8.95 6 8.47933 6.196 8.088 6.588C7.696 6.97933 7.5 7.45 7.5 8C7.5 8.55 7.696 9.02067 8.088 9.412C8.47933 9.804 8.95 10 9.5 10Z",
+    fill: color
+  }));
+};
+
+PersonAddDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PersonPinCircleDs2Icon = function PersonPinCircleDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 15C13.4333 15 14.275 14.7707 15.025 14.312C15.775 13.854 16.3667 13.25 16.8 12.5C16.2167 12.0167 15.5583 11.6457 14.825 11.387C14.0917 11.129 13.3167 11 12.5 11C11.6833 11 10.9083 11.129 10.175 11.387C9.44167 11.6457 8.78333 12.0167 8.2 12.5C8.63333 13.25 9.225 13.854 9.975 14.312C10.725 14.7707 11.5667 15 12.5 15ZM12.5 10C13.05 10 13.521 9.804 13.913 9.412C14.3043 9.02067 14.5 8.55 14.5 8C14.5 7.45 14.3043 6.97933 13.913 6.588C13.521 6.196 13.05 6 12.5 6C11.95 6 11.4793 6.196 11.088 6.588C10.696 6.97933 10.5 7.45 10.5 8C10.5 8.55 10.696 9.02067 11.088 9.412C11.4793 9.804 11.95 10 12.5 10ZM12.5 19.35C14.5333 17.4833 16.0417 15.7873 17.025 14.262C18.0083 12.7373 18.5 11.3833 18.5 10.2C18.5 8.38333 17.9207 6.89567 16.762 5.737C15.604 4.579 14.1833 4 12.5 4C10.8167 4 9.39567 4.579 8.237 5.737C7.079 6.89567 6.5 8.38333 6.5 10.2C6.5 11.3833 6.99167 12.7373 7.975 14.262C8.95833 15.7873 10.4667 17.4833 12.5 19.35ZM12.5 21.625C12.3667 21.625 12.2333 21.6 12.1 21.55C11.9667 21.5 11.85 21.4333 11.75 21.35C9.31667 19.2 7.5 17.2043 6.3 15.363C5.1 13.521 4.5 11.8 4.5 10.2C4.5 7.7 5.30433 5.70833 6.913 4.225C8.521 2.74167 10.3833 2 12.5 2C14.6167 2 16.479 2.74167 18.087 4.225C19.6957 5.70833 20.5 7.7 20.5 10.2C20.5 11.8 19.9 13.521 18.7 15.363C17.5 17.2043 15.6833 19.2 13.25 21.35C13.15 21.4333 13.0333 21.5 12.9 21.55C12.7667 21.6 12.6333 21.625 12.5 21.625Z",
+    fill: color
+  }));
+};
+
+PersonPinCircleDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PersonPinDs2Icon = function PersonPinDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 22.575C12.3667 22.575 12.2417 22.554 12.125 22.512C12.0083 22.4707 11.9 22.4 11.8 22.3L9.5 20H5.5C4.95 20 4.479 19.8043 4.087 19.413C3.69567 19.021 3.5 18.55 3.5 18V4C3.5 3.45 3.69567 2.979 4.087 2.587C4.479 2.19567 4.95 2 5.5 2H19.5C20.05 2 20.521 2.19567 20.913 2.587C21.3043 2.979 21.5 3.45 21.5 4V18C21.5 18.55 21.3043 19.021 20.913 19.413C20.521 19.8043 20.05 20 19.5 20H15.5L13.2 22.3C13.1 22.4 12.9917 22.4707 12.875 22.512C12.7583 22.554 12.6333 22.575 12.5 22.575ZM5.5 16.85C6.4 15.9667 7.446 15.2707 8.638 14.762C9.82933 14.254 11.1167 14 12.5 14C13.8833 14 15.171 14.254 16.363 14.762C17.5543 15.2707 18.6 15.9667 19.5 16.85V4H5.5V16.85ZM12.5 12C13.4667 12 14.2917 11.6583 14.975 10.975C15.6583 10.2917 16 9.46667 16 8.5C16 7.53333 15.6583 6.70833 14.975 6.025C14.2917 5.34167 13.4667 5 12.5 5C11.5333 5 10.7083 5.34167 10.025 6.025C9.34167 6.70833 9 7.53333 9 8.5C9 9.46667 9.34167 10.2917 10.025 10.975C10.7083 11.6583 11.5333 12 12.5 12ZM12.5 10C12.0833 10 11.7293 9.854 11.438 9.562C11.146 9.27067 11 8.91667 11 8.5C11 8.08333 11.146 7.72933 11.438 7.438C11.7293 7.146 12.0833 7 12.5 7C12.9167 7 13.2707 7.146 13.562 7.438C13.854 7.72933 14 8.08333 14 8.5C14 8.91667 13.854 9.27067 13.562 9.562C13.2707 9.854 12.9167 10 12.5 10ZM12.5 20.2L14.7 18H17.5V17.75C16.8 17.1667 16.025 16.7293 15.175 16.438C14.325 16.146 13.4333 16 12.5 16C11.5667 16 10.675 16.146 9.825 16.438C8.975 16.7293 8.2 17.1667 7.5 17.75V18H10.3L12.5 20.2Z",
+    fill: color
+  }));
+};
+
+PersonPinDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PersonDs2Icon = function PersonDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 12C11.4 12 10.4583 11.6083 9.675 10.825C8.89167 10.0417 8.5 9.1 8.5 8C8.5 6.9 8.89167 5.95833 9.675 5.175C10.4583 4.39167 11.4 4 12.5 4C13.6 4 14.5417 4.39167 15.325 5.175C16.1083 5.95833 16.5 6.9 16.5 8C16.5 9.1 16.1083 10.0417 15.325 10.825C14.5417 11.6083 13.6 12 12.5 12ZM18.5 20H6.5C5.95 20 5.47933 19.8043 5.088 19.413C4.696 19.021 4.5 18.55 4.5 18V17.2C4.5 16.6333 4.646 16.1123 4.938 15.637C5.22933 15.1623 5.61667 14.8 6.1 14.55C7.13333 14.0333 8.18333 13.6457 9.25 13.387C10.3167 13.129 11.4 13 12.5 13C13.6 13 14.6833 13.129 15.75 13.387C16.8167 13.6457 17.8667 14.0333 18.9 14.55C19.3833 14.8 19.7707 15.1623 20.062 15.637C20.354 16.1123 20.5 16.6333 20.5 17.2V18C20.5 18.55 20.3043 19.021 19.913 19.413C19.521 19.8043 19.05 20 18.5 20ZM6.5 18H18.5V17.2C18.5 17.0167 18.4543 16.85 18.363 16.7C18.271 16.55 18.15 16.4333 18 16.35C17.1 15.9 16.1917 15.5623 15.275 15.337C14.3583 15.1123 13.4333 15 12.5 15C11.5667 15 10.6417 15.1123 9.725 15.337C8.80833 15.5623 7.9 15.9 7 16.35C6.85 16.4333 6.72933 16.55 6.638 16.7C6.546 16.85 6.5 17.0167 6.5 17.2V18ZM12.5 10C13.05 10 13.521 9.804 13.913 9.412C14.3043 9.02067 14.5 8.55 14.5 8C14.5 7.45 14.3043 6.97933 13.913 6.588C13.521 6.196 13.05 6 12.5 6C11.95 6 11.4793 6.196 11.088 6.588C10.696 6.97933 10.5 7.45 10.5 8C10.5 8.55 10.696 9.02067 11.088 9.412C11.4793 9.804 11.95 10 12.5 10Z",
+    fill: color
+  }));
+};
+
+PersonDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PhotoCameraFrontDs2Icon = function PhotoCameraFrontDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M8.5 17H16.5V16.45C16.5 15.7 16.1333 15.104 15.4 14.662C14.6667 14.2207 13.7 14 12.5 14C11.3 14 10.3333 14.2207 9.6 14.662C8.86667 15.104 8.5 15.7 8.5 16.45V17ZM12.5 13C13.05 13 13.521 12.804 13.913 12.412C14.3043 12.0207 14.5 11.55 14.5 11C14.5 10.45 14.3043 9.979 13.913 9.587C13.521 9.19567 13.05 9 12.5 9C11.95 9 11.4793 9.19567 11.088 9.587C10.696 9.979 10.5 10.45 10.5 11C10.5 11.55 10.696 12.0207 11.088 12.412C11.4793 12.804 11.95 13 12.5 13ZM4.5 21C3.95 21 3.47933 20.8043 3.088 20.413C2.696 20.021 2.5 19.55 2.5 19V7C2.5 6.45 2.696 5.97933 3.088 5.588C3.47933 5.196 3.95 5 4.5 5H7.65L8.9 3.65C9.08333 3.43333 9.304 3.27067 9.562 3.162C9.82067 3.054 10.0917 3 10.375 3H14.625C14.9083 3 15.1793 3.054 15.438 3.162C15.696 3.27067 15.9167 3.43333 16.1 3.65L17.35 5H20.5C21.05 5 21.521 5.196 21.913 5.588C22.3043 5.97933 22.5 6.45 22.5 7V19C22.5 19.55 22.3043 20.021 21.913 20.413C21.521 20.8043 21.05 21 20.5 21H4.5ZM20.5 19V7H4.5V19H20.5Z",
+    fill: color
+  }));
+};
+
+PhotoCameraFrontDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PhotoCameraDs2Icon = function PhotoCameraDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 17.5C13.75 17.5 14.8127 17.0627 15.688 16.188C16.5627 15.3127 17 14.25 17 13C17 11.75 16.5627 10.6873 15.688 9.812C14.8127 8.93733 13.75 8.5 12.5 8.5C11.25 8.5 10.1873 8.93733 9.312 9.812C8.43733 10.6873 8 11.75 8 13C8 14.25 8.43733 15.3127 9.312 16.188C10.1873 17.0627 11.25 17.5 12.5 17.5ZM12.5 15.5C11.8 15.5 11.2083 15.2583 10.725 14.775C10.2417 14.2917 10 13.7 10 13C10 12.3 10.2417 11.7083 10.725 11.225C11.2083 10.7417 11.8 10.5 12.5 10.5C13.2 10.5 13.7917 10.7417 14.275 11.225C14.7583 11.7083 15 12.3 15 13C15 13.7 14.7583 14.2917 14.275 14.775C13.7917 15.2583 13.2 15.5 12.5 15.5ZM4.5 21C3.95 21 3.47933 20.8043 3.088 20.413C2.696 20.021 2.5 19.55 2.5 19V7C2.5 6.45 2.696 5.97933 3.088 5.588C3.47933 5.196 3.95 5 4.5 5H7.65L9.5 3H15.5L17.35 5H20.5C21.05 5 21.521 5.196 21.913 5.588C22.3043 5.97933 22.5 6.45 22.5 7V19C22.5 19.55 22.3043 20.021 21.913 20.413C21.521 20.8043 21.05 21 20.5 21H4.5ZM20.5 19V7H16.45L14.625 5H10.375L8.55 7H4.5V19H20.5Z",
+    fill: color
+  }));
+};
+
+PhotoCameraDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PlayArrowDs2Icon = function PlayArrowDs2Icon(_ref) {
+  _ref.color;
+      var _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M10.025 18.0251C9.69167 18.2417 9.354 18.2541 9.012 18.0621C8.67067 17.8707 8.5 17.5751 8.5 17.1751V6.82508C8.5 6.42508 8.67067 6.12908 9.012 5.93708C9.354 5.74575 9.69167 5.75841 10.025 5.97508L18.175 11.1501C18.475 11.3501 18.625 11.6334 18.625 12.0001C18.625 12.3667 18.475 12.6501 18.175 12.8501L10.025 18.0251ZM10.5 15.3501L15.75 12.0001L10.5 8.65008V15.3501Z",
+    fill: "#2B435E"
+  }));
+};
+
+PlayArrowDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PlayCircleDs2Icon = function PlayCircleDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M10 9.325V14.675C10 15.075 10.175 15.3667 10.525 15.55C10.875 15.7333 11.2167 15.7167 11.55 15.5L15.7 12.85C16.0167 12.6667 16.175 12.3833 16.175 12C16.175 11.6167 16.0167 11.3333 15.7 11.15L11.55 8.5C11.2167 8.28333 10.875 8.26667 10.525 8.45C10.175 8.63333 10 8.925 10 9.325ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+PlayCircleDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PlaylistAddCheckDs2Icon = function PlaylistAddCheckDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 8C4.21667 8 3.97933 7.90433 3.788 7.713C3.596 7.521 3.5 7.28333 3.5 7C3.5 6.71667 3.596 6.479 3.788 6.287C3.97933 6.09567 4.21667 6 4.5 6H14.5C14.7833 6 15.021 6.09567 15.213 6.287C15.4043 6.479 15.5 6.71667 15.5 7C15.5 7.28333 15.4043 7.521 15.213 7.713C15.021 7.90433 14.7833 8 14.5 8H4.5ZM4.5 12C4.21667 12 3.97933 11.904 3.788 11.712C3.596 11.5207 3.5 11.2833 3.5 11C3.5 10.7167 3.596 10.479 3.788 10.287C3.97933 10.0957 4.21667 10 4.5 10H14.5C14.7833 10 15.021 10.0957 15.213 10.287C15.4043 10.479 15.5 10.7167 15.5 11C15.5 11.2833 15.4043 11.5207 15.213 11.712C15.021 11.904 14.7833 12 14.5 12H4.5ZM4.5 16C4.21667 16 3.97933 15.904 3.788 15.712C3.596 15.5207 3.5 15.2833 3.5 15C3.5 14.7167 3.596 14.479 3.788 14.287C3.97933 14.0957 4.21667 14 4.5 14H10.5C10.7833 14 11.021 14.0957 11.213 14.287C11.4043 14.479 11.5 14.7167 11.5 15C11.5 15.2833 11.4043 15.5207 11.213 15.712C11.021 15.904 10.7833 16 10.5 16H4.5ZM16.15 18.3L14 16.15C13.8167 15.9667 13.725 15.7333 13.725 15.45C13.725 15.1667 13.8167 14.9333 14 14.75C14.1833 14.5667 14.4127 14.475 14.688 14.475C14.9627 14.475 15.2 14.5667 15.4 14.75L16.85 16.15L20.4 12.6C20.5833 12.4167 20.8123 12.325 21.087 12.325C21.3623 12.325 21.6 12.425 21.8 12.625C22 12.825 22.096 13.0667 22.088 13.35C22.0793 13.6333 21.975 13.875 21.775 14.075L17.55 18.3C17.3667 18.4833 17.1333 18.575 16.85 18.575C16.5667 18.575 16.3333 18.4833 16.15 18.3Z",
+    fill: color
+  }));
+};
+
+PlaylistAddCheckDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PublicDs2Icon = function PublicDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM11.5 19.95V18C10.95 18 10.4793 17.8043 10.088 17.413C9.696 17.021 9.5 16.55 9.5 16V15L4.7 10.2C4.65 10.5 4.604 10.8 4.562 11.1C4.52067 11.4 4.5 11.7 4.5 12C4.5 14.0167 5.16267 15.7833 6.488 17.3C7.81267 18.8167 9.48333 19.7 11.5 19.95ZM18.4 17.4C18.7333 17.0333 19.0333 16.6373 19.3 16.212C19.5667 15.7873 19.7877 15.3457 19.963 14.887C20.1377 14.429 20.271 13.9583 20.363 13.475C20.4543 12.9917 20.5 12.5 20.5 12C20.5 10.3667 20.046 8.875 19.138 7.525C18.2293 6.175 17.0167 5.2 15.5 4.6V5C15.5 5.55 15.3043 6.02067 14.913 6.412C14.521 6.804 14.05 7 13.5 7H11.5V9C11.5 9.28333 11.4043 9.52067 11.213 9.712C11.021 9.904 10.7833 10 10.5 10H8.5V12H14.5C14.7833 12 15.021 12.0957 15.213 12.287C15.4043 12.479 15.5 12.7167 15.5 13V16H16.5C16.9333 16 17.325 16.129 17.675 16.387C18.025 16.6457 18.2667 16.9833 18.4 17.4Z",
+    fill: color
+  }));
+};
+
+PublicDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var PublishDs2Icon = function PublishDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 20C12.2167 20 11.9793 19.904 11.788 19.712C11.596 19.5207 11.5 19.2833 11.5 19V11.85L9.625 13.725C9.44167 13.9083 9.204 13.996 8.912 13.988C8.62067 13.9793 8.38333 13.8833 8.2 13.7C8.01667 13.5167 7.925 13.2833 7.925 13C7.925 12.7167 8.01667 12.4833 8.2 12.3L11.8 8.7C11.9 8.6 12.0083 8.529 12.125 8.487C12.2417 8.44567 12.3667 8.425 12.5 8.425C12.6333 8.425 12.7583 8.44567 12.875 8.487C12.9917 8.529 13.1 8.6 13.2 8.7L16.8 12.3C16.9833 12.4833 17.075 12.7167 17.075 13C17.075 13.2833 16.9833 13.5167 16.8 13.7C16.6167 13.8833 16.3793 13.9793 16.088 13.988C15.796 13.996 15.5583 13.9083 15.375 13.725L13.5 11.85V19C13.5 19.2833 13.4043 19.5207 13.213 19.712C13.021 19.904 12.7833 20 12.5 20ZM5.5 9C5.21667 9 4.979 8.904 4.787 8.712C4.59567 8.52067 4.5 8.28333 4.5 8V6C4.5 5.45 4.696 4.97933 5.088 4.588C5.47933 4.196 5.95 4 6.5 4H18.5C19.05 4 19.521 4.196 19.913 4.588C20.3043 4.97933 20.5 5.45 20.5 6V8C20.5 8.28333 20.404 8.52067 20.212 8.712C20.0207 8.904 19.7833 9 19.5 9C19.2167 9 18.9793 8.904 18.788 8.712C18.596 8.52067 18.5 8.28333 18.5 8V6H6.5V8C6.5 8.28333 6.40433 8.52067 6.213 8.712C6.021 8.904 5.78333 9 5.5 9Z",
+    fill: color
+  }));
+};
+
+PublishDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var RateReviewDs2Icon = function RateReviewDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11 14H17.5C17.7833 14 18.0207 13.904 18.212 13.712C18.404 13.5207 18.5 13.2833 18.5 13C18.5 12.7167 18.404 12.479 18.212 12.287C18.0207 12.0957 17.7833 12 17.5 12H13L11 14ZM7 14H8.55C8.68333 14 8.80833 13.9707 8.925 13.912C9.04167 13.854 9.15 13.7833 9.25 13.7L14.85 8.15C14.95 8.05 15 7.925 15 7.775C15 7.625 14.95 7.5 14.85 7.4L13.1 5.65C13 5.55 12.875 5.5 12.725 5.5C12.575 5.5 12.45 5.55 12.35 5.65L6.8 11.25C6.71667 11.35 6.646 11.4583 6.588 11.575C6.52933 11.6917 6.5 11.8167 6.5 11.95V13.5C6.5 13.6333 6.55 13.75 6.65 13.85C6.75 13.95 6.86667 14 7 14ZM2.5 19.575V4C2.5 3.45 2.696 2.979 3.088 2.587C3.47933 2.19567 3.95 2 4.5 2H20.5C21.05 2 21.521 2.19567 21.913 2.587C22.3043 2.979 22.5 3.45 22.5 4V16C22.5 16.55 22.3043 17.021 21.913 17.413C21.521 17.8043 21.05 18 20.5 18H6.5L4.2 20.3C3.88333 20.6167 3.52067 20.6873 3.112 20.512C2.704 20.3373 2.5 20.025 2.5 19.575ZM4.5 17.175L5.675 16H20.5V4H4.5V17.175Z",
+    fill: color
+  }));
+};
+
+RateReviewDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var RedeemDs2Icon = function RedeemDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 17V19H20.5V17H4.5ZM4.5 21C3.95 21 3.47933 20.8043 3.088 20.413C2.696 20.021 2.5 19.55 2.5 19V8C2.5 7.45 2.696 6.97933 3.088 6.588C3.47933 6.196 3.95 6 4.5 6H6.7C6.61667 5.85 6.56233 5.69167 6.537 5.525C6.51233 5.35833 6.5 5.18333 6.5 5C6.5 4.16667 6.79167 3.45833 7.375 2.875C7.95833 2.29167 8.66667 2 9.5 2C10 2 10.4623 2.129 10.887 2.387C11.3123 2.64567 11.6833 2.96667 12 3.35L12.5 4L13 3.35C13.3 2.95 13.6667 2.625 14.1 2.375C14.5333 2.125 15 2 15.5 2C16.3333 2 17.0417 2.29167 17.625 2.875C18.2083 3.45833 18.5 4.16667 18.5 5C18.5 5.18333 18.4873 5.35833 18.462 5.525C18.4373 5.69167 18.3833 5.85 18.3 6H20.5C21.05 6 21.521 6.196 21.913 6.588C22.3043 6.97933 22.5 7.45 22.5 8V19C22.5 19.55 22.3043 20.021 21.913 20.413C21.521 20.8043 21.05 21 20.5 21H4.5ZM4.5 14H20.5V8H15.4L16.925 10.075C17.075 10.275 17.1207 10.504 17.062 10.762C17.004 11.0207 16.8833 11.2417 16.7 11.425C16.4833 11.5917 16.2417 11.65 15.975 11.6C15.7083 11.55 15.4917 11.4167 15.325 11.2L12.5 7.4L9.675 11.225C9.49167 11.4583 9.26267 11.5957 8.988 11.637C8.71267 11.679 8.48333 11.6083 8.3 11.425C8.06667 11.2583 7.92933 11.0417 7.888 10.775C7.846 10.5083 7.90833 10.2667 8.075 10.05L9.55 8H4.5V14ZM9.5 6C9.78333 6 10.021 5.90433 10.213 5.713C10.4043 5.521 10.5 5.28333 10.5 5C10.5 4.71667 10.4043 4.479 10.213 4.287C10.021 4.09567 9.78333 4 9.5 4C9.21667 4 8.97933 4.09567 8.788 4.287C8.596 4.479 8.5 4.71667 8.5 5C8.5 5.28333 8.596 5.521 8.788 5.713C8.97933 5.90433 9.21667 6 9.5 6ZM15.5 6C15.7833 6 16.021 5.90433 16.213 5.713C16.4043 5.521 16.5 5.28333 16.5 5C16.5 4.71667 16.4043 4.479 16.213 4.287C16.021 4.09567 15.7833 4 15.5 4C15.2167 4 14.9793 4.09567 14.788 4.287C14.596 4.479 14.5 4.71667 14.5 5C14.5 5.28333 14.596 5.521 14.788 5.713C14.9793 5.90433 15.2167 6 15.5 6Z",
+    fill: color
+  }));
+};
+
+RedeemDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ImageDs2Icon = function ImageDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 17H17.5C17.7 17 17.85 16.9083 17.95 16.725C18.05 16.5417 18.0333 16.3667 17.9 16.2L15.15 12.525C15.05 12.3917 14.9167 12.325 14.75 12.325C14.5833 12.325 14.45 12.3917 14.35 12.525L11.75 16L9.9 13.525C9.8 13.3917 9.66667 13.325 9.5 13.325C9.33333 13.325 9.2 13.3917 9.1 13.525L7.1 16.2C6.96667 16.3667 6.95 16.5417 7.05 16.725C7.15 16.9083 7.3 17 7.5 17ZM5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H5.5ZM5.5 19H19.5V5H5.5V19Z",
+    fill: color
+  }));
+};
+
+ImageDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var InfoDs2Icon = function InfoDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 17C12.7833 17 13.021 16.904 13.213 16.712C13.4043 16.5207 13.5 16.2833 13.5 16V11.975C13.5 11.6917 13.4043 11.4583 13.213 11.275C13.021 11.0917 12.7833 11 12.5 11C12.2167 11 11.9793 11.0957 11.788 11.287C11.596 11.479 11.5 11.7167 11.5 12V16.025C11.5 16.3083 11.596 16.5417 11.788 16.725C11.9793 16.9083 12.2167 17 12.5 17ZM12.5 9C12.7833 9 13.021 8.904 13.213 8.712C13.4043 8.52067 13.5 8.28333 13.5 8C13.5 7.71667 13.4043 7.479 13.213 7.287C13.021 7.09567 12.7833 7 12.5 7C12.2167 7 11.9793 7.09567 11.788 7.287C11.596 7.479 11.5 7.71667 11.5 8C11.5 8.28333 11.596 8.52067 11.788 8.712C11.9793 8.904 12.2167 9 12.5 9ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+InfoDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var InsightsDs2Icon = function InsightsDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M3.5 20C2.95 20 2.47933 19.8043 2.088 19.413C1.696 19.021 1.5 18.55 1.5 18C1.5 17.45 1.696 16.979 2.088 16.587C2.47933 16.1957 2.95 16 3.5 16H3.763C3.83767 16 3.91667 16.0167 4 16.05L8.55 11.5C8.51667 11.4167 8.5 11.3373 8.5 11.262V11C8.5 10.45 8.696 9.979 9.088 9.587C9.47933 9.19567 9.95 9 10.5 9C11.05 9 11.521 9.19567 11.913 9.587C12.3043 9.979 12.5 10.45 12.5 11C12.5 11.0333 12.4833 11.2 12.45 11.5L15 14.05C15.0833 14.0167 15.1627 14 15.238 14H15.762C15.8373 14 15.9167 14.0167 16 14.05L19.55 10.5C19.5167 10.4167 19.5 10.3373 19.5 10.262V10C19.5 9.45 19.6957 8.979 20.087 8.587C20.479 8.19567 20.95 8 21.5 8C22.05 8 22.521 8.19567 22.913 8.587C23.3043 8.979 23.5 9.45 23.5 10C23.5 10.55 23.3043 11.0207 22.913 11.412C22.521 11.804 22.05 12 21.5 12H21.238C21.1627 12 21.0833 11.9833 21 11.95L17.45 15.5C17.4833 15.5833 17.5 15.6627 17.5 15.738V16C17.5 16.55 17.3043 17.021 16.913 17.413C16.521 17.8043 16.05 18 15.5 18C14.95 18 14.4793 17.8043 14.088 17.413C13.696 17.021 13.5 16.55 13.5 16V15.738C13.5 15.6627 13.5167 15.5833 13.55 15.5L11 12.95C10.9167 12.9833 10.8373 13 10.762 13H10.5C10.4667 13 10.3 12.9833 10 12.95L5.45 17.5C5.48333 17.5833 5.5 17.6627 5.5 17.738V18C5.5 18.55 5.304 19.021 4.912 19.413C4.52067 19.8043 4.05 20 3.5 20ZM4.5 9.975L3.875 8.625L2.525 8L3.875 7.375L4.5 6.025L5.125 7.375L6.475 8L5.125 8.625L4.5 9.975ZM15.5 9L14.55 6.95L12.5 6L14.55 5.05L15.5 3L16.45 5.05L18.5 6L16.45 6.95L15.5 9Z",
+    fill: color
+  }));
+};
+
+InsightsDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var InventoryDs2Icon = function InventoryDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.5 21H5.5C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H9.675C9.85833 2.41667 10.2167 1.93733 10.75 1.562C11.2833 1.18733 11.8667 1 12.5 1C13.1667 1 13.7627 1.18733 14.288 1.562C14.8127 1.93733 15.1667 2.41667 15.35 3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V10H19.5V5H17.5V8H7.5V5H5.5V19H11.5V21ZM16 19.925L11.75 15.675L13.15 14.275L16 17.125L21.65 11.475L23.05 12.875L16 19.925ZM12.5 5C12.7833 5 13.021 4.904 13.213 4.712C13.4043 4.52067 13.5 4.28333 13.5 4C13.5 3.71667 13.4043 3.479 13.213 3.287C13.021 3.09567 12.7833 3 12.5 3C12.2167 3 11.9793 3.09567 11.788 3.287C11.596 3.479 11.5 3.71667 11.5 4C11.5 4.28333 11.596 4.52067 11.788 4.712C11.9793 4.904 12.2167 5 12.5 5Z",
+    fill: color
+  }));
+};
+
+InventoryDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var IosShareDs2Icon = function IosShareDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 16C12.2167 16 11.9793 15.904 11.788 15.712C11.596 15.5207 11.5 15.2833 11.5 15V4.82499L10.6 5.72499C10.4167 5.90832 10.1877 5.99999 9.913 5.99999C9.63767 5.99999 9.4 5.89999 9.2 5.69999C9.01667 5.49999 8.925 5.26232 8.925 4.98699C8.925 4.71232 9.01667 4.48332 9.2 4.29999L11.8 1.69999C11.8833 1.61665 11.9877 1.54999 12.113 1.49999C12.2377 1.44999 12.3667 1.42499 12.5 1.42499C12.6333 1.42499 12.7627 1.44999 12.888 1.49999C13.0127 1.54999 13.1167 1.61665 13.2 1.69999L15.8 4.29999C16 4.49999 16.1 4.74165 16.1 5.02499C16.1 5.30832 16 5.54165 15.8 5.72499C15.6 5.90832 15.3627 5.99999 15.088 5.99999C14.8127 5.99999 14.5833 5.90832 14.4 5.72499L13.5 4.82499V15C13.5 15.2833 13.4043 15.5207 13.213 15.712C13.021 15.904 12.7833 16 12.5 16ZM6.5 23C5.95 23 5.47933 22.8043 5.088 22.413C4.696 22.021 4.5 21.55 4.5 21V9.99999C4.5 9.44999 4.696 8.97899 5.088 8.58699C5.47933 8.19565 5.95 7.99999 6.5 7.99999H8.5C8.78333 7.99999 9.021 8.09565 9.213 8.28699C9.40433 8.47899 9.5 8.71665 9.5 8.99999C9.5 9.28332 9.40433 9.52065 9.213 9.71199C9.021 9.90399 8.78333 9.99999 8.5 9.99999H6.5V21H18.5V9.99999H16.5C16.2167 9.99999 15.9793 9.90399 15.788 9.71199C15.596 9.52065 15.5 9.28332 15.5 8.99999C15.5 8.71665 15.596 8.47899 15.788 8.28699C15.9793 8.09565 16.2167 7.99999 16.5 7.99999H18.5C19.05 7.99999 19.521 8.19565 19.913 8.58699C20.3043 8.97899 20.5 9.44999 20.5 9.99999V21C20.5 21.55 20.3043 22.021 19.913 22.413C19.521 22.8043 19.05 23 18.5 23H6.5Z",
+    fill: color
+  }));
+};
+
+IosShareDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var KeyDs2Icon = function KeyDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 14C6.95 14 6.47933 13.804 6.088 13.412C5.696 13.0207 5.5 12.55 5.5 12C5.5 11.45 5.696 10.979 6.088 10.587C6.47933 10.1957 6.95 10 7.5 10C8.05 10 8.52067 10.1957 8.912 10.587C9.304 10.979 9.5 11.45 9.5 12C9.5 12.55 9.304 13.0207 8.912 13.412C8.52067 13.804 8.05 14 7.5 14ZM7.5 18C5.83333 18 4.41667 17.4167 3.25 16.25C2.08333 15.0833 1.5 13.6667 1.5 12C1.5 10.3333 2.08333 8.91667 3.25 7.75C4.41667 6.58333 5.83333 6 7.5 6C8.61667 6 9.62933 6.275 10.538 6.825C11.446 7.375 12.1667 8.1 12.7 9H21.5L24.5 12L20 16.5L18 15L16 16.5L13.875 15H12.7C12.1667 15.9 11.446 16.625 10.538 17.175C9.62933 17.725 8.61667 18 7.5 18ZM7.5 16C8.43333 16 9.25433 15.7167 9.963 15.15C10.671 14.5833 11.1417 13.8667 11.375 13H14.5L15.95 14.025L18 12.5L19.775 13.875L21.65 12L20.65 11H11.375C11.1417 10.1333 10.671 9.41667 9.963 8.85C9.25433 8.28333 8.43333 8 7.5 8C6.4 8 5.45833 8.39167 4.675 9.175C3.89167 9.95833 3.5 10.9 3.5 12C3.5 13.1 3.89167 14.0417 4.675 14.825C5.45833 15.6083 6.4 16 7.5 16Z",
+    fill: color
+  }));
+};
+
+KeyDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LanDs2Icon = function LanDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 22C4.95 22 4.479 21.8043 4.087 21.413C3.69567 21.021 3.5 20.55 3.5 20V17C3.5 16.45 3.69567 15.9793 4.087 15.588C4.479 15.196 4.95 15 5.5 15H6.5V13C6.5 12.45 6.696 11.979 7.088 11.587C7.47933 11.1957 7.95 11 8.5 11H11.5V9H10.5C9.95 9 9.47933 8.804 9.088 8.412C8.696 8.02067 8.5 7.55 8.5 7V4C8.5 3.45 8.696 2.979 9.088 2.587C9.47933 2.19567 9.95 2 10.5 2H14.5C15.05 2 15.521 2.19567 15.913 2.587C16.3043 2.979 16.5 3.45 16.5 4V7C16.5 7.55 16.3043 8.02067 15.913 8.412C15.521 8.804 15.05 9 14.5 9H13.5V11H16.5C17.05 11 17.521 11.1957 17.913 11.587C18.3043 11.979 18.5 12.45 18.5 13V15H19.5C20.05 15 20.521 15.196 20.913 15.588C21.3043 15.9793 21.5 16.45 21.5 17V20C21.5 20.55 21.3043 21.021 20.913 21.413C20.521 21.8043 20.05 22 19.5 22H15.5C14.95 22 14.4793 21.8043 14.088 21.413C13.696 21.021 13.5 20.55 13.5 20V17C13.5 16.45 13.696 15.9793 14.088 15.588C14.4793 15.196 14.95 15 15.5 15H16.5V13H8.5V15H9.5C10.05 15 10.521 15.196 10.913 15.588C11.3043 15.9793 11.5 16.45 11.5 17V20C11.5 20.55 11.3043 21.021 10.913 21.413C10.521 21.8043 10.05 22 9.5 22H5.5ZM10.5 7H14.5V4H10.5V7ZM5.5 20H9.5V17H5.5V20ZM15.5 20H19.5V17H15.5V20Z",
+    fill: color
+  }));
+};
+
+LanDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LandscapeDs2Icon = function LandscapeDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M3.49999 18C3.08332 18 2.78332 17.8167 2.59999 17.45C2.41666 17.0834 2.44999 16.7334 2.69999 16.4L6.69999 11.075C6.89999 10.8084 7.16666 10.675 7.49999 10.675C7.83332 10.675 8.09999 10.8084 8.29999 11.075L12 16H19.5L14.5 9.35005L12 12.65L10.75 11L13.7 7.07505C13.9 6.80838 14.1667 6.67505 14.5 6.67505C14.8333 6.67505 15.1 6.80838 15.3 7.07505L22.3 16.4C22.55 16.7334 22.5833 17.0834 22.4 17.45C22.2167 17.8167 21.9167 18 21.5 18H3.49999ZM5.49999 16H9.49999L7.49999 13.325L5.49999 16Z",
+    fill: color
+  }));
+};
+
+LandscapeDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LangageDs2Icon = function LangageDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 22C11.1333 22 9.84167 21.7373 8.625 21.212C7.40833 20.6873 6.346 19.9707 5.438 19.062C4.52933 18.154 3.81267 17.0917 3.288 15.875C2.76267 14.6583 2.5 13.3667 2.5 12C2.5 10.6167 2.76267 9.321 3.288 8.113C3.81267 6.90433 4.52933 5.846 5.438 4.938C6.346 4.02933 7.40833 3.31233 8.625 2.787C9.84167 2.26233 11.1333 2 12.5 2C13.8833 2 15.179 2.26233 16.387 2.787C17.5957 3.31233 18.654 4.02933 19.562 4.938C20.4707 5.846 21.1873 6.90433 21.712 8.113C22.2373 9.321 22.5 10.6167 22.5 12C22.5 13.3667 22.2373 14.6583 21.712 15.875C21.1873 17.0917 20.4707 18.154 19.562 19.062C18.654 19.9707 17.5957 20.6873 16.387 21.212C15.179 21.7373 13.8833 22 12.5 22ZM12.5 19.95C12.9333 19.35 13.3083 18.725 13.625 18.075C13.9417 17.425 14.2 16.7333 14.4 16H10.6C10.8 16.7333 11.0583 17.425 11.375 18.075C11.6917 18.725 12.0667 19.35 12.5 19.95ZM9.9 19.55C9.6 19 9.33767 18.429 9.113 17.837C8.88767 17.2457 8.7 16.6333 8.55 16H5.6C6.08333 16.8333 6.68733 17.5583 7.412 18.175C8.13733 18.7917 8.96667 19.25 9.9 19.55ZM15.1 19.55C16.0333 19.25 16.8623 18.7917 17.587 18.175C18.3123 17.5583 18.9167 16.8333 19.4 16H16.45C16.3 16.6333 16.1127 17.2457 15.888 17.837C15.6627 18.429 15.4 19 15.1 19.55ZM4.75 14H8.15C8.1 13.6667 8.06233 13.3373 8.037 13.012C8.01233 12.6873 8 12.35 8 12C8 11.65 8.01233 11.3127 8.037 10.988C8.06233 10.6627 8.1 10.3333 8.15 10H4.75C4.66667 10.3333 4.604 10.6627 4.562 10.988C4.52067 11.3127 4.5 11.65 4.5 12C4.5 12.35 4.52067 12.6873 4.562 13.012C4.604 13.3373 4.66667 13.6667 4.75 14ZM10.15 14H14.85C14.9 13.6667 14.9377 13.3373 14.963 13.012C14.9877 12.6873 15 12.35 15 12C15 11.65 14.9877 11.3127 14.963 10.988C14.9377 10.6627 14.9 10.3333 14.85 10H10.15C10.1 10.3333 10.0627 10.6627 10.038 10.988C10.0127 11.3127 10 11.65 10 12C10 12.35 10.0127 12.6873 10.038 13.012C10.0627 13.3373 10.1 13.6667 10.15 14ZM16.85 14H20.25C20.3333 13.6667 20.396 13.3373 20.438 13.012C20.4793 12.6873 20.5 12.35 20.5 12C20.5 11.65 20.4793 11.3127 20.438 10.988C20.396 10.6627 20.3333 10.3333 20.25 10H16.85C16.9 10.3333 16.9373 10.6627 16.962 10.988C16.9873 11.3127 17 11.65 17 12C17 12.35 16.9873 12.6873 16.962 13.012C16.9373 13.3373 16.9 13.6667 16.85 14ZM16.45 8H19.4C18.9167 7.16667 18.3123 6.44167 17.587 5.825C16.8623 5.20833 16.0333 4.75 15.1 4.45C15.4 5 15.6627 5.57067 15.888 6.162C16.1127 6.754 16.3 7.36667 16.45 8ZM10.6 8H14.4C14.2 7.26667 13.9417 6.575 13.625 5.925C13.3083 5.275 12.9333 4.65 12.5 4.05C12.0667 4.65 11.6917 5.275 11.375 5.925C11.0583 6.575 10.8 7.26667 10.6 8ZM5.6 8H8.55C8.7 7.36667 8.88767 6.754 9.113 6.162C9.33767 5.57067 9.6 5 9.9 4.45C8.96667 4.75 8.13733 5.20833 7.412 5.825C6.68733 6.44167 6.08333 7.16667 5.6 8Z",
+    fill: color
+  }));
+};
+
+LangageDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LaptopMacDs2Icon = function LaptopMacDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M2.5 20C1.95 20 1.47933 19.8043 1.088 19.413C0.696 19.021 0.5 18.55 0.5 18H4.5C3.95 18 3.47933 17.8043 3.088 17.413C2.696 17.021 2.5 16.55 2.5 16V5C2.5 4.45 2.696 3.979 3.088 3.587C3.47933 3.19567 3.95 3 4.5 3H20.5C21.05 3 21.521 3.19567 21.913 3.587C22.3043 3.979 22.5 4.45 22.5 5V16C22.5 16.55 22.3043 17.021 21.913 17.413C21.521 17.8043 21.05 18 20.5 18H24.5C24.5 18.55 24.3043 19.021 23.913 19.413C23.521 19.8043 23.05 20 22.5 20H2.5ZM12.5 19C12.7833 19 13.021 18.904 13.213 18.712C13.4043 18.5207 13.5 18.2833 13.5 18C13.5 17.7167 13.4043 17.4793 13.213 17.288C13.021 17.096 12.7833 17 12.5 17C12.2167 17 11.9793 17.096 11.788 17.288C11.596 17.4793 11.5 17.7167 11.5 18C11.5 18.2833 11.596 18.5207 11.788 18.712C11.9793 18.904 12.2167 19 12.5 19ZM4.5 16H20.5V5H4.5V16Z",
+    fill: color
+  }));
+};
+
+LaptopMacDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LayersDs2Icon = function LayersDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 20.525C12.2833 20.525 12.071 20.4877 11.863 20.413C11.6543 20.3377 11.4583 20.2334 11.275 20.1L4.525 14.85C4.25833 14.65 4.12933 14.3874 4.138 14.062C4.146 13.7374 4.28333 13.475 4.55 13.275C4.73333 13.1417 4.93333 13.075 5.15 13.075C5.36667 13.075 5.56667 13.1417 5.75 13.275L12.5 18.5L19.25 13.275C19.4333 13.1417 19.6333 13.075 19.85 13.075C20.0667 13.075 20.2667 13.1417 20.45 13.275C20.7167 13.475 20.8543 13.7374 20.863 14.062C20.871 14.3874 20.7417 14.65 20.475 14.85L13.725 20.1C13.5417 20.2334 13.346 20.3377 13.138 20.413C12.9293 20.4877 12.7167 20.525 12.5 20.525ZM12.5 15.475C12.2833 15.475 12.071 15.4377 11.863 15.363C11.6543 15.2877 11.4583 15.1834 11.275 15.05L4.525 9.80002C4.39167 9.70002 4.29167 9.57936 4.225 9.43802C4.15833 9.29602 4.125 9.15002 4.125 9.00002C4.125 8.85002 4.15833 8.70402 4.225 8.56202C4.29167 8.42069 4.39167 8.30002 4.525 8.20002L11.275 2.95002C11.4583 2.81669 11.6543 2.71236 11.863 2.63702C12.071 2.56236 12.2833 2.52502 12.5 2.52502C12.7167 2.52502 12.9293 2.56236 13.138 2.63702C13.346 2.71236 13.5417 2.81669 13.725 2.95002L20.475 8.20002C20.6083 8.30002 20.7083 8.42069 20.775 8.56202C20.8417 8.70402 20.875 8.85002 20.875 9.00002C20.875 9.15002 20.8417 9.29602 20.775 9.43802C20.7083 9.57936 20.6083 9.70002 20.475 9.80002L13.725 15.05C13.5417 15.1834 13.346 15.2877 13.138 15.363C12.9293 15.4377 12.7167 15.475 12.5 15.475ZM12.5 13.45L18.25 9.00002L12.5 4.55002L6.75 9.00002L12.5 13.45Z",
+    fill: color
+  }));
+};
+
+LayersDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LinkDs2Icon = function LinkDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 17C6.11667 17 4.93767 16.5123 3.963 15.537C2.98767 14.5623 2.5 13.3833 2.5 12C2.5 10.6167 2.98767 9.43733 3.963 8.462C4.93767 7.48733 6.11667 7 7.5 7H10.5C10.7833 7 11.021 7.09567 11.213 7.287C11.4043 7.479 11.5 7.71667 11.5 8C11.5 8.28333 11.4043 8.52067 11.213 8.712C11.021 8.904 10.7833 9 10.5 9H7.5C6.66667 9 5.95833 9.29167 5.375 9.875C4.79167 10.4583 4.5 11.1667 4.5 12C4.5 12.8333 4.79167 13.5417 5.375 14.125C5.95833 14.7083 6.66667 15 7.5 15H10.5C10.7833 15 11.021 15.0957 11.213 15.287C11.4043 15.479 11.5 15.7167 11.5 16C11.5 16.2833 11.4043 16.5207 11.213 16.712C11.021 16.904 10.7833 17 10.5 17H7.5ZM9.5 13C9.21667 13 8.97933 12.904 8.788 12.712C8.596 12.5207 8.5 12.2833 8.5 12C8.5 11.7167 8.596 11.479 8.788 11.287C8.97933 11.0957 9.21667 11 9.5 11H15.5C15.7833 11 16.021 11.0957 16.213 11.287C16.4043 11.479 16.5 11.7167 16.5 12C16.5 12.2833 16.4043 12.5207 16.213 12.712C16.021 12.904 15.7833 13 15.5 13H9.5ZM14.5 17C14.2167 17 13.9793 16.904 13.788 16.712C13.596 16.5207 13.5 16.2833 13.5 16C13.5 15.7167 13.596 15.479 13.788 15.287C13.9793 15.0957 14.2167 15 14.5 15H17.5C18.3333 15 19.0417 14.7083 19.625 14.125C20.2083 13.5417 20.5 12.8333 20.5 12C20.5 11.1667 20.2083 10.4583 19.625 9.875C19.0417 9.29167 18.3333 9 17.5 9H14.5C14.2167 9 13.9793 8.904 13.788 8.712C13.596 8.52067 13.5 8.28333 13.5 8C13.5 7.71667 13.596 7.479 13.788 7.287C13.9793 7.09567 14.2167 7 14.5 7H17.5C18.8833 7 20.0627 7.48733 21.038 8.462C22.0127 9.43733 22.5 10.6167 22.5 12C22.5 13.3833 22.0127 14.5623 21.038 15.537C20.0627 16.5123 18.8833 17 17.5 17H14.5Z",
+    fill: color
+  }));
+};
+
+LinkDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ListAltDs2Icon = function ListAltDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H5.5ZM5.5 19H19.5V5H5.5V19ZM8.5 17C8.78333 17 9.021 16.904 9.213 16.712C9.40433 16.5207 9.5 16.2833 9.5 16C9.5 15.7167 9.40433 15.479 9.213 15.287C9.021 15.0957 8.78333 15 8.5 15C8.21667 15 7.979 15.0957 7.787 15.287C7.59567 15.479 7.5 15.7167 7.5 16C7.5 16.2833 7.59567 16.5207 7.787 16.712C7.979 16.904 8.21667 17 8.5 17ZM8.5 13C8.78333 13 9.021 12.904 9.213 12.712C9.40433 12.5207 9.5 12.2833 9.5 12C9.5 11.7167 9.40433 11.479 9.213 11.287C9.021 11.0957 8.78333 11 8.5 11C8.21667 11 7.979 11.0957 7.787 11.287C7.59567 11.479 7.5 11.7167 7.5 12C7.5 12.2833 7.59567 12.5207 7.787 12.712C7.979 12.904 8.21667 13 8.5 13ZM8.5 9C8.78333 9 9.021 8.904 9.213 8.712C9.40433 8.52067 9.5 8.28333 9.5 8C9.5 7.71667 9.40433 7.479 9.213 7.287C9.021 7.09567 8.78333 7 8.5 7C8.21667 7 7.979 7.09567 7.787 7.287C7.59567 7.479 7.5 7.71667 7.5 8C7.5 8.28333 7.59567 8.52067 7.787 8.712C7.979 8.904 8.21667 9 8.5 9ZM12.5 17H16.5C16.7833 17 17.0207 16.904 17.212 16.712C17.404 16.5207 17.5 16.2833 17.5 16C17.5 15.7167 17.404 15.479 17.212 15.287C17.0207 15.0957 16.7833 15 16.5 15H12.5C12.2167 15 11.9793 15.0957 11.788 15.287C11.596 15.479 11.5 15.7167 11.5 16C11.5 16.2833 11.596 16.5207 11.788 16.712C11.9793 16.904 12.2167 17 12.5 17ZM12.5 13H16.5C16.7833 13 17.0207 12.904 17.212 12.712C17.404 12.5207 17.5 12.2833 17.5 12C17.5 11.7167 17.404 11.479 17.212 11.287C17.0207 11.0957 16.7833 11 16.5 11H12.5C12.2167 11 11.9793 11.0957 11.788 11.287C11.596 11.479 11.5 11.7167 11.5 12C11.5 12.2833 11.596 12.5207 11.788 12.712C11.9793 12.904 12.2167 13 12.5 13ZM12.5 9H16.5C16.7833 9 17.0207 8.904 17.212 8.712C17.404 8.52067 17.5 8.28333 17.5 8C17.5 7.71667 17.404 7.479 17.212 7.287C17.0207 7.09567 16.7833 7 16.5 7H12.5C12.2167 7 11.9793 7.09567 11.788 7.287C11.596 7.479 11.5 7.71667 11.5 8C11.5 8.28333 11.596 8.52067 11.788 8.712C11.9793 8.904 12.2167 9 12.5 9Z",
+    fill: color
+  }));
+};
+
+ListAltDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LocalPoliceDs2Icon = function LocalPoliceDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M10.9 14.7L12.5 13.5L14.05 14.7C14.2333 14.8334 14.425 14.8377 14.625 14.713C14.825 14.5877 14.8833 14.4084 14.8 14.175L14.2 12.2L15.825 10.925C16.0083 10.775 16.0627 10.5834 15.988 10.35C15.9127 10.1167 15.75 10 15.5 10H13.6L12.95 8.02502C12.8667 7.79169 12.7167 7.67502 12.5 7.67502C12.2833 7.67502 12.1333 7.79169 12.05 8.02502L11.4 10H9.5C9.25 10 9.08333 10.1167 9 10.35C8.91667 10.5834 8.975 10.775 9.175 10.925L10.75 12.2L10.15 14.175C10.0667 14.4084 10.125 14.5877 10.325 14.713C10.525 14.8377 10.7167 14.8334 10.9 14.7ZM12.5 21.925H12.25C12.1667 21.925 12.0917 21.9084 12.025 21.875C9.84167 21.1917 8.04167 19.8374 6.625 17.812C5.20833 15.7874 4.5 13.55 4.5 11.1V6.37502C4.5 5.95836 4.621 5.58336 4.863 5.25002C5.10433 4.91669 5.41667 4.67502 5.8 4.52502L11.8 2.27502C12.0333 2.19169 12.2667 2.15002 12.5 2.15002C12.7333 2.15002 12.9667 2.19169 13.2 2.27502L19.2 4.52502C19.5833 4.67502 19.896 4.91669 20.138 5.25002C20.3793 5.58336 20.5 5.95836 20.5 6.37502V11.1C20.5 13.55 19.7917 15.7874 18.375 17.812C16.9583 19.8374 15.1583 21.1917 12.975 21.875C12.8917 21.9084 12.7333 21.925 12.5 21.925ZM12.5 19.9C14.2333 19.35 15.6667 18.25 16.8 16.6C17.9333 14.95 18.5 13.1167 18.5 11.1V6.37502L12.5 4.12502L6.5 6.37502V11.1C6.5 13.1167 7.06667 14.95 8.2 16.6C9.33333 18.25 10.7667 19.35 12.5 19.9Z",
+    fill: color
+  }));
+};
+
+LocalPoliceDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LocationOnDs2Icon = function LocationOnDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 12C13.05 12 13.521 11.804 13.913 11.412C14.3043 11.0207 14.5 10.55 14.5 10C14.5 9.45 14.3043 8.979 13.913 8.587C13.521 8.19567 13.05 8 12.5 8C11.95 8 11.4793 8.19567 11.088 8.587C10.696 8.979 10.5 9.45 10.5 10C10.5 10.55 10.696 11.0207 11.088 11.412C11.4793 11.804 11.95 12 12.5 12ZM12.5 19.35C14.5333 17.4833 16.0417 15.7873 17.025 14.262C18.0083 12.7373 18.5 11.3833 18.5 10.2C18.5 8.38333 17.9207 6.89567 16.762 5.737C15.604 4.579 14.1833 4 12.5 4C10.8167 4 9.39567 4.579 8.237 5.737C7.079 6.89567 6.5 8.38333 6.5 10.2C6.5 11.3833 6.99167 12.7373 7.975 14.262C8.95833 15.7873 10.4667 17.4833 12.5 19.35ZM12.5 22C9.81667 19.7167 7.81267 17.5957 6.488 15.637C5.16267 13.679 4.5 11.8667 4.5 10.2C4.5 7.7 5.30433 5.70833 6.913 4.225C8.521 2.74167 10.3833 2 12.5 2C14.6167 2 16.479 2.74167 18.087 4.225C19.6957 5.70833 20.5 7.7 20.5 10.2C20.5 11.8667 19.8377 13.679 18.513 15.637C17.1877 17.5957 15.1833 19.7167 12.5 22Z",
+    fill: color
+  }));
+};
+
+LocationOnDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LockOpenDs2Icon = function LockOpenDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 22C5.95 22 5.47933 21.8043 5.088 21.413C4.696 21.021 4.5 20.55 4.5 20V10C4.5 9.45 4.696 8.979 5.088 8.587C5.47933 8.19567 5.95 8 6.5 8H15.5V6C15.5 5.16667 15.2083 4.45833 14.625 3.875C14.0417 3.29167 13.3333 3 12.5 3C11.8167 3 11.2127 3.204 10.688 3.612C10.1627 4.02067 9.80833 4.53333 9.625 5.15C9.54167 5.4 9.41267 5.604 9.238 5.762C9.06267 5.92067 8.85833 6 8.625 6C8.29167 6 8.025 5.88733 7.825 5.662C7.625 5.43733 7.55833 5.18333 7.625 4.9C7.875 3.78333 8.45 2.854 9.35 2.112C10.25 1.37067 11.3 1 12.5 1C13.8833 1 15.0627 1.48733 16.038 2.462C17.0127 3.43733 17.5 4.61667 17.5 6V8H18.5C19.05 8 19.521 8.19567 19.913 8.587C20.3043 8.979 20.5 9.45 20.5 10V20C20.5 20.55 20.3043 21.021 19.913 21.413C19.521 21.8043 19.05 22 18.5 22H6.5ZM6.5 20H18.5V10H6.5V20ZM12.5 17C13.05 17 13.521 16.8043 13.913 16.413C14.3043 16.021 14.5 15.55 14.5 15C14.5 14.45 14.3043 13.979 13.913 13.587C13.521 13.1957 13.05 13 12.5 13C11.95 13 11.4793 13.1957 11.088 13.587C10.696 13.979 10.5 14.45 10.5 15C10.5 15.55 10.696 16.021 11.088 16.413C11.4793 16.8043 11.95 17 12.5 17Z",
+    fill: color
+  }));
+};
+
+LockOpenDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LockDs2Icon = function LockDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 22C5.95 22 5.47933 21.8043 5.088 21.413C4.696 21.021 4.5 20.55 4.5 20V10C4.5 9.45 4.696 8.979 5.088 8.587C5.47933 8.19567 5.95 8 6.5 8H7.5V6C7.5 4.61667 7.98767 3.43733 8.963 2.462C9.93767 1.48733 11.1167 1 12.5 1C13.8833 1 15.0627 1.48733 16.038 2.462C17.0127 3.43733 17.5 4.61667 17.5 6V8H18.5C19.05 8 19.521 8.19567 19.913 8.587C20.3043 8.979 20.5 9.45 20.5 10V20C20.5 20.55 20.3043 21.021 19.913 21.413C19.521 21.8043 19.05 22 18.5 22H6.5ZM6.5 20H18.5V10H6.5V20ZM12.5 17C13.05 17 13.521 16.8043 13.913 16.413C14.3043 16.021 14.5 15.55 14.5 15C14.5 14.45 14.3043 13.979 13.913 13.587C13.521 13.1957 13.05 13 12.5 13C11.95 13 11.4793 13.1957 11.088 13.587C10.696 13.979 10.5 14.45 10.5 15C10.5 15.55 10.696 16.021 11.088 16.413C11.4793 16.8043 11.95 17 12.5 17ZM9.5 8H15.5V6C15.5 5.16667 15.2083 4.45833 14.625 3.875C14.0417 3.29167 13.3333 3 12.5 3C11.6667 3 10.9583 3.29167 10.375 3.875C9.79167 4.45833 9.5 5.16667 9.5 6V8Z",
+    fill: color
+  }));
+};
+
+LockDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var LoginDs2Icon = function LoginDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 21V19H19.5V5H12.5V3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H12.5ZM10.5 17L9.125 15.55L11.675 13H3.5V11H11.675L9.125 8.45L10.5 7L15.5 12L10.5 17Z",
+    fill: color
+  }));
+};
+
+LoginDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var MailDs2Icon = function MailDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 20C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H20.5C21.05 4 21.521 4.196 21.913 4.588C22.3043 4.97933 22.5 5.45 22.5 6V18C22.5 18.55 22.3043 19.021 21.913 19.413C21.521 19.8043 21.05 20 20.5 20H4.5ZM20.5 8L13.025 12.675C12.9417 12.725 12.854 12.7623 12.762 12.787C12.6707 12.8123 12.5833 12.825 12.5 12.825C12.4167 12.825 12.3293 12.8123 12.238 12.787C12.146 12.7623 12.0583 12.725 11.975 12.675L4.5 8V18H20.5V8ZM12.5 11L20.5 6H4.5L12.5 11ZM4.5 8.25V6.775V6.8V6.787V8.25Z",
+    fill: color
+  }));
+};
+
+MailDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var MarkEmailReadDs2Icon = function MarkEmailReadDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M16.45 21.575C16.3167 21.575 16.1917 21.554 16.075 21.512C15.9583 21.4707 15.85 21.4 15.75 21.3L12.9 18.45C12.7167 18.2667 12.625 18.0333 12.625 17.75C12.625 17.4667 12.7167 17.2333 12.9 17.05C13.0833 16.8667 13.3167 16.775 13.6 16.775C13.8833 16.775 14.1167 16.8667 14.3 17.05L16.45 19.2L21.4 14.25C21.5833 14.0667 21.8167 13.975 22.1 13.975C22.3833 13.975 22.6167 14.0667 22.8 14.25C22.9833 14.4333 23.075 14.6667 23.075 14.95C23.075 15.2333 22.9833 15.4667 22.8 15.65L17.15 21.3C17.05 21.4 16.9417 21.4707 16.825 21.512C16.7083 21.554 16.5833 21.575 16.45 21.575ZM4.5 6L12.5 11L20.5 6H4.5ZM4.5 20C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H20.5C21.05 4 21.521 4.196 21.913 4.588C22.3043 4.97933 22.5 5.45 22.5 6V10.35L20.5 12.35V8L13.025 12.675C12.9417 12.725 12.854 12.7623 12.762 12.787C12.6707 12.8123 12.5833 12.825 12.5 12.825C12.4167 12.825 12.3293 12.8123 12.238 12.787C12.146 12.7623 12.0583 12.725 11.975 12.675L4.5 8V18H9.65L11.65 20H4.5Z",
+    fill: color
+  }));
+};
+
+MarkEmailReadDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var MenuDs2Icon = function MenuDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 18C4.21667 18 3.97933 17.904 3.788 17.712C3.596 17.5207 3.5 17.2833 3.5 17C3.5 16.7167 3.596 16.4793 3.788 16.288C3.97933 16.096 4.21667 16 4.5 16H20.5C20.7833 16 21.0207 16.096 21.212 16.288C21.404 16.4793 21.5 16.7167 21.5 17C21.5 17.2833 21.404 17.5207 21.212 17.712C21.0207 17.904 20.7833 18 20.5 18H4.5ZM4.5 13C4.21667 13 3.97933 12.904 3.788 12.712C3.596 12.5207 3.5 12.2833 3.5 12C3.5 11.7167 3.596 11.479 3.788 11.287C3.97933 11.0957 4.21667 11 4.5 11H20.5C20.7833 11 21.0207 11.0957 21.212 11.287C21.404 11.479 21.5 11.7167 21.5 12C21.5 12.2833 21.404 12.5207 21.212 12.712C21.0207 12.904 20.7833 13 20.5 13H4.5ZM4.5 8C4.21667 8 3.97933 7.90433 3.788 7.713C3.596 7.521 3.5 7.28333 3.5 7C3.5 6.71667 3.596 6.479 3.788 6.287C3.97933 6.09567 4.21667 6 4.5 6H20.5C20.7833 6 21.0207 6.09567 21.212 6.287C21.404 6.479 21.5 6.71667 21.5 7C21.5 7.28333 21.404 7.521 21.212 7.713C21.0207 7.90433 20.7833 8 20.5 8H4.5Z",
+    fill: color
+  }));
+};
+
+MenuDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FontDownloadDs2Icon = function FontDownloadDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M8.3 18C8.48333 18 8.66667 17.9417 8.85 17.825C9.03333 17.7083 9.15833 17.5583 9.225 17.375L10.1 14.95H14.9L15.775 17.375C15.8417 17.5583 15.9623 17.7083 16.137 17.825C16.3123 17.9417 16.5 18 16.7 18C17.0833 18 17.3627 17.871 17.538 17.613C17.7127 17.3543 17.7333 17.0417 17.6 16.675L13.925 6.975C13.825 6.70833 13.6377 6.479 13.363 6.287C13.0877 6.09567 12.8 6 12.5 6C12.2167 6 11.9333 6.09567 11.65 6.287C11.3667 6.479 11.175 6.70833 11.075 6.975L7.4 16.675C7.26667 17.0417 7.28767 17.3543 7.463 17.613C7.63767 17.871 7.91667 18 8.3 18ZM10.7 13.2L12.45 8.25H12.55L14.3 13.2H10.7ZM4.5 22C3.95 22 3.47933 21.8043 3.088 21.413C2.696 21.021 2.5 20.55 2.5 20V4C2.5 3.45 2.696 2.979 3.088 2.587C3.47933 2.19567 3.95 2 4.5 2H20.5C21.05 2 21.521 2.19567 21.913 2.587C22.3043 2.979 22.5 3.45 22.5 4V20C22.5 20.55 22.3043 21.021 21.913 21.413C21.521 21.8043 21.05 22 20.5 22H4.5ZM4.5 20H20.5V4H4.5V20Z",
+    fill: color
+  }));
+};
+
+FontDownloadDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatAlignLeftDs2Icon = function FormatAlignLeftDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 17C4.21667 17 3.97933 16.904 3.788 16.712C3.596 16.5207 3.5 16.2833 3.5 16C3.5 15.7167 3.596 15.479 3.788 15.287C3.97933 15.0957 4.21667 15 4.5 15H14.5C14.7833 15 15.021 15.0957 15.213 15.287C15.4043 15.479 15.5 15.7167 15.5 16C15.5 16.2833 15.4043 16.5207 15.213 16.712C15.021 16.904 14.7833 17 14.5 17H4.5ZM4.5 9C4.21667 9 3.97933 8.904 3.788 8.712C3.596 8.52067 3.5 8.28333 3.5 8C3.5 7.71667 3.596 7.479 3.788 7.287C3.97933 7.09567 4.21667 7 4.5 7H14.5C14.7833 7 15.021 7.09567 15.213 7.287C15.4043 7.479 15.5 7.71667 15.5 8C15.5 8.28333 15.4043 8.52067 15.213 8.712C15.021 8.904 14.7833 9 14.5 9H4.5ZM4.5 13C4.21667 13 3.97933 12.904 3.788 12.712C3.596 12.5207 3.5 12.2833 3.5 12C3.5 11.7167 3.596 11.479 3.788 11.287C3.97933 11.0957 4.21667 11 4.5 11H20.5C20.7833 11 21.0207 11.0957 21.212 11.287C21.404 11.479 21.5 11.7167 21.5 12C21.5 12.2833 21.404 12.5207 21.212 12.712C21.0207 12.904 20.7833 13 20.5 13H4.5ZM4.5 21C4.21667 21 3.97933 20.904 3.788 20.712C3.596 20.5207 3.5 20.2833 3.5 20C3.5 19.7167 3.596 19.4793 3.788 19.288C3.97933 19.096 4.21667 19 4.5 19H20.5C20.7833 19 21.0207 19.096 21.212 19.288C21.404 19.4793 21.5 19.7167 21.5 20C21.5 20.2833 21.404 20.5207 21.212 20.712C21.0207 20.904 20.7833 21 20.5 21H4.5ZM4.5 5C4.21667 5 3.97933 4.904 3.788 4.712C3.596 4.52067 3.5 4.28333 3.5 4C3.5 3.71667 3.596 3.479 3.788 3.287C3.97933 3.09567 4.21667 3 4.5 3H20.5C20.7833 3 21.0207 3.09567 21.212 3.287C21.404 3.479 21.5 3.71667 21.5 4C21.5 4.28333 21.404 4.52067 21.212 4.712C21.0207 4.904 20.7833 5 20.5 5H4.5Z",
+    fill: color
+  }));
+};
+
+FormatAlignLeftDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatBoldDs2Icon = function FormatBoldDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M9.5 18C8.95 18 8.47933 17.8043 8.088 17.413C7.696 17.021 7.5 16.55 7.5 16V6C7.5 5.45 7.696 4.97933 8.088 4.588C8.47933 4.196 8.95 4 9.5 4H13C14.1333 4 15.125 4.325 15.975 4.975C16.825 5.625 17.25 6.51667 17.25 7.65C17.25 8.45 17.0667 9.08733 16.7 9.562C16.3333 10.0373 15.9 10.4 15.4 10.65V10.85C16.1333 11.1 16.7083 11.4917 17.125 12.025C17.5417 12.5583 17.75 13.25 17.75 14.1C17.75 15.35 17.2957 16.3127 16.387 16.988C15.479 17.6627 14.4 18 13.15 18H9.5ZM10.15 9.7H12.8C13.35 9.7 13.8043 9.54167 14.163 9.225C14.521 8.90833 14.7 8.50833 14.7 8.025C14.7 7.54167 14.521 7.14167 14.163 6.825C13.8043 6.50833 13.35 6.35 12.8 6.35H10.15V9.7ZM10.15 15.6H13C13.65 15.6 14.1627 15.4333 14.538 15.1C14.9127 14.7667 15.1 14.325 15.1 13.775C15.1 13.225 14.9127 12.7833 14.538 12.45C14.1627 12.1167 13.65 11.95 13 11.95H10.15V15.6Z",
+    fill: color
+  }));
+};
+
+FormatBoldDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatClearDs2Icon = function FormatClearDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M13.7 10.3501L8.34995 5.0001H19C19.4166 5.0001 19.7706 5.1461 20.062 5.4381C20.354 5.72943 20.5 6.08343 20.5 6.5001C20.5 6.91676 20.354 7.27076 20.062 7.5621C19.7706 7.8541 19.4166 8.0001 19 8.0001H14.7L13.7 10.3501ZM19.6 21.9001L12 14.3001L10.4 18.0751C10.2833 18.3584 10.096 18.5834 9.83795 18.7501C9.57929 18.9168 9.29995 19.0001 8.99995 19.0001C8.46662 19.0001 8.04995 18.7751 7.74995 18.3251C7.44995 17.8751 7.40828 17.4001 7.62495 16.9001L9.69995 12.0001L2.59995 4.9001C2.41662 4.71676 2.32495 4.48343 2.32495 4.2001C2.32495 3.91676 2.41662 3.68343 2.59995 3.5001C2.78328 3.31676 3.01662 3.2251 3.29995 3.2251C3.58328 3.2251 3.81662 3.31676 3.99995 3.5001L21 20.5001C21.1833 20.6834 21.275 20.9168 21.275 21.2001C21.275 21.4834 21.1833 21.7168 21 21.9001C20.8166 22.0834 20.5833 22.1751 20.2999 22.1751C20.0166 22.1751 19.7833 22.0834 19.6 21.9001Z",
+    fill: color
+  }));
+};
+
+FormatClearDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatIndentDecreaseDs2Icon = function FormatIndentDecreaseDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 17C12.2167 17 11.9793 16.904 11.788 16.712C11.596 16.5207 11.5 16.2833 11.5 16C11.5 15.7167 11.596 15.479 11.788 15.287C11.9793 15.0957 12.2167 15 12.5 15H20.5C20.7833 15 21.0207 15.0957 21.212 15.287C21.404 15.479 21.5 15.7167 21.5 16C21.5 16.2833 21.404 16.5207 21.212 16.712C21.0207 16.904 20.7833 17 20.5 17H12.5ZM6.65 15.15L3.85 12.35C3.75 12.25 3.7 12.1333 3.7 12C3.7 11.8667 3.75 11.75 3.85 11.65L6.65 8.85C6.81667 8.68333 7 8.64167 7.2 8.725C7.4 8.80833 7.5 8.96667 7.5 9.2V14.8C7.5 15.0333 7.4 15.1917 7.2 15.275C7 15.3583 6.81667 15.3167 6.65 15.15ZM4.5 21C4.21667 21 3.97933 20.904 3.788 20.712C3.596 20.5207 3.5 20.2833 3.5 20C3.5 19.7167 3.596 19.4793 3.788 19.288C3.97933 19.096 4.21667 19 4.5 19H20.5C20.7833 19 21.0207 19.096 21.212 19.288C21.404 19.4793 21.5 19.7167 21.5 20C21.5 20.2833 21.404 20.5207 21.212 20.712C21.0207 20.904 20.7833 21 20.5 21H4.5ZM4.5 5C4.21667 5 3.97933 4.904 3.788 4.712C3.596 4.52067 3.5 4.28333 3.5 4C3.5 3.71667 3.596 3.479 3.788 3.287C3.97933 3.09567 4.21667 3 4.5 3H20.5C20.7833 3 21.0207 3.09567 21.212 3.287C21.404 3.479 21.5 3.71667 21.5 4C21.5 4.28333 21.404 4.52067 21.212 4.712C21.0207 4.904 20.7833 5 20.5 5H4.5ZM12.5 9C12.2167 9 11.9793 8.904 11.788 8.712C11.596 8.52067 11.5 8.28333 11.5 8C11.5 7.71667 11.596 7.479 11.788 7.287C11.9793 7.09567 12.2167 7 12.5 7H20.5C20.7833 7 21.0207 7.09567 21.212 7.287C21.404 7.479 21.5 7.71667 21.5 8C21.5 8.28333 21.404 8.52067 21.212 8.712C21.0207 8.904 20.7833 9 20.5 9H12.5ZM12.5 13C12.2167 13 11.9793 12.904 11.788 12.712C11.596 12.5207 11.5 12.2833 11.5 12C11.5 11.7167 11.596 11.479 11.788 11.287C11.9793 11.0957 12.2167 11 12.5 11H20.5C20.7833 11 21.0207 11.0957 21.212 11.287C21.404 11.479 21.5 11.7167 21.5 12C21.5 12.2833 21.404 12.5207 21.212 12.712C21.0207 12.904 20.7833 13 20.5 13H12.5Z",
+    fill: color
+  }));
+};
+
+FormatIndentDecreaseDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatIndentIncreaseDs2Icon = function FormatIndentIncreaseDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 21C4.21667 21 3.97933 20.904 3.788 20.712C3.596 20.5207 3.5 20.2833 3.5 20C3.5 19.7167 3.596 19.4793 3.788 19.288C3.97933 19.096 4.21667 19 4.5 19H20.5C20.7833 19 21.0207 19.096 21.212 19.288C21.404 19.4793 21.5 19.7167 21.5 20C21.5 20.2833 21.404 20.5207 21.212 20.712C21.0207 20.904 20.7833 21 20.5 21H4.5ZM3.5 14.8V9.2C3.5 8.96667 3.6 8.80833 3.8 8.725C4 8.64167 4.18333 8.68333 4.35 8.85L7.15 11.65C7.25 11.75 7.3 11.8667 7.3 12C7.3 12.1333 7.25 12.25 7.15 12.35L4.35 15.15C4.18333 15.3167 4 15.3583 3.8 15.275C3.6 15.1917 3.5 15.0333 3.5 14.8ZM12.5 17C12.2167 17 11.9793 16.904 11.788 16.712C11.596 16.5207 11.5 16.2833 11.5 16C11.5 15.7167 11.596 15.479 11.788 15.287C11.9793 15.0957 12.2167 15 12.5 15H20.5C20.7833 15 21.0207 15.0957 21.212 15.287C21.404 15.479 21.5 15.7167 21.5 16C21.5 16.2833 21.404 16.5207 21.212 16.712C21.0207 16.904 20.7833 17 20.5 17H12.5ZM4.5 5C4.21667 5 3.97933 4.904 3.788 4.712C3.596 4.52067 3.5 4.28333 3.5 4C3.5 3.71667 3.596 3.479 3.788 3.287C3.97933 3.09567 4.21667 3 4.5 3H20.5C20.7833 3 21.0207 3.09567 21.212 3.287C21.404 3.479 21.5 3.71667 21.5 4C21.5 4.28333 21.404 4.52067 21.212 4.712C21.0207 4.904 20.7833 5 20.5 5H4.5ZM12.5 9C12.2167 9 11.9793 8.904 11.788 8.712C11.596 8.52067 11.5 8.28333 11.5 8C11.5 7.71667 11.596 7.479 11.788 7.287C11.9793 7.09567 12.2167 7 12.5 7H20.5C20.7833 7 21.0207 7.09567 21.212 7.287C21.404 7.479 21.5 7.71667 21.5 8C21.5 8.28333 21.404 8.52067 21.212 8.712C21.0207 8.904 20.7833 9 20.5 9H12.5ZM12.5 13C12.2167 13 11.9793 12.904 11.788 12.712C11.596 12.5207 11.5 12.2833 11.5 12C11.5 11.7167 11.596 11.479 11.788 11.287C11.9793 11.0957 12.2167 11 12.5 11H20.5C20.7833 11 21.0207 11.0957 21.212 11.287C21.404 11.479 21.5 11.7167 21.5 12C21.5 12.2833 21.404 12.5207 21.212 12.712C21.0207 12.904 20.7833 13 20.5 13H12.5Z",
+    fill: color
+  }));
+};
+
+FormatIndentIncreaseDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatItalicDs2Icon = function FormatItalicDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7 20C6.58333 20 6.22933 19.854 5.938 19.562C5.646 19.2707 5.5 18.9167 5.5 18.5C5.5 18.0833 5.646 17.7293 5.938 17.438C6.22933 17.146 6.58333 17 7 17H8.875L12.875 7H11C10.5833 7 10.2293 6.854 9.938 6.562C9.646 6.27067 9.5 5.91667 9.5 5.5C9.5 5.08333 9.646 4.72933 9.938 4.438C10.2293 4.146 10.5833 4 11 4H18C18.4167 4 18.7707 4.146 19.062 4.438C19.354 4.72933 19.5 5.08333 19.5 5.5C19.5 5.91667 19.354 6.27067 19.062 6.562C18.7707 6.854 18.4167 7 18 7H16.125L12.125 17H14C14.4167 17 14.7707 17.146 15.062 17.438C15.354 17.7293 15.5 18.0833 15.5 18.5C15.5 18.9167 15.354 19.2707 15.062 19.562C14.7707 19.854 14.4167 20 14 20H7Z",
+    fill: color
+  }));
+};
+
+FormatItalicDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatListBulletedDs2Icon = function FormatListBulletedDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5 13.5C4.58333 13.5 4.22933 13.354 3.938 13.062C3.646 12.7707 3.5 12.4167 3.5 12C3.5 11.5833 3.646 11.2293 3.938 10.938C4.22933 10.646 4.58333 10.5 5 10.5C5.41667 10.5 5.77067 10.646 6.062 10.938C6.354 11.2293 6.5 11.5833 6.5 12C6.5 12.4167 6.354 12.7707 6.062 13.062C5.77067 13.354 5.41667 13.5 5 13.5ZM5 7.5C4.58333 7.5 4.22933 7.354 3.938 7.062C3.646 6.77067 3.5 6.41667 3.5 6C3.5 5.58333 3.646 5.22933 3.938 4.938C4.22933 4.646 4.58333 4.5 5 4.5C5.41667 4.5 5.77067 4.646 6.062 4.938C6.354 5.22933 6.5 5.58333 6.5 6C6.5 6.41667 6.354 6.77067 6.062 7.062C5.77067 7.354 5.41667 7.5 5 7.5ZM5 19.5C4.58333 19.5 4.22933 19.354 3.938 19.062C3.646 18.7707 3.5 18.4167 3.5 18C3.5 17.5833 3.646 17.2293 3.938 16.938C4.22933 16.646 4.58333 16.5 5 16.5C5.41667 16.5 5.77067 16.646 6.062 16.938C6.354 17.2293 6.5 17.5833 6.5 18C6.5 18.4167 6.354 18.7707 6.062 19.062C5.77067 19.354 5.41667 19.5 5 19.5ZM9.5 19C9.21667 19 8.97933 18.904 8.788 18.712C8.596 18.5207 8.5 18.2833 8.5 18C8.5 17.7167 8.596 17.4793 8.788 17.288C8.97933 17.096 9.21667 17 9.5 17H20.5C20.7833 17 21.0207 17.096 21.212 17.288C21.404 17.4793 21.5 17.7167 21.5 18C21.5 18.2833 21.404 18.5207 21.212 18.712C21.0207 18.904 20.7833 19 20.5 19H9.5ZM9.5 13C9.21667 13 8.97933 12.904 8.788 12.712C8.596 12.5207 8.5 12.2833 8.5 12C8.5 11.7167 8.596 11.479 8.788 11.287C8.97933 11.0957 9.21667 11 9.5 11H20.5C20.7833 11 21.0207 11.0957 21.212 11.287C21.404 11.479 21.5 11.7167 21.5 12C21.5 12.2833 21.404 12.5207 21.212 12.712C21.0207 12.904 20.7833 13 20.5 13H9.5ZM9.5 7C9.21667 7 8.97933 6.90433 8.788 6.713C8.596 6.521 8.5 6.28333 8.5 6C8.5 5.71667 8.596 5.479 8.788 5.287C8.97933 5.09567 9.21667 5 9.5 5H20.5C20.7833 5 21.0207 5.09567 21.212 5.287C21.404 5.479 21.5 5.71667 21.5 6C21.5 6.28333 21.404 6.521 21.212 6.713C21.0207 6.90433 20.7833 7 20.5 7H9.5Z",
+    fill: color
+  }));
+};
+
+FormatListBulletedDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatListNumberedDs2Icon = function FormatListNumberedDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4 20C3.86667 20 3.75 19.95 3.65 19.85C3.55 19.75 3.5 19.6333 3.5 19.5C3.5 19.3667 3.55 19.25 3.65 19.15C3.75 19.05 3.86667 19 4 19H5.5V18.5H5C4.86667 18.5 4.75 18.45 4.65 18.35C4.55 18.25 4.5 18.1333 4.5 18C4.5 17.8667 4.55 17.75 4.65 17.65C4.75 17.55 4.86667 17.5 5 17.5H5.5V17H4C3.86667 17 3.75 16.95 3.65 16.85C3.55 16.75 3.5 16.6333 3.5 16.5C3.5 16.3667 3.55 16.25 3.65 16.15C3.75 16.05 3.86667 16 4 16H6C6.13333 16 6.25 16.05 6.35 16.15C6.45 16.25 6.5 16.3667 6.5 16.5V19.5C6.5 19.6333 6.45 19.75 6.35 19.85C6.25 19.95 6.13333 20 6 20H4ZM5 8C4.86667 8 4.75 7.95 4.65 7.85C4.55 7.75 4.5 7.63333 4.5 7.5V5H4C3.86667 5 3.75 4.95 3.65 4.85C3.55 4.75 3.5 4.63333 3.5 4.5C3.5 4.36667 3.55 4.25 3.65 4.15C3.75 4.05 3.86667 4 4 4H5C5.13333 4 5.25 4.05 5.35 4.15C5.45 4.25 5.5 4.36667 5.5 4.5V7.5C5.5 7.63333 5.45 7.75 5.35 7.85C5.25 7.95 5.13333 8 5 8ZM4 14C3.86667 14 3.75 13.95 3.65 13.85C3.55 13.75 3.5 13.6333 3.5 13.5V13.275C3.5 13.2083 3.54167 13.1 3.625 12.95L5.3 11H4C3.86667 11 3.75 10.95 3.65 10.85C3.55 10.75 3.5 10.6333 3.5 10.5C3.5 10.3667 3.55 10.25 3.65 10.15C3.75 10.05 3.86667 10 4 10H6C6.13333 10 6.25 10.05 6.35 10.15C6.45 10.25 6.5 10.3667 6.5 10.5V10.725C6.5 10.7917 6.45833 10.9 6.375 11.05L4.7 13H6C6.13333 13 6.25 13.05 6.35 13.15C6.45 13.25 6.5 13.3667 6.5 13.5C6.5 13.6333 6.45 13.75 6.35 13.85C6.25 13.95 6.13333 14 6 14H4ZM9.5 19C9.21667 19 8.97933 18.904 8.788 18.712C8.596 18.5207 8.5 18.2833 8.5 18C8.5 17.7167 8.596 17.4793 8.788 17.288C8.97933 17.096 9.21667 17 9.5 17H20.5C20.7833 17 21.0207 17.096 21.212 17.288C21.404 17.4793 21.5 17.7167 21.5 18C21.5 18.2833 21.404 18.5207 21.212 18.712C21.0207 18.904 20.7833 19 20.5 19H9.5ZM9.5 13C9.21667 13 8.97933 12.904 8.788 12.712C8.596 12.5207 8.5 12.2833 8.5 12C8.5 11.7167 8.596 11.479 8.788 11.287C8.97933 11.0957 9.21667 11 9.5 11H20.5C20.7833 11 21.0207 11.0957 21.212 11.287C21.404 11.479 21.5 11.7167 21.5 12C21.5 12.2833 21.404 12.5207 21.212 12.712C21.0207 12.904 20.7833 13 20.5 13H9.5ZM9.5 7C9.21667 7 8.97933 6.90433 8.788 6.713C8.596 6.521 8.5 6.28333 8.5 6C8.5 5.71667 8.596 5.479 8.788 5.287C8.97933 5.09567 9.21667 5 9.5 5H20.5C20.7833 5 21.0207 5.09567 21.212 5.287C21.404 5.479 21.5 5.71667 21.5 6C21.5 6.28333 21.404 6.521 21.212 6.713C21.0207 6.90433 20.7833 7 20.5 7H9.5Z",
+    fill: color
+  }));
+};
+
+FormatListNumberedDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FormatUnderlineDs2Icon = function FormatUnderlineDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 21C6.21667 21 5.979 20.904 5.787 20.712C5.59567 20.5207 5.5 20.2833 5.5 20C5.5 19.7167 5.59567 19.4793 5.787 19.288C5.979 19.096 6.21667 19 6.5 19H18.5C18.7833 19 19.0207 19.096 19.212 19.288C19.404 19.4793 19.5 19.7167 19.5 20C19.5 20.2833 19.404 20.5207 19.212 20.712C19.0207 20.904 18.7833 21 18.5 21H6.5ZM12.5 17C10.8167 17 9.39567 16.4207 8.237 15.262C7.079 14.104 6.5 12.6833 6.5 11V4.25C6.5 3.9 6.621 3.604 6.863 3.362C7.10433 3.12067 7.4 3 7.75 3C8.1 3 8.39567 3.12067 8.637 3.362C8.879 3.604 9 3.9 9 4.25V11C9 11.9833 9.33733 12.8127 10.012 13.488C10.6873 14.1627 11.5167 14.5 12.5 14.5C13.4833 14.5 14.3127 14.1627 14.988 13.488C15.6627 12.8127 16 11.9833 16 11V4.25C16 3.9 16.121 3.604 16.363 3.362C16.6043 3.12067 16.9 3 17.25 3C17.6 3 17.896 3.12067 18.138 3.362C18.3793 3.604 18.5 3.9 18.5 4.25V11C18.5 12.6833 17.9207 14.104 16.762 15.262C15.604 16.4207 14.1833 17 12.5 17Z",
+    fill: color
+  }));
+};
+
+FormatUnderlineDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ForumDs2Icon = function ForumDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M2.5 15.8V3C2.5 2.71667 2.596 2.479 2.788 2.287C2.97933 2.09567 3.21667 2 3.5 2H16.5C16.7833 2 17.0207 2.09567 17.212 2.287C17.404 2.479 17.5 2.71667 17.5 3V12C17.5 12.2833 17.404 12.5207 17.212 12.712C17.0207 12.904 16.7833 13 16.5 13H6.5L3.35 16.15C3.18333 16.3167 3 16.3583 2.8 16.275C2.6 16.1917 2.5 16.0333 2.5 15.8ZM7.5 18C7.21667 18 6.979 17.904 6.787 17.712C6.59567 17.5207 6.5 17.2833 6.5 17V15H19.5V6H21.5C21.7833 6 22.0207 6.09567 22.212 6.287C22.404 6.479 22.5 6.71667 22.5 7V20.8C22.5 21.0333 22.4 21.1917 22.2 21.275C22 21.3583 21.8167 21.3167 21.65 21.15L18.5 18H7.5ZM15.5 4H4.5V11H15.5V4Z",
+    fill: color
+  }));
+};
+
+ForumDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var GridOnDs2Icon = function GridOnDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 22C3.95 22 3.47933 21.8043 3.088 21.413C2.696 21.021 2.5 20.55 2.5 20V4C2.5 3.45 2.696 2.979 3.088 2.587C3.47933 2.19567 3.95 2 4.5 2H20.5C21.05 2 21.521 2.19567 21.913 2.587C22.3043 2.979 22.5 3.45 22.5 4V20C22.5 20.55 22.3043 21.021 21.913 21.413C21.521 21.8043 21.05 22 20.5 22H4.5ZM4.5 16V20H8.5V16H4.5ZM10.5 16V20H14.5V16H10.5ZM16.5 20H20.5V16H16.5V20ZM4.5 14H8.5V10H4.5V14ZM10.5 14H14.5V10H10.5V14ZM16.5 14H20.5V10H16.5V14ZM8.5 4H4.5V8H8.5V4ZM10.5 8H14.5V4H10.5V8ZM16.5 8H20.5V4H16.5V8Z",
+    fill: color
+  }));
+};
+
+GridOnDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var GroupAddDs2Icon = function GroupAddDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M13 11.95C13.4833 11.4167 13.8543 10.8083 14.113 10.125C14.371 9.44167 14.5 8.73333 14.5 8C14.5 7.26667 14.371 6.55833 14.113 5.875C13.8543 5.19167 13.4833 4.58333 13 4.05C14 4.18333 14.8333 4.625 15.5 5.375C16.1667 6.125 16.5 7 16.5 8C16.5 9 16.1667 9.875 15.5 10.625C14.8333 11.375 14 11.8167 13 11.95ZM18.025 20C18.175 19.8833 18.2917 19.7373 18.375 19.562C18.4583 19.3873 18.5 19.1917 18.5 18.975V17C18.5 16.4 18.3667 15.8293 18.1 15.288C17.8333 14.746 17.4833 14.2667 17.05 13.85C17.9 14.15 18.6877 14.5373 19.413 15.012C20.1377 15.4873 20.5 16.15 20.5 17V19C20.5 19.2833 20.404 19.5207 20.212 19.712C20.0207 19.904 19.7833 20 19.5 20H18.025ZM21.5 13C21.2167 13 20.9793 12.904 20.788 12.712C20.596 12.5207 20.5 12.2833 20.5 12V11H19.5C19.2167 11 18.9793 10.904 18.788 10.712C18.596 10.5207 18.5 10.2833 18.5 10C18.5 9.71667 18.596 9.479 18.788 9.287C18.9793 9.09567 19.2167 9 19.5 9H20.5V8C20.5 7.71667 20.596 7.479 20.788 7.287C20.9793 7.09567 21.2167 7 21.5 7C21.7833 7 22.0207 7.09567 22.212 7.287C22.404 7.479 22.5 7.71667 22.5 8V9H23.5C23.7833 9 24.0207 9.09567 24.212 9.287C24.404 9.479 24.5 9.71667 24.5 10C24.5 10.2833 24.404 10.5207 24.212 10.712C24.0207 10.904 23.7833 11 23.5 11H22.5V12C22.5 12.2833 22.404 12.5207 22.212 12.712C22.0207 12.904 21.7833 13 21.5 13ZM8.5 12C7.4 12 6.45833 11.6083 5.675 10.825C4.89167 10.0417 4.5 9.1 4.5 8C4.5 6.9 4.89167 5.95833 5.675 5.175C6.45833 4.39167 7.4 4 8.5 4C9.6 4 10.5417 4.39167 11.325 5.175C12.1083 5.95833 12.5 6.9 12.5 8C12.5 9.1 12.1083 10.0417 11.325 10.825C10.5417 11.6083 9.6 12 8.5 12ZM1.5 20C1.21667 20 0.979333 19.904 0.788 19.712C0.596 19.5207 0.5 19.2833 0.5 19V17.2C0.5 16.6333 0.646 16.1123 0.938 15.637C1.22933 15.1623 1.61667 14.8 2.1 14.55C3.13333 14.0333 4.18333 13.6457 5.25 13.387C6.31667 13.129 7.4 13 8.5 13C9.6 13 10.6833 13.129 11.75 13.387C12.8167 13.6457 13.8667 14.0333 14.9 14.55C15.3833 14.8 15.7707 15.1623 16.062 15.637C16.354 16.1123 16.5 16.6333 16.5 17.2V19C16.5 19.2833 16.4043 19.5207 16.213 19.712C16.021 19.904 15.7833 20 15.5 20H1.5ZM8.5 10C9.05 10 9.521 9.804 9.913 9.412C10.3043 9.02067 10.5 8.55 10.5 8C10.5 7.45 10.3043 6.97933 9.913 6.588C9.521 6.196 9.05 6 8.5 6C7.95 6 7.47933 6.196 7.088 6.588C6.696 6.97933 6.5 7.45 6.5 8C6.5 8.55 6.696 9.02067 7.088 9.412C7.47933 9.804 7.95 10 8.5 10ZM2.5 18H14.5V17.2C14.5 17.0167 14.4543 16.85 14.363 16.7C14.271 16.55 14.15 16.4333 14 16.35C13.1 15.9 12.1917 15.5623 11.275 15.337C10.3583 15.1123 9.43333 15 8.5 15C7.56667 15 6.64167 15.1123 5.725 15.337C4.80833 15.5623 3.9 15.9 3 16.35C2.85 16.4333 2.72933 16.55 2.638 16.7C2.546 16.85 2.5 17.0167 2.5 17.2V18Z",
+    fill: color
+  }));
+};
+
+GroupAddDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var GroupDs2Icon = function GroupDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M2.5 20C2.21667 20 1.97933 19.904 1.788 19.712C1.596 19.5207 1.5 19.2833 1.5 19V17.2C1.5 16.6333 1.646 16.1123 1.938 15.637C2.22933 15.1623 2.61667 14.8 3.1 14.55C4.13333 14.0333 5.18333 13.6457 6.25 13.387C7.31667 13.129 8.4 13 9.5 13C10.6 13 11.6833 13.129 12.75 13.387C13.8167 13.6457 14.8667 14.0333 15.9 14.55C16.3833 14.8 16.7707 15.1623 17.062 15.637C17.354 16.1123 17.5 16.6333 17.5 17.2V19C17.5 19.2833 17.404 19.5207 17.212 19.712C17.0207 19.904 16.7833 20 16.5 20H2.5ZM19.025 20C19.175 19.8833 19.2917 19.7373 19.375 19.562C19.4583 19.3873 19.5 19.1917 19.5 18.975V17C19.5 16.2667 19.296 15.5623 18.888 14.887C18.4793 14.2123 17.9 13.6333 17.15 13.15C18 13.25 18.8 13.4207 19.55 13.662C20.3 13.904 21 14.2 21.65 14.55C22.25 14.8833 22.7083 15.254 23.025 15.662C23.3417 16.0707 23.5 16.5167 23.5 17V19C23.5 19.2833 23.404 19.5207 23.212 19.712C23.0207 19.904 22.7833 20 22.5 20H19.025ZM9.5 12C8.4 12 7.45833 11.6083 6.675 10.825C5.89167 10.0417 5.5 9.1 5.5 8C5.5 6.9 5.89167 5.95833 6.675 5.175C7.45833 4.39167 8.4 4 9.5 4C10.6 4 11.5417 4.39167 12.325 5.175C13.1083 5.95833 13.5 6.9 13.5 8C13.5 9.1 13.1083 10.0417 12.325 10.825C11.5417 11.6083 10.6 12 9.5 12ZM19.5 8C19.5 9.1 19.1083 10.0417 18.325 10.825C17.5417 11.6083 16.6 12 15.5 12C15.3167 12 15.0833 11.9793 14.8 11.938C14.5167 11.896 14.2833 11.85 14.1 11.8C14.55 11.2667 14.8957 10.675 15.137 10.025C15.379 9.375 15.5 8.7 15.5 8C15.5 7.3 15.379 6.625 15.137 5.975C14.8957 5.325 14.55 4.73333 14.1 4.2C14.3333 4.11667 14.5667 4.06233 14.8 4.037C15.0333 4.01233 15.2667 4 15.5 4C16.6 4 17.5417 4.39167 18.325 5.175C19.1083 5.95833 19.5 6.9 19.5 8ZM3.5 18H15.5V17.2C15.5 17.0167 15.4543 16.85 15.363 16.7C15.271 16.55 15.15 16.4333 15 16.35C14.1 15.9 13.1917 15.5623 12.275 15.337C11.3583 15.1123 10.4333 15 9.5 15C8.56667 15 7.64167 15.1123 6.725 15.337C5.80833 15.5623 4.9 15.9 4 16.35C3.85 16.4333 3.72933 16.55 3.638 16.7C3.546 16.85 3.5 17.0167 3.5 17.2V18ZM9.5 10C10.05 10 10.521 9.804 10.913 9.412C11.3043 9.02067 11.5 8.55 11.5 8C11.5 7.45 11.3043 6.97933 10.913 6.588C10.521 6.196 10.05 6 9.5 6C8.95 6 8.47933 6.196 8.088 6.588C7.696 6.97933 7.5 7.45 7.5 8C7.5 8.55 7.696 9.02067 8.088 9.412C8.47933 9.804 8.95 10 9.5 10Z",
+    fill: color
+  }));
+};
+
+GroupDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var HandshakeDs2Icon = function HandshakeDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.375 20C12.4417 20 12.5083 19.9833 12.575 19.95C12.6417 19.9167 12.6917 19.8833 12.725 19.85L20.925 11.65C21.125 11.45 21.271 11.225 21.363 10.975C21.4543 10.725 21.5 10.475 21.5 10.225C21.5 9.95833 21.4543 9.704 21.363 9.462C21.271 9.22067 21.125 9.00833 20.925 8.825L16.675 4.575C16.4917 4.375 16.2793 4.229 16.038 4.137C15.796 4.04567 15.5417 4 15.275 4C15.025 4 14.775 4.04567 14.525 4.137C14.275 4.229 14.05 4.375 13.85 4.575L13.575 4.85L15.425 6.725C15.675 6.95833 15.8583 7.225 15.975 7.525C16.0917 7.825 16.15 8.14167 16.15 8.475C16.15 9.175 15.9127 9.76233 15.438 10.237C14.9627 10.7123 14.375 10.95 13.675 10.95C13.3417 10.95 13.021 10.8917 12.713 10.775C12.4043 10.6583 12.1333 10.4833 11.9 10.25L10.025 8.4L5.64999 12.775C5.59999 12.825 5.56232 12.8793 5.53699 12.938C5.51232 12.996 5.49999 13.0583 5.49999 13.125C5.49999 13.2583 5.54999 13.379 5.64999 13.487C5.74999 13.5957 5.86666 13.65 5.99999 13.65C6.06666 13.65 6.13332 13.6333 6.19999 13.6C6.26666 13.5667 6.31666 13.5333 6.34999 13.5L9.74999 10.1L11.15 11.5L7.77499 14.9C7.72499 14.95 7.68732 15.004 7.66199 15.062C7.63732 15.1207 7.62499 15.1833 7.62499 15.25C7.62499 15.3833 7.67499 15.5 7.77499 15.6C7.87499 15.7 7.99166 15.75 8.12499 15.75C8.19166 15.75 8.25832 15.7333 8.32499 15.7C8.39166 15.6667 8.44166 15.6333 8.47499 15.6L11.875 12.225L13.275 13.625L9.89999 17.025C9.84999 17.0583 9.81266 17.1083 9.78799 17.175C9.76266 17.2417 9.74999 17.3083 9.74999 17.375C9.74999 17.5083 9.79999 17.625 9.89999 17.725C9.99999 17.825 10.1167 17.875 10.25 17.875C10.3167 17.875 10.3793 17.8623 10.438 17.837C10.496 17.8123 10.55 17.775 10.6 17.725L14 14.35L15.4 15.75L12 19.15C11.95 19.2 11.9127 19.254 11.888 19.312C11.8627 19.3707 11.85 19.4333 11.85 19.5C11.85 19.6333 11.9043 19.75 12.013 19.85C12.121 19.95 12.2417 20 12.375 20ZM12.35 22C11.7333 22 11.1877 21.7957 10.713 21.387C10.2377 20.979 9.95832 20.4667 9.87499 19.85C9.30832 19.7667 8.83332 19.5333 8.44999 19.15C8.06666 18.7667 7.83332 18.2917 7.74999 17.725C7.18332 17.6417 6.71266 17.4043 6.33799 17.013C5.96266 16.621 5.73332 16.15 5.64999 15.6C5.01666 15.5167 4.49999 15.2417 4.09999 14.775C3.69999 14.3083 3.49999 13.7583 3.49999 13.125C3.49999 12.7917 3.56266 12.4707 3.68799 12.162C3.81266 11.854 3.99166 11.5833 4.22499 11.35L10.025 5.575L13.3 8.85C13.3333 8.9 13.3833 8.93733 13.45 8.962C13.5167 8.98733 13.5833 9 13.65 9C13.8 9 13.925 8.95433 14.025 8.863C14.125 8.771 14.175 8.65 14.175 8.5C14.175 8.43333 14.1627 8.36667 14.138 8.3C14.1127 8.23333 14.075 8.18333 14.025 8.15L10.45 4.575C10.2667 4.375 10.054 4.229 9.81199 4.137C9.57066 4.04567 9.31666 4 9.04999 4C8.79999 4 8.54999 4.04567 8.29999 4.137C8.04999 4.229 7.82499 4.375 7.62499 4.575L4.09999 8.125C3.94999 8.275 3.82499 8.45 3.72499 8.65C3.62499 8.85 3.55832 9.05 3.52499 9.25C3.49166 9.45 3.49166 9.654 3.52499 9.862C3.55832 10.0707 3.62499 10.2667 3.72499 10.45L2.27499 11.9C1.99166 11.5167 1.78332 11.0957 1.64999 10.637C1.51666 10.179 1.46666 9.71667 1.49999 9.25C1.53332 8.78333 1.64999 8.329 1.84999 7.887C2.04999 7.44567 2.32499 7.05 2.67499 6.7L6.19999 3.175C6.59999 2.79167 7.04599 2.5 7.53799 2.3C8.02932 2.1 8.53332 2 9.04999 2C9.56666 2 10.0707 2.1 10.562 2.3C11.054 2.5 11.4917 2.79167 11.875 3.175L12.15 3.45L12.425 3.175C12.825 2.79167 13.2707 2.5 13.762 2.3C14.254 2.1 14.7583 2 15.275 2C15.7917 2 16.296 2.1 16.788 2.3C17.2793 2.5 17.7167 2.79167 18.1 3.175L22.325 7.4C22.7083 7.78333 23 8.225 23.2 8.725C23.4 9.225 23.5 9.73333 23.5 10.25C23.5 10.7667 23.4 11.2707 23.2 11.762C23 12.254 22.7083 12.6917 22.325 13.075L14.125 21.25C13.8917 21.4833 13.6207 21.6667 13.312 21.8C13.004 21.9333 12.6833 22 12.35 22Z",
+    fill: color
+  }));
+};
+
+HandshakeDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var HistoryDs2Icon = function HistoryDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M13.5 11.6L16 14.1C16.1833 14.2833 16.275 14.5167 16.275 14.8C16.275 15.0833 16.1833 15.3167 16 15.5C15.8167 15.6833 15.5833 15.775 15.3 15.775C15.0167 15.775 14.7833 15.6833 14.6 15.5L11.8 12.7C11.7 12.6 11.625 12.4873 11.575 12.362C11.525 12.2373 11.5 12.1083 11.5 11.975V8C11.5 7.71667 11.596 7.479 11.788 7.287C11.9793 7.09567 12.2167 7 12.5 7C12.7833 7 13.021 7.09567 13.213 7.287C13.4043 7.479 13.5 7.71667 13.5 8V11.6ZM12.5 21C10.4833 21 8.675 20.404 7.075 19.212C5.475 18.0207 4.4 16.4667 3.85 14.55C3.76667 14.25 3.796 13.9667 3.938 13.7C4.07933 13.4333 4.3 13.2667 4.6 13.2C4.88333 13.1333 5.13767 13.1957 5.363 13.387C5.58767 13.579 5.74167 13.8167 5.825 14.1C6.25833 15.5667 7.096 16.75 8.338 17.65C9.57933 18.55 10.9667 19 12.5 19C14.45 19 16.104 18.3207 17.462 16.962C18.8207 15.604 19.5 13.95 19.5 12C19.5 10.05 18.8207 8.39567 17.462 7.037C16.104 5.679 14.45 5 12.5 5C11.35 5 10.275 5.26667 9.275 5.8C8.275 6.33333 7.43333 7.06667 6.75 8H8.5C8.78333 8 9.021 8.09567 9.213 8.287C9.40433 8.479 9.5 8.71667 9.5 9C9.5 9.28333 9.40433 9.52067 9.213 9.712C9.021 9.904 8.78333 10 8.5 10H4.5C4.21667 10 3.97933 9.904 3.788 9.712C3.596 9.52067 3.5 9.28333 3.5 9V5C3.5 4.71667 3.596 4.479 3.788 4.287C3.97933 4.09567 4.21667 4 4.5 4C4.78333 4 5.021 4.09567 5.213 4.287C5.40433 4.479 5.5 4.71667 5.5 5V6.35C6.35 5.28333 7.38767 4.45833 8.613 3.875C9.83767 3.29167 11.1333 3 12.5 3C13.75 3 14.921 3.23733 16.013 3.712C17.1043 4.18733 18.0543 4.829 18.863 5.637C19.671 6.44567 20.3127 7.39567 20.788 8.487C21.2627 9.579 21.5 10.75 21.5 12C21.5 13.25 21.2627 14.4207 20.788 15.512C20.3127 16.604 19.671 17.554 18.863 18.362C18.0543 19.1707 17.1043 19.8127 16.013 20.288C14.921 20.7627 13.75 21 12.5 21Z",
+    fill: color
+  }));
+};
+
+HistoryDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var HowToRegDs2Icon = function HowToRegDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M3.5 20C3.21667 20 2.97933 19.904 2.788 19.712C2.596 19.5207 2.5 19.2833 2.5 19V17.2C2.5 16.65 2.64167 16.1333 2.925 15.65C3.20833 15.1667 3.6 14.8 4.1 14.55C4.95 14.1167 5.90833 13.75 6.975 13.45C8.04167 13.15 9.21667 13 10.5 13C11 13 11.4877 13.025 11.963 13.075C12.4377 13.125 12.9 13.2 13.35 13.3L11.6 15.05C11.4167 15.0167 11.2373 15 11.062 15H10.5C9.31667 15 8.254 15.1417 7.312 15.425C6.37067 15.7083 5.6 16.0167 5 16.35C4.85 16.4333 4.72933 16.55 4.638 16.7C4.546 16.85 4.5 17.0167 4.5 17.2V18H10.75L12.75 20H3.5ZM16.05 19.975C15.9167 19.975 15.7917 19.9543 15.675 19.913C15.5583 19.871 15.45 19.8 15.35 19.7L13.3 17.65C13.1167 17.4667 13.025 17.2333 13.025 16.95C13.025 16.6667 13.1167 16.4333 13.3 16.25C13.4833 16.0667 13.7167 15.975 14 15.975C14.2833 15.975 14.5167 16.0667 14.7 16.25L16.05 17.6L20.4 13.25C20.5833 13.0667 20.8167 12.975 21.1 12.975C21.3833 12.975 21.6167 13.0667 21.8 13.25C21.9833 13.4333 22.075 13.6667 22.075 13.95C22.075 14.2333 21.9833 14.4667 21.8 14.65L16.75 19.7C16.65 19.8 16.5417 19.871 16.425 19.913C16.3083 19.9543 16.1833 19.975 16.05 19.975ZM10.5 12C9.4 12 8.45833 11.6083 7.675 10.825C6.89167 10.0417 6.5 9.1 6.5 8C6.5 6.9 6.89167 5.95833 7.675 5.175C8.45833 4.39167 9.4 4 10.5 4C11.6 4 12.5417 4.39167 13.325 5.175C14.1083 5.95833 14.5 6.9 14.5 8C14.5 9.1 14.1083 10.0417 13.325 10.825C12.5417 11.6083 11.6 12 10.5 12ZM10.5 10C11.05 10 11.521 9.804 11.913 9.412C12.3043 9.02067 12.5 8.55 12.5 8C12.5 7.45 12.3043 6.97933 11.913 6.588C11.521 6.196 11.05 6 10.5 6C9.95 6 9.47933 6.196 9.088 6.588C8.696 6.97933 8.5 7.45 8.5 8C8.5 8.55 8.696 9.02067 9.088 9.412C9.47933 9.804 9.95 10 10.5 10Z",
+    fill: color
+  }));
+};
+
+HowToRegDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var HubDs2Icon = function HubDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 23C5.66667 23 4.95833 22.7083 4.375 22.125C3.79167 21.5417 3.5 20.8333 3.5 20C3.5 19.1667 3.79167 18.4583 4.375 17.875C4.95833 17.2917 5.66667 17 6.5 17C6.73333 17 6.95 17.025 7.15 17.075C7.35 17.125 7.54167 17.1917 7.725 17.275L9.15 15.5C8.68333 14.9833 8.35833 14.4 8.175 13.75C7.99167 13.1 7.95 12.45 8.05 11.8L6.025 11.125C5.74167 11.5417 5.38333 11.875 4.95 12.125C4.51667 12.375 4.03333 12.5 3.5 12.5C2.66667 12.5 1.95833 12.2083 1.375 11.625C0.791667 11.0417 0.5 10.3333 0.5 9.5C0.5 8.66667 0.791667 7.95833 1.375 7.375C1.95833 6.79167 2.66667 6.5 3.5 6.5C4.33333 6.5 5.04167 6.79167 5.625 7.375C6.20833 7.95833 6.5 8.66667 6.5 9.5V9.7L8.525 10.4C8.85833 9.8 9.30433 9.29167 9.863 8.875C10.421 8.45833 11.05 8.19167 11.75 8.075V5.9C11.1 5.71667 10.5623 5.36233 10.137 4.837C9.71233 4.31233 9.5 3.7 9.5 3C9.5 2.16667 9.79167 1.45833 10.375 0.875C10.9583 0.291667 11.6667 0 12.5 0C13.3333 0 14.0417 0.291667 14.625 0.875C15.2083 1.45833 15.5 2.16667 15.5 3C15.5 3.7 15.2833 4.31233 14.85 4.837C14.4167 5.36233 13.8833 5.71667 13.25 5.9V8.075C13.95 8.19167 14.5793 8.45833 15.138 8.875C15.696 9.29167 16.1417 9.8 16.475 10.4L18.5 9.7V9.5C18.5 8.66667 18.7917 7.95833 19.375 7.375C19.9583 6.79167 20.6667 6.5 21.5 6.5C22.3333 6.5 23.0417 6.79167 23.625 7.375C24.2083 7.95833 24.5 8.66667 24.5 9.5C24.5 10.3333 24.2083 11.0417 23.625 11.625C23.0417 12.2083 22.3333 12.5 21.5 12.5C20.9667 12.5 20.4793 12.375 20.038 12.125C19.596 11.875 19.2417 11.5417 18.975 11.125L16.95 11.8C17.05 12.45 17.0083 13.0957 16.825 13.737C16.6417 14.379 16.3167 14.9667 15.85 15.5L17.275 17.25C17.4583 17.1667 17.65 17.104 17.85 17.062C18.05 17.0207 18.2667 17 18.5 17C19.3333 17 20.0417 17.2917 20.625 17.875C21.2083 18.4583 21.5 19.1667 21.5 20C21.5 20.8333 21.2083 21.5417 20.625 22.125C20.0417 22.7083 19.3333 23 18.5 23C17.6667 23 16.9583 22.7083 16.375 22.125C15.7917 21.5417 15.5 20.8333 15.5 20C15.5 19.6667 15.5543 19.346 15.663 19.038C15.771 18.7293 15.9167 18.45 16.1 18.2L14.675 16.425C13.9917 16.8083 13.2627 17 12.488 17C11.7127 17 10.9833 16.8083 10.3 16.425L8.9 18.2C9.08333 18.45 9.22933 18.7293 9.338 19.038C9.446 19.346 9.5 19.6667 9.5 20C9.5 20.8333 9.20833 21.5417 8.625 22.125C8.04167 22.7083 7.33333 23 6.5 23ZM3.5 10.5C3.78333 10.5 4.021 10.404 4.213 10.212C4.40433 10.0207 4.5 9.78333 4.5 9.5C4.5 9.21667 4.40433 8.979 4.213 8.787C4.021 8.59567 3.78333 8.5 3.5 8.5C3.21667 8.5 2.97933 8.59567 2.788 8.787C2.596 8.979 2.5 9.21667 2.5 9.5C2.5 9.78333 2.596 10.0207 2.788 10.212C2.97933 10.404 3.21667 10.5 3.5 10.5ZM6.5 21C6.78333 21 7.021 20.904 7.213 20.712C7.40433 20.5207 7.5 20.2833 7.5 20C7.5 19.7167 7.40433 19.4793 7.213 19.288C7.021 19.096 6.78333 19 6.5 19C6.21667 19 5.979 19.096 5.787 19.288C5.59567 19.4793 5.5 19.7167 5.5 20C5.5 20.2833 5.59567 20.5207 5.787 20.712C5.979 20.904 6.21667 21 6.5 21ZM12.5 4C12.7833 4 13.021 3.904 13.213 3.712C13.4043 3.52067 13.5 3.28333 13.5 3C13.5 2.71667 13.4043 2.479 13.213 2.287C13.021 2.09567 12.7833 2 12.5 2C12.2167 2 11.9793 2.09567 11.788 2.287C11.596 2.479 11.5 2.71667 11.5 3C11.5 3.28333 11.596 3.52067 11.788 3.712C11.9793 3.904 12.2167 4 12.5 4ZM12.5 15C13.2 15 13.7917 14.7583 14.275 14.275C14.7583 13.7917 15 13.2 15 12.5C15 11.8 14.7583 11.2083 14.275 10.725C13.7917 10.2417 13.2 10 12.5 10C11.8 10 11.2083 10.2417 10.725 10.725C10.2417 11.2083 10 11.8 10 12.5C10 13.2 10.2417 13.7917 10.725 14.275C11.2083 14.7583 11.8 15 12.5 15ZM18.5 21C18.7833 21 19.0207 20.904 19.212 20.712C19.404 20.5207 19.5 20.2833 19.5 20C19.5 19.7167 19.404 19.4793 19.212 19.288C19.0207 19.096 18.7833 19 18.5 19C18.2167 19 17.9793 19.096 17.788 19.288C17.596 19.4793 17.5 19.7167 17.5 20C17.5 20.2833 17.596 20.5207 17.788 20.712C17.9793 20.904 18.2167 21 18.5 21ZM21.5 10.5C21.7833 10.5 22.0207 10.404 22.212 10.212C22.404 10.0207 22.5 9.78333 22.5 9.5C22.5 9.21667 22.404 8.979 22.212 8.787C22.0207 8.59567 21.7833 8.5 21.5 8.5C21.2167 8.5 20.9793 8.59567 20.788 8.787C20.596 8.979 20.5 9.21667 20.5 9.5C20.5 9.78333 20.596 10.0207 20.788 10.212C20.9793 10.404 21.2167 10.5 21.5 10.5Z",
+    fill: color
+  }));
+};
+
+HubDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var DrawDs2Icon = function DrawDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M14.5 21C14.2167 21 13.9793 20.904 13.788 20.712C13.596 20.5207 13.5 20.2833 13.5 20C13.5 19.7167 13.596 19.4793 13.788 19.288C13.9793 19.096 14.2167 19 14.5 19C15.2833 19 15.979 18.846 16.587 18.538C17.1957 18.2293 17.5 17.8833 17.5 17.5C17.5 17.2667 17.3917 17.05 17.175 16.85C16.9583 16.65 16.6583 16.4667 16.275 16.3L17.75 14.825C18.2833 15.1417 18.7083 15.5167 19.025 15.95C19.3417 16.3833 19.5 16.9 19.5 17.5C19.5 18.6 18.975 19.4583 17.925 20.075C16.875 20.6917 15.7333 21 14.5 21ZM5.075 13.35C4.59167 13.0667 4.20833 12.7373 3.925 12.362C3.64167 11.9873 3.5 11.5333 3.5 11C3.5 10.3 3.75833 9.71233 4.275 9.237C4.79167 8.76233 5.71667 8.23333 7.05 7.65C8.1 7.16667 8.77067 6.829 9.062 6.637C9.354 6.44567 9.5 6.23333 9.5 6C9.5 5.73333 9.33733 5.5 9.012 5.3C8.68733 5.1 8.18333 5 7.5 5C7.08333 5 6.73333 5.05 6.45 5.15C6.16667 5.25 5.90833 5.41667 5.675 5.65C5.49167 5.83333 5.26667 5.94167 5 5.975C4.73333 6.00833 4.49167 5.93333 4.275 5.75C4.05833 5.58333 3.93333 5.36667 3.9 5.1C3.86667 4.83333 3.94167 4.59167 4.125 4.375C4.44167 3.99167 4.896 3.66667 5.488 3.4C6.07933 3.13333 6.75 3 7.5 3C8.7 3 9.66667 3.27067 10.4 3.812C11.1333 4.354 11.5 5.08333 11.5 6C11.5 6.65 11.2583 7.23333 10.775 7.75C10.2917 8.26667 9.31667 8.84167 7.85 9.475C6.88333 9.89167 6.25 10.2 5.95 10.4C5.65 10.6 5.5 10.8 5.5 11C5.5 11.15 5.59567 11.296 5.787 11.438C5.979 11.5793 6.24167 11.7167 6.575 11.85L5.075 13.35ZM19.35 10.4L15.1 6.15L16.15 5.1C16.55 4.7 17.029 4.5 17.587 4.5C18.1457 4.5 18.6167 4.7 19 5.1L20.4 6.5C20.8 6.88333 21 7.354 21 7.912C21 8.47067 20.8 8.95 20.4 9.35L19.35 10.4ZM6.5 19H7.9L15.1 11.8L13.7 10.4L6.5 17.6V19ZM5 21C4.86667 21 4.75 20.95 4.65 20.85C4.55 20.75 4.5 20.6333 4.5 20.5V16.95C4.5 16.9167 4.55 16.8 4.65 16.6L13.7 7.55L17.95 11.8L8.9 20.85C8.86667 20.8833 8.75 20.9333 8.55 21H5Z",
+    fill: color
+  }));
+};
+
+DrawDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var EditNoteDs2Icon = function EditNoteDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M20.625 15L18.5 12.875L19.225 12.15C19.4083 11.9667 19.6417 11.875 19.925 11.875C20.2083 11.875 20.4417 11.9667 20.625 12.15L21.35 12.875C21.5333 13.0583 21.625 13.2917 21.625 13.575C21.625 13.8583 21.5333 14.0917 21.35 14.275L20.625 15ZM12.5 21V18.875L17.8 13.575L19.925 15.7L14.625 21H12.5ZM3.5 16V14H10.5V16H3.5ZM3.5 12V10H14.5V12H3.5ZM3.5 8V6H14.5V8H3.5Z",
+    fill: color
+  }));
+};
+
+EditNoteDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var EditDs2Icon = function EditDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 19H6.9L15.525 10.375L14.125 8.975L5.5 17.6V19ZM19.8 8.925L15.55 4.725L16.95 3.325C17.3333 2.94167 17.8043 2.75 18.363 2.75C18.921 2.75 19.3917 2.94167 19.775 3.325L21.175 4.725C21.5583 5.10833 21.7583 5.571 21.775 6.113C21.7917 6.65433 21.6083 7.11667 21.225 7.5L19.8 8.925ZM4.5 21C4.21667 21 3.97933 20.904 3.788 20.712C3.596 20.5207 3.5 20.2833 3.5 20V17.175C3.5 17.0417 3.525 16.9127 3.575 16.788C3.625 16.6627 3.7 16.55 3.8 16.45L14.1 6.15L18.35 10.4L8.05 20.7C7.95 20.8 7.83767 20.875 7.713 20.925C7.58767 20.975 7.45833 21 7.325 21H4.5Z",
+    fill: color
+  }));
+};
+
+EditDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var EqualizerDs2Icon = function EqualizerDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 20C5.95 20 5.47933 19.8043 5.088 19.413C4.696 19.021 4.5 18.55 4.5 18V14C4.5 13.45 4.696 12.979 5.088 12.587C5.47933 12.1957 5.95 12 6.5 12C7.05 12 7.52067 12.1957 7.912 12.587C8.304 12.979 8.5 13.45 8.5 14V18C8.5 18.55 8.304 19.021 7.912 19.413C7.52067 19.8043 7.05 20 6.5 20ZM12.5 20C11.95 20 11.4793 19.8043 11.088 19.413C10.696 19.021 10.5 18.55 10.5 18V6C10.5 5.45 10.696 4.97933 11.088 4.588C11.4793 4.196 11.95 4 12.5 4C13.05 4 13.521 4.196 13.913 4.588C14.3043 4.97933 14.5 5.45 14.5 6V18C14.5 18.55 14.3043 19.021 13.913 19.413C13.521 19.8043 13.05 20 12.5 20ZM18.5 20C17.95 20 17.479 19.8043 17.087 19.413C16.6957 19.021 16.5 18.55 16.5 18V11C16.5 10.45 16.6957 9.979 17.087 9.587C17.479 9.19567 17.95 9 18.5 9C19.05 9 19.521 9.19567 19.913 9.587C20.3043 9.979 20.5 10.45 20.5 11V18C20.5 18.55 20.3043 19.021 19.913 19.413C19.521 19.8043 19.05 20 18.5 20Z",
+    fill: color
+  }));
+};
+
+EqualizerDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ErrorDs2Icon = function ErrorDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 13C12.7833 13 13.021 12.904 13.213 12.712C13.4043 12.5207 13.5 12.2833 13.5 12V7.975C13.5 7.69167 13.4043 7.45833 13.213 7.275C13.021 7.09167 12.7833 7 12.5 7C12.2167 7 11.9793 7.09567 11.788 7.287C11.596 7.479 11.5 7.71667 11.5 8V12.025C11.5 12.3083 11.596 12.5417 11.788 12.725C11.9793 12.9083 12.2167 13 12.5 13ZM12.5 17C12.7833 17 13.021 16.904 13.213 16.712C13.4043 16.5207 13.5 16.2833 13.5 16C13.5 15.7167 13.4043 15.479 13.213 15.287C13.021 15.0957 12.7833 15 12.5 15C12.2167 15 11.9793 15.0957 11.788 15.287C11.596 15.479 11.5 15.7167 11.5 16C11.5 16.2833 11.596 16.5207 11.788 16.712C11.9793 16.904 12.2167 17 12.5 17ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+ErrorDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var EuroSymbolDs2Icon = function EuroSymbolDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M15.5 21C13.5333 21 11.7833 20.4417 10.25 19.325C8.71667 18.2083 7.63333 16.7667 7 15H4.5C4.21667 15 3.97933 14.904 3.788 14.712C3.596 14.5207 3.5 14.2833 3.5 14C3.5 13.7167 3.596 13.479 3.788 13.287C3.97933 13.0957 4.21667 13 4.5 13H6.55C6.51667 12.8167 6.5 12.65 6.5 12.5V11.5C6.5 11.35 6.51667 11.1833 6.55 11H4.5C4.21667 11 3.97933 10.904 3.788 10.712C3.596 10.5207 3.5 10.2833 3.5 10C3.5 9.71667 3.596 9.479 3.788 9.287C3.97933 9.09567 4.21667 9 4.5 9H7C7.63333 7.23333 8.71667 5.79167 10.25 4.675C11.7833 3.55833 13.5333 3 15.5 3C16.4167 3 17.2877 3.125 18.113 3.375C18.9377 3.625 19.7083 3.98333 20.425 4.45C20.725 4.65 20.8877 4.93333 20.913 5.3C20.9377 5.66667 20.8083 5.99167 20.525 6.275C20.325 6.475 20.071 6.59167 19.763 6.625C19.4543 6.65833 19.1583 6.59167 18.875 6.425C18.375 6.14167 17.8417 5.91667 17.275 5.75C16.7083 5.58333 16.1167 5.5 15.5 5.5C14.25 5.5 13.1127 5.821 12.088 6.463C11.0627 7.10433 10.2833 7.95 9.75 9H14.5C14.7833 9 15.021 9.09567 15.213 9.287C15.4043 9.479 15.5 9.71667 15.5 10C15.5 10.2833 15.4043 10.5207 15.213 10.712C15.021 10.904 14.7833 11 14.5 11H9.1C9.06667 11.1833 9.04167 11.35 9.025 11.5C9.00833 11.65 9 11.8167 9 12C9 12.1833 9.00833 12.35 9.025 12.5C9.04167 12.65 9.06667 12.8167 9.1 13H14.5C14.7833 13 15.021 13.0957 15.213 13.287C15.4043 13.479 15.5 13.7167 15.5 14C15.5 14.2833 15.4043 14.5207 15.213 14.712C15.021 14.904 14.7833 15 14.5 15H9.75C10.2833 16.05 11.0627 16.896 12.088 17.538C13.1127 18.1793 14.25 18.5 15.5 18.5C16.1 18.5 16.6917 18.4167 17.275 18.25C17.8583 18.0833 18.3917 17.8583 18.875 17.575C19.1583 17.4083 19.45 17.3373 19.75 17.362C20.05 17.3873 20.3083 17.5083 20.525 17.725C20.8083 18.0083 20.9377 18.3333 20.913 18.7C20.8877 19.0667 20.725 19.35 20.425 19.55C19.7083 20.0167 18.9377 20.375 18.113 20.625C17.2877 20.875 16.4167 21 15.5 21Z",
+    fill: color
+  }));
+};
+
+EuroSymbolDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var EventAvailableDs2Icon = function EventAvailableDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M10.75 17.65L8.625 15.525C8.425 15.325 8.325 15.0833 8.325 14.8C8.325 14.5167 8.425 14.275 8.625 14.075C8.825 13.875 9.06667 13.775 9.35 13.775C9.63333 13.775 9.875 13.875 10.075 14.075L11.45 15.45L14.925 11.975C15.125 11.775 15.3667 11.675 15.65 11.675C15.9333 11.675 16.175 11.775 16.375 11.975C16.575 12.175 16.675 12.4167 16.675 12.7C16.675 12.9833 16.575 13.225 16.375 13.425L12.15 17.65C11.95 17.85 11.7167 17.95 11.45 17.95C11.1833 17.95 10.95 17.85 10.75 17.65ZM5.5 22C4.95 22 4.479 21.8043 4.087 21.413C3.69567 21.021 3.5 20.55 3.5 20V6C3.5 5.45 3.69567 4.97933 4.087 4.588C4.479 4.196 4.95 4 5.5 4H6.5V3C6.5 2.71667 6.59567 2.479 6.787 2.287C6.979 2.09567 7.21667 2 7.5 2C7.78333 2 8.021 2.09567 8.213 2.287C8.40433 2.479 8.5 2.71667 8.5 3V4H16.5V3C16.5 2.71667 16.596 2.479 16.788 2.287C16.9793 2.09567 17.2167 2 17.5 2C17.7833 2 18.0207 2.09567 18.212 2.287C18.404 2.479 18.5 2.71667 18.5 3V4H19.5C20.05 4 20.521 4.196 20.913 4.588C21.3043 4.97933 21.5 5.45 21.5 6V20C21.5 20.55 21.3043 21.021 20.913 21.413C20.521 21.8043 20.05 22 19.5 22H5.5ZM5.5 20H19.5V10H5.5V20ZM5.5 8H19.5V6H5.5V8Z",
+    fill: color
+  }));
+};
+
+EventAvailableDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var EventDs2Icon = function EventDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M15 18C14.3 18 13.7083 17.7583 13.225 17.275C12.7417 16.7917 12.5 16.2 12.5 15.5C12.5 14.8 12.7417 14.2083 13.225 13.725C13.7083 13.2417 14.3 13 15 13C15.7 13 16.2917 13.2417 16.775 13.725C17.2583 14.2083 17.5 14.8 17.5 15.5C17.5 16.2 17.2583 16.7917 16.775 17.275C16.2917 17.7583 15.7 18 15 18ZM5.5 22C4.95 22 4.479 21.8043 4.087 21.413C3.69567 21.021 3.5 20.55 3.5 20V6C3.5 5.45 3.69567 4.97933 4.087 4.588C4.479 4.196 4.95 4 5.5 4H6.5V3C6.5 2.71667 6.59567 2.479 6.787 2.287C6.979 2.09567 7.21667 2 7.5 2C7.78333 2 8.021 2.09567 8.213 2.287C8.40433 2.479 8.5 2.71667 8.5 3V4H16.5V3C16.5 2.71667 16.596 2.479 16.788 2.287C16.9793 2.09567 17.2167 2 17.5 2C17.7833 2 18.0207 2.09567 18.212 2.287C18.404 2.479 18.5 2.71667 18.5 3V4H19.5C20.05 4 20.521 4.196 20.913 4.588C21.3043 4.97933 21.5 5.45 21.5 6V20C21.5 20.55 21.3043 21.021 20.913 21.413C20.521 21.8043 20.05 22 19.5 22H5.5ZM5.5 20H19.5V10H5.5V20ZM5.5 8H19.5V6H5.5V8Z",
+    fill: color
+  }));
+};
+
+EventDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ExpandLessDs2Icon = function ExpandLessDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.20005 14.675C7.01672 14.4917 6.92505 14.2584 6.92505 13.975C6.92505 13.6917 7.01672 13.4584 7.20005 13.275L11.8 8.67502C11.9 8.57502 12.0084 8.50402 12.125 8.46202C12.2417 8.42069 12.3667 8.40002 12.5 8.40002C12.6334 8.40002 12.7584 8.42069 12.875 8.46202C12.9917 8.50402 13.1 8.57502 13.2 8.67502L17.825 13.3C18.0084 13.4834 18.1 13.7084 18.1 13.975C18.1 14.2417 18 14.475 17.8 14.675C17.6167 14.8584 17.3834 14.95 17.1 14.95C16.8167 14.95 16.5834 14.8584 16.4 14.675L12.5 10.775L8.57505 14.7C8.39172 14.8834 8.16672 14.975 7.90005 14.975C7.63338 14.975 7.40005 14.875 7.20005 14.675Z",
+    fill: color
+  }));
+};
+
+ExpandLessDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ExploreDs2Icon = function ExploreDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7 17.5L14.5 14L18 6.5L10.5 10L7 17.5ZM12.5 13C12.2167 13 11.9793 12.904 11.788 12.712C11.596 12.5207 11.5 12.2833 11.5 12C11.5 11.7167 11.596 11.479 11.788 11.287C11.9793 11.0957 12.2167 11 12.5 11C12.7833 11 13.021 11.0957 13.213 11.287C13.4043 11.479 13.5 11.7167 13.5 12C13.5 12.2833 13.4043 12.5207 13.213 12.712C13.021 12.904 12.7833 13 12.5 13ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7333 20 16.625 19.225 18.175 17.675C19.725 16.125 20.5 14.2333 20.5 12C20.5 9.76667 19.725 7.875 18.175 6.325C16.625 4.775 14.7333 4 12.5 4C10.2667 4 8.375 4.775 6.825 6.325C5.275 7.875 4.5 9.76667 4.5 12C4.5 14.2333 5.275 16.125 6.825 17.675C8.375 19.225 10.2667 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+ExploreDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FaceDs2Icon = function FaceDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M9.5 14.25C9.15 14.25 8.85433 14.129 8.613 13.887C8.371 13.6457 8.25 13.35 8.25 13C8.25 12.65 8.371 12.3543 8.613 12.113C8.85433 11.871 9.15 11.75 9.5 11.75C9.85 11.75 10.1457 11.871 10.387 12.113C10.629 12.3543 10.75 12.65 10.75 13C10.75 13.35 10.629 13.6457 10.387 13.887C10.1457 14.129 9.85 14.25 9.5 14.25ZM15.5 14.25C15.15 14.25 14.8543 14.129 14.613 13.887C14.371 13.6457 14.25 13.35 14.25 13C14.25 12.65 14.371 12.3543 14.613 12.113C14.8543 11.871 15.15 11.75 15.5 11.75C15.85 11.75 16.1457 11.871 16.387 12.113C16.629 12.3543 16.75 12.65 16.75 13C16.75 13.35 16.629 13.6457 16.387 13.887C16.1457 14.129 15.85 14.25 15.5 14.25ZM12.5 20C14.7333 20 16.625 19.225 18.175 17.675C19.725 16.125 20.5 14.2333 20.5 12C20.5 11.6 20.475 11.2123 20.425 10.837C20.375 10.4623 20.2833 10.1 20.15 9.75C19.8 9.83333 19.45 9.896 19.1 9.938C18.75 9.97933 18.3833 10 18 10C16.4833 10 15.05 9.675 13.7 9.025C12.35 8.375 11.2 7.46667 10.25 6.3C9.71667 7.6 8.95433 8.72933 7.963 9.688C6.971 10.646 5.81667 11.3667 4.5 11.85V12C4.5 14.2333 5.275 16.125 6.825 17.675C8.375 19.225 10.2667 20 12.5 20ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM11.15 4.125C11.85 5.29167 12.8 6.22933 14 6.938C15.2 7.646 16.5333 8 18 8C18.2333 8 18.4583 7.98767 18.675 7.963C18.8917 7.93767 19.1167 7.90833 19.35 7.875C18.65 6.70833 17.7 5.77067 16.5 5.062C15.3 4.354 13.9667 4 12.5 4C12.2667 4 12.0417 4.01233 11.825 4.037C11.6083 4.06233 11.3833 4.09167 11.15 4.125ZM4.925 9.475C5.775 8.99167 6.51667 8.36667 7.15 7.6C7.78333 6.83333 8.25833 5.975 8.575 5.025C7.725 5.50833 6.98333 6.13333 6.35 6.9C5.71667 7.66667 5.24167 8.525 4.925 9.475Z",
+    fill: color
+  }));
+};
+
+FaceDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FavouriteDs2Icon = function FavouriteDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.15 19.8L9.425 18.225C7.65833 16.6083 6.06267 15.004 4.638 13.412C3.21267 11.8207 2.5 10.0667 2.5 8.15C2.5 6.58333 3.025 5.275 4.075 4.225C5.125 3.175 6.43333 2.65 8 2.65C8.88333 2.65 9.71667 2.83733 10.5 3.212C11.2833 3.58733 11.95 4.1 12.5 4.75C13.05 4.1 13.7167 3.58733 14.5 3.212C15.2833 2.83733 16.1167 2.65 17 2.65C18.5667 2.65 19.875 3.175 20.925 4.225C21.975 5.275 22.5 6.58333 22.5 8.15C22.5 10.0667 21.7917 11.825 20.375 13.425C18.9583 15.025 17.35 16.6333 15.55 18.25L13.85 19.8C13.4667 20.1667 13.0167 20.35 12.5 20.35C11.9833 20.35 11.5333 20.1667 11.15 19.8ZM11.55 6.75C11.0667 6.06667 10.55 5.54567 10 5.187C9.45 4.829 8.78333 4.65 8 4.65C7 4.65 6.16667 4.98333 5.5 5.65C4.83333 6.31667 4.5 7.15 4.5 8.15C4.5 9.01667 4.80833 9.93733 5.425 10.912C6.04167 11.8873 6.77933 12.8333 7.638 13.75C8.496 14.6667 9.37933 15.525 10.288 16.325C11.196 17.125 11.9333 17.7833 12.5 18.3C13.0667 17.7833 13.8043 17.125 14.713 16.325C15.621 15.525 16.5043 14.6667 17.363 13.75C18.221 12.8333 18.9583 11.8873 19.575 10.912C20.1917 9.93733 20.5 9.01667 20.5 8.15C20.5 7.15 20.1667 6.31667 19.5 5.65C18.8333 4.98333 18 4.65 17 4.65C16.2167 4.65 15.55 4.829 15 5.187C14.45 5.54567 13.9333 6.06667 13.45 6.75C13.3333 6.91667 13.1917 7.04167 13.025 7.125C12.8583 7.20833 12.6833 7.25 12.5 7.25C12.3167 7.25 12.1417 7.20833 11.975 7.125C11.8083 7.04167 11.6667 6.91667 11.55 6.75Z",
+    fill: color
+  }));
+};
+
+FavouriteDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FileDownloadDs2Icon = function FileDownloadDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 15.575C12.3667 15.575 12.2417 15.554 12.125 15.512C12.0083 15.4707 11.9 15.4 11.8 15.3L8.2 11.7C8.01667 11.5167 7.925 11.2833 7.925 11C7.925 10.7167 8.01667 10.4833 8.2 10.3C8.38333 10.1167 8.62067 10.0207 8.912 10.012C9.204 10.004 9.44167 10.0917 9.625 10.275L11.5 12.15V5C11.5 4.71667 11.596 4.479 11.788 4.287C11.9793 4.09567 12.2167 4 12.5 4C12.7833 4 13.021 4.09567 13.213 4.287C13.4043 4.479 13.5 4.71667 13.5 5V12.15L15.375 10.275C15.5583 10.0917 15.796 10.004 16.088 10.012C16.3793 10.0207 16.6167 10.1167 16.8 10.3C16.9833 10.4833 17.075 10.7167 17.075 11C17.075 11.2833 16.9833 11.5167 16.8 11.7L13.2 15.3C13.1 15.4 12.9917 15.4707 12.875 15.512C12.7583 15.554 12.6333 15.575 12.5 15.575ZM6.5 20C5.95 20 5.47933 19.8043 5.088 19.413C4.696 19.021 4.5 18.55 4.5 18V16C4.5 15.7167 4.59567 15.479 4.787 15.287C4.979 15.0957 5.21667 15 5.5 15C5.78333 15 6.021 15.0957 6.213 15.287C6.40433 15.479 6.5 15.7167 6.5 16V18H18.5V16C18.5 15.7167 18.596 15.479 18.788 15.287C18.9793 15.0957 19.2167 15 19.5 15C19.7833 15 20.0207 15.0957 20.212 15.287C20.404 15.479 20.5 15.7167 20.5 16V18C20.5 18.55 20.3043 19.021 19.913 19.413C19.521 19.8043 19.05 20 18.5 20H6.5Z",
+    fill: color
+  }));
+};
+
+FileDownloadDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FilterAltDs2Icon = function FilterAltDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.5 20C11.2167 20 10.9794 19.904 10.788 19.712C10.596 19.5207 10.5 19.2833 10.5 19V13L4.70003 5.6C4.45003 5.26667 4.4127 4.91667 4.58803 4.55C4.7627 4.18333 5.0667 4 5.50003 4H19.5C19.9334 4 20.2377 4.18333 20.413 4.55C20.5877 4.91667 20.55 5.26667 20.3 5.6L14.5 13V19C14.5 19.2833 14.4044 19.5207 14.213 19.712C14.021 19.904 13.7834 20 13.5 20H11.5ZM12.5 12.3L17.45 6H7.55003L12.5 12.3Z",
+    fill: color
+  }));
+};
+
+FilterAltDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FitnessCenterDs2Icon = function FitnessCenterDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M13.2 21.2C13.0167 21.0167 12.925 20.7833 12.925 20.5C12.925 20.2167 13.0167 19.9833 13.2 19.8L16.05 16.95L7.55 8.45L4.7 11.3C4.5 11.5 4.26667 11.5957 4 11.587C3.73333 11.579 3.5 11.475 3.3 11.275C3.1 11.075 3 10.8373 3 10.562C3 10.2873 3.1 10.05 3.3 9.85L4 9.15L3.3 8.45C3.1 8.25 3 8.01667 3 7.75C3 7.48333 3.1 7.25 3.3 7.05L4.725 5.625L4 4.9C3.8 4.7 3.70433 4.46233 3.713 4.187C3.721 3.91233 3.825 3.675 4.025 3.475C4.225 3.275 4.46267 3.175 4.738 3.175C5.01267 3.175 5.25 3.275 5.45 3.475L6.15 4.2L7.55 2.8C7.75 2.6 7.98333 2.5 8.25 2.5C8.51667 2.5 8.75 2.6 8.95 2.8L9.675 3.525L10.4 2.8C10.5833 2.61667 10.8167 2.525 11.1 2.525C11.3833 2.525 11.6167 2.61667 11.8 2.8C11.9833 2.98333 12.075 3.21667 12.075 3.5C12.075 3.78333 11.9833 4.01667 11.8 4.2L8.95 7.05L17.45 15.55L20.3 12.7C20.5 12.5 20.7377 12.4 21.013 12.4C21.2877 12.4 21.525 12.5 21.725 12.7C21.925 12.9 22.025 13.1373 22.025 13.412C22.025 13.6873 21.925 13.925 21.725 14.125L21 14.85L21.7 15.55C21.9 15.75 22 15.9833 22 16.25C22 16.5167 21.9 16.75 21.7 16.95L20.275 18.375L21 19.1C21.2 19.3 21.3 19.5333 21.3 19.8C21.3 20.0667 21.2 20.3 21 20.5C20.8 20.7 20.5627 20.8 20.288 20.8C20.0127 20.8 19.775 20.7 19.575 20.5L18.85 19.8L17.45 21.2C17.25 21.4 17.0167 21.5 16.75 21.5C16.4833 21.5 16.25 21.4 16.05 21.2L15.325 20.475L14.6 21.2C14.4167 21.3833 14.1833 21.475 13.9 21.475C13.6167 21.475 13.3833 21.3833 13.2 21.2Z",
+    fill: color
+  }));
+};
+
+FitnessCenterDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FlashOnDs2Icon = function FlashOnDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.425 21.4C11.2917 21.6333 11.1043 21.7123 10.863 21.637C10.621 21.5623 10.5 21.4 10.5 21.15V14H8.5C8.21667 14 7.979 13.904 7.787 13.712C7.59567 13.5207 7.5 13.2833 7.5 13V3C7.5 2.71667 7.59567 2.479 7.787 2.287C7.979 2.09567 8.21667 2 8.5 2H15.95C16.3167 2 16.6 2.15 16.8 2.45C17 2.75 17.025 3.06667 16.875 3.4L13.5 11H15.75C16.1333 11 16.425 11.1667 16.625 11.5C16.825 11.8333 16.825 12.1667 16.625 12.5L11.425 21.4Z",
+    fill: color
+  }));
+};
+
+FlashOnDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FolderOpenDs2Icon = function FolderOpenDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 20C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H9.675C9.94167 4 10.196 4.05 10.438 4.15C10.6793 4.25 10.8917 4.39167 11.075 4.575L12.5 6H20.5C21.05 6 21.521 6.196 21.913 6.588C22.3043 6.97933 22.5 7.45 22.5 8H11.675L9.675 6H4.5V18L6.475 11.425C6.60833 10.9917 6.85433 10.6457 7.213 10.387C7.571 10.129 7.96667 10 8.4 10H21.3C21.9833 10 22.521 10.2707 22.913 10.812C23.3043 11.354 23.4083 11.9417 23.225 12.575L21.425 18.575C21.2917 19.0083 21.046 19.3543 20.688 19.613C20.3293 19.871 19.9333 20 19.5 20H4.5ZM6.6 18H19.5L21.3 12H8.4L6.6 18Z",
+    fill: color
+  }));
+};
+
+FolderOpenDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FolderSharedDs2Icon = function FolderSharedDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M15.5 13C16.05 13 16.521 12.804 16.913 12.412C17.3043 12.0207 17.5 11.55 17.5 11C17.5 10.45 17.3043 9.979 16.913 9.587C16.521 9.19567 16.05 9 15.5 9C14.95 9 14.4793 9.19567 14.088 9.587C13.696 9.979 13.5 10.45 13.5 11C13.5 11.55 13.696 12.0207 14.088 12.412C14.4793 12.804 14.95 13 15.5 13ZM11.5 17H19.5V16.45C19.5 15.7 19.1333 15.104 18.4 14.662C17.6667 14.2207 16.7 14 15.5 14C14.3 14 13.3333 14.2207 12.6 14.662C11.8667 15.104 11.5 15.7 11.5 16.45V17ZM4.5 20C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H9.675C9.94167 4 10.196 4.05 10.438 4.15C10.6793 4.25 10.8917 4.39167 11.075 4.575L12.5 6H20.5C21.05 6 21.521 6.196 21.913 6.588C22.3043 6.97933 22.5 7.45 22.5 8V18C22.5 18.55 22.3043 19.021 21.913 19.413C21.521 19.8043 21.05 20 20.5 20H4.5ZM4.5 6V18H20.5V8H11.675L9.675 6H4.5Z",
+    fill: color
+  }));
+};
+
+FolderSharedDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var FolderDs2Icon = function FolderDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5 20C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H9.675C9.94167 4 10.196 4.05 10.438 4.15C10.6793 4.25 10.8917 4.39167 11.075 4.575L12.5 6H20.5C21.05 6 21.521 6.196 21.913 6.588C22.3043 6.97933 22.5 7.45 22.5 8V18C22.5 18.55 22.3043 19.021 21.913 19.413C21.521 19.8043 21.05 20 20.5 20H4.5ZM4.5 6V18H20.5V8H11.675L9.675 6H4.5Z",
+    fill: color
+  }));
+};
+
+FolderDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ChatDs2Icon = function ChatDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 14H13.525C13.8083 14 14.0417 13.904 14.225 13.712C14.4083 13.5207 14.5 13.2833 14.5 13C14.5 12.7167 14.4043 12.479 14.213 12.287C14.021 12.0957 13.7833 12 13.5 12H7.475C7.19167 12 6.95833 12.0957 6.775 12.287C6.59167 12.479 6.5 12.7167 6.5 13C6.5 13.2833 6.59567 13.5207 6.787 13.712C6.979 13.904 7.21667 14 7.5 14ZM7.5 11H17.525C17.8083 11 18.0417 10.904 18.225 10.712C18.4083 10.5207 18.5 10.2833 18.5 10C18.5 9.71667 18.404 9.479 18.212 9.287C18.0207 9.09567 17.7833 9 17.5 9H7.475C7.19167 9 6.95833 9.09567 6.775 9.287C6.59167 9.479 6.5 9.71667 6.5 10C6.5 10.2833 6.59567 10.5207 6.787 10.712C6.979 10.904 7.21667 11 7.5 11ZM7.5 8H17.525C17.8083 8 18.0417 7.90433 18.225 7.713C18.4083 7.521 18.5 7.28333 18.5 7C18.5 6.71667 18.404 6.479 18.212 6.287C18.0207 6.09567 17.7833 6 17.5 6H7.475C7.19167 6 6.95833 6.09567 6.775 6.287C6.59167 6.479 6.5 6.71667 6.5 7C6.5 7.28333 6.59567 7.521 6.787 7.713C6.979 7.90433 7.21667 8 7.5 8ZM2.5 19.575V4C2.5 3.45 2.696 2.979 3.088 2.587C3.47933 2.19567 3.95 2 4.5 2H20.5C21.05 2 21.521 2.19567 21.913 2.587C22.3043 2.979 22.5 3.45 22.5 4V16C22.5 16.55 22.3043 17.021 21.913 17.413C21.521 17.8043 21.05 18 20.5 18H6.5L4.2 20.3C3.88333 20.6167 3.52067 20.6873 3.112 20.512C2.704 20.3373 2.5 20.025 2.5 19.575ZM4.5 17.175L5.675 16H20.5V4H4.5V17.175Z",
+    fill: color
+  }));
+};
+
+ChatDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CheckBoxDs2Icon = function CheckBoxDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H5.5ZM5.5 19H19.5V5H5.5V19ZM11.1 15.775C11.2333 15.775 11.3583 15.7543 11.475 15.713C11.5917 15.671 11.7 15.6 11.8 15.5L17.475 9.825C17.6583 9.64167 17.75 9.41667 17.75 9.15C17.75 8.88333 17.65 8.65 17.45 8.45C17.2667 8.26667 17.0333 8.175 16.75 8.175C16.4667 8.175 16.2333 8.26667 16.05 8.45L11.1 13.4L8.925 11.225C8.74167 11.0417 8.51667 10.95 8.25 10.95C7.98333 10.95 7.75 11.05 7.55 11.25C7.36667 11.4333 7.275 11.6667 7.275 11.95C7.275 12.2333 7.36667 12.4667 7.55 12.65L10.4 15.5C10.5 15.6 10.6083 15.671 10.725 15.713C10.8417 15.7543 10.9667 15.775 11.1 15.775Z",
+    fill: color
+  }));
+};
+
+CheckBoxDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CheckCircleDs2Icon = function CheckCircleDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M11.1 13.8L8.925 11.625C8.74167 11.4417 8.51267 11.3543 8.238 11.363C7.96267 11.371 7.73333 11.4667 7.55 11.65C7.36667 11.8333 7.275 12.0667 7.275 12.35C7.275 12.6333 7.36667 12.8667 7.55 13.05L10.4 15.9C10.5833 16.0833 10.8167 16.175 11.1 16.175C11.3833 16.175 11.6167 16.0833 11.8 15.9L17.475 10.225C17.6583 10.0417 17.746 9.81233 17.738 9.537C17.7293 9.26233 17.6333 9.03333 17.45 8.85C17.2667 8.66667 17.0333 8.575 16.75 8.575C16.4667 8.575 16.2333 8.66667 16.05 8.85L11.1 13.8ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+CheckCircleDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CheckDs2Icon = function CheckDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M10.05 17.575C9.91667 17.575 9.79167 17.554 9.675 17.512C9.55833 17.4707 9.45 17.4 9.35 17.3L5.05 13C4.86667 12.8167 4.779 12.579 4.787 12.287C4.79567 11.9957 4.89167 11.7583 5.075 11.575C5.25833 11.3917 5.49167 11.3 5.775 11.3C6.05833 11.3 6.29167 11.3917 6.475 11.575L10.05 15.15L18.525 6.67499C18.7083 6.49166 18.946 6.39999 19.238 6.39999C19.5293 6.39999 19.7667 6.49166 19.95 6.67499C20.1333 6.85833 20.225 7.09566 20.225 7.38699C20.225 7.67899 20.1333 7.91666 19.95 8.09999L10.75 17.3C10.65 17.4 10.5417 17.4707 10.425 17.512C10.3083 17.554 10.1833 17.575 10.05 17.575Z",
+    fill: color
+  }));
+};
+
+CheckDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ChevronLeftDs2Icon = function ChevronLeftDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M13.8 17.3L9.19999 12.7C9.09999 12.6 9.02932 12.4917 8.98799 12.375C8.94599 12.2583 8.92499 12.1333 8.92499 12C8.92499 11.8667 8.94599 11.7417 8.98799 11.625C9.02932 11.5083 9.09999 11.4 9.19999 11.3L13.8 6.7C13.9833 6.51667 14.2167 6.425 14.5 6.425C14.7833 6.425 15.0167 6.51667 15.2 6.7C15.3833 6.88334 15.475 7.11667 15.475 7.4C15.475 7.68334 15.3833 7.91667 15.2 8.1L11.3 12L15.2 15.9C15.3833 16.0833 15.475 16.3167 15.475 16.6C15.475 16.8833 15.3833 17.1167 15.2 17.3C15.0167 17.4833 14.7833 17.575 14.5 17.575C14.2167 17.575 13.9833 17.4833 13.8 17.3Z",
+    fill: color
+  }));
+};
+
+ChevronLeftDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CircleNotificationsDs2Icon = function CircleNotificationsDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 18.5C12.9167 18.5 13.2707 18.354 13.562 18.062C13.854 17.7707 14 17.4167 14 17H11C11 17.4167 11.146 17.7707 11.438 18.062C11.7293 18.354 12.0833 18.5 12.5 18.5ZM8.525 16H16.525C16.8083 16 17.0417 15.904 17.225 15.712C17.4083 15.5207 17.5 15.2833 17.5 15C17.5 14.7167 17.404 14.479 17.212 14.287C17.0207 14.0957 16.7833 14 16.5 14V11.4C16.5 10.3833 16.2377 9.454 15.713 8.612C15.1877 7.77067 14.45 7.23333 13.5 7V6.5C13.5 6.21667 13.4043 5.979 13.213 5.787C13.021 5.59567 12.7833 5.5 12.5 5.5C12.2167 5.5 11.9793 5.59567 11.788 5.787C11.596 5.979 11.5 6.21667 11.5 6.5V7C10.55 7.23333 9.81267 7.77067 9.288 8.612C8.76267 9.454 8.5 10.3833 8.5 11.4V14C8.21667 14 7.98333 14.0957 7.8 14.287C7.61667 14.479 7.525 14.7167 7.525 15C7.525 15.2833 7.62067 15.5207 7.812 15.712C8.004 15.904 8.24167 16 8.525 16ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20ZM10.5 14V11C10.5 10.45 10.696 9.979 11.088 9.587C11.4793 9.19567 11.95 9 12.5 9C13.05 9 13.521 9.19567 13.913 9.587C14.3043 9.979 14.5 10.45 14.5 11V14H10.5Z",
+    fill: color
+  }));
+};
+
+CircleNotificationsDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CloseDs2Icon = function CloseDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 13.4L7.60005 18.3C7.41672 18.4834 7.18338 18.575 6.90005 18.575C6.61672 18.575 6.38338 18.4834 6.20005 18.3C6.01672 18.1167 5.92505 17.8834 5.92505 17.6C5.92505 17.3167 6.01672 17.0834 6.20005 16.9L11.1 12L6.20005 7.10005C6.01672 6.91672 5.92505 6.68338 5.92505 6.40005C5.92505 6.11672 6.01672 5.88338 6.20005 5.70005C6.38338 5.51672 6.61672 5.42505 6.90005 5.42505C7.18338 5.42505 7.41672 5.51672 7.60005 5.70005L12.5 10.6L17.4 5.70005C17.5834 5.51672 17.8167 5.42505 18.1 5.42505C18.3834 5.42505 18.6167 5.51672 18.8 5.70005C18.9834 5.88338 19.075 6.11672 19.075 6.40005C19.075 6.68338 18.9834 6.91672 18.8 7.10005L13.9 12L18.8 16.9C18.9834 17.0834 19.075 17.3167 19.075 17.6C19.075 17.8834 18.9834 18.1167 18.8 18.3C18.6167 18.4834 18.3834 18.575 18.1 18.575C17.8167 18.575 17.5834 18.4834 17.4 18.3L12.5 13.4Z",
+    fill: color
+  }));
+};
+
+CloseDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ColorizeDs2Icon = function ColorizeDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M3.5 20.9999V16.2499L12.45 7.2999L11 5.8999L12.45 4.4999L14.35 6.3999L17.45 3.2999C17.6333 3.11657 17.8667 3.0249 18.15 3.0249C18.4333 3.0249 18.6667 3.11657 18.85 3.2999L21.2 5.6499C21.3833 5.83324 21.475 6.06657 21.475 6.3499C21.475 6.63324 21.3833 6.86657 21.2 7.0499L18.125 10.1249L20.025 12.0749L18.6 13.4999L17.2 12.0499L8.25 20.9999H3.5ZM5.5 18.9999H7.45L15.75 10.6499L13.85 8.7499L5.5 17.0499V18.9999ZM16.675 8.7499L19.075 6.3499L18.15 5.4249L15.75 7.8249L16.675 8.7499Z",
+    fill: color
+  }));
+};
+
+ColorizeDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ConstructionDs2Icon = function ConstructionDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M18.35 19.9501L13.925 15.5251L16.025 13.4251L20.4501 17.8501C20.7334 18.1334 20.875 18.4834 20.875 18.9001C20.875 19.3168 20.7334 19.6668 20.4501 19.9501C20.1667 20.2334 19.8167 20.3751 19.4 20.3751C18.9834 20.3751 18.6334 20.2334 18.35 19.9501ZM4.55005 19.9501C4.26672 19.6668 4.12505 19.3168 4.12505 18.9001C4.12505 18.4834 4.26672 18.1334 4.55005 17.8501L10.4 12.0001L8.70005 10.3001C8.48338 10.5168 8.24172 10.6168 7.97505 10.6001C7.70838 10.5834 7.48338 10.4834 7.30005 10.3001L6.72505 9.7251V11.7751L6.55005 11.9501C6.40005 12.1001 6.22505 12.1751 6.02505 12.1751C5.82505 12.1751 5.65005 12.1001 5.50005 11.9501L3.52505 9.9751C3.37505 9.8251 3.30005 9.6501 3.30005 9.4501C3.30005 9.2501 3.37505 9.0751 3.52505 8.9251L3.70005 8.7501H5.75005L5.20005 8.2001C5.00005 8.0001 4.90005 7.76676 4.90005 7.5001C4.90005 7.23343 5.00005 7.0001 5.20005 6.8001L8.05005 3.9501C8.38338 3.61676 8.74172 3.3751 9.12505 3.2251C9.50838 3.0751 9.90005 3.0001 10.3 3.0001C10.7 3.0001 11.0917 3.0751 11.475 3.2251C11.8584 3.3751 12.2167 3.61676 12.55 3.9501L10.25 6.2501L10.8 6.8001C10.9834 6.98343 11.0834 7.20843 11.1 7.4751C11.1167 7.74176 11.0167 7.98343 10.8 8.2001L12.5 9.9001L14.75 7.6501C14.6834 7.46676 14.6294 7.2751 14.588 7.0751C14.546 6.8751 14.525 6.6751 14.525 6.4751C14.525 5.49176 14.8627 4.66243 15.538 3.9871C16.2127 3.31243 17.0417 2.9751 18.025 2.9751C18.275 2.9751 18.5127 3.0001 18.738 3.0501C18.9627 3.1001 19.1917 3.1751 19.425 3.2751L16.95 5.7501L18.75 7.5501L21.225 5.0751C21.3417 5.30843 21.421 5.53743 21.463 5.7621C21.5044 5.98743 21.525 6.2251 21.525 6.4751C21.525 7.45843 21.1877 8.28743 20.5131 8.9621C19.8377 9.63743 19.0084 9.9751 18.025 9.9751C17.825 9.9751 17.625 9.95843 17.425 9.9251C17.225 9.89176 17.0334 9.83343 16.85 9.7501L6.65005 19.9501C6.36672 20.2334 6.01672 20.3751 5.60005 20.3751C5.18338 20.3751 4.83338 20.2334 4.55005 19.9501Z",
+    fill: color
+  }));
+};
+
+ConstructionDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ContactPageDs2Icon = function ContactPageDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 14C13.05 14 13.521 13.804 13.913 13.412C14.3043 13.0207 14.5 12.55 14.5 12C14.5 11.45 14.3043 10.979 13.913 10.587C13.521 10.1957 13.05 10 12.5 10C11.95 10 11.4793 10.1957 11.088 10.587C10.696 10.979 10.5 11.45 10.5 12C10.5 12.55 10.696 13.0207 11.088 13.412C11.4793 13.804 11.95 14 12.5 14ZM8.5 18H16.5V17.425C16.5 17.025 16.3917 16.6583 16.175 16.325C15.9583 15.9917 15.6583 15.7417 15.275 15.575C14.8417 15.3917 14.396 15.25 13.938 15.15C13.4793 15.05 13 15 12.5 15C12 15 11.5207 15.05 11.062 15.15C10.604 15.25 10.1583 15.3917 9.725 15.575C9.34167 15.7417 9.04167 15.9917 8.825 16.325C8.60833 16.6583 8.5 17.025 8.5 17.425V18ZM18.5 22H6.5C5.95 22 5.47933 21.8043 5.088 21.413C4.696 21.021 4.5 20.55 4.5 20V4C4.5 3.45 4.696 2.979 5.088 2.587C5.47933 2.19567 5.95 2 6.5 2H13.675C13.9417 2 14.196 2.05 14.438 2.15C14.6793 2.25 14.8917 2.39167 15.075 2.575L19.925 7.425C20.1083 7.60833 20.25 7.82067 20.35 8.062C20.45 8.304 20.5 8.55833 20.5 8.825V20C20.5 20.55 20.3043 21.021 19.913 21.413C19.521 21.8043 19.05 22 18.5 22ZM18.5 20V8.85L13.65 4H6.5V20H18.5Z",
+    fill: color
+  }));
+};
+
+ContactPageDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ContentCopyDs2Icon = function ContentCopyDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M9.5 18C8.95 18 8.47933 17.8043 8.088 17.413C7.696 17.021 7.5 16.55 7.5 16V4C7.5 3.45 7.696 2.979 8.088 2.587C8.47933 2.19567 8.95 2 9.5 2H18.5C19.05 2 19.521 2.19567 19.913 2.587C20.3043 2.979 20.5 3.45 20.5 4V16C20.5 16.55 20.3043 17.021 19.913 17.413C19.521 17.8043 19.05 18 18.5 18H9.5ZM9.5 16H18.5V4H9.5V16ZM5.5 22C4.95 22 4.479 21.8043 4.087 21.413C3.69567 21.021 3.5 20.55 3.5 20V7C3.5 6.71667 3.596 6.479 3.788 6.287C3.97933 6.09567 4.21667 6 4.5 6C4.78333 6 5.021 6.09567 5.213 6.287C5.40433 6.479 5.5 6.71667 5.5 7V20H15.5C15.7833 20 16.021 20.096 16.213 20.288C16.4043 20.4793 16.5 20.7167 16.5 21C16.5 21.2833 16.4043 21.5207 16.213 21.712C16.021 21.904 15.7833 22 15.5 22H5.5Z",
+    fill: color
+  }));
+};
+
+ContentCopyDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ContentPasteDs2Icon = function ContentPasteDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 5C12.7833 5 13.021 4.904 13.213 4.712C13.4043 4.52067 13.5 4.28333 13.5 4C13.5 3.71667 13.4043 3.479 13.213 3.287C13.021 3.09567 12.7833 3 12.5 3C12.2167 3 11.9793 3.09567 11.788 3.287C11.596 3.479 11.5 3.71667 11.5 4C11.5 4.28333 11.596 4.52067 11.788 4.712C11.9793 4.904 12.2167 5 12.5 5ZM5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H9.675C9.85833 2.41667 10.2167 1.93733 10.75 1.562C11.2833 1.18733 11.8667 1 12.5 1C13.1667 1 13.7627 1.18733 14.288 1.562C14.8127 1.93733 15.1667 2.41667 15.35 3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H5.5ZM5.5 19H19.5V5H17.5V6C17.5 6.55 17.3043 7.02067 16.913 7.412C16.521 7.804 16.05 8 15.5 8H9.5C8.95 8 8.47933 7.804 8.088 7.412C7.696 7.02067 7.5 6.55 7.5 6V5H5.5V19Z",
+    fill: color
+  }));
+};
+
+ContentPasteDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ControlPointDuplicateDs2Icon = function ControlPointDuplicateDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M15.5 16C15.7833 16 16.021 15.904 16.213 15.712C16.4043 15.5207 16.5 15.2833 16.5 15V13H18.5C18.7833 13 19.0207 12.904 19.212 12.712C19.404 12.5207 19.5 12.2833 19.5 12C19.5 11.7167 19.404 11.479 19.212 11.287C19.0207 11.0957 18.7833 11 18.5 11H16.5V9C16.5 8.71667 16.4043 8.479 16.213 8.287C16.021 8.09567 15.7833 8 15.5 8C15.2167 8 14.9793 8.09567 14.788 8.287C14.596 8.479 14.5 8.71667 14.5 9V11H12.5C12.2167 11 11.9793 11.0957 11.788 11.287C11.596 11.479 11.5 11.7167 11.5 12C11.5 12.2833 11.596 12.5207 11.788 12.712C11.9793 12.904 12.2167 13 12.5 13H14.5V15C14.5 15.2833 14.596 15.5207 14.788 15.712C14.9793 15.904 15.2167 16 15.5 16ZM4.925 19.775C3.59167 19.025 2.521 17.9583 1.713 16.575C0.904333 15.1917 0.5 13.6667 0.5 12C0.5 10.3333 0.912667 8.804 1.738 7.412C2.56267 6.02067 3.68333 4.925 5.1 4.125C5.43333 3.94167 5.75 3.95833 6.05 4.175C6.35 4.39167 6.5 4.69167 6.5 5.075C6.5 5.24167 6.45 5.41667 6.35 5.6C6.25 5.78333 6.11667 5.91667 5.95 6C4.88333 6.63333 4.04167 7.479 3.425 8.537C2.80833 9.59567 2.5 10.75 2.5 12C2.5 13.25 2.80833 14.4043 3.425 15.463C4.04167 16.521 4.88333 17.3667 5.95 18C6.11667 18.0833 6.25 18.2167 6.35 18.4C6.45 18.5833 6.5 18.7667 6.5 18.95C6.5 19.3333 6.34167 19.625 6.025 19.825C5.70833 20.025 5.34167 20.0083 4.925 19.775ZM15.5 21C14.25 21 13.0793 20.7627 11.988 20.288C10.896 19.8127 9.946 19.1707 9.138 18.362C8.32933 17.554 7.68767 16.604 7.213 15.512C6.73767 14.4207 6.5 13.25 6.5 12C6.5 10.75 6.73767 9.579 7.213 8.487C7.68767 7.39567 8.32933 6.44567 9.138 5.637C9.946 4.829 10.896 4.18733 11.988 3.712C13.0793 3.23733 14.25 3 15.5 3C16.75 3 17.921 3.23733 19.013 3.712C20.1043 4.18733 21.0543 4.829 21.863 5.637C22.671 6.44567 23.3127 7.39567 23.788 8.487C24.2627 9.579 24.5 10.75 24.5 12C24.5 13.25 24.2627 14.4207 23.788 15.512C23.3127 16.604 22.671 17.554 21.863 18.362C21.0543 19.1707 20.1043 19.8127 19.013 20.288C17.921 20.7627 16.75 21 15.5 21ZM15.5 19C17.45 19 19.104 18.3207 20.462 16.962C21.8207 15.604 22.5 13.95 22.5 12C22.5 10.05 21.8207 8.39567 20.462 7.037C19.104 5.679 17.45 5 15.5 5C13.55 5 11.896 5.679 10.538 7.037C9.17933 8.39567 8.5 10.05 8.5 12C8.5 13.95 9.17933 15.604 10.538 16.962C11.896 18.3207 13.55 19 15.5 19Z",
+    fill: color
+  }));
+};
+
+ControlPointDuplicateDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CreditCardDs2Icon = function CreditCardDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M22.5 6V18C22.5 18.55 22.3043 19.021 21.913 19.413C21.521 19.8043 21.05 20 20.5 20H4.5C3.95 20 3.47933 19.8043 3.088 19.413C2.696 19.021 2.5 18.55 2.5 18V6C2.5 5.45 2.696 4.97933 3.088 4.588C3.47933 4.196 3.95 4 4.5 4H20.5C21.05 4 21.521 4.196 21.913 4.588C22.3043 4.97933 22.5 5.45 22.5 6ZM4.5 8H20.5V6H4.5V8ZM4.5 12V18H20.5V12H4.5Z",
+    fill: color
+  }));
+};
+
+CreditCardDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var DeleteDs2Icon = function DeleteDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 21C6.95 21 6.47933 20.8043 6.088 20.413C5.696 20.021 5.5 19.55 5.5 19V6C5.21667 6 4.979 5.90433 4.787 5.713C4.59567 5.521 4.5 5.28333 4.5 5C4.5 4.71667 4.59567 4.479 4.787 4.287C4.979 4.09567 5.21667 4 5.5 4H9.5C9.5 3.71667 9.596 3.479 9.788 3.287C9.97933 3.09567 10.2167 3 10.5 3H14.5C14.7833 3 15.021 3.09567 15.213 3.287C15.4043 3.479 15.5 3.71667 15.5 4H19.5C19.7833 4 20.0207 4.09567 20.212 4.287C20.404 4.479 20.5 4.71667 20.5 5C20.5 5.28333 20.404 5.521 20.212 5.713C20.0207 5.90433 19.7833 6 19.5 6V19C19.5 19.55 19.3043 20.021 18.913 20.413C18.521 20.8043 18.05 21 17.5 21H7.5ZM7.5 6V19H17.5V6H7.5ZM9.5 16C9.5 16.2833 9.596 16.5207 9.788 16.712C9.97933 16.904 10.2167 17 10.5 17C10.7833 17 11.021 16.904 11.213 16.712C11.4043 16.5207 11.5 16.2833 11.5 16V9C11.5 8.71667 11.4043 8.479 11.213 8.287C11.021 8.09567 10.7833 8 10.5 8C10.2167 8 9.97933 8.09567 9.788 8.287C9.596 8.479 9.5 8.71667 9.5 9V16ZM13.5 16C13.5 16.2833 13.596 16.5207 13.788 16.712C13.9793 16.904 14.2167 17 14.5 17C14.7833 17 15.021 16.904 15.213 16.712C15.4043 16.5207 15.5 16.2833 15.5 16V9C15.5 8.71667 15.4043 8.479 15.213 8.287C15.021 8.09567 14.7833 8 14.5 8C14.2167 8 13.9793 8.09567 13.788 8.287C13.596 8.479 13.5 8.71667 13.5 9V16Z",
+    fill: color
+  }));
+};
+
+DeleteDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var DescriptionDs2Icon = function DescriptionDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M9.5 18H15.5C15.7833 18 16.021 17.904 16.213 17.712C16.4043 17.5207 16.5 17.2833 16.5 17C16.5 16.7167 16.4043 16.4793 16.213 16.288C16.021 16.096 15.7833 16 15.5 16H9.5C9.21667 16 8.97933 16.096 8.788 16.288C8.596 16.4793 8.5 16.7167 8.5 17C8.5 17.2833 8.596 17.5207 8.788 17.712C8.97933 17.904 9.21667 18 9.5 18ZM9.5 14H15.5C15.7833 14 16.021 13.904 16.213 13.712C16.4043 13.5207 16.5 13.2833 16.5 13C16.5 12.7167 16.4043 12.479 16.213 12.287C16.021 12.0957 15.7833 12 15.5 12H9.5C9.21667 12 8.97933 12.0957 8.788 12.287C8.596 12.479 8.5 12.7167 8.5 13C8.5 13.2833 8.596 13.5207 8.788 13.712C8.97933 13.904 9.21667 14 9.5 14ZM6.5 22C5.95 22 5.47933 21.8043 5.088 21.413C4.696 21.021 4.5 20.55 4.5 20V4C4.5 3.45 4.696 2.979 5.088 2.587C5.47933 2.19567 5.95 2 6.5 2H13.675C13.9417 2 14.196 2.05 14.438 2.15C14.6793 2.25 14.8917 2.39167 15.075 2.575L19.925 7.425C20.1083 7.60833 20.25 7.82067 20.35 8.062C20.45 8.304 20.5 8.55833 20.5 8.825V20C20.5 20.55 20.3043 21.021 19.913 21.413C19.521 21.8043 19.05 22 18.5 22H6.5ZM13.5 8V4H6.5V20H18.5V9H14.5C14.2167 9 13.9793 8.904 13.788 8.712C13.596 8.52067 13.5 8.28333 13.5 8Z",
+    fill: color
+  }));
+};
+
+DescriptionDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var DoNotDisturbOnDs2Icon = function DoNotDisturbOnDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M8.5 13H16.525C16.8083 13 17.0417 12.904 17.225 12.712C17.4083 12.5207 17.5 12.2833 17.5 12C17.5 11.7167 17.404 11.479 17.212 11.287C17.0207 11.0957 16.7833 11 16.5 11H8.475C8.19167 11 7.95833 11.0957 7.775 11.287C7.59167 11.479 7.5 11.7167 7.5 12C7.5 12.2833 7.59567 12.5207 7.787 12.712C7.979 12.904 8.21667 13 8.5 13ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+DoNotDisturbOnDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var DoneAllDs2Icon = function DoneAllDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.2 17.6C7.06667 17.6 6.94167 17.575 6.825 17.525C6.70833 17.475 6.6 17.4 6.5 17.3L2.275 13.075C2.09167 12.8917 2 12.654 2 12.362C2 12.0707 2.09167 11.8334 2.275 11.65C2.45833 11.4667 2.69167 11.375 2.975 11.375C3.25833 11.375 3.49167 11.4667 3.675 11.65L8.625 16.6L7.9 17.3C7.8 17.4 7.69167 17.475 7.575 17.525C7.45833 17.575 7.33333 17.6 7.2 17.6ZM12.85 17.575C12.7167 17.575 12.5917 17.554 12.475 17.512C12.3583 17.4707 12.25 17.4 12.15 17.3L7.9 13.05C7.71667 12.8667 7.625 12.629 7.625 12.337C7.625 12.0457 7.71667 11.8084 7.9 11.625C8.08333 11.4417 8.31667 11.35 8.6 11.35C8.88333 11.35 9.11667 11.4417 9.3 11.625L12.85 15.175L21.35 6.67502C21.5333 6.49169 21.7667 6.40002 22.05 6.40002C22.3333 6.40002 22.5667 6.49169 22.75 6.67502C22.9333 6.85836 23.025 7.09569 23.025 7.38702C23.025 7.67902 22.9333 7.91669 22.75 8.10002L13.55 17.3C13.45 17.4 13.3417 17.4707 13.225 17.512C13.1083 17.554 12.9833 17.575 12.85 17.575ZM12.85 12.35L11.425 10.95L15.675 6.70002C15.8583 6.51669 16.0957 6.42502 16.387 6.42502C16.679 6.42502 16.9167 6.51669 17.1 6.70002C17.2833 6.88336 17.375 7.11669 17.375 7.40002C17.375 7.68336 17.2833 7.91669 17.1 8.10002L12.85 12.35Z",
+    fill: color
+  }));
+};
+
+DoneAllDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var DraftDs2Icon = function DraftDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 22C5.95 22 5.47933 21.8043 5.088 21.413C4.696 21.021 4.5 20.55 4.5 20V4C4.5 3.45 4.696 2.979 5.088 2.587C5.47933 2.19567 5.95 2 6.5 2H13.675C13.9417 2 14.196 2.05 14.438 2.15C14.6793 2.25 14.8917 2.39167 15.075 2.575L19.925 7.425C20.1083 7.60833 20.25 7.82067 20.35 8.062C20.45 8.304 20.5 8.55833 20.5 8.825V20C20.5 20.55 20.3043 21.021 19.913 21.413C19.521 21.8043 19.05 22 18.5 22H6.5ZM13.5 8V4H6.5V20H18.5V9H14.5C14.2167 9 13.9793 8.904 13.788 8.712C13.596 8.52067 13.5 8.28333 13.5 8Z",
+    fill: color
+  }));
+};
+
+DraftDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AddCircleDs2Icon = function AddCircleDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 17C12.7833 17 13.021 16.904 13.213 16.712C13.4043 16.5207 13.5 16.2833 13.5 16V13H16.525C16.8083 13 17.0417 12.904 17.225 12.712C17.4083 12.5207 17.5 12.2833 17.5 12C17.5 11.7167 17.404 11.479 17.212 11.287C17.0207 11.0957 16.7833 11 16.5 11H13.5V7.975C13.5 7.69167 13.4043 7.45833 13.213 7.275C13.021 7.09167 12.7833 7 12.5 7C12.2167 7 11.9793 7.09567 11.788 7.287C11.596 7.479 11.5 7.71667 11.5 8V11H8.475C8.19167 11 7.95833 11.0957 7.775 11.287C7.59167 11.479 7.5 11.7167 7.5 12C7.5 12.2833 7.59567 12.5207 7.787 12.712C7.979 12.904 8.21667 13 8.5 13H11.5V16.025C11.5 16.3083 11.596 16.5417 11.788 16.725C11.9793 16.9083 12.2167 17 12.5 17ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+AddCircleDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AddDs2Icon = function AddDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 19C12.2167 19 11.9793 18.904 11.788 18.712C11.596 18.5207 11.5 18.2833 11.5 18V13H6.5C6.21667 13 5.979 12.904 5.787 12.712C5.59567 12.5207 5.5 12.2833 5.5 12C5.5 11.7167 5.59567 11.479 5.787 11.287C5.979 11.0957 6.21667 11 6.5 11H11.5V6C11.5 5.71667 11.596 5.479 11.788 5.287C11.9793 5.09567 12.2167 5 12.5 5C12.7833 5 13.021 5.09567 13.213 5.287C13.4043 5.479 13.5 5.71667 13.5 6V11H18.5C18.7833 11 19.0207 11.0957 19.212 11.287C19.404 11.479 19.5 11.7167 19.5 12C19.5 12.2833 19.404 12.5207 19.212 12.712C19.0207 12.904 18.7833 13 18.5 13H13.5V18C13.5 18.2833 13.4043 18.5207 13.213 18.712C13.021 18.904 12.7833 19 12.5 19Z",
+    fill: color
+  }));
+};
+
+AddDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AddsClickDs2Icon = function AddsClickDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.05 17.85C10.45 17.7666 9.09998 17.15 7.99998 16C6.89998 14.85 6.34998 13.4666 6.34998 11.85C6.34998 10.1833 6.93331 8.76664 8.09998 7.59998C9.26664 6.43331 10.6833 5.84998 12.35 5.84998C13.9666 5.84998 15.35 6.39998 16.5 7.49998C17.65 8.59998 18.2666 9.94998 18.35 11.55L16.25 10.925C16.0333 10.025 15.5666 9.28764 14.85 8.71298C14.1333 8.13764 13.3 7.84998 12.35 7.84998C11.25 7.84998 10.3083 8.24164 9.52498 9.02498C8.74164 9.80831 8.34998 10.75 8.34998 11.85C8.34998 12.8 8.63764 13.6333 9.21298 14.35C9.78764 15.0666 10.525 15.5333 11.425 15.75L12.05 17.85ZM12.35 21.85C10.9666 21.85 9.66664 21.5873 8.44998 21.062C7.23331 20.5373 6.17498 19.825 5.27498 18.925C4.37498 18.025 3.66264 16.9666 3.13798 15.75C2.61264 14.5333 2.34998 13.2333 2.34998 11.85C2.34998 10.4666 2.61264 9.16664 3.13798 7.94998C3.66264 6.73331 4.37498 5.67498 5.27498 4.77498C6.17498 3.87498 7.23331 3.16231 8.44998 2.63698C9.66664 2.11231 10.9666 1.84998 12.35 1.84998C13.7333 1.84998 15.0333 2.11231 16.25 2.63698C17.4666 3.16231 18.525 3.87498 19.425 4.77498C20.325 5.67498 21.0373 6.73331 21.562 7.94998C22.0873 9.16664 22.35 10.4666 22.35 11.85V12.3C22.35 12.45 22.3333 12.6 22.3 12.75L20.35 12.15V11.85C20.35 9.61664 19.575 7.72498 18.025 6.17498C16.475 4.62498 14.5833 3.84998 12.35 3.84998C10.1166 3.84998 8.22498 4.62498 6.67498 6.17498C5.12498 7.72498 4.34998 9.61664 4.34998 11.85C4.34998 14.0833 5.12498 15.975 6.67498 17.525C8.22498 19.075 10.1166 19.85 12.35 19.85H12.65L13.25 21.8C13.1 21.8333 12.95 21.85 12.8 21.85H12.35ZM20.525 22L16.6 18.075L15.85 20.35C15.7666 20.5833 15.6083 20.6956 15.375 20.687C15.1416 20.679 14.9833 20.5583 14.9 20.325L12.625 12.75C12.5583 12.5666 12.6 12.4 12.75 12.25C12.9 12.1 13.0666 12.0583 13.25 12.125L20.825 14.4C21.0583 14.4833 21.1793 14.6416 21.188 14.875C21.196 15.1083 21.0833 15.2666 20.85 15.35L18.575 16.1L22.5 20.025C22.6 20.125 22.65 20.2416 22.65 20.375C22.65 20.5083 22.6 20.625 22.5 20.725L21.225 22C21.125 22.1 21.0083 22.15 20.875 22.15C20.7416 22.15 20.625 22.1 20.525 22Z",
+    fill: color
+  }));
+};
+
+AddsClickDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AlarmDs2Icon = function AlarmDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.4999 22C11.2499 22 10.0792 21.7627 8.9879 21.288C7.8959 20.8127 6.9459 20.1707 6.1379 19.362C5.32924 18.554 4.68724 17.604 4.2119 16.512C3.73724 15.4207 3.4999 14.25 3.4999 13C3.4999 11.75 3.73724 10.579 4.2119 9.487C4.68724 8.39567 5.32924 7.44567 6.1379 6.637C6.9459 5.829 7.8959 5.18767 8.9879 4.713C10.0792 4.23767 11.2499 4 12.4999 4C13.7499 4 14.9209 4.23767 16.0129 4.713C17.1042 5.18767 18.0542 5.829 18.8629 6.637C19.6709 7.44567 20.3126 8.39567 20.7879 9.487C21.2626 10.579 21.4999 11.75 21.4999 13C21.4999 14.25 21.2626 15.4207 20.7879 16.512C20.3126 17.604 19.6709 18.554 18.8629 19.362C18.0542 20.1707 17.1042 20.8127 16.0129 21.288C14.9209 21.7627 13.7499 22 12.4999 22ZM11.4999 9V12.975C11.4999 13.1083 11.5249 13.2373 11.5749 13.362C11.6249 13.4873 11.6999 13.6 11.7999 13.7L14.6249 16.525C14.8082 16.7083 15.0332 16.8 15.2999 16.8C15.5666 16.8 15.7999 16.7 15.9999 16.5C16.1832 16.3167 16.2749 16.0833 16.2749 15.8C16.2749 15.5167 16.1832 15.2833 15.9999 15.1L13.4999 12.6V8.975C13.4999 8.69167 13.4042 8.45833 13.2129 8.275C13.0209 8.09167 12.7832 8 12.4999 8C12.2166 8 11.9792 8.09567 11.7879 8.287C11.5959 8.479 11.4999 8.71667 11.4999 9ZM3.9249 7.325C3.74157 7.50833 3.51657 7.6 3.2499 7.6C2.98324 7.6 2.7499 7.5 2.5499 7.3C2.36657 7.11667 2.2749 6.88333 2.2749 6.6C2.2749 6.31667 2.36657 6.08333 2.5499 5.9L5.4249 3.025C5.60824 2.84167 5.83324 2.75 6.0999 2.75C6.36657 2.75 6.5999 2.85 6.7999 3.05C6.98324 3.23333 7.0749 3.46667 7.0749 3.75C7.0749 4.03333 6.98324 4.26667 6.7999 4.45L3.9249 7.325ZM21.0499 7.3L18.1749 4.425C17.9916 4.24167 17.8999 4.01667 17.8999 3.75C17.8999 3.48333 17.9999 3.25 18.1999 3.05C18.3832 2.86667 18.6166 2.775 18.8999 2.775C19.1832 2.775 19.4166 2.86667 19.5999 3.05L22.4749 5.925C22.6582 6.10833 22.7499 6.33333 22.7499 6.6C22.7499 6.86667 22.6499 7.1 22.4499 7.3C22.2666 7.48333 22.0332 7.575 21.7499 7.575C21.4666 7.575 21.2332 7.48333 21.0499 7.3ZM12.4999 20C14.4499 20 16.1039 19.3207 17.4619 17.962C18.8206 16.604 19.4999 14.95 19.4999 13C19.4999 11.05 18.8206 9.39567 17.4619 8.037C16.1039 6.679 14.4499 6 12.4999 6C10.5499 6 8.8959 6.679 7.5379 8.037C6.17924 9.39567 5.4999 11.05 5.4999 13C5.4999 14.95 6.17924 16.604 7.5379 17.962C8.8959 19.3207 10.5499 20 12.4999 20Z",
+    fill: color
+  }));
+};
+
+AlarmDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AnalyticsDs2Icon = function AnalyticsDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H5.5ZM5.5 19H19.5V5H5.5V19ZM8.5 17C8.78333 17 9.021 16.904 9.213 16.712C9.40433 16.5207 9.5 16.2833 9.5 16V13C9.5 12.7167 9.40433 12.479 9.213 12.287C9.021 12.0957 8.78333 12 8.5 12C8.21667 12 7.979 12.0957 7.787 12.287C7.59567 12.479 7.5 12.7167 7.5 13V16C7.5 16.2833 7.59567 16.5207 7.787 16.712C7.979 16.904 8.21667 17 8.5 17ZM16.5 17C16.7833 17 17.0207 16.904 17.212 16.712C17.404 16.5207 17.5 16.2833 17.5 16V8C17.5 7.71667 17.404 7.479 17.212 7.287C17.0207 7.09567 16.7833 7 16.5 7C16.2167 7 15.9793 7.09567 15.788 7.287C15.596 7.479 15.5 7.71667 15.5 8V16C15.5 16.2833 15.596 16.5207 15.788 16.712C15.9793 16.904 16.2167 17 16.5 17ZM12.5 17C12.7833 17 13.021 16.904 13.213 16.712C13.4043 16.5207 13.5 16.2833 13.5 16V15C13.5 14.7167 13.4043 14.479 13.213 14.287C13.021 14.0957 12.7833 14 12.5 14C12.2167 14 11.9793 14.0957 11.788 14.287C11.596 14.479 11.5 14.7167 11.5 15V16C11.5 16.2833 11.596 16.5207 11.788 16.712C11.9793 16.904 12.2167 17 12.5 17ZM12.5 12C12.7833 12 13.021 11.904 13.213 11.712C13.4043 11.5207 13.5 11.2833 13.5 11C13.5 10.7167 13.4043 10.479 13.213 10.287C13.021 10.0957 12.7833 10 12.5 10C12.2167 10 11.9793 10.0957 11.788 10.287C11.596 10.479 11.5 10.7167 11.5 11C11.5 11.2833 11.596 11.5207 11.788 11.712C11.9793 11.904 12.2167 12 12.5 12Z",
+    fill: color
+  }));
+};
+
+AnalyticsDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ApartmentDs2Icon = function ApartmentDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V9C3.5 8.45 3.69567 7.979 4.087 7.587C4.479 7.19567 4.95 7 5.5 7H7.5V5C7.5 4.45 7.696 3.979 8.088 3.587C8.47933 3.19567 8.95 3 9.5 3H15.5C16.05 3 16.521 3.19567 16.913 3.587C17.3043 3.979 17.5 4.45 17.5 5V11H19.5C20.05 11 20.521 11.1957 20.913 11.587C21.3043 11.979 21.5 12.45 21.5 13V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H13.5V17H11.5V21H5.5ZM5.5 19H7.5V17H5.5V19ZM5.5 15H7.5V13H5.5V15ZM5.5 11H7.5V9H5.5V11ZM9.5 15H11.5V13H9.5V15ZM9.5 11H11.5V9H9.5V11ZM9.5 7H11.5V5H9.5V7ZM13.5 15H15.5V13H13.5V15ZM13.5 11H15.5V9H13.5V11ZM13.5 7H15.5V5H13.5V7ZM17.5 19H19.5V17H17.5V19ZM17.5 15H19.5V13H17.5V15Z",
+    fill: color
+  }));
+};
+
+ApartmentDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AppsDs2Icon = function AppsDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 20C5.95 20 5.47933 19.8043 5.088 19.413C4.696 19.021 4.5 18.55 4.5 18C4.5 17.45 4.696 16.979 5.088 16.587C5.47933 16.1957 5.95 16 6.5 16C7.05 16 7.52067 16.1957 7.912 16.587C8.304 16.979 8.5 17.45 8.5 18C8.5 18.55 8.304 19.021 7.912 19.413C7.52067 19.8043 7.05 20 6.5 20ZM12.5 20C11.95 20 11.4793 19.8043 11.088 19.413C10.696 19.021 10.5 18.55 10.5 18C10.5 17.45 10.696 16.979 11.088 16.587C11.4793 16.1957 11.95 16 12.5 16C13.05 16 13.521 16.1957 13.913 16.587C14.3043 16.979 14.5 17.45 14.5 18C14.5 18.55 14.3043 19.021 13.913 19.413C13.521 19.8043 13.05 20 12.5 20ZM18.5 20C17.95 20 17.479 19.8043 17.087 19.413C16.6957 19.021 16.5 18.55 16.5 18C16.5 17.45 16.6957 16.979 17.087 16.587C17.479 16.1957 17.95 16 18.5 16C19.05 16 19.521 16.1957 19.913 16.587C20.3043 16.979 20.5 17.45 20.5 18C20.5 18.55 20.3043 19.021 19.913 19.413C19.521 19.8043 19.05 20 18.5 20ZM6.5 14C5.95 14 5.47933 13.804 5.088 13.412C4.696 13.0207 4.5 12.55 4.5 12C4.5 11.45 4.696 10.979 5.088 10.587C5.47933 10.1957 5.95 10 6.5 10C7.05 10 7.52067 10.1957 7.912 10.587C8.304 10.979 8.5 11.45 8.5 12C8.5 12.55 8.304 13.0207 7.912 13.412C7.52067 13.804 7.05 14 6.5 14ZM12.5 14C11.95 14 11.4793 13.804 11.088 13.412C10.696 13.0207 10.5 12.55 10.5 12C10.5 11.45 10.696 10.979 11.088 10.587C11.4793 10.1957 11.95 10 12.5 10C13.05 10 13.521 10.1957 13.913 10.587C14.3043 10.979 14.5 11.45 14.5 12C14.5 12.55 14.3043 13.0207 13.913 13.412C13.521 13.804 13.05 14 12.5 14ZM18.5 14C17.95 14 17.479 13.804 17.087 13.412C16.6957 13.0207 16.5 12.55 16.5 12C16.5 11.45 16.6957 10.979 17.087 10.587C17.479 10.1957 17.95 10 18.5 10C19.05 10 19.521 10.1957 19.913 10.587C20.3043 10.979 20.5 11.45 20.5 12C20.5 12.55 20.3043 13.0207 19.913 13.412C19.521 13.804 19.05 14 18.5 14ZM6.5 8C5.95 8 5.47933 7.804 5.088 7.412C4.696 7.02067 4.5 6.55 4.5 6C4.5 5.45 4.696 4.97933 5.088 4.588C5.47933 4.196 5.95 4 6.5 4C7.05 4 7.52067 4.196 7.912 4.588C8.304 4.97933 8.5 5.45 8.5 6C8.5 6.55 8.304 7.02067 7.912 7.412C7.52067 7.804 7.05 8 6.5 8ZM12.5 8C11.95 8 11.4793 7.804 11.088 7.412C10.696 7.02067 10.5 6.55 10.5 6C10.5 5.45 10.696 4.97933 11.088 4.588C11.4793 4.196 11.95 4 12.5 4C13.05 4 13.521 4.196 13.913 4.588C14.3043 4.97933 14.5 5.45 14.5 6C14.5 6.55 14.3043 7.02067 13.913 7.412C13.521 7.804 13.05 8 12.5 8ZM18.5 8C17.95 8 17.479 7.804 17.087 7.412C16.6957 7.02067 16.5 6.55 16.5 6C16.5 5.45 16.6957 4.97933 17.087 4.588C17.479 4.196 17.95 4 18.5 4C19.05 4 19.521 4.196 19.913 4.588C20.3043 4.97933 20.5 5.45 20.5 6C20.5 6.55 20.3043 7.02067 19.913 7.412C19.521 7.804 19.05 8 18.5 8Z",
+    fill: color
+  }));
+};
+
+AppsDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ArrowForwardIosDs2Icon = function ArrowForwardIosDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.65002 21.1C7.40002 20.85 7.27502 20.554 7.27502 20.212C7.27502 19.8707 7.40002 19.575 7.65002 19.325L14.975 12L7.62502 4.65C7.39169 4.41667 7.27502 4.125 7.27502 3.775C7.27502 3.425 7.40002 3.125 7.65002 2.875C7.90002 2.625 8.19602 2.5 8.53802 2.5C8.87936 2.5 9.17502 2.625 9.42502 2.875L17.825 11.3C17.925 11.4 17.996 11.5083 18.038 11.625C18.0794 11.7417 18.1 11.8667 18.1 12C18.1 12.1333 18.0794 12.2583 18.038 12.375C17.996 12.4917 17.925 12.6 17.825 12.7L9.40002 21.125C9.16669 21.3583 8.87936 21.475 8.53802 21.475C8.19602 21.475 7.90002 21.35 7.65002 21.1Z",
+    fill: color
+  }));
+};
+
+ArrowForwardIosDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AssignmentIndDs2Icon = function AssignmentIndDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M5.5 21C4.95 21 4.479 20.8043 4.087 20.413C3.69567 20.021 3.5 19.55 3.5 19V5C3.5 4.45 3.69567 3.979 4.087 3.587C4.479 3.19567 4.95 3 5.5 3H9.7C9.93333 2.4 10.3 1.91667 10.8 1.55C11.3 1.18333 11.8667 1 12.5 1C13.1333 1 13.7 1.18333 14.2 1.55C14.7 1.91667 15.0667 2.4 15.3 3H19.5C20.05 3 20.521 3.19567 20.913 3.587C21.3043 3.979 21.5 4.45 21.5 5V19C21.5 19.55 21.3043 20.021 20.913 20.413C20.521 20.8043 20.05 21 19.5 21H5.5ZM12.5 4.25C12.7167 4.25 12.896 4.179 13.038 4.037C13.1793 3.89567 13.25 3.71667 13.25 3.5C13.25 3.28333 13.1793 3.104 13.038 2.962C12.896 2.82067 12.7167 2.75 12.5 2.75C12.2833 2.75 12.1043 2.82067 11.963 2.962C11.821 3.104 11.75 3.28333 11.75 3.5C11.75 3.71667 11.821 3.89567 11.963 4.037C12.1043 4.179 12.2833 4.25 12.5 4.25ZM5.5 17.85C6.4 16.9667 7.446 16.2707 8.638 15.762C9.82933 15.254 11.1167 15 12.5 15C13.8833 15 15.171 15.254 16.363 15.762C17.5543 16.2707 18.6 16.9667 19.5 17.85V5H5.5V17.85ZM12.5 13C13.4667 13 14.2917 12.6583 14.975 11.975C15.6583 11.2917 16 10.4667 16 9.5C16 8.53333 15.6583 7.70833 14.975 7.025C14.2917 6.34167 13.4667 6 12.5 6C11.5333 6 10.7083 6.34167 10.025 7.025C9.34167 7.70833 9 8.53333 9 9.5C9 10.4667 9.34167 11.2917 10.025 11.975C10.7083 12.6583 11.5333 13 12.5 13ZM7.5 19H17.5V18.75C16.8 18.1667 16.025 17.7293 15.175 17.438C14.325 17.146 13.4333 17 12.5 17C11.5667 17 10.675 17.146 9.825 17.438C8.975 17.7293 8.2 18.1667 7.5 18.75V19ZM12.5 11C12.0833 11 11.7293 10.854 11.438 10.562C11.146 10.2707 11 9.91667 11 9.5C11 9.08333 11.146 8.72933 11.438 8.438C11.7293 8.146 12.0833 8 12.5 8C12.9167 8 13.2707 8.146 13.562 8.438C13.854 8.72933 14 9.08333 14 9.5C14 9.91667 13.854 10.2707 13.562 10.562C13.2707 10.854 12.9167 11 12.5 11Z",
+    fill: color
+  }));
+};
+
+AssignmentIndDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AssistantDs2Icon = function AssistantDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 23L9.5 20H5.5C4.95 20 4.479 19.8043 4.087 19.413C3.69567 19.021 3.5 18.55 3.5 18V4C3.5 3.45 3.69567 2.979 4.087 2.587C4.479 2.19567 4.95 2 5.5 2H19.5C20.05 2 20.521 2.19567 20.913 2.587C21.3043 2.979 21.5 3.45 21.5 4V18C21.5 18.55 21.3043 19.021 20.913 19.413C20.521 19.8043 20.05 20 19.5 20H15.5L12.5 23ZM5.5 18H10.3L12.5 20.2L14.7 18H19.5V4H5.5V18ZM14.05 12.55L17.5 11L14.05 9.45L12.5 6L10.95 9.45L7.5 11L10.95 12.55L12.5 16L14.05 12.55Z",
+    fill: color
+  }));
+};
+
+AssistantDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AttachFileDs2Icon = function AttachFileDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12 22C10.4667 22 9.16667 21.4667 8.1 20.4C7.03333 19.3333 6.5 18.0333 6.5 16.5V6C6.5 4.9 6.89167 3.95833 7.675 3.175C8.45833 2.39167 9.4 2 10.5 2C11.6 2 12.5417 2.39167 13.325 3.175C14.1083 3.95833 14.5 4.9 14.5 6V15.5C14.5 16.2 14.2583 16.7917 13.775 17.275C13.2917 17.7583 12.7 18 12 18C11.3 18 10.7083 17.7583 10.225 17.275C9.74167 16.7917 9.5 16.2 9.5 15.5V6.75C9.5 6.53333 9.571 6.35433 9.713 6.213C9.85433 6.071 10.0333 6 10.25 6C10.4667 6 10.646 6.071 10.788 6.213C10.9293 6.35433 11 6.53333 11 6.75V15.5C11 15.7833 11.096 16.0207 11.288 16.212C11.4793 16.404 11.7167 16.5 12 16.5C12.2833 16.5 12.521 16.404 12.713 16.212C12.9043 16.0207 13 15.7833 13 15.5V6C13 5.3 12.7583 4.70833 12.275 4.225C11.7917 3.74167 11.2 3.5 10.5 3.5C9.8 3.5 9.20833 3.74167 8.725 4.225C8.24167 4.70833 8 5.3 8 6V16.5C8 17.6 8.39167 18.5417 9.175 19.325C9.95833 20.1083 10.9 20.5 12 20.5C13.1 20.5 14.0417 20.1083 14.825 19.325C15.6083 18.5417 16 17.6 16 16.5V6.75C16 6.53333 16.071 6.35433 16.213 6.213C16.3543 6.071 16.5333 6 16.75 6C16.9667 6 17.146 6.071 17.288 6.213C17.4293 6.35433 17.5 6.53333 17.5 6.75V16.5C17.5 18.0333 16.9667 19.3333 15.9 20.4C14.8333 21.4667 13.5333 22 12 22Z",
+    fill: color
+  }));
+};
+
+AttachFileDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AutoRenewDs2Icon = function AutoRenewDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.975 14.7C4.80833 14.2667 4.68767 13.829 4.613 13.387C4.53767 12.9457 4.5 12.5 4.5 12.05C4.5 9.81672 5.275 7.91672 6.825 6.35005C8.375 4.78338 10.2667 4.00005 12.5 4.00005H12.675L11.775 3.10005C11.5917 2.91672 11.5 2.68338 11.5 2.40005C11.5 2.11672 11.5917 1.88338 11.775 1.70005C11.9583 1.51672 12.1917 1.42505 12.475 1.42505C12.7583 1.42505 12.9917 1.51672 13.175 1.70005L15.775 4.30005C15.875 4.40005 15.946 4.50838 15.988 4.62505C16.0293 4.74172 16.05 4.86672 16.05 5.00005C16.05 5.13338 16.0293 5.25838 15.988 5.37505C15.946 5.49172 15.875 5.60005 15.775 5.70005L13.175 8.30005C12.9917 8.48338 12.7583 8.57505 12.475 8.57505C12.1917 8.57505 11.9583 8.48338 11.775 8.30005C11.5917 8.11672 11.5 7.88338 11.5 7.60005C11.5 7.31672 11.5917 7.08338 11.775 6.90005L12.675 6.00005H12.5C10.8333 6.00005 9.41667 6.58738 8.25 7.76205C7.08333 8.93738 6.5 10.3667 6.5 12.05C6.5 12.3834 6.52933 12.7084 6.588 13.025C6.646 13.3417 6.73333 13.6584 6.85 13.975C6.91667 14.1417 6.93333 14.3207 6.9 14.512C6.86667 14.704 6.78333 14.8667 6.65 15C6.35 15.3 6.02933 15.421 5.688 15.363C5.346 15.3044 5.10833 15.0834 4.975 14.7ZM11.825 22.3L9.225 19.7001C9.125 19.6 9.05433 19.4917 9.013 19.375C8.971 19.2584 8.95 19.1334 8.95 19C8.95 18.8667 8.971 18.7417 9.013 18.625C9.05433 18.5084 9.125 18.4 9.225 18.3L11.825 15.7C12.0083 15.5167 12.2417 15.425 12.525 15.425C12.8083 15.425 13.0417 15.5167 13.225 15.7C13.4083 15.8834 13.5 16.1167 13.5 16.4C13.5 16.6834 13.4083 16.9167 13.225 17.1L12.325 18H12.5C14.1667 18 15.5833 17.4127 16.75 16.238C17.9167 15.0627 18.5 13.6334 18.5 11.95C18.5 11.6167 18.471 11.2917 18.413 10.975C18.3543 10.6584 18.2667 10.3417 18.15 10.025C18.0833 9.85838 18.0667 9.67905 18.1 9.48705C18.1333 9.29572 18.2167 9.13338 18.35 9.00005C18.65 8.70005 18.9707 8.57905 19.312 8.63705C19.654 8.69572 19.8917 8.91672 20.025 9.30005C20.1917 9.73338 20.3127 10.1707 20.388 10.612C20.4627 11.054 20.5 11.5 20.5 11.95C20.5 14.1834 19.725 16.0834 18.175 17.65C16.625 19.2167 14.7333 20 12.5 20H12.325L13.225 20.9C13.4083 21.0834 13.5 21.3167 13.5 21.6C13.5 21.8834 13.4083 22.1167 13.225 22.3C13.0417 22.4834 12.8083 22.5751 12.525 22.5751C12.2417 22.5751 12.0083 22.4834 11.825 22.3Z",
+    fill: color
+  }));
+};
+
+AutoRenewDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var BarChartDs2Icon = function BarChartDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M6.5 20C5.95 20 5.47933 19.8043 5.088 19.413C4.696 19.021 4.5 18.55 4.5 18V11C4.5 10.45 4.696 9.979 5.088 9.587C5.47933 9.19567 5.95 9 6.5 9C7.05 9 7.52067 9.19567 7.912 9.587C8.304 9.979 8.5 10.45 8.5 11V18C8.5 18.55 8.304 19.021 7.912 19.413C7.52067 19.8043 7.05 20 6.5 20ZM12.5 20C11.95 20 11.4793 19.8043 11.088 19.413C10.696 19.021 10.5 18.55 10.5 18V6C10.5 5.45 10.696 4.97933 11.088 4.588C11.4793 4.196 11.95 4 12.5 4C13.05 4 13.521 4.196 13.913 4.588C14.3043 4.97933 14.5 5.45 14.5 6V18C14.5 18.55 14.3043 19.021 13.913 19.413C13.521 19.8043 13.05 20 12.5 20ZM18.5 20C17.95 20 17.479 19.8043 17.087 19.413C16.6957 19.021 16.5 18.55 16.5 18V15C16.5 14.45 16.6957 13.979 17.087 13.587C17.479 13.1957 17.95 13 18.5 13C19.05 13 19.521 13.1957 19.913 13.587C20.3043 13.979 20.5 14.45 20.5 15V18C20.5 18.55 20.3043 19.021 19.913 19.413C19.521 19.8043 19.05 20 18.5 20Z",
+    fill: color
+  }));
+};
+
+BarChartDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var BatteryDs2Icon = function BatteryDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M22.5 16C22.5 16.2833 22.404 16.5207 22.212 16.712C22.0207 16.904 21.7833 17 21.5 17H5.5C5.21667 17 4.979 16.904 4.787 16.712C4.59567 16.5207 4.5 16.2833 4.5 16V14H3.5C3.21667 14 2.97933 13.904 2.788 13.712C2.596 13.5207 2.5 13.2833 2.5 13V11C2.5 10.7167 2.596 10.479 2.788 10.287C2.97933 10.0957 3.21667 10 3.5 10H4.5V8C4.5 7.71667 4.59567 7.479 4.787 7.287C4.979 7.09567 5.21667 7 5.5 7H21.5C21.7833 7 22.0207 7.09567 22.212 7.287C22.404 7.479 22.5 7.71667 22.5 8V16ZM10.5 15V9H6.5V15H10.5Z",
+    fill: color
+  }));
+};
+
+BatteryDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var BlockDs2Icon = function BlockDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7333 20 16.625 19.225 18.175 17.675C19.725 16.125 20.5 14.2333 20.5 12C20.5 11.1 20.354 10.2333 20.062 9.4C19.7707 8.56667 19.35 7.8 18.8 7.1L7.6 18.3C8.3 18.85 9.06667 19.2707 9.9 19.562C10.7333 19.854 11.6 20 12.5 20ZM6.2 16.9L17.4 5.7C16.7 5.15 15.9333 4.72933 15.1 4.438C14.2667 4.146 13.4 4 12.5 4C10.2667 4 8.375 4.775 6.825 6.325C5.275 7.875 4.5 9.76667 4.5 12C4.5 12.9 4.646 13.7667 4.938 14.6C5.22933 15.4333 5.65 16.2 6.2 16.9Z",
+    fill: color
+  }));
+};
+
+BlockDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var BookmarkDs2Icon = function BookmarkDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.5 17.95L12.5 15.8L17.5 17.95V5H7.5V17.95ZM6.9 20.4C6.56667 20.5333 6.25 20.504 5.95 20.312C5.65 20.1207 5.5 19.8417 5.5 19.475V5C5.5 4.45 5.696 3.979 6.088 3.587C6.47933 3.19567 6.95 3 7.5 3H17.5C18.05 3 18.521 3.19567 18.913 3.587C19.3043 3.979 19.5 4.45 19.5 5V19.475C19.5 19.8417 19.35 20.1207 19.05 20.312C18.75 20.504 18.4333 20.5333 18.1 20.4L12.5 18L6.9 20.4Z",
+    fill: color
+  }));
+};
+
+BookmarkDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CallSplitDs2Icon = function CallSplitDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M15.35 10.6L13.9 9.15L17.1 6H15.5C15.2167 6 14.9793 5.90433 14.788 5.713C14.596 5.521 14.5 5.28333 14.5 5C14.5 4.71667 14.596 4.479 14.788 4.287C14.9793 4.09567 15.2167 4 15.5 4H19.5C19.7833 4 20.0207 4.09567 20.212 4.287C20.404 4.479 20.5 4.71667 20.5 5V9C20.5 9.28333 20.404 9.52067 20.212 9.712C20.0207 9.904 19.7833 10 19.5 10C19.2167 10 18.9793 9.904 18.788 9.712C18.596 9.52067 18.5 9.28333 18.5 9V7.4L15.35 10.6ZM12.5 20C12.2167 20 11.9793 19.904 11.788 19.712C11.596 19.5207 11.5 19.2833 11.5 19V12.4L6.5 7.4V9C6.5 9.28333 6.40433 9.52067 6.213 9.712C6.021 9.904 5.78333 10 5.5 10C5.21667 10 4.979 9.904 4.787 9.712C4.59567 9.52067 4.5 9.28333 4.5 9V5C4.5 4.71667 4.59567 4.479 4.787 4.287C4.979 4.09567 5.21667 4 5.5 4H9.5C9.78333 4 10.021 4.09567 10.213 4.287C10.4043 4.479 10.5 4.71667 10.5 5C10.5 5.28333 10.4043 5.521 10.213 5.713C10.021 5.90433 9.78333 6 9.5 6H7.9L13.5 11.6V19C13.5 19.2833 13.4043 19.5207 13.213 19.712C13.021 19.904 12.7833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+CallSplitDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CallDs2Icon = function CallDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M20.45 21C18.3 21 16.2043 20.5207 14.163 19.562C12.121 18.604 10.3127 17.3373 8.738 15.762C7.16267 14.1873 5.896 12.379 4.938 10.337C3.97933 8.29567 3.5 6.2 3.5 4.05C3.5 3.75 3.6 3.5 3.8 3.3C4 3.1 4.25 3 4.55 3H8.6C8.83333 3 9.04167 3.075 9.225 3.225C9.40833 3.375 9.51667 3.56667 9.55 3.8L10.2 7.3C10.2333 7.53333 10.2293 7.74567 10.188 7.937C10.146 8.129 10.05 8.3 9.9 8.45L7.475 10.9C8.175 12.1 9.05433 13.225 10.113 14.275C11.171 15.325 12.3333 16.2333 13.6 17L15.95 14.65C16.1 14.5 16.296 14.3873 16.538 14.312C16.7793 14.2373 17.0167 14.2167 17.25 14.25L20.7 14.95C20.9333 15 21.125 15.1123 21.275 15.287C21.425 15.4623 21.5 15.6667 21.5 15.9V19.95C21.5 20.25 21.4 20.5 21.2 20.7C21 20.9 20.75 21 20.45 21ZM6.525 9L8.175 7.35L7.75 5H5.525C5.60833 5.68333 5.725 6.35833 5.875 7.025C6.025 7.69167 6.24167 8.35 6.525 9ZM19.5 18.95V16.75L17.15 16.275L15.475 17.95C16.125 18.2333 16.7877 18.4583 17.463 18.625C18.1377 18.7917 18.8167 18.9 19.5 18.95Z",
+    fill: color
+  }));
+};
+
+CallDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CampaignDs2Icon = function CampaignDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M19.5 13C19.2167 13 18.9793 12.904 18.788 12.712C18.596 12.5207 18.5 12.2833 18.5 12C18.5 11.7167 18.596 11.479 18.788 11.287C18.9793 11.0957 19.2167 11 19.5 11H21.5C21.7833 11 22.0207 11.0957 22.212 11.287C22.404 11.479 22.5 11.7167 22.5 12C22.5 12.2833 22.404 12.5207 22.212 12.712C22.0207 12.904 21.7833 13 21.5 13H19.5ZM18.9 19.4L17.3 18.2C17.0667 18.0333 16.9333 17.8167 16.9 17.55C16.8667 17.2833 16.9333 17.0333 17.1 16.8C17.2667 16.5667 17.4833 16.4333 17.75 16.4C18.0167 16.3667 18.2667 16.4333 18.5 16.6L20.1 17.8C20.3333 17.9667 20.4667 18.1833 20.5 18.45C20.5333 18.7167 20.4667 18.9667 20.3 19.2C20.1333 19.4333 19.9167 19.5667 19.65 19.6C19.3833 19.6333 19.1333 19.5667 18.9 19.4ZM18.5 7.4C18.2667 7.56666 18.0167 7.63333 17.75 7.6C17.4833 7.56666 17.2667 7.43333 17.1 7.2C16.9333 6.96666 16.8667 6.71666 16.9 6.45C16.9333 6.18333 17.0667 5.96666 17.3 5.8L18.9 4.6C19.1333 4.43333 19.3833 4.36666 19.65 4.4C19.9167 4.43333 20.1333 4.56666 20.3 4.8C20.4667 5.03333 20.5333 5.28333 20.5 5.55C20.4667 5.81666 20.3333 6.03333 20.1 6.2L18.5 7.4ZM5.5 19V15H4.5C3.95 15 3.47933 14.804 3.088 14.412C2.696 14.0207 2.5 13.55 2.5 13V11C2.5 10.45 2.696 9.979 3.088 9.587C3.47933 9.19566 3.95 9 4.5 9H8.5L11.975 6.9C12.3083 6.7 12.646 6.7 12.988 6.9C13.3293 7.1 13.5 7.39166 13.5 7.775V16.225C13.5 16.6083 13.3293 16.9 12.988 17.1C12.646 17.3 12.3083 17.3 11.975 17.1L8.5 15H7.5V19H5.5ZM14.5 15.35V8.65C14.95 9.05 15.3127 9.53766 15.588 10.113C15.8627 10.6877 16 11.3167 16 12C16 12.6833 15.8627 13.3123 15.588 13.887C15.3127 14.4623 14.95 14.95 14.5 15.35ZM11.5 14.45V9.55L9.05 11H4.5V13H9.05L11.5 14.45Z",
+    fill: color
+  }));
+};
+
+CampaignDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CancelDs2Icon = function CancelDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M8.2 16.3C8.38333 16.4833 8.61667 16.575 8.9 16.575C9.18333 16.575 9.41667 16.4833 9.6 16.3L12.5 13.4L15.425 16.325C15.6083 16.5083 15.8377 16.5957 16.113 16.587C16.3877 16.579 16.6167 16.4833 16.8 16.3C16.9833 16.1167 17.075 15.8833 17.075 15.6C17.075 15.3167 16.9833 15.0833 16.8 14.9L13.9 12L16.825 9.075C17.0083 8.89167 17.0957 8.66233 17.087 8.387C17.079 8.11233 16.9833 7.88333 16.8 7.7C16.6167 7.51667 16.3833 7.425 16.1 7.425C15.8167 7.425 15.5833 7.51667 15.4 7.7L12.5 10.6L9.575 7.675C9.39167 7.49167 9.16267 7.404 8.888 7.412C8.61267 7.42067 8.38333 7.51667 8.2 7.7C8.01667 7.88333 7.925 8.11667 7.925 8.4C7.925 8.68333 8.01667 8.91667 8.2 9.1L11.1 12L8.175 14.925C7.99167 15.1083 7.90433 15.3373 7.913 15.612C7.921 15.8873 8.01667 16.1167 8.2 16.3ZM12.5 22C11.1167 22 9.81667 21.7373 8.6 21.212C7.38333 20.6873 6.325 19.975 5.425 19.075C4.525 18.175 3.81267 17.1167 3.288 15.9C2.76267 14.6833 2.5 13.3833 2.5 12C2.5 10.6167 2.76267 9.31667 3.288 8.1C3.81267 6.88333 4.525 5.825 5.425 4.925C6.325 4.025 7.38333 3.31233 8.6 2.787C9.81667 2.26233 11.1167 2 12.5 2C13.8833 2 15.1833 2.26233 16.4 2.787C17.6167 3.31233 18.675 4.025 19.575 4.925C20.475 5.825 21.1873 6.88333 21.712 8.1C22.2373 9.31667 22.5 10.6167 22.5 12C22.5 13.3833 22.2373 14.6833 21.712 15.9C21.1873 17.1167 20.475 18.175 19.575 19.075C18.675 19.975 17.6167 20.6873 16.4 21.212C15.1833 21.7373 13.8833 22 12.5 22ZM12.5 20C14.7167 20 16.6043 19.221 18.163 17.663C19.721 16.1043 20.5 14.2167 20.5 12C20.5 9.78333 19.721 7.89567 18.163 6.337C16.6043 4.779 14.7167 4 12.5 4C10.2833 4 8.396 4.779 6.838 6.337C5.27933 7.89567 4.5 9.78333 4.5 12C4.5 14.2167 5.27933 16.1043 6.838 17.663C8.396 19.221 10.2833 20 12.5 20Z",
+    fill: color
+  }));
+};
+
+CancelDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var ChatBubbleDs2Icon = function ChatBubbleDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M2.5 19.575V4C2.5 3.45 2.696 2.979 3.088 2.587C3.47933 2.19567 3.95 2 4.5 2H20.5C21.05 2 21.521 2.19567 21.913 2.587C22.3043 2.979 22.5 3.45 22.5 4V16C22.5 16.55 22.3043 17.021 21.913 17.413C21.521 17.8043 21.05 18 20.5 18H6.5L4.2 20.3C3.88333 20.6167 3.52067 20.6873 3.112 20.512C2.704 20.3373 2.5 20.025 2.5 19.575ZM4.5 17.175L5.675 16H20.5V4H4.5V17.175Z",
+    fill: color
+  }));
+};
+
+ChatBubbleDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CelebrationDs2Icon = function CelebrationDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M4.5001 21.3C4.1001 21.45 3.74593 21.3708 3.4376 21.0625C3.12927 20.7542 3.0501 20.4 3.2001 20L6.4251 10.975C6.65843 10.275 7.13343 9.84165 7.8501 9.67499C8.56677 9.50832 9.19177 9.69166 9.7251 10.225L14.2751 14.775C14.8084 15.3083 14.9918 15.9333 14.8251 16.65C14.6584 17.3667 14.2251 17.8417 13.5251 18.075L4.5001 21.3ZM5.8001 18.7L12.8501 16.2L8.3001 11.65L5.8001 18.7ZM14.5251 12.025C14.3751 11.875 14.3001 11.7 14.3001 11.5C14.3001 11.3 14.3751 11.125 14.5251 10.975L19.6001 5.89999C20.1334 5.36665 20.7751 5.09999 21.5251 5.09999C22.2751 5.09999 22.9168 5.36665 23.4501 5.89999L23.5501 5.99999C23.6834 6.13332 23.7501 6.29999 23.7501 6.49999C23.7501 6.69999 23.6751 6.87499 23.5251 7.02499C23.3751 7.17499 23.2001 7.24999 23.0001 7.24999C22.8001 7.24999 22.6251 7.17499 22.4751 7.02499L22.4001 6.94999C22.1668 6.71666 21.8751 6.59999 21.5251 6.59999C21.1751 6.59999 20.8834 6.71666 20.6501 6.94999L15.5501 12.05C15.4168 12.1833 15.2501 12.25 15.0501 12.25C14.8501 12.25 14.6751 12.175 14.5251 12.025ZM10.5251 8.02499C10.3751 7.87499 10.3001 7.69999 10.3001 7.49999C10.3001 7.29999 10.3751 7.12499 10.5251 6.97499L10.6001 6.89999C10.8334 6.66665 10.9501 6.38332 10.9501 6.04999C10.9501 5.71665 10.8334 5.43332 10.6001 5.19999L10.4501 5.04999C10.3168 4.91665 10.2501 4.74999 10.2501 4.54999C10.2501 4.34999 10.3251 4.17499 10.4751 4.02499C10.6251 3.87499 10.8001 3.79999 11.0001 3.79999C11.2001 3.79999 11.3751 3.87499 11.5251 4.02499L11.6501 4.14999C12.1834 4.68332 12.4501 5.31665 12.4501 6.04999C12.4501 6.78332 12.1834 7.41665 11.6501 7.94999L11.5501 8.04999C11.4168 8.18332 11.2501 8.24999 11.0501 8.24999C10.8501 8.24999 10.6751 8.17499 10.5251 8.02499ZM12.5251 10.025C12.3751 9.87499 12.3001 9.69999 12.3001 9.49999C12.3001 9.29999 12.3751 9.12499 12.5251 8.97499L15.6001 5.89999C15.8334 5.66665 15.9501 5.37499 15.9501 5.02499C15.9501 4.67499 15.8334 4.38332 15.6001 4.14999L14.5001 3.04999C14.3668 2.91665 14.3001 2.74999 14.3001 2.54999C14.3001 2.34999 14.3751 2.17499 14.5251 2.02499C14.6751 1.87499 14.8501 1.79999 15.0501 1.79999C15.2501 1.79999 15.4251 1.87499 15.5751 2.02499L16.6501 3.09999C17.1834 3.63332 17.4501 4.27499 17.4501 5.02499C17.4501 5.77499 17.1834 6.41665 16.6501 6.94999L13.5501 10.05C13.4168 10.1833 13.2501 10.25 13.0501 10.25C12.8501 10.25 12.6751 10.175 12.5251 10.025ZM16.5251 14.025C16.3751 13.875 16.3001 13.7 16.3001 13.5C16.3001 13.3 16.3751 13.125 16.5251 12.975L17.6001 11.9C18.1334 11.3667 18.7751 11.1 19.5251 11.1C20.2751 11.1 20.9168 11.3667 21.4501 11.9L22.5501 13C22.6834 13.1333 22.7501 13.3 22.7501 13.5C22.7501 13.7 22.6751 13.875 22.5251 14.025C22.3751 14.175 22.2001 14.25 22.0001 14.25C21.8001 14.25 21.6251 14.175 21.4751 14.025L20.4001 12.95C20.1668 12.7167 19.8751 12.6 19.5251 12.6C19.1751 12.6 18.8834 12.7167 18.6501 12.95L17.5501 14.05C17.4168 14.1833 17.2501 14.25 17.0501 14.25C16.8501 14.25 16.6751 14.175 16.5251 14.025Z",
+    fill: color
+  }));
+};
+
+CelebrationDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AttachMoneyDs2Icon = function AttachMoneyDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.525 21C12.2416 21 12.0041 20.9042 11.8125 20.7125C11.6208 20.5208 11.525 20.2833 11.525 20V18.85C10.775 18.6833 10.1166 18.3917 9.54997 17.975C8.9833 17.5583 8.52497 16.975 8.17497 16.225C8.0583 15.9917 8.05414 15.7458 8.16247 15.4875C8.2708 15.2292 8.46664 15.0417 8.74997 14.925C8.9833 14.825 9.22497 14.8292 9.47497 14.9375C9.72497 15.0458 9.91664 15.225 10.05 15.475C10.3333 15.975 10.6916 16.3542 11.125 16.6125C11.5583 16.8708 12.0916 17 12.725 17C13.4083 17 13.9875 16.8458 14.4625 16.5375C14.9375 16.2292 15.175 15.75 15.175 15.1C15.175 14.5167 14.9916 14.0542 14.625 13.7125C14.2583 13.3708 13.4083 12.9833 12.075 12.55C10.6416 12.1 9.6583 11.5625 9.12497 10.9375C8.59164 10.3125 8.32497 9.55 8.32497 8.65C8.32497 7.56667 8.67497 6.725 9.37497 6.125C10.075 5.525 10.7916 5.18333 11.525 5.1V4C11.525 3.71667 11.6208 3.47917 11.8125 3.2875C12.0041 3.09583 12.2416 3 12.525 3C12.8083 3 13.0458 3.09583 13.2375 3.2875C13.4291 3.47917 13.525 3.71667 13.525 4V5.1C14.1583 5.2 14.7083 5.40417 15.175 5.7125C15.6416 6.02083 16.025 6.4 16.325 6.85C16.475 7.06667 16.5041 7.30833 16.4125 7.575C16.3208 7.84167 16.1333 8.03333 15.85 8.15C15.6166 8.25 15.375 8.25417 15.125 8.1625C14.875 8.07083 14.6416 7.90833 14.425 7.675C14.2083 7.44167 13.9541 7.2625 13.6625 7.1375C13.3708 7.0125 13.0083 6.95 12.575 6.95C11.8416 6.95 11.2833 7.1125 10.9 7.4375C10.5166 7.7625 10.325 8.16667 10.325 8.65C10.325 9.2 10.575 9.63333 11.075 9.95C11.575 10.2667 12.4416 10.6 13.675 10.95C14.825 11.2833 15.6958 11.8125 16.2875 12.5375C16.8791 13.2625 17.175 14.1 17.175 15.05C17.175 16.2333 16.825 17.1333 16.125 17.75C15.425 18.3667 14.5583 18.75 13.525 18.9V20C13.525 20.2833 13.4291 20.5208 13.2375 20.7125C13.0458 20.9042 12.8083 21 12.525 21Z",
+    fill: color
+  }));
+};
+
+AttachMoneyDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var CurrencyPoundDs2Icon = function CurrencyPoundDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M7.725 21C7.39167 21 7.10417 20.8792 6.8625 20.6375C6.62083 20.3958 6.5 20.1083 6.5 19.775C6.5 19.6083 6.55417 19.4208 6.6625 19.2125C6.77083 19.0042 6.925 18.8 7.125 18.6C7.50833 18.3167 7.93333 17.875 8.4 17.275C8.86667 16.675 9.1 15.9167 9.1 15C9.1 14.8167 9.0875 14.6417 9.0625 14.475C9.0375 14.3083 9.00833 14.15 8.975 14H7.5C7.21667 14 6.97917 13.9042 6.7875 13.7125C6.59583 13.5208 6.5 13.2833 6.5 13C6.5 12.7167 6.59583 12.4792 6.7875 12.2875C6.97917 12.0958 7.21667 12 7.5 12H8C7.65 11.45 7.3125 10.8708 6.9875 10.2625C6.6625 9.65417 6.5 8.9 6.5 8C6.5 6.46667 7.03333 5.16667 8.1 4.1C9.16667 3.03333 10.4667 2.5 12 2.5C12.95 2.5 13.8083 2.7125 14.575 3.1375C15.3417 3.5625 15.975 4.125 16.475 4.825C16.675 5.10833 16.7542 5.40833 16.7125 5.725C16.6708 6.04167 16.5 6.26667 16.2 6.4C15.9667 6.5 15.7208 6.5 15.4625 6.4C15.2042 6.3 14.9833 6.13333 14.8 5.9C14.4667 5.46667 14.0625 5.125 13.5875 4.875C13.1125 4.625 12.5833 4.5 12 4.5C11.0333 4.5 10.2083 4.84167 9.525 5.525C8.84167 6.20833 8.5 7.03333 8.5 8C8.5 8.8 8.7 9.46667 9.1 10C9.5 10.5333 9.90833 11.2 10.325 12H13.5C13.7833 12 14.0208 12.0958 14.2125 12.2875C14.4042 12.4792 14.5 12.7167 14.5 13C14.5 13.2833 14.4042 13.5208 14.2125 13.7125C14.0208 13.9042 13.7833 14 13.5 14H11.025C11.0583 14.15 11.0792 14.3083 11.0875 14.475C11.0958 14.6417 11.1 14.8167 11.1 15C11.1 15.8333 10.9542 16.5833 10.6625 17.25C10.3708 17.9167 10.0167 18.5 9.6 19H14.5C14.9333 19 15.3042 18.9208 15.6125 18.7625C15.9208 18.6042 16.1667 18.3833 16.35 18.1C16.5333 17.8167 16.75 17.6292 17 17.5375C17.25 17.4458 17.4917 17.4667 17.725 17.6C18.0583 17.7667 18.2375 17.9917 18.2625 18.275C18.2875 18.5583 18.2167 18.8417 18.05 19.125C17.7 19.7083 17.2083 20.1667 16.575 20.5C15.9417 20.8333 15.25 21 14.5 21H7.725Z",
+    fill: color
+  }));
+};
+
+CurrencyPoundDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var DragIndicatorDs2Icon = function DragIndicatorDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement("path", {
+    d: "M9.5 20C8.95 20 8.47917 19.8042 8.0875 19.4125C7.69583 19.0208 7.5 18.55 7.5 18C7.5 17.45 7.69583 16.9792 8.0875 16.5875C8.47917 16.1958 8.95 16 9.5 16C10.05 16 10.5208 16.1958 10.9125 16.5875C11.3042 16.9792 11.5 17.45 11.5 18C11.5 18.55 11.3042 19.0208 10.9125 19.4125C10.5208 19.8042 10.05 20 9.5 20ZM15.5 20C14.95 20 14.4792 19.8042 14.0875 19.4125C13.6958 19.0208 13.5 18.55 13.5 18C13.5 17.45 13.6958 16.9792 14.0875 16.5875C14.4792 16.1958 14.95 16 15.5 16C16.05 16 16.5208 16.1958 16.9125 16.5875C17.3042 16.9792 17.5 17.45 17.5 18C17.5 18.55 17.3042 19.0208 16.9125 19.4125C16.5208 19.8042 16.05 20 15.5 20ZM9.5 14C8.95 14 8.47917 13.8042 8.0875 13.4125C7.69583 13.0208 7.5 12.55 7.5 12C7.5 11.45 7.69583 10.9792 8.0875 10.5875C8.47917 10.1958 8.95 10 9.5 10C10.05 10 10.5208 10.1958 10.9125 10.5875C11.3042 10.9792 11.5 11.45 11.5 12C11.5 12.55 11.3042 13.0208 10.9125 13.4125C10.5208 13.8042 10.05 14 9.5 14ZM15.5 14C14.95 14 14.4792 13.8042 14.0875 13.4125C13.6958 13.0208 13.5 12.55 13.5 12C13.5 11.45 13.6958 10.9792 14.0875 10.5875C14.4792 10.1958 14.95 10 15.5 10C16.05 10 16.5208 10.1958 16.9125 10.5875C17.3042 10.9792 17.5 11.45 17.5 12C17.5 12.55 17.3042 13.0208 16.9125 13.4125C16.5208 13.8042 16.05 14 15.5 14ZM9.5 8C8.95 8 8.47917 7.80417 8.0875 7.4125C7.69583 7.02083 7.5 6.55 7.5 6C7.5 5.45 7.69583 4.97917 8.0875 4.5875C8.47917 4.19583 8.95 4 9.5 4C10.05 4 10.5208 4.19583 10.9125 4.5875C11.3042 4.97917 11.5 5.45 11.5 6C11.5 6.55 11.3042 7.02083 10.9125 7.4125C10.5208 7.80417 10.05 8 9.5 8ZM15.5 8C14.95 8 14.4792 7.80417 14.0875 7.4125C13.6958 7.02083 13.5 6.55 13.5 6C13.5 5.45 13.6958 4.97917 14.0875 4.5875C14.4792 4.19583 14.95 4 15.5 4C16.05 4 16.5208 4.19583 16.9125 4.5875C17.3042 4.97917 17.5 5.45 17.5 6C17.5 6.55 17.3042 7.02083 16.9125 7.4125C16.5208 7.80417 16.05 8 15.5 8Z",
+    fill: color
+  }));
+};
+
+DragIndicatorDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+var AutopayDs2Icon = function AutopayDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default.createElement(Svg, {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default.createElement(Path, {
+    d: "M12.5 23C10.6333 23 8.91667 22.5707 7.35 21.712C5.78333 20.854 4.5 19.7167 3.5 18.3V20H1.5V15H6.5V17H5.05C5.85 18.2 6.9 19.1667 8.2 19.9C9.5 20.6333 10.9333 21 12.5 21C13.75 21 14.921 20.7627 16.013 20.288C17.1043 19.8127 18.0543 19.1707 18.863 18.362C19.671 17.554 20.3127 16.604 20.788 15.512C21.2627 14.4207 21.5 13.25 21.5 12H23.5C23.5 13.5167 23.2127 14.9417 22.638 16.275C22.0627 17.6083 21.275 18.775 20.275 19.775C19.275 20.775 18.1083 21.5623 16.775 22.137C15.4417 22.7123 14.0167 23 12.5 23ZM7.85 4.325L7 2.475C7.85 1.99167 8.71267 1.625 9.588 1.375C10.4627 1.125 11.4333 1 12.5 1C14.3667 1 16.0833 1.429 17.65 2.287C19.2167 3.14567 20.5 4.28333 21.5 5.7V4H23.5V9H18.5V7H19.95C19.15 5.8 18.1 4.83333 16.8 4.1C15.5 3.36667 14.0667 3 12.5 3C11.6167 3 10.796 3.12067 10.038 3.362C9.27933 3.604 8.55 3.925 7.85 4.325ZM4.5 12L3.25 9.25L0.5 8L3.25 6.75L4.5 4L5.75 6.75L8.5 8L5.75 9.25L4.5 12ZM8.3 16L11.7 7H13.3L16.7 16H15.15L14.35 13.7H10.7L9.9 16H8.3ZM11.15 12.4H13.85L12.55 8.65H12.45L11.15 12.4Z",
+    fill: color
+  }));
+};
+
+AutopayDs2Icon.propTypes = {
+  color: PropTypes.oneOfType([PropTypes.string, PropTypes.number // used for null
+  ]),
+  size: PropTypes.number
+};
+
+export { AccountBalanceDs2Icon, AccountPinCircleFillIcon, AddCircleDs2Icon, AddCircleIcon, AddCircleOutlineIcon, AddDs2Icon, AddsClickDs2Icon, AlarmDs2Icon, AlarmIcon, AnalyticsDs2Icon, AnalyticsOutlineIcon, ApartmentDs2Icon, AppsDs2Icon, AppsIcon, ArrowForwardIcon, ArrowForwardIosDs2Icon, ArrowRepeatIcon, AssignmentIndDs2Icon, AssistantDs2Icon, AttachFileDs2Icon, AttachFileIcon, AttachMoneyDs2Icon, AutoPayIcon, AutoRenewDs2Icon, AutopayDs2Icon, BanIcon, BarChartDs2Icon, BatteryDs2Icon, BatteryThreeQuartersIcon, BinocularsIcon, BlockDs2Icon, BlockIcon, BoltIcon, BookmarkAltIcon, BookmarkDs2Icon, BookmarkIcon, BriefCaseIcon, BuildingIcon, BullhornIcon, CalculatorIcon, CalendarCheckIcon, CalendarIcon, CallDs2Icon, CallPaulIcon, CallSplitDs2Icon, CallSplitIcon, CameraIcon, CampaignDs2Icon, CancelDs2Icon, CaretDownIcon, CaretUpIcon, CelebrationDs2Icon, ChatBubbleDs2Icon, ChatBubbleIcon, ChatBubblesIcon, ChatDs2Icon, CheckBoxDs2Icon, CheckCircleDs2Icon, CheckCircleIcon, CheckDs2Icon, CheckIcon, CheckSquareIcon, ChevronDownIcon, ChevronLeftDs2Icon, ChevronLeftIcon, ChevronLeftDs2Icon as ChevronRightDs2Icon, ChevronRightIcon, ChevronUpIcon, CircleIcon, CircleNotificationsDs2Icon, ClipboardListIcon, CloneIcon, CloseCircleIcon, CloseDs2Icon, CloseIcon, CodeBranchIcon, CogIcon, CollectionsBookmarkIcon, ColorPaletteIcon, ColorizeDs2Icon, ColumnsIcon, CompassIcon, ConstructionDs2Icon, ContactPageDs2Icon, ContentCopyDs2Icon, ContentPasteDs2Icon as ContentPasteDs2, ContentPasteIcon, ControlPointDuplicateDs2Icon as ControlPointDulpicateDs2Icon, ControlPointDuplicateIcon, CreditCardDs2Icon, CreditCardIcon, CurrencyPoundDs2Icon, DeleteDs2Icon, DescriptionDs2Icon, DesktopIcon, DoNotDisturbOnDs2Icon, DoneAllDs2Icon, DonutIcon, DownloadIcon, DraftDs2Icon, DragIndicatorDs2Icon, DrawDs2Icon, DumbbellIcon, EditDs2Icon, EditIcon, EditNoteDs2Icon, EditNoteIcon, EnvelopeIcon, EnveloppeCheckIcon, EqualizerDs2Icon, ErrorDs2Icon, ErrorIcon, EuroIcon, EuroSymbolDs2Icon, EventAvailableDs2Icon, EventDs2Icon, ExpandLessDs2Icon, ExpandLessDs2Icon as ExpandMoreDs2Icon, ExploreDs2Icon, ExternalLinkIcon, EyeIcon, EyeOffIcon, EyedropperIcon, FaceDs2Icon, FaceIcon, FacebookIcon, FacebookSquareIcon, FavouriteDs2Icon, FileAltIcon, FileDownloadDs2Icon, FileIcon, FileInvoiceDollarIcon, FilterAltDs2Icon, FilterIcon, FitnessCenterDs2Icon, FlashOnDs2Icon, FolderDs2Icon, FolderIcon, FolderOpenDs2Icon, FolderOpenedIcon, FolderSharedDs2Icon, FontDownloadDs2Icon, FontDownloadIcon, FormatAlignLeftDs2Icon as FormatAlignLeftDs2, FormatAlignLeftIcon, FormatBoldDs2Icon, FormatBoldIcon, FormatClearDs2Icon, FormatClearIcon, FormatIndentDecreaseDs2Icon, FormatIndentIncreaseDs2Icon, FormatItalicDs2Icon, FormatItalicIcon, FormatListBulletedDs2Icon, FormatListBulletedIcon, FormatListNumberedDs2Icon, FormatListNumberedIcon, FormatUnderlineDs2Icon, FormatUnderlineIcon, ForumDs2Icon, GiftIcon, GithubSquareIcon, GlobeEuropeIcon, GlobeIcon, GoogleHangoutsIcon, GraduateIcon, GridIcon, GridOnDs2Icon, GroupAddDs2Icon, GroupDs2Icon, HandHoldingHeartIcon, HandsHelpingIcon, HandshakeDs2Icon, HeartIcon, HistoryDs2Icon, HistoryIcon, HowToRegDs2Icon, HubDs2Icon, ImageDs2Icon, ImageEditIcon, ImageIcon, InfoCircleIcon, InfoDs2Icon, InsightsDs2Icon, InstagramIcon, InventoryDs2Icon, IosShareDs2Icon, IosShareIcon, KeyDs2Icon, KeyIcon, LanDs2Icon, LandscapeDs2Icon, LangageDs2Icon, LaptopMacDs2Icon, LayerGroupIcon, LayersDs2Icon, LinkDs2Icon, LinkIcon, LinkedinIcon, LinkedinSquareIcon, ListAltDs2Icon, ListAltIcon, LocalPoliceDs2Icon, LocationOnDs2Icon, LockDs2Icon, LockIcon, LockOpenDs2Icon, LockOpenIcon, LoginDs2Icon, LogoFlatchr, MailDs2Icon, MailIcon, MapMarkerIcon, MapSignsIcon, MarkEmailReadDs2Icon, MenuDs2Icon, MenuFoldIcon, MenuIcon, MenuUnfoldIcon, MergeIcon, MicDs2Icon, MicrophoneIcon, MinusIcon, MobileIcon, MoreVertDs2Icon, MoreVerticalIcon, MoutainIcon, MoveDownDs2Icon, MoveDownIcon, NestHeatLinkEDs2 as NestHeatLinkEDs2Icon, NetworkWiredIcon, NotificationsActiveDs2Icon, NotificationsActiveIcon, NotificationsCircleIcon, NotificationsDs2Icon, NotificationsIcon, OctopussDeployIcon, OpenInNewDs2Icon, PaletteDs2Icon, PaperPlaneIcon, PauseDs2Icon, PauseIcon, PenIcon, PeopleIcon, PersonAddDs2Icon, PersonAddIcon, PersonDs2Icon, PersonPinCircleDs2Icon, PersonPinDs2Icon, PhoneIcon, PhotoCameraDs2Icon, PhotoCameraFrontDs2Icon, PhotoCameraFrontIcon, PlayArrowDs2Icon, PlayCircleDs2Icon, PlayCircleIcon, PlayIcon, PlaylistAddCheckDs2Icon, PlusIcon, PublicDs2Icon, PublishDs2Icon, PublishIcon, RandomIcon, RateReviewDs2Icon, RedeemDs2Icon, RedoIcon, RedoLoopIcon, RefreshDs2Icon, RegDotCircleIcon, RegisterListAltIcon, RemoveCircleOutlineIcon, RemoveDs2Icon, RepeatDs2Icon, RepeatIcon, ReplyDs2Icon, ReplyIcon, RequestQuoteDs2Icon, SaveIcon, ScreenRotationDs2Icon, SearchDs2Icon, SearchIcon, SellDs2Icon, SellIcon, SendDs2Icon, SentimentSatisfiedDs2Icon, SettingsDs2Icon, ShareDs2Icon, ShareIcon, ShieldAltIcon, ShieldCheckmarkIcon, ShoppingCartDs2Icon, ShoppingCartIcon, ShuffleDs2Icon, SignInIcon, SignPostDs2Icon, SignatureIcon, SkypeIcon, SmartphoneDs2Icon, SmileGrinHeartsIcon, SmileIcon, SmileWinkIcon, SourceTreeIcon, SpeedDs2Icon, StarBorderIcon, StarDs2Icon, StarHalfDs2Icon, StarHalfIcon, StarIcon, StarRoundedIcon, StayCurrentPortraitDs2Icon, StayCurrentPortraitIcon, StopDs2Icon, StopIcon, StoreAltIcon, StoreDs2Icon, StreetViewIcon, SupervisedUserCircleDs2Icon, SwapHorizIcon as SwapHorieIcon, SwapHorizDs2Icon, TableAltIcon, TableDs2Icon, TabletMacDs2Icon, TachometerAltIcon, TagsIcon, TaskDs2Icon, TaskIcon, ThumbUpDs2Icon, ThumbsUpIcon, ToolsIcon, TopicDs2Icon, TrashBinIcon, TrashIcon, TrophyIcon, TwitterIcon, TwitterSquareIcon, UndoIcon, UniversityIcon, UpdateDs2Icon, UpdateIcon, UserAssignmentIcon, UserClockIcon, UserIcon, UserLockIcon, UserPlusIcon, VectorSquareIcon, VerifiedUserDs2Icon, ViewWeekDs2Icon, VisibilityDs2Icon, VisibilityOffDs2Icon, VolunteerActivismDs2Icon, WorkDs2Icon, WorkHistoryDs2Icon, WorkspacePremiumDs2Icon, YoutubeIcon };
