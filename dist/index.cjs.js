@@ -12673,6 +12673,29 @@ AutopayDs2Icon.propTypes = {
   size: PropTypes__default["default"].number
 };
 
+var LightBulbDs2Icon = function LightBulbDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+      _ref$size = _ref.size,
+      size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: size,
+    height: size,
+    viewBox: "0 0 25 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M12.5 22C11.95 22 11.4792 21.8042 11.0875 21.4125C10.6958 21.0208 10.5 20.55 10.5 20H14.5C14.5 20.55 14.3042 21.0208 13.9125 21.4125C13.5208 21.8042 13.05 22 12.5 22ZM9.5 19C9.21667 19 8.97917 18.9042 8.7875 18.7125C8.59583 18.5208 8.5 18.2833 8.5 18C8.5 17.7167 8.59583 17.4792 8.7875 17.2875C8.97917 17.0958 9.21667 17 9.5 17H15.5C15.7833 17 16.0208 17.0958 16.2125 17.2875C16.4042 17.4792 16.5 17.7167 16.5 18C16.5 18.2833 16.4042 18.5208 16.2125 18.7125C16.0208 18.9042 15.7833 19 15.5 19H9.5ZM8.75 16C7.6 15.3167 6.6875 14.4 6.0125 13.25C5.3375 12.1 5 10.85 5 9.5C5 7.41667 5.72917 5.64583 7.1875 4.1875C8.64583 2.72917 10.4167 2 12.5 2C14.5833 2 16.3542 2.72917 17.8125 4.1875C19.2708 5.64583 20 7.41667 20 9.5C20 10.85 19.6625 12.1 18.9875 13.25C18.3125 14.4 17.4 15.3167 16.25 16H8.75ZM9.35 14H15.65C16.4 13.4667 16.9792 12.8083 17.3875 12.025C17.7958 11.2417 18 10.4 18 9.5C18 7.96667 17.4667 6.66667 16.4 5.6C15.3333 4.53333 14.0333 4 12.5 4C10.9667 4 9.66667 4.53333 8.6 5.6C7.53333 6.66667 7 7.96667 7 9.5C7 10.4 7.20417 11.2417 7.6125 12.025C8.02083 12.8083 8.6 13.4667 9.35 14Z",
+    fill: color
+  }));
+};
+
+LightBulbDs2Icon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+  size: PropTypes__default["default"].number
+};
+
 exports.AccountBalanceDs2Icon = AccountBalanceDs2Icon;
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleDs2Icon = AddCircleDs2Icon;
@@ -12869,6 +12892,7 @@ exports.LangageDs2Icon = LangageDs2Icon;
 exports.LaptopMacDs2Icon = LaptopMacDs2Icon;
 exports.LayerGroupIcon = LayerGroupIcon;
 exports.LayersDs2Icon = LayersDs2Icon;
+exports.LightBulbDs2Icon = LightBulbDs2Icon;
 exports.LinkDs2Icon = LinkDs2Icon;
 exports.LinkIcon = LinkIcon;
 exports.LinkedinIcon = LinkedinIcon;

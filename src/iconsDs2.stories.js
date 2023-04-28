@@ -171,6 +171,7 @@ import AttachMoneyDs2Icon from './icons/iconsDs2/AttachMoneyDs2';
 import CurrencyPoundDs2Icon from './icons/iconsDs2/CurrencyPoundDs2';
 import DragIndicatorDs2Icon from './icons/iconsDs2/DragIndicatorDs2';
 import AutopayDs2Icon from "./icons/iconsDs2/AutopayDs2";
+import LightBulbDs2Icon from "./icons/iconsDs2/LightBulbDs2";
 
 const icons = {
   title: "Iconography/Icons Ds2",
@@ -1058,6 +1059,11 @@ const AutopayDs2IconStory = args => (
 );
 AutopayDs2IconStory.storyName = 'V2 Autopay';
 
+const LightBulbDs2IconStory = args => (
+    <LightBulbDs2Icon {...args} />
+);
+LightBulbDs2IconStory.storyName = 'V2 Light Bulb';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountBalanceDs2IconStory,
@@ -1160,6 +1166,7 @@ export {
   LinkDs2IconStory,
   LinkedinDs2IconStory,
   ListAltDs2IconStory,
+  LightBulbDs2IconStory,
   LocalPoliceDs2IconStory,
   LocationOnDs2IconStory,
   LockDs2IconStory,
