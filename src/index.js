@@ -354,4 +354,5 @@ export { default as AttachMoneyDs2Icon } from './icons/iconsDs2/AttachMoneyDs2';
 export { default as CurrencyPoundDs2Icon } from './icons/iconsDs2/CurrencyPoundDs2';
 export { default as DragIndicatorDs2Icon } from './icons/iconsDs2/DragIndicatorDs2';
 export { default as AutopayDs2Icon } from './icons/iconsDs2/AutopayDs2';
+export { default as LightBulbDs2Icon } from './icons/iconsDs2/LightBulbDs2';
 
