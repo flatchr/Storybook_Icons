@@ -173,6 +173,7 @@ import DragIndicatorDs2Icon from './icons/iconsDs2/DragIndicatorDs2';
 import AutopayDs2Icon from "./icons/iconsDs2/AutopayDs2";
 import LightBulbDs2Icon from "./icons/iconsDs2/LightBulbDs2";
 import DeleteSweepDs2Icon from './icons/iconsDs2/DeleteSweepDs2';
+import AmendDs2Icon from './icons/iconsDs2/AmendDs2';
 
 const icons = {
   title: "Iconography/Icons Ds2",
@@ -1069,6 +1070,10 @@ const DeleteSweepDs2IconStory = args => (
     <DeleteSweepDs2Icon {...args} />
 );
 DeleteSweepDs2IconStory.storyName = 'V2 Delete Sweep';
+const AmendDs2IconStory = args => (
+    <AmendDs2Icon {...args} />
+);
+AmendDs2IconStory.storyName = 'V2 Amend';
 
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
@@ -1077,6 +1082,7 @@ export {
   AddDs2IconStory,
   AddsClickDs2IconStory,
   AlarmDs2IconStory,
+  AmendDs2IconStory,
   AnalyticsDs2IconStory,
   ApartmentDs2IconStory,
   AppsDs2IconStory,
