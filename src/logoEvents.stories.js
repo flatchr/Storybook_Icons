@@ -155,6 +155,21 @@ const PaulChristmasStory = (args) => (
 );
 PaulChristmasStory.storyName = "Christmas";
 
+const PaulConfirmedCooptationStory = (args) => (
+  <LogoFlatchr {...args} onlyPaul event="confirmedCooptation" />
+);
+PaulConfirmedCooptationStory.storyName = "ConfirmedCooptation";
+
+const PaulExploratorCooptationStory = (args) => (
+  <LogoFlatchr {...args} onlyPaul event="exploratorCooptation" />
+);
+PaulExploratorCooptationStory.storyName = "ExploratorCooptation";
+
+const PaulAmbassadorCooptationStory = (args) => (
+  <LogoFlatchr {...args} onlyPaul event="ambassadorCooptation" />
+);
+PaulAmbassadorCooptationStory.storyName = "AmbassadorCooptation";
+
 export {
   PaulPrideMonthStory,
   PaulSaintPatrickStory,
@@ -184,5 +199,8 @@ export {
   PaulArmisticeStory,
   PaulWinterStory,
   PaulChristmasSweaterDayStory,
-  PaulChristmasStory
+  PaulChristmasStory,
+  PaulConfirmedCooptationStory,
+  PaulExploratorCooptationStory,
+  PaulAmbassadorCooptationStory
 };
