@@ -174,6 +174,7 @@ import AutopayDs2Icon from "./icons/iconsDs2/AutopayDs2";
 import LightBulbDs2Icon from "./icons/iconsDs2/LightBulbDs2";
 import DeleteSweepDs2Icon from './icons/iconsDs2/DeleteSweepDs2';
 import AmendDs2Icon from './icons/iconsDs2/AmendDs2';
+import NumbersDs2Icon from "./icons/iconsDs2/NumbersDs2";
 
 const icons = {
   title: "Iconography/Icons Ds2",
@@ -1066,6 +1067,11 @@ const LightBulbDs2IconStory = args => (
 );
 LightBulbDs2IconStory.storyName = 'V2 Light Bulb';
 
+const NumbersDs2IconStory = args => (
+    <NumbersDs2Icon {...args} />
+);
+NumbersDs2IconStory.storyName = 'V2 Numbers';
+
 const DeleteSweepDs2IconStory = args => (
     <DeleteSweepDs2Icon {...args} />
 );
@@ -1194,6 +1200,7 @@ export {
   NestHeatLinkEDs2Icon,
   NotificationsActiveDs2IconStory,
   NotificationsDs2IconStory,
+  NumbersDs2IconStory,
   OpenInNewDs2IconStory,
   PaletteDs2IconStory,
   PauseDs2IconStory,

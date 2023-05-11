@@ -357,4 +357,5 @@ export { default as AutopayDs2Icon } from './icons/iconsDs2/AutopayDs2';
 export { default as LightBulbDs2Icon } from './icons/iconsDs2/LightBulbDs2';
 export { default as DeleteSweepDs2Icon } from './icons/iconsDs2/DeleteSweepDs2';
 export { default as AmendDs2Icon } from './icons/iconsDs2/AmendDs2';
+export { default as NumbersDs2Icon } from './icons/iconsDs2/NumbersDs2';
 
