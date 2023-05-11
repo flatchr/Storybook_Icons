@@ -33,6 +33,9 @@ import ArmisticeVariant from './paulVariants/armistice';
 import WinterVariant from './paulVariants/winter';
 import ChristmasSweaterDayVariant from './paulVariants/christmasSweaterDay';
 import ChristmasVariant from './paulVariants/christmas';
+import ConfirmedCooptation from './paulVariants/confirmedCooptation';
+import ExploratorCooptation from './paulVariants/exploratorCooptation';
+import AmbassadorCooptation from './paulVariants/ambassadorCooptation';
 
 const RenderEvent = ({ event }) => {
   switch (event) {
@@ -97,6 +100,12 @@ const RenderEvent = ({ event }) => {
       return <ChristmasSweaterDayVariant />;
     case 'christmas':
       return <ChristmasVariant />;
+    case 'confirmedCooptation':
+      return <ConfirmedCooptation />;
+    case 'exploratorCooptation':
+      return <ExploratorCooptation />;
+    case 'ambassadorCooptation':
+      return <AmbassadorCooptation />;
     default:
       return null;
   }
