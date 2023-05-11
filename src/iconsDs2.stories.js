@@ -172,6 +172,7 @@ import CurrencyPoundDs2Icon from './icons/iconsDs2/CurrencyPoundDs2';
 import DragIndicatorDs2Icon from './icons/iconsDs2/DragIndicatorDs2';
 import AutopayDs2Icon from "./icons/iconsDs2/AutopayDs2";
 import LightBulbDs2Icon from "./icons/iconsDs2/LightBulbDs2";
+import DeleteSweepDs2Icon from './icons/iconsDs2/DeleteSweepDs2';
 
 const icons = {
   title: "Iconography/Icons Ds2",
@@ -1064,6 +1065,11 @@ const LightBulbDs2IconStory = args => (
 );
 LightBulbDs2IconStory.storyName = 'V2 Light Bulb';
 
+const DeleteSweepDs2IconStory = args => (
+    <DeleteSweepDs2Icon {...args} />
+);
+DeleteSweepDs2IconStory.storyName = 'V2 Delete Sweep';
+
 // ⚠️ PLEASE KEEP IN ALPHABETICAL ORDER ⚠️
 export {
   AccountBalanceDs2IconStory,
@@ -1108,6 +1114,7 @@ export {
   CurrencyPoundDs2IconStory,
   CreditCardDs2IconStory,
   DeleteDs2IconStory,
+  DeleteSweepDs2IconStory,
   DescriptionDs2IconStory,
   DoNotDisturbOnDs2IconStory,
   DoneAllDs2IconStory,
