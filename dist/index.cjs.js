@@ -12282,6 +12282,29 @@ DeleteSweepDs2Icon.propTypes = {
   size: PropTypes__default["default"].number
 };
 
+var AmendDs2Icon = function AmendDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M6.5 5L6.5 15H8.5L8.5 5H6.5ZM10.5 5V9H12V7.575C12.3167 7.90833 12.5625 8.28333 12.7375 8.7C12.9125 9.11667 13 9.55 13 10C13 10.7833 12.7708 11.4792 12.3125 12.0875C11.8542 12.6958 11.25 13.1167 10.5 13.35L10.5 14.9C11.6667 14.6667 12.625 14.0917 13.375 13.175C14.125 12.2583 14.5 11.2 14.5 10C14.5 9.35 14.375 8.72083 14.125 8.1125C13.875 7.50417 13.5167 6.96667 13.05 6.5L14.5 6.5V5L10.5 5ZM0.5 10C0.5 8.61667 0.762501 7.31667 1.2875 6.1C1.8125 4.88333 2.525 3.825 3.425 2.925C4.325 2.025 5.38333 1.3125 6.6 0.7875C7.81667 0.2625 9.11667 0 10.5 0C11.8833 0 13.1833 0.2625 14.4 0.7875C15.6167 1.3125 16.675 2.025 17.575 2.925C18.475 3.825 19.1875 4.88333 19.7125 6.1C20.2375 7.31667 20.5 8.61667 20.5 10C20.5 11.3833 20.2375 12.6833 19.7125 13.9C19.1875 15.1167 18.475 16.175 17.575 17.075C16.675 17.975 15.6167 18.6875 14.4 19.2125C13.1833 19.7375 11.8833 20 10.5 20C9.11667 20 7.81667 19.7375 6.6 19.2125C5.38333 18.6875 4.325 17.975 3.425 17.075C2.525 16.175 1.8125 15.1167 1.2875 13.9C0.762501 12.6833 0.5 11.3833 0.5 10ZM2.5 10C2.5 12.2333 3.275 14.125 4.825 15.675C6.375 17.225 8.26667 18 10.5 18C12.7333 18 14.625 17.225 16.175 15.675C17.725 14.125 18.5 12.2333 18.5 10C18.5 7.76667 17.725 5.875 16.175 4.325C14.625 2.775 12.7333 2 10.5 2C8.26667 2 6.375 2.775 4.825 4.325C3.275 5.875 2.5 7.76667 2.5 10Z",
+    fill: color
+  }));
+};
+AmendDs2Icon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+
+  size: PropTypes__default["default"].number
+};
+
 exports.AccountBalanceDs2Icon = AccountBalanceDs2Icon;
 exports.AccountPinCircleFillIcon = AccountPinCircleFillIcon;
 exports.AddCircleDs2Icon = AddCircleDs2Icon;
@@ -12291,6 +12314,7 @@ exports.AddDs2Icon = AddDs2Icon;
 exports.AddsClickDs2Icon = AddsClickDs2Icon;
 exports.AlarmDs2Icon = AlarmDs2Icon;
 exports.AlarmIcon = AlarmIcon;
+exports.AmendDs2Icon = AmendDs2Icon;
 exports.AnalyticsDs2Icon = AnalyticsDs2Icon;
 exports.AnalyticsOutlineIcon = AnalyticsOutlineIcon;
 exports.ApartmentDs2Icon = ApartmentDs2Icon;
