@@ -61,6 +61,7 @@ import PlayCircleDs2Icon from './icons/iconsDs2/PlayCircleDs2';
 import PlaylistAddCheckDs2Icon from './icons/iconsDs2/PlaylistAddCheckDs2';
 import PublicDs2Icon from './icons/iconsDs2/PublicDs2';
 import PublishDs2Icon from './icons/iconsDs2/PublishDs2';
+import PreviewDs2Icon from './icons/iconsDs2/PreviewDs2';
 import RateReviewDs2Icon from './icons/iconsDs2/RateReviewDs2';
 import RedeemDs2Icon from './icons/iconsDs2/RedeemDs2';
 import ImageDs2Icon from './icons/iconsDs2/ImageDs2';
@@ -164,6 +165,7 @@ import CampaignDs2Icon from './icons/iconsDs2/CampaignDs2';
 import CancelDs2Icon from './icons/iconsDs2/CancelDs2';
 import ChatBubbleDs2Icon from './icons/iconsDs2/ChatBubbleDs2';
 import FacebookDs2Icon from './icons/iconsDs2/FacebookDs2';
+import GoogleDs2Icon from './icons/iconsDs2/GoogleDs2';
 import TwitterDs2Icon from './icons/iconsDs2/TwitterDs2';
 import LinkedinDs2Icon from './icons/iconsDs2/LinkedinDs2';
 import CelebrationDs2Icon from './icons/iconsDs2/CelebrationDs2';
@@ -518,6 +520,11 @@ const PublishDs2IconStory = args => (
   <PublishDs2Icon {...args} />
 );
 PublishDs2IconStory.storyName = 'V2 Publish';
+
+const PreviewDs2IconStory = args => (
+  <PreviewDs2Icon {...args} />
+);
+PreviewDs2IconStory.storyName = 'V2 Preview';
 
 const RateReviewDs2IconStory = args => (
   <RateReviewDs2Icon {...args} />
@@ -1033,6 +1040,12 @@ const FacebookDs2IconStory = args => (
     <FacebookDs2Icon {...args} />
 );
 FacebookDs2IconStory.storyName = 'V2 Facebook';
+
+const GoogleDs2IconStory = args => (
+  <GoogleDs2Icon {...args} />
+);
+GoogleDs2IconStory.storyName = 'V2 Google';
+
 const TwitterDs2IconStory = args => (
     <TwitterDs2Icon {...args} />
 );
@@ -1145,6 +1158,7 @@ export {
   ExploreDs2IconStory,
   FaceDs2IconStory,
   FacebookDs2IconStory,
+  GoogleDs2IconStory,
   FavouriteDs2IconStory,
   FileDownloadDs2IconStory,
   FilterAltDs2IconStory,
@@ -1215,6 +1229,7 @@ export {
   PlayCircleDs2IconStory,
   PublicDs2IconStory,
   PublishDs2IconStory,
+  PreviewDs2IconStory,
   RateReviewDs2IconStory,
   RedeemDs2IconStory,
   RefreshDs2IconStory,
