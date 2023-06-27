@@ -247,6 +247,7 @@ export { default as PlayCircleDs2Icon } from './icons/iconsDs2/PlayCircleDs2';
 export { default as PlaylistAddCheckDs2Icon } from './icons/iconsDs2/PlaylistAddCheckDs2';
 export { default as PublicDs2Icon } from './icons/iconsDs2/PublicDs2';
 export { default as PublishDs2Icon } from './icons/iconsDs2/PublishDs2';
+export { default as PreviewDs2Icon } from './icons/iconsDs2/PreviewDs2';
 export { default as RateReviewDs2Icon } from './icons/iconsDs2/RateReviewDs2';
 export { default as RedeemDs2Icon } from './icons/iconsDs2/RedeemDs2';
 export { default as ImageDs2Icon } from './icons/iconsDs2/ImageDs2';
@@ -358,4 +359,5 @@ export { default as LightBulbDs2Icon } from './icons/iconsDs2/LightBulbDs2';
 export { default as DeleteSweepDs2Icon } from './icons/iconsDs2/DeleteSweepDs2';
 export { default as AmendDs2Icon } from './icons/iconsDs2/AmendDs2';
 export { default as NumbersDs2Icon } from './icons/iconsDs2/NumbersDs2';
+export { default as GoogleDs2Icon } from './icons/iconsDs2/GoogleDs2';
 
