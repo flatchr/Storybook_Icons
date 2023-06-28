@@ -1185,7 +1185,7 @@ var SaintPatrickVariant = function SaintPatrickVariant() {
 
 var HeartVariant = function HeartVariant(_ref) {
   var _ref$isSaintValentine = _ref.isSaintValentineEvent,
-      isSaintValentineEvent = _ref$isSaintValentine === void 0 ? false : _ref$isSaintValentine;
+    isSaintValentineEvent = _ref$isSaintValentine === void 0 ? false : _ref$isSaintValentine;
   return /*#__PURE__*/React__default["default"].createElement(Svg.G, {
     rotation: 18,
     scale: 0.065,
@@ -2121,155 +2121,115 @@ var AmbassadorCooptation = function AmbassadorCooptation(props) {
 
 var RenderEvent = function RenderEvent(_ref) {
   var event = _ref.event;
-
   switch (event) {
     case 'prideMonth':
     case 'saintValentine':
       return /*#__PURE__*/React__default["default"].createElement(HeartVariant, {
         isSaintValentineEvent: event === 'saintValentine'
       });
-
     case 'saintPatrick':
       return /*#__PURE__*/React__default["default"].createElement(SaintPatrickVariant, null);
-
     case 'easter':
       return /*#__PURE__*/React__default["default"].createElement(EasterVariant, null);
-
     case 'spring':
       return /*#__PURE__*/React__default["default"].createElement(SpringVariant, null);
-
     case 'summer':
       return /*#__PURE__*/React__default["default"].createElement(SummerVariant, null);
-
     case 'frenchNationalDay':
       return /*#__PURE__*/React__default["default"].createElement(FrenchNationalDayVariant, null);
-
     case 'frenchMusicDay':
       return /*#__PURE__*/React__default["default"].createElement(FrenchMusicDayVariant, null);
-
     case 'halloween':
       return /*#__PURE__*/React__default["default"].createElement(HalloweenVariant, null);
-
     case 'pinkOctober':
       return /*#__PURE__*/React__default["default"].createElement(PinkOctoberVariant, null);
-
     case 'movember':
       return /*#__PURE__*/React__default["default"].createElement(MovemberVariant, null);
-
     case 'newYearDay':
       return /*#__PURE__*/React__default["default"].createElement(NewYearDayVariant, null);
-
     case 'epiphany':
       return /*#__PURE__*/React__default["default"].createElement(EpiphanyVariant, null);
-
     case 'candlemas':
       return /*#__PURE__*/React__default["default"].createElement(CandlemasVariant, null);
-
     case 'cancerDay':
       return /*#__PURE__*/React__default["default"].createElement(CancerDayVariant, null);
-
     case 'shroveTuesday':
       return /*#__PURE__*/React__default["default"].createElement(ShroveTuesdayVariant, null);
-
     case 'aprilFoolDay':
       return /*#__PURE__*/React__default["default"].createElement(AprilFoolDayVariant, null);
-
     case 'workersDay':
       return /*#__PURE__*/React__default["default"].createElement(WorkersDayVariant, null);
-
     case 'europeanDay':
       return /*#__PURE__*/React__default["default"].createElement(EuropeanDayVariant, null);
-
     case 'rolandGarros':
       return /*#__PURE__*/React__default["default"].createElement(RolandGarrosVariant, null);
-
     case 'worldBloodDonorDay':
       return /*#__PURE__*/React__default["default"].createElement(WorldBloodDonorDayVariant, null);
-
     case 'holidays':
       return /*#__PURE__*/React__default["default"].createElement(HolidaysVariant, null);
-
     case 'backToSchool':
       return /*#__PURE__*/React__default["default"].createElement(BackToSchoolVariant, null);
-
     case 'autumn':
       return /*#__PURE__*/React__default["default"].createElement(AutumnVariant, null);
-
     case 'spanishNationalDay':
       return /*#__PURE__*/React__default["default"].createElement(SpanishNationalDayVariant, null);
-
     case 'armistice':
       return /*#__PURE__*/React__default["default"].createElement(ArmisticeVariant, null);
-
     case 'winter':
       return /*#__PURE__*/React__default["default"].createElement(WinterVariant, null);
-
     case 'christmasSweaterDay':
       return /*#__PURE__*/React__default["default"].createElement(ChristmasSweaterDayVariant, null);
-
     case 'christmas':
       return /*#__PURE__*/React__default["default"].createElement(ChristmasVariant, null);
-
     case 'confirmedCooptation':
       return /*#__PURE__*/React__default["default"].createElement(ConfirmedCooptation, null);
-
     case 'exploratorCooptation':
       return /*#__PURE__*/React__default["default"].createElement(ExploratorCooptation, null);
-
     case 'ambassadorCooptation':
       return /*#__PURE__*/React__default["default"].createElement(AmbassadorCooptation, null);
-
     default:
       return null;
   }
 };
-
 var LogoFlatchr = function LogoFlatchr(props) {
   var _props$color = props.color,
-      color = _props$color === void 0 ? systemDesign.theme.colors.primary400 : _props$color,
-      _props$width = props.width,
-      widthProp = _props$width === void 0 ? null : _props$width,
-      _props$height = props.height,
-      heightProp = _props$height === void 0 ? null : _props$height,
-      _props$textColor = props.textColor,
-      textColor = _props$textColor === void 0 ? null : _props$textColor,
-      _props$onlyPaul = props.onlyPaul,
-      onlyPaul = _props$onlyPaul === void 0 ? false : _props$onlyPaul,
-      _props$event = props.event,
-      event = _props$event === void 0 ? null : _props$event,
-      _props$noEventRender = props.noEventRender,
-      noEventRender = _props$noEventRender === void 0 ? false : _props$noEventRender;
-
+    color = _props$color === void 0 ? systemDesign.theme.colors.primary400 : _props$color,
+    _props$width = props.width,
+    widthProp = _props$width === void 0 ? null : _props$width,
+    _props$height = props.height,
+    heightProp = _props$height === void 0 ? null : _props$height,
+    _props$textColor = props.textColor,
+    textColor = _props$textColor === void 0 ? null : _props$textColor,
+    _props$onlyPaul = props.onlyPaul,
+    onlyPaul = _props$onlyPaul === void 0 ? false : _props$onlyPaul,
+    _props$event = props.event,
+    event = _props$event === void 0 ? null : _props$event,
+    _props$noEventRender = props.noEventRender,
+    noEventRender = _props$noEventRender === void 0 ? false : _props$noEventRender;
   var dimensions = function dimensions() {
     var width = 347;
     var height = 90;
-
     if (onlyPaul) {
       height = 90;
       width = 75;
     }
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * height / width;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = width * heightProp / height;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -2301,27 +2261,29 @@ var LogoFlatchr = function LogoFlatchr(props) {
     fill: textColor || color
   })));
 };
-
 LogoFlatchr.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   event: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   noEventRender: PropTypes__default["default"].bool,
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number,
   textColor: PropTypes__default["default"].PropTypes.oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   onlyPaul: PropTypes__default["default"].bool
 };
 
 var UserIcon = function UserIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2334,21 +2296,21 @@ var UserIcon = function UserIcon(_ref) {
     fill: color
   }));
 };
-
 UserIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ErrorIcon = function ErrorIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2361,21 +2323,21 @@ var ErrorIcon = function ErrorIcon(_ref) {
     fill: color
   }));
 };
-
 ErrorIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var NotificationsIcon = function NotificationsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2388,21 +2350,21 @@ var NotificationsIcon = function NotificationsIcon(_ref) {
     fill: color
   }));
 };
-
 NotificationsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var NotificationsActiveIcon = function NotificationsActiveIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2415,21 +2377,21 @@ var NotificationsActiveIcon = function NotificationsActiveIcon(_ref) {
     fill: color
   }));
 };
-
 NotificationsActiveIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var NotificationsCircleIcon = function NotificationsCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2441,21 +2403,21 @@ var NotificationsCircleIcon = function NotificationsCircleIcon(_ref) {
     fill: color
   }));
 };
-
 NotificationsCircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AlarmIcon = function AlarmIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 20,
     height: height || width || 20,
@@ -2467,20 +2429,20 @@ var AlarmIcon = function AlarmIcon(_ref) {
     fill: color
   }));
 };
-
 AlarmIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FaceIcon = function FaceIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 20,
     height: height || width || 20,
@@ -2498,21 +2460,21 @@ var FaceIcon = function FaceIcon(_ref) {
     fill: "white"
   }))));
 };
-
 FaceIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MoveDownIcon = function MoveDownIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2524,21 +2486,21 @@ var MoveDownIcon = function MoveDownIcon(_ref) {
     fill: color
   }));
 };
-
 MoveDownIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PersonAddIcon = function PersonAddIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2550,21 +2512,21 @@ var PersonAddIcon = function PersonAddIcon(_ref) {
     fill: color
   }));
 };
-
 PersonAddIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var UpdateIcon = function UpdateIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2576,21 +2538,21 @@ var UpdateIcon = function UpdateIcon(_ref) {
     fill: color
   }));
 };
-
 UpdateIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var HeartIcon = function HeartIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2602,47 +2564,41 @@ var HeartIcon = function HeartIcon(_ref) {
     fill: color
   }));
 };
-
 HeartIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ClipboardListIcon = function ClipboardListIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -2654,21 +2610,21 @@ var ClipboardListIcon = function ClipboardListIcon(_ref) {
     fill: color
   }));
 };
-
 ClipboardListIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var DonutIcon = function DonutIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2680,21 +2636,21 @@ var DonutIcon = function DonutIcon(_ref) {
     fill: color
   }));
 };
-
 DonutIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ArrowForwardIcon = function ArrowForwardIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2706,21 +2662,21 @@ var ArrowForwardIcon = function ArrowForwardIcon(_ref) {
     fill: color
   }));
 };
-
 ArrowForwardIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CallPaulIcon = function CallPaulIcon(_ref) {
   var _ref$color = _ref.color;
-      _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color;
-      var _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color;
+    var _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 20,
     height: height || width || 20,
@@ -2764,21 +2720,21 @@ var CallPaulIcon = function CallPaulIcon(_ref) {
     "stroke-miterlimit": "10"
   }));
 };
-
 CallPaulIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MenuIcon = function MenuIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2790,21 +2746,21 @@ var MenuIcon = function MenuIcon(_ref) {
     fill: color
   }));
 };
-
 MenuIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AccountPinCircleFillIcon = function AccountPinCircleFillIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2816,21 +2772,21 @@ var AccountPinCircleFillIcon = function AccountPinCircleFillIcon(_ref) {
     fill: color
   }));
 };
-
 AccountPinCircleFillIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var GiftIcon = function GiftIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2842,21 +2798,21 @@ var GiftIcon = function GiftIcon(_ref) {
     fill: color
   }));
 };
-
 GiftIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CircleIcon = function CircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2868,21 +2824,21 @@ var CircleIcon = function CircleIcon(_ref) {
     fill: color
   }));
 };
-
 CircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MenuUnfoldIcon = function MenuUnfoldIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2894,21 +2850,21 @@ var MenuUnfoldIcon = function MenuUnfoldIcon(_ref) {
     fill: color
   }));
 };
-
 MenuUnfoldIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MenuFoldIcon = function MenuFoldIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2920,21 +2876,21 @@ var MenuFoldIcon = function MenuFoldIcon(_ref) {
     fill: color
   }));
 };
-
 MenuFoldIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CollectionsBookmarkIcon = function CollectionsBookmarkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2949,21 +2905,21 @@ var CollectionsBookmarkIcon = function CollectionsBookmarkIcon(_ref) {
     fill: color
   }));
 };
-
 CollectionsBookmarkIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ContentPasteIcon = function ContentPasteIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -2975,21 +2931,21 @@ var ContentPasteIcon = function ContentPasteIcon(_ref) {
     fill: color
   }));
 };
-
 ContentPasteIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TrashBinIcon = function TrashBinIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3009,47 +2965,41 @@ var TrashBinIcon = function TrashBinIcon(_ref) {
     fill: color
   }));
 };
-
 TrashBinIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ChevronRightIcon = function ChevronRightIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 320;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 320 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3061,47 +3011,41 @@ var ChevronRightIcon = function ChevronRightIcon(_ref) {
     fill: color
   }));
 };
-
 ChevronRightIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BookmarkIcon = function BookmarkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3113,21 +3057,21 @@ var BookmarkIcon = function BookmarkIcon(_ref) {
     fill: color
   }));
 };
-
 BookmarkIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FolderIcon = function FolderIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3139,21 +3083,21 @@ var FolderIcon = function FolderIcon(_ref) {
     fill: color
   }));
 };
-
 FolderIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ChatBubbleIcon = function ChatBubbleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3165,47 +3109,41 @@ var ChatBubbleIcon = function ChatBubbleIcon(_ref) {
     fill: color
   }));
 };
-
 ChatBubbleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BullhornIcon = function BullhornIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3217,47 +3155,41 @@ var BullhornIcon = function BullhornIcon(_ref) {
     fill: color
   }));
 };
-
 BullhornIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FileIcon = function FileIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3269,21 +3201,21 @@ var FileIcon = function FileIcon(_ref) {
     fill: color
   }));
 };
-
 FileIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FilterIcon = function FilterIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3298,21 +3230,21 @@ var FilterIcon = function FilterIcon(_ref) {
     fill: color
   }));
 };
-
 FilterIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var KeyIcon = function KeyIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3324,21 +3256,21 @@ var KeyIcon = function KeyIcon(_ref) {
     fill: color
   }));
 };
-
 KeyIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var RegisterListAltIcon = function RegisterListAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3350,21 +3282,21 @@ var RegisterListAltIcon = function RegisterListAltIcon(_ref) {
     fill: color
   }));
 };
-
 RegisterListAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StarIcon = function StarIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3376,47 +3308,41 @@ var StarIcon = function StarIcon(_ref) {
     fill: color
   }));
 };
-
 StarIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TagsIcon = function TagsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3428,21 +3354,21 @@ var TagsIcon = function TagsIcon(_ref) {
     fill: color
   }));
 };
-
 TagsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PeopleIcon = function PeopleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3461,47 +3387,41 @@ var PeopleIcon = function PeopleIcon(_ref) {
     fill: color
   }));
 };
-
 PeopleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BuildingIcon = function BuildingIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3513,21 +3433,21 @@ var BuildingIcon = function BuildingIcon(_ref) {
     fill: color
   }));
 };
-
 BuildingIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ColumnsIcon = function ColumnsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3539,47 +3459,41 @@ var ColumnsIcon = function ColumnsIcon(_ref) {
     fill: color
   }));
 };
-
 ColumnsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StoreAltIcon = function StoreAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3591,47 +3505,41 @@ var StoreAltIcon = function StoreAltIcon(_ref) {
     fill: color
   }));
 };
-
 StoreAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FileInvoiceDollarIcon = function FileInvoiceDollarIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3643,47 +3551,41 @@ var FileInvoiceDollarIcon = function FileInvoiceDollarIcon(_ref) {
     fill: color
   }));
 };
-
 FileInvoiceDollarIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TachometerAltIcon = function TachometerAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3695,21 +3597,21 @@ var TachometerAltIcon = function TachometerAltIcon(_ref) {
     fill: color
   }));
 };
-
 TachometerAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var LayerGroupIcon = function LayerGroupIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3721,21 +3623,21 @@ var LayerGroupIcon = function LayerGroupIcon(_ref) {
     fill: color
   }));
 };
-
 LayerGroupIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ShieldAltIcon = function ShieldAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3747,47 +3649,41 @@ var ShieldAltIcon = function ShieldAltIcon(_ref) {
     fill: color
   }));
 };
-
 ShieldAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TableAltIcon = function TableAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3799,47 +3695,41 @@ var TableAltIcon = function TableAltIcon(_ref) {
     fill: color
   }));
 };
-
 TableAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var UserLockIcon = function UserLockIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3851,47 +3741,41 @@ var UserLockIcon = function UserLockIcon(_ref) {
     fill: color
   }));
 };
-
 UserLockIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PlusIcon = function PlusIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -3903,21 +3787,21 @@ var PlusIcon = function PlusIcon(_ref) {
     fill: color
   }));
 };
-
 PlusIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PenIcon = function PenIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3929,21 +3813,21 @@ var PenIcon = function PenIcon(_ref) {
     fill: color
   }));
 };
-
 PenIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CheckIcon = function CheckIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3955,21 +3839,21 @@ var CheckIcon = function CheckIcon(_ref) {
     fill: color
   }));
 };
-
 CheckIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CloseIcon = function CloseIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -3981,47 +3865,41 @@ var CloseIcon = function CloseIcon(_ref) {
     fill: color
   }));
 };
-
 CloseIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CaretDownIcon = function CaretDownIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 320;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 320 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4033,47 +3911,41 @@ var CaretDownIcon = function CaretDownIcon(_ref) {
     fill: color
   }));
 };
-
 CaretDownIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CaretUpIcon = function CaretUpIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 320;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 320 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4085,21 +3957,21 @@ var CaretUpIcon = function CaretUpIcon(_ref) {
     fill: color
   }));
 };
-
 CaretUpIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SearchIcon = function SearchIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4111,21 +3983,21 @@ var SearchIcon = function SearchIcon(_ref) {
     fill: color
   }));
 };
-
 SearchIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EyeIcon = function EyeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4137,21 +4009,21 @@ var EyeIcon = function EyeIcon(_ref) {
     fill: color
   }));
 };
-
 EyeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EyeOffIcon = function EyeOffIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4163,47 +4035,41 @@ var EyeOffIcon = function EyeOffIcon(_ref) {
     fill: color
   }));
 };
-
 EyeOffIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var LockIcon = function LockIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4215,47 +4081,41 @@ var LockIcon = function LockIcon(_ref) {
     fill: color
   }));
 };
-
 LockIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var LockOpenIcon = function LockOpenIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4267,21 +4127,21 @@ var LockOpenIcon = function LockOpenIcon(_ref) {
     fill: color
   }));
 };
-
 LockOpenIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CheckCircleIcon = function CheckCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4293,21 +4153,21 @@ var CheckCircleIcon = function CheckCircleIcon(_ref) {
     fill: color
   }));
 };
-
 CheckCircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AddCircleOutlineIcon = function AddCircleOutlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4319,21 +4179,21 @@ var AddCircleOutlineIcon = function AddCircleOutlineIcon(_ref) {
     fill: color
   }));
 };
-
 AddCircleOutlineIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var RemoveCircleOutlineIcon = function RemoveCircleOutlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4345,47 +4205,41 @@ var RemoveCircleOutlineIcon = function RemoveCircleOutlineIcon(_ref) {
     fill: color
   }));
 };
-
 RemoveCircleOutlineIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ChevronLeftIcon = function ChevronLeftIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 320;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 320 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4397,21 +4251,21 @@ var ChevronLeftIcon = function ChevronLeftIcon(_ref) {
     fill: color
   }));
 };
-
 ChevronLeftIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CogIcon = function CogIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4423,21 +4277,21 @@ var CogIcon = function CogIcon(_ref) {
     fill: color
   }));
 };
-
 CogIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ColorPaletteIcon = function ColorPaletteIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4449,21 +4303,21 @@ var ColorPaletteIcon = function ColorPaletteIcon(_ref) {
     fill: color
   }));
 };
-
 ColorPaletteIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FormatAlignLeftIcon = function FormatAlignLeftIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4475,21 +4329,21 @@ var FormatAlignLeftIcon = function FormatAlignLeftIcon(_ref) {
     fill: color
   }));
 };
-
 FormatAlignLeftIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PublishIcon = function PublishIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4501,21 +4355,21 @@ var PublishIcon = function PublishIcon(_ref) {
     fill: color
   }));
 };
-
 PublishIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CameraIcon = function CameraIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4532,21 +4386,21 @@ var CameraIcon = function CameraIcon(_ref) {
     fill: color
   }));
 };
-
 CameraIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PlayCircleIcon = function PlayCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4558,21 +4412,21 @@ var PlayCircleIcon = function PlayCircleIcon(_ref) {
     fill: color
   }));
 };
-
 PlayCircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AnalyticsOutlineIcon = function AnalyticsOutlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4587,47 +4441,41 @@ var AnalyticsOutlineIcon = function AnalyticsOutlineIcon(_ref) {
     fill: color
   }));
 };
-
 AnalyticsOutlineIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FacebookIcon = function FacebookIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 320;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 320 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4639,21 +4487,21 @@ var FacebookIcon = function FacebookIcon(_ref) {
     fill: color
   }));
 };
-
 FacebookIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TwitterIcon = function TwitterIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4665,47 +4513,41 @@ var TwitterIcon = function TwitterIcon(_ref) {
     fill: color
   }));
 };
-
 TwitterIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var LinkedinIcon = function LinkedinIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4717,47 +4559,41 @@ var LinkedinIcon = function LinkedinIcon(_ref) {
     fill: color
   }));
 };
-
 LinkedinIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var YoutubeIcon = function YoutubeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4769,21 +4605,21 @@ var YoutubeIcon = function YoutubeIcon(_ref) {
     fill: color
   }));
 };
-
 YoutubeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var InstagramIcon = function InstagramIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4795,47 +4631,41 @@ var InstagramIcon = function InstagramIcon(_ref) {
     fill: color
   }));
 };
-
 InstagramIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ChevronUpIcon = function ChevronUpIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4847,47 +4677,41 @@ var ChevronUpIcon = function ChevronUpIcon(_ref) {
     fill: color
   }));
 };
-
 ChevronUpIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ChevronDownIcon = function ChevronDownIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -4899,21 +4723,21 @@ var ChevronDownIcon = function ChevronDownIcon(_ref) {
     fill: color
   }));
 };
-
 ChevronDownIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var LinkIcon = function LinkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4925,21 +4749,21 @@ var LinkIcon = function LinkIcon(_ref) {
     fill: color
   }));
 };
-
 LinkIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MergeIcon = function MergeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4951,21 +4775,21 @@ var MergeIcon = function MergeIcon(_ref) {
     fill: color
   }));
 };
-
 MergeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CloneIcon = function CloneIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -4977,47 +4801,41 @@ var CloneIcon = function CloneIcon(_ref) {
     fill: color
   }));
 };
-
 CloneIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BookmarkAltIcon = function BookmarkAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5029,47 +4847,41 @@ var BookmarkAltIcon = function BookmarkAltIcon(_ref) {
     fill: color
   }));
 };
-
 BookmarkAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SourceTreeIcon = function SourceTreeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5081,21 +4893,21 @@ var SourceTreeIcon = function SourceTreeIcon(_ref) {
     fill: color
   }));
 };
-
 SourceTreeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var VectorSquareIcon = function VectorSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5107,47 +4919,41 @@ var VectorSquareIcon = function VectorSquareIcon(_ref) {
     fill: color
   }));
 };
-
 VectorSquareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SaveIcon = function SaveIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5159,21 +4965,21 @@ var SaveIcon = function SaveIcon(_ref) {
     fill: color
   }));
 };
-
 SaveIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var DownloadIcon = function DownloadIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5185,21 +4991,21 @@ var DownloadIcon = function DownloadIcon(_ref) {
     fill: color
   }));
 };
-
 DownloadIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PaperPlaneIcon = function PaperPlaneIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5211,21 +5017,21 @@ var PaperPlaneIcon = function PaperPlaneIcon(_ref) {
     fill: color
   }));
 };
-
 PaperPlaneIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var RandomIcon = function RandomIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5237,21 +5043,21 @@ var RandomIcon = function RandomIcon(_ref) {
     fill: color
   }));
 };
-
 RandomIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var RedoLoopIcon = function RedoLoopIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5263,21 +5069,21 @@ var RedoLoopIcon = function RedoLoopIcon(_ref) {
     fill: color
   }));
 };
-
 RedoLoopIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AppsIcon = function AppsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5289,21 +5095,21 @@ var AppsIcon = function AppsIcon(_ref) {
     fill: color
   }));
 };
-
 AppsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var GridIcon = function GridIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5315,47 +5121,41 @@ var GridIcon = function GridIcon(_ref) {
     fill: color
   }));
 };
-
 GridIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CalendarIcon = function CalendarIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5367,21 +5167,21 @@ var CalendarIcon = function CalendarIcon(_ref) {
     fill: color
   }));
 };
-
 CalendarIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EnvelopeIcon = function EnvelopeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5393,47 +5193,41 @@ var EnvelopeIcon = function EnvelopeIcon(_ref) {
     fill: color
   }));
 };
-
 EnvelopeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var GlobeIcon = function GlobeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 496;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 496 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5445,47 +5239,41 @@ var GlobeIcon = function GlobeIcon(_ref) {
     fill: color
   }));
 };
-
 GlobeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var GlobeEuropeIcon = function GlobeEuropeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 496;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 496 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5497,47 +5285,41 @@ var GlobeEuropeIcon = function GlobeEuropeIcon(_ref) {
     fill: color
   }));
 };
-
 GlobeEuropeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var NetworkWiredIcon = function NetworkWiredIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5549,21 +5331,21 @@ var NetworkWiredIcon = function NetworkWiredIcon(_ref) {
     fill: color
   }));
 };
-
 NetworkWiredIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var RegDotCircleIcon = function RegDotCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5575,21 +5357,21 @@ var RegDotCircleIcon = function RegDotCircleIcon(_ref) {
     fill: color
   }));
 };
-
 RegDotCircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var UniversityIcon = function UniversityIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5601,21 +5383,21 @@ var UniversityIcon = function UniversityIcon(_ref) {
     fill: color
   }));
 };
-
 UniversityIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StreetViewIcon = function StreetViewIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5627,47 +5409,41 @@ var StreetViewIcon = function StreetViewIcon(_ref) {
     fill: color
   }));
 };
-
 StreetViewIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var UserClockIcon = function UserClockIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5679,47 +5455,41 @@ var UserClockIcon = function UserClockIcon(_ref) {
     fill: color
   }));
 };
-
 UserClockIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var GraduateIcon = function GraduateIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5731,21 +5501,21 @@ var GraduateIcon = function GraduateIcon(_ref) {
     fill: color
   }));
 };
-
 GraduateIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ChatBubblesIcon = function ChatBubblesIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5760,47 +5530,41 @@ var ChatBubblesIcon = function ChatBubblesIcon(_ref) {
     fill: color
   }));
 };
-
 ChatBubblesIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FacebookSquareIcon = function FacebookSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5812,47 +5576,41 @@ var FacebookSquareIcon = function FacebookSquareIcon(_ref) {
     fill: color
   }));
 };
-
 FacebookSquareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var LinkedinSquareIcon = function LinkedinSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5864,21 +5622,21 @@ var LinkedinSquareIcon = function LinkedinSquareIcon(_ref) {
     fill: color
   }));
 };
-
 LinkedinSquareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AttachFileIcon = function AttachFileIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5890,21 +5648,21 @@ var AttachFileIcon = function AttachFileIcon(_ref) {
     fill: color
   }));
 };
-
 AttachFileIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StarHalfIcon = function StarHalfIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5916,21 +5674,21 @@ var StarHalfIcon = function StarHalfIcon(_ref) {
     fill: color
   }));
 };
-
 StarHalfIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StarBorderIcon = function StarBorderIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -5942,47 +5700,41 @@ var StarBorderIcon = function StarBorderIcon(_ref) {
     fill: color
   }));
 };
-
 StarBorderIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var GithubSquareIcon = function GithubSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -5994,47 +5746,41 @@ var GithubSquareIcon = function GithubSquareIcon(_ref) {
     fill: color
   }));
 };
-
 GithubSquareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TwitterSquareIcon = function TwitterSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6046,21 +5792,21 @@ var TwitterSquareIcon = function TwitterSquareIcon(_ref) {
     fill: color
   }));
 };
-
 TwitterSquareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ExternalLinkIcon = function ExternalLinkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6072,47 +5818,41 @@ var ExternalLinkIcon = function ExternalLinkIcon(_ref) {
     fill: color
   }));
 };
-
 ExternalLinkIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FileAltIcon = function FileAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6124,21 +5864,21 @@ var FileAltIcon = function FileAltIcon(_ref) {
     fill: color
   }));
 };
-
 FileAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PhoneIcon = function PhoneIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6150,47 +5890,41 @@ var PhoneIcon = function PhoneIcon(_ref) {
     fill: color
   }));
 };
-
 PhoneIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SkypeIcon = function SkypeIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6202,21 +5936,21 @@ var SkypeIcon = function SkypeIcon(_ref) {
     fill: color
   }));
 };
-
 SkypeIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ShareIcon = function ShareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6228,21 +5962,21 @@ var ShareIcon = function ShareIcon(_ref) {
     fill: color
   }));
 };
-
 ShareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var GoogleHangoutsIcon = function GoogleHangoutsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6254,21 +5988,21 @@ var GoogleHangoutsIcon = function GoogleHangoutsIcon(_ref) {
     fill: color
   }));
 };
-
 GoogleHangoutsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FontDownloadIcon = function FontDownloadIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6280,21 +6014,21 @@ var FontDownloadIcon = function FontDownloadIcon(_ref) {
     fill: color
   }));
 };
-
 FontDownloadIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FormatBoldIcon = function FormatBoldIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6306,21 +6040,21 @@ var FormatBoldIcon = function FormatBoldIcon(_ref) {
     fill: color
   }));
 };
-
 FormatBoldIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FormatClearIcon = function FormatClearIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6332,21 +6066,21 @@ var FormatClearIcon = function FormatClearIcon(_ref) {
     fill: color
   }));
 };
-
 FormatClearIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FormatItalicIcon = function FormatItalicIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6358,21 +6092,21 @@ var FormatItalicIcon = function FormatItalicIcon(_ref) {
     fill: color
   }));
 };
-
 FormatItalicIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FormatListBulletedIcon = function FormatListBulletedIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6384,21 +6118,21 @@ var FormatListBulletedIcon = function FormatListBulletedIcon(_ref) {
     fill: color
   }));
 };
-
 FormatListBulletedIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FormatListNumberedIcon = function FormatListNumberedIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6410,21 +6144,21 @@ var FormatListNumberedIcon = function FormatListNumberedIcon(_ref) {
     fill: color
   }));
 };
-
 FormatListNumberedIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FormatUnderlineIcon = function FormatUnderlineIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6439,21 +6173,21 @@ var FormatUnderlineIcon = function FormatUnderlineIcon(_ref) {
     fill: color
   }));
 };
-
 FormatUnderlineIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ImageIcon = function ImageIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6465,21 +6199,21 @@ var ImageIcon = function ImageIcon(_ref) {
     fill: color
   }));
 };
-
 ImageIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var RedoIcon = function RedoIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6491,21 +6225,21 @@ var RedoIcon = function RedoIcon(_ref) {
     fill: color
   }));
 };
-
 RedoIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var UndoIcon = function UndoIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6517,47 +6251,41 @@ var UndoIcon = function UndoIcon(_ref) {
     fill: color
   }));
 };
-
 UndoIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TrashIcon = function TrashIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6569,47 +6297,41 @@ var TrashIcon = function TrashIcon(_ref) {
     fill: color
   }));
 };
-
 TrashIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CalendarCheckIcon = function CalendarCheckIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6621,21 +6343,21 @@ var CalendarCheckIcon = function CalendarCheckIcon(_ref) {
     fill: color
   }));
 };
-
 CalendarCheckIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BanIcon = function BanIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6647,21 +6369,21 @@ var BanIcon = function BanIcon(_ref) {
     fill: color
   }));
 };
-
 BanIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SignInIcon = function SignInIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6673,21 +6395,21 @@ var SignInIcon = function SignInIcon(_ref) {
     fill: color
   }));
 };
-
 SignInIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ThumbsUpIcon = function ThumbsUpIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6699,47 +6421,41 @@ var ThumbsUpIcon = function ThumbsUpIcon(_ref) {
     fill: color
   }));
 };
-
 ThumbsUpIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TrophyIcon = function TrophyIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6751,21 +6467,21 @@ var TrophyIcon = function TrophyIcon(_ref) {
     fill: color
   }));
 };
-
 TrophyIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MapSignsIcon = function MapSignsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6777,21 +6493,21 @@ var MapSignsIcon = function MapSignsIcon(_ref) {
     fill: color
   }));
 };
-
 MapSignsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BriefCaseIcon = function BriefCaseIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6803,47 +6519,41 @@ var BriefCaseIcon = function BriefCaseIcon(_ref) {
     fill: color
   }));
 };
-
 BriefCaseIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SmileIcon = function SmileIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 496;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 496 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6855,47 +6565,41 @@ var SmileIcon = function SmileIcon(_ref) {
     fill: color
   }));
 };
-
 SmileIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SmileGrinHeartsIcon = function SmileGrinHeartsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 496;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 496 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -6907,21 +6611,21 @@ var SmileGrinHeartsIcon = function SmileGrinHeartsIcon(_ref) {
     fill: color
   }));
 };
-
 SmileGrinHeartsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BinocularsIcon = function BinocularsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6933,21 +6637,21 @@ var BinocularsIcon = function BinocularsIcon(_ref) {
     fill: color
   }));
 };
-
 BinocularsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ToolsIcon = function ToolsIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -6959,47 +6663,41 @@ var ToolsIcon = function ToolsIcon(_ref) {
     fill: color
   }));
 };
-
 ToolsIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CompassIcon = function CompassIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 496;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 496 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7011,47 +6709,41 @@ var CompassIcon = function CompassIcon(_ref) {
     fill: color
   }));
 };
-
 CompassIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MoutainIcon = function MoutainIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7063,47 +6755,41 @@ var MoutainIcon = function MoutainIcon(_ref) {
     fill: color
   }));
 };
-
 MoutainIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CalculatorIcon = function CalculatorIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7115,47 +6801,41 @@ var CalculatorIcon = function CalculatorIcon(_ref) {
     fill: color
   }));
 };
-
 CalculatorIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var HandHoldingHeartIcon = function HandHoldingHeartIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7167,47 +6847,41 @@ var HandHoldingHeartIcon = function HandHoldingHeartIcon(_ref) {
     fill: color
   }));
 };
-
 HandHoldingHeartIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SmileWinkIcon = function SmileWinkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 496 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 496;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 496 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7219,47 +6893,41 @@ var SmileWinkIcon = function SmileWinkIcon(_ref) {
     fill: color
   }));
 };
-
 SmileWinkIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BoltIcon = function BoltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 320;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 320 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7271,21 +6939,21 @@ var BoltIcon = function BoltIcon(_ref) {
     fill: color
   }));
 };
-
 BoltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var OctopussDeployIcon = function OctopussDeployIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7297,47 +6965,41 @@ var OctopussDeployIcon = function OctopussDeployIcon(_ref) {
     fill: color
   }));
 };
-
 OctopussDeployIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BatteryThreeQuartersIcon = function BatteryThreeQuartersIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7349,47 +7011,41 @@ var BatteryThreeQuartersIcon = function BatteryThreeQuartersIcon(_ref) {
     fill: color
   }));
 };
-
 BatteryThreeQuartersIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var DumbbellIcon = function DumbbellIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7401,47 +7057,41 @@ var DumbbellIcon = function DumbbellIcon(_ref) {
     fill: color
   }));
 };
-
 DumbbellIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CreditCardIcon = function CreditCardIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7453,21 +7103,21 @@ var CreditCardIcon = function CreditCardIcon(_ref) {
     fill: color
   }));
 };
-
 CreditCardIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var InfoCircleIcon = function InfoCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7479,47 +7129,41 @@ var InfoCircleIcon = function InfoCircleIcon(_ref) {
     fill: color
   }));
 };
-
 InfoCircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PauseIcon = function PauseIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7531,47 +7175,41 @@ var PauseIcon = function PauseIcon(_ref) {
     fill: color
   }));
 };
-
 PauseIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PlayIcon = function PlayIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7583,47 +7221,41 @@ var PlayIcon = function PlayIcon(_ref) {
     fill: color
   }));
 };
-
 PlayIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ShoppingCartIcon = function ShoppingCartIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7635,21 +7267,21 @@ var ShoppingCartIcon = function ShoppingCartIcon(_ref) {
     fill: color
   }));
 };
-
 ShoppingCartIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ShieldCheckmarkIcon = function ShieldCheckmarkIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7661,21 +7293,21 @@ var ShieldCheckmarkIcon = function ShieldCheckmarkIcon(_ref) {
     fill: color
   }));
 };
-
 ShieldCheckmarkIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ArrowRepeatIcon = function ArrowRepeatIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7690,21 +7322,21 @@ var ArrowRepeatIcon = function ArrowRepeatIcon(_ref) {
     fill: color
   }));
 };
-
 ArrowRepeatIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AddCircleIcon = function AddCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7716,21 +7348,21 @@ var AddCircleIcon = function AddCircleIcon(_ref) {
     fill: color
   }));
 };
-
 AddCircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EyedropperIcon = function EyedropperIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7742,21 +7374,21 @@ var EyedropperIcon = function EyedropperIcon(_ref) {
     fill: color
   }));
 };
-
 EyedropperIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ImageEditIcon = function ImageEditIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7768,21 +7400,21 @@ var ImageEditIcon = function ImageEditIcon(_ref) {
     fill: color
   }));
 };
-
 ImageEditIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ReplyIcon = function ReplyIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7794,21 +7426,21 @@ var ReplyIcon = function ReplyIcon(_ref) {
     fill: color
   }));
 };
-
 ReplyIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MoreVerticalIcon = function MoreVerticalIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7820,47 +7452,41 @@ var MoreVerticalIcon = function MoreVerticalIcon(_ref) {
     fill: color
   }));
 };
-
 MoreVerticalIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MicrophoneIcon = function MicrophoneIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 352 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 352;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 352 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7872,47 +7498,41 @@ var MicrophoneIcon = function MicrophoneIcon(_ref) {
     fill: color
   }));
 };
-
 MicrophoneIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StopIcon = function StopIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -7924,21 +7544,21 @@ var StopIcon = function StopIcon(_ref) {
     fill: color
   }));
 };
-
 StopIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ControlPointDuplicateIcon = function ControlPointDuplicateIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -7950,47 +7570,41 @@ var ControlPointDuplicateIcon = function ControlPointDuplicateIcon(_ref) {
     fill: color
   }));
 };
-
 ControlPointDuplicateIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EditIcon = function EditIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 576 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 576;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 576 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8002,47 +7616,41 @@ var EditIcon = function EditIcon(_ref) {
     fill: color
   }));
 };
-
 EditIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CheckSquareIcon = function CheckSquareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8054,21 +7662,21 @@ var CheckSquareIcon = function CheckSquareIcon(_ref) {
     fill: color
   }));
 };
-
 CheckSquareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CallSplitIcon = function CallSplitIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -8080,47 +7688,41 @@ var CallSplitIcon = function CallSplitIcon(_ref) {
     fill: color
   }));
 };
-
 CallSplitIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EuroIcon = function EuroIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 320 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 320;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 320 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8132,47 +7734,41 @@ var EuroIcon = function EuroIcon(_ref) {
     fill: color
   }));
 };
-
 EuroIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MapMarkerIcon = function MapMarkerIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8184,21 +7780,21 @@ var MapMarkerIcon = function MapMarkerIcon(_ref) {
     fill: color
   }));
 };
-
 MapMarkerIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var HistoryIcon = function HistoryIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -8210,21 +7806,21 @@ var HistoryIcon = function HistoryIcon(_ref) {
     fill: color
   }));
 };
-
 HistoryIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EnveloppeCheckIcon = function EnveloppeCheckIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -8236,47 +7832,41 @@ var EnveloppeCheckIcon = function EnveloppeCheckIcon(_ref) {
     fill: color
   }));
 };
-
 EnveloppeCheckIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var UserPlusIcon = function UserPlusIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8288,47 +7878,41 @@ var UserPlusIcon = function UserPlusIcon(_ref) {
     fill: color
   }));
 };
-
 UserPlusIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CodeBranchIcon = function CodeBranchIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 384 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 384;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 384 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8340,21 +7924,21 @@ var CodeBranchIcon = function CodeBranchIcon(_ref) {
     fill: color
   }));
 };
-
 CodeBranchIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var UserAssignmentIcon = function UserAssignmentIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -8366,21 +7950,21 @@ var UserAssignmentIcon = function UserAssignmentIcon(_ref) {
     fill: color
   }));
 };
-
 UserAssignmentIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var CloseCircleIcon = function CloseCircleIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -8392,21 +7976,21 @@ var CloseCircleIcon = function CloseCircleIcon(_ref) {
     fill: color
   }));
 };
-
 CloseCircleIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var ListAltIcon = function ListAltIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -8418,47 +8002,41 @@ var ListAltIcon = function ListAltIcon(_ref) {
     fill: color
   }));
 };
-
 ListAltIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MinusIcon = function MinusIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8470,21 +8048,21 @@ var MinusIcon = function MinusIcon(_ref) {
     fill: color
   }));
 };
-
 MinusIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var FolderOpenedIcon = function FolderOpenedIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 16,
     height: height || width || 16,
@@ -8496,47 +8074,41 @@ var FolderOpenedIcon = function FolderOpenedIcon(_ref) {
     fill: color
   }));
 };
-
 FolderOpenedIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var HandsHelpingIcon = function HandsHelpingIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 640 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 640;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 640 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8548,47 +8120,41 @@ var HandsHelpingIcon = function HandsHelpingIcon(_ref) {
     fill: color
   }));
 };
-
 HandsHelpingIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MobileIcon = function MobileIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 10 * 16 / 14;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 14 / 10;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 10 * heightProp / 14;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8600,21 +8166,21 @@ var MobileIcon = function MobileIcon(_ref) {
     fill: color
   }));
 };
-
 MobileIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SignatureIcon = function SignatureIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || height || 48,
     height: height || width || 48,
@@ -8626,21 +8192,21 @@ var SignatureIcon = function SignatureIcon(_ref) {
     fill: color
   }));
 };
-
 SignatureIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AutoPayIcon = function AutoPayIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? 24 : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? 24 : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? 24 : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? 24 : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width,
     height: height,
@@ -8652,21 +8218,21 @@ var AutoPayIcon = function AutoPayIcon(_ref) {
     fill: color
   }));
 };
-
 AutoPayIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var BlockIcon = function BlockIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? 24 : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? 24 : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? 24 : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? 24 : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width,
     height: height,
@@ -8678,21 +8244,21 @@ var BlockIcon = function BlockIcon(_ref) {
     fill: color
   })));
 };
-
 BlockIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SellIcon = function SellIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     xmlns: "http://www.w3.org/2000/svg",
     width: width || 24,
@@ -8704,47 +8270,41 @@ var SellIcon = function SellIcon(_ref) {
     fill: color
   })));
 };
-
 SellIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var DesktopIcon = function DesktopIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$width = _ref.width,
-      widthProp = _ref$width === void 0 ? null : _ref$width,
-      _ref$height = _ref.height,
-      heightProp = _ref$height === void 0 ? null : _ref$height;
-
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$width = _ref.width,
+    widthProp = _ref$width === void 0 ? null : _ref$width,
+    _ref$height = _ref.height,
+    heightProp = _ref$height === void 0 ? null : _ref$height;
   var dimensions = function dimensions() {
     var width = 448 * 16 / 512;
     var height = 16;
-
     if (widthProp && heightProp) {
       height = heightProp;
       width = widthProp;
     }
-
     if (widthProp && !heightProp) {
       height = widthProp * 512 / 448;
       width = widthProp;
     }
-
     if (!widthProp && heightProp) {
       width = 448 * heightProp / 512;
       height = heightProp;
     }
-
     return {
       height: height,
       width: width
     };
   };
-
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: dimensions().width,
     height: dimensions().height,
@@ -8756,21 +8316,21 @@ var DesktopIcon = function DesktopIcon(_ref) {
     fill: color
   }));
 };
-
 DesktopIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var EditNoteIcon = function EditNoteIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8782,21 +8342,21 @@ var EditNoteIcon = function EditNoteIcon(_ref) {
     fill: color
   })));
 };
-
 EditNoteIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var RepeatIcon = function RepeatIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8808,21 +8368,21 @@ var RepeatIcon = function RepeatIcon(_ref) {
     fill: color
   })));
 };
-
 RepeatIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var IosShareIcon = function IosShareIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8834,21 +8394,21 @@ var IosShareIcon = function IosShareIcon(_ref) {
     fill: color
   })));
 };
-
 IosShareIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StayCurrentPortraitIcon = function StayCurrentPortraitIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8860,21 +8420,21 @@ var StayCurrentPortraitIcon = function StayCurrentPortraitIcon(_ref) {
     fill: color
   })));
 };
-
 StayCurrentPortraitIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var SwapHorizIcon = function SwapHorizIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8886,21 +8446,21 @@ var SwapHorizIcon = function SwapHorizIcon(_ref) {
     fill: color
   })));
 };
-
 SwapHorizIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var TaskIcon = function TaskIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8912,21 +8472,21 @@ var TaskIcon = function TaskIcon(_ref) {
     fill: color
   })));
 };
-
 TaskIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var StarRoundedIcon = function StarRoundedIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8938,21 +8498,21 @@ var StarRoundedIcon = function StarRoundedIcon(_ref) {
     fill: color
   })));
 };
-
 StarRoundedIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var MailIcon = function MailIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8964,21 +8524,21 @@ var MailIcon = function MailIcon(_ref) {
     fill: color
   })));
 };
-
 MailIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var PhotoCameraFrontIcon = function PhotoCameraFrontIcon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$height = _ref.height,
-      height = _ref$height === void 0 ? null : _ref$height,
-      _ref$width = _ref.width,
-      width = _ref$width === void 0 ? null : _ref$width;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$height = _ref.height,
+    height = _ref$height === void 0 ? null : _ref$height,
+    _ref$width = _ref.width,
+    width = _ref$width === void 0 ? null : _ref$width;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: width || 24,
     height: height || 24,
@@ -8990,19 +8550,19 @@ var PhotoCameraFrontIcon = function PhotoCameraFrontIcon(_ref) {
     fill: color
   })));
 };
-
 PhotoCameraFrontIcon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   height: PropTypes__default["default"].number,
   with: PropTypes__default["default"].number
 };
 
 var AccountBalanceDs2Icon = function AccountBalanceDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9014,18 +8574,18 @@ var AccountBalanceDs2Icon = function AccountBalanceDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AccountBalanceDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var WorkspacePremiumDs2Icon = function WorkspacePremiumDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9037,18 +8597,18 @@ var WorkspacePremiumDs2Icon = function WorkspacePremiumDs2Icon(_ref) {
     fill: color
   }));
 };
-
 WorkspacePremiumDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var WorkDs2Icon = function WorkDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9060,18 +8620,18 @@ var WorkDs2Icon = function WorkDs2Icon(_ref) {
     fill: color
   }));
 };
-
 WorkDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var VolunteerActivismDs2Icon = function VolunteerActivismDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9083,18 +8643,18 @@ var VolunteerActivismDs2Icon = function VolunteerActivismDs2Icon(_ref) {
     fill: color
   }));
 };
-
 VolunteerActivismDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var VisibilityDs2Icon = function VisibilityDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9106,18 +8666,18 @@ var VisibilityDs2Icon = function VisibilityDs2Icon(_ref) {
     fill: color
   }));
 };
-
 VisibilityDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var VisibilityOffDs2Icon = function VisibilityOffDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9129,18 +8689,18 @@ var VisibilityOffDs2Icon = function VisibilityOffDs2Icon(_ref) {
     fill: color
   }));
 };
-
 VisibilityOffDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ViewWeekDs2Icon = function ViewWeekDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9152,18 +8712,18 @@ var ViewWeekDs2Icon = function ViewWeekDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ViewWeekDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var VerifiedUserDs2Icon = function VerifiedUserDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9175,18 +8735,18 @@ var VerifiedUserDs2Icon = function VerifiedUserDs2Icon(_ref) {
     fill: color
   }));
 };
-
 VerifiedUserDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var UpdateDs2Icon = function UpdateDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9198,18 +8758,18 @@ var UpdateDs2Icon = function UpdateDs2Icon(_ref) {
     fill: color
   }));
 };
-
 UpdateDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var TopicDs2Icon = function TopicDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9221,18 +8781,18 @@ var TopicDs2Icon = function TopicDs2Icon(_ref) {
     fill: color
   }));
 };
-
 TopicDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ThumbUpDs2Icon = function ThumbUpDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9244,18 +8804,18 @@ var ThumbUpDs2Icon = function ThumbUpDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ThumbUpDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var TaskDs2Icon = function TaskDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9267,18 +8827,18 @@ var TaskDs2Icon = function TaskDs2Icon(_ref) {
     fill: color
   }));
 };
-
 TaskDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var TabletMacDs2Icon = function TabletMacDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9290,18 +8850,18 @@ var TabletMacDs2Icon = function TabletMacDs2Icon(_ref) {
     fill: color
   }));
 };
-
 TabletMacDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var TableDs2Icon = function TableDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9313,18 +8873,18 @@ var TableDs2Icon = function TableDs2Icon(_ref) {
     fill: color
   }));
 };
-
 TableDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SwapHorizDs2Icon = function SwapHorizDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9336,18 +8896,18 @@ var SwapHorizDs2Icon = function SwapHorizDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SwapHorizDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SupervisedUserCircleDs2Icon = function SupervisedUserCircleDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9359,18 +8919,18 @@ var SupervisedUserCircleDs2Icon = function SupervisedUserCircleDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SupervisedUserCircleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var StoreDs2Icon = function StoreDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9382,18 +8942,18 @@ var StoreDs2Icon = function StoreDs2Icon(_ref) {
     fill: color
   }));
 };
-
 StoreDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var StopDs2Icon = function StopDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9405,18 +8965,18 @@ var StopDs2Icon = function StopDs2Icon(_ref) {
     fill: color
   }));
 };
-
 StopDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var StayCurrentPortraitDs2Icon = function StayCurrentPortraitDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9428,18 +8988,18 @@ var StayCurrentPortraitDs2Icon = function StayCurrentPortraitDs2Icon(_ref) {
     fill: color
   }));
 };
-
 StayCurrentPortraitDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var StarDs2Icon = function StarDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9451,18 +9011,18 @@ var StarDs2Icon = function StarDs2Icon(_ref) {
     fill: color
   }));
 };
-
 StarDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var StarHalfDs2Icon = function StarHalfDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9474,18 +9034,18 @@ var StarHalfDs2Icon = function StarHalfDs2Icon(_ref) {
     fill: color
   }));
 };
-
 StarHalfDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SpeedDs2Icon = function SpeedDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9497,18 +9057,18 @@ var SpeedDs2Icon = function SpeedDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SpeedDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SmartphoneDs2Icon = function SmartphoneDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9520,18 +9080,18 @@ var SmartphoneDs2Icon = function SmartphoneDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SmartphoneDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SignPostDs2Icon = function SignPostDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9543,18 +9103,18 @@ var SignPostDs2Icon = function SignPostDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SignPostDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ShuffleDs2Icon = function ShuffleDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9566,18 +9126,18 @@ var ShuffleDs2Icon = function ShuffleDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ShuffleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ShoppingCartDs2Icon = function ShoppingCartDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9589,18 +9149,18 @@ var ShoppingCartDs2Icon = function ShoppingCartDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ShoppingCartDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ShareDs2Icon = function ShareDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9612,18 +9172,18 @@ var ShareDs2Icon = function ShareDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ShareDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SettingsDs2Icon = function SettingsDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9635,18 +9195,18 @@ var SettingsDs2Icon = function SettingsDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SettingsDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SentimentSatisfiedDs2Icon = function SentimentSatisfiedDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9658,18 +9218,18 @@ var SentimentSatisfiedDs2Icon = function SentimentSatisfiedDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SentimentSatisfiedDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SendDs2Icon = function SendDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9681,18 +9241,18 @@ var SendDs2Icon = function SendDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SendDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var RefreshDs2Icon = function RefreshDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9704,18 +9264,18 @@ var RefreshDs2Icon = function RefreshDs2Icon(_ref) {
     fill: color
   }));
 };
-
 RefreshDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var RemoveDs2Icon = function RemoveDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9727,18 +9287,18 @@ var RemoveDs2Icon = function RemoveDs2Icon(_ref) {
     fill: color
   }));
 };
-
 RemoveDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var RepeatDs2Icon = function RepeatDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9750,18 +9310,18 @@ var RepeatDs2Icon = function RepeatDs2Icon(_ref) {
     fill: color
   }));
 };
-
 RepeatDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ReplyDs2Icon = function ReplyDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9773,18 +9333,18 @@ var ReplyDs2Icon = function ReplyDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ReplyDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var RequestQuoteDs2Icon = function RequestQuoteDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9796,18 +9356,18 @@ var RequestQuoteDs2Icon = function RequestQuoteDs2Icon(_ref) {
     fill: color
   }));
 };
-
 RequestQuoteDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ScreenRotationDs2Icon = function ScreenRotationDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9819,18 +9379,18 @@ var ScreenRotationDs2Icon = function ScreenRotationDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ScreenRotationDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SearchDs2Icon = function SearchDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9842,18 +9402,18 @@ var SearchDs2Icon = function SearchDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SearchDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var SellDs2Icon = function SellDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9865,18 +9425,18 @@ var SellDs2Icon = function SellDs2Icon(_ref) {
     fill: color
   }));
 };
-
 SellDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var WorkHistoryDs2Icon = function WorkHistoryDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9888,18 +9448,18 @@ var WorkHistoryDs2Icon = function WorkHistoryDs2Icon(_ref) {
     fill: color
   }));
 };
-
 WorkHistoryDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var MicDs2Icon = function MicDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9911,18 +9471,18 @@ var MicDs2Icon = function MicDs2Icon(_ref) {
     fill: color
   }));
 };
-
 MicDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var MoreVertDs2Icon = function MoreVertDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9934,18 +9494,18 @@ var MoreVertDs2Icon = function MoreVertDs2Icon(_ref) {
     fill: color
   }));
 };
-
 MoreVertDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var MoveDownDs2Icon = function MoveDownDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9957,18 +9517,18 @@ var MoveDownDs2Icon = function MoveDownDs2Icon(_ref) {
     fill: color
   }));
 };
-
 MoveDownDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var NestHeatLinkEDs2 = function NestHeatLinkEDs2(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -9980,18 +9540,18 @@ var NestHeatLinkEDs2 = function NestHeatLinkEDs2(_ref) {
     fill: color
   }));
 };
-
 NestHeatLinkEDs2.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var NotificationsActiveDs2Icon = function NotificationsActiveDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10003,18 +9563,18 @@ var NotificationsActiveDs2Icon = function NotificationsActiveDs2Icon(_ref) {
     fill: color
   }));
 };
-
 NotificationsActiveDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var NotificationsDs2Icon = function NotificationsDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10026,18 +9586,18 @@ var NotificationsDs2Icon = function NotificationsDs2Icon(_ref) {
     fill: color
   }));
 };
-
 NotificationsDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var OpenInNewDs2Icon = function OpenInNewDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10049,18 +9609,18 @@ var OpenInNewDs2Icon = function OpenInNewDs2Icon(_ref) {
     fill: color
   }));
 };
-
 OpenInNewDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PaletteDs2Icon = function PaletteDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? systemDesign.theme.colors.textPrimary : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10072,18 +9632,18 @@ var PaletteDs2Icon = function PaletteDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PaletteDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PauseDs2Icon = function PauseDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10095,18 +9655,18 @@ var PauseDs2Icon = function PauseDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PauseDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PersonAddDs2Icon = function PersonAddDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10118,18 +9678,18 @@ var PersonAddDs2Icon = function PersonAddDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PersonAddDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PersonPinCircleDs2Icon = function PersonPinCircleDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10141,18 +9701,18 @@ var PersonPinCircleDs2Icon = function PersonPinCircleDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PersonPinCircleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PersonPinDs2Icon = function PersonPinDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10164,18 +9724,18 @@ var PersonPinDs2Icon = function PersonPinDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PersonPinDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PersonDs2Icon = function PersonDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10187,18 +9747,18 @@ var PersonDs2Icon = function PersonDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PersonDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PhotoCameraFrontDs2Icon = function PhotoCameraFrontDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10210,18 +9770,18 @@ var PhotoCameraFrontDs2Icon = function PhotoCameraFrontDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PhotoCameraFrontDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PhotoCameraDs2Icon = function PhotoCameraDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10233,17 +9793,17 @@ var PhotoCameraDs2Icon = function PhotoCameraDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PhotoCameraDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PlayArrowDs2Icon = function PlayArrowDs2Icon(_ref) {
   _ref.color;
-      var _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    var _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10255,18 +9815,18 @@ var PlayArrowDs2Icon = function PlayArrowDs2Icon(_ref) {
     fill: "#2B435E"
   }));
 };
-
 PlayArrowDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PlayCircleDs2Icon = function PlayCircleDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10278,18 +9838,18 @@ var PlayCircleDs2Icon = function PlayCircleDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PlayCircleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PlaylistAddCheckDs2Icon = function PlaylistAddCheckDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10301,18 +9861,18 @@ var PlaylistAddCheckDs2Icon = function PlaylistAddCheckDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PlaylistAddCheckDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PublicDs2Icon = function PublicDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10324,18 +9884,18 @@ var PublicDs2Icon = function PublicDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PublicDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var PublishDs2Icon = function PublishDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10347,18 +9907,41 @@ var PublishDs2Icon = function PublishDs2Icon(_ref) {
     fill: color
   }));
 };
-
 PublishDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
+  size: PropTypes__default["default"].number
+};
+
+var PreviewDs2Icon = function PreviewDs2Icon(_ref) {
+  var _ref$color = _ref.color,
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
+  return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
+    width: size,
+    height: size,
+    viewBox: "0 0 18 18",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, /*#__PURE__*/React__default["default"].createElement(Svg.Path, {
+    d: "M2 18C1.45 18 0.979167 17.8042 0.5875 17.4125C0.195833 17.0208 0 16.55 0 16V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H16C16.55 0 17.0208 0.195833 17.4125 0.5875C17.8042 0.979167 18 1.45 18 2V16C18 16.55 17.8042 17.0208 17.4125 17.4125C17.0208 17.8042 16.55 18 16 18H2ZM2 16H16V4H2V16ZM9 14C7.63333 14 6.4125 13.6292 5.3375 12.8875C4.2625 12.1458 3.48333 11.1833 3 10C3.48333 8.81667 4.2625 7.85417 5.3375 7.1125C6.4125 6.37083 7.63333 6 9 6C10.3667 6 11.5875 6.37083 12.6625 7.1125C13.7375 7.85417 14.5167 8.81667 15 10C14.5167 11.1833 13.7375 12.1458 12.6625 12.8875C11.5875 13.6292 10.3667 14 9 14ZM9 12.5C9.93333 12.5 10.7833 12.2792 11.55 11.8375C12.3167 11.3958 12.9167 10.7833 13.35 10C12.9167 9.21667 12.3167 8.60417 11.55 8.1625C10.7833 7.72083 9.93333 7.5 9 7.5C8.06667 7.5 7.21667 7.72083 6.45 8.1625C5.68333 8.60417 5.08333 9.21667 4.65 10C5.08333 10.7833 5.68333 11.3958 6.45 11.8375C7.21667 12.2792 8.06667 12.5 9 12.5ZM9 11.5C9.41667 11.5 9.77083 11.3542 10.0625 11.0625C10.3542 10.7708 10.5 10.4167 10.5 10C10.5 9.58333 10.3542 9.22917 10.0625 8.9375C9.77083 8.64583 9.41667 8.5 9 8.5C8.58333 8.5 8.22917 8.64583 7.9375 8.9375C7.64583 9.22917 7.5 9.58333 7.5 10C7.5 10.4167 7.64583 10.7708 7.9375 11.0625C8.22917 11.3542 8.58333 11.5 9 11.5Z",
+    fill: color
+  }));
+};
+PreviewDs2Icon.propTypes = {
+  color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
+  ]),
+
   size: PropTypes__default["default"].number
 };
 
 var RateReviewDs2Icon = function RateReviewDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10370,18 +9953,18 @@ var RateReviewDs2Icon = function RateReviewDs2Icon(_ref) {
     fill: color
   }));
 };
-
 RateReviewDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var RedeemDs2Icon = function RedeemDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10393,18 +9976,18 @@ var RedeemDs2Icon = function RedeemDs2Icon(_ref) {
     fill: color
   }));
 };
-
 RedeemDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ImageDs2Icon = function ImageDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10416,18 +9999,18 @@ var ImageDs2Icon = function ImageDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ImageDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var InfoDs2Icon = function InfoDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10439,18 +10022,18 @@ var InfoDs2Icon = function InfoDs2Icon(_ref) {
     fill: color
   }));
 };
-
 InfoDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var InsightsDs2Icon = function InsightsDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10462,18 +10045,18 @@ var InsightsDs2Icon = function InsightsDs2Icon(_ref) {
     fill: color
   }));
 };
-
 InsightsDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var InventoryDs2Icon = function InventoryDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10485,18 +10068,18 @@ var InventoryDs2Icon = function InventoryDs2Icon(_ref) {
     fill: color
   }));
 };
-
 InventoryDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var IosShareDs2Icon = function IosShareDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10508,18 +10091,18 @@ var IosShareDs2Icon = function IosShareDs2Icon(_ref) {
     fill: color
   }));
 };
-
 IosShareDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var KeyDs2Icon = function KeyDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10531,18 +10114,18 @@ var KeyDs2Icon = function KeyDs2Icon(_ref) {
     fill: color
   }));
 };
-
 KeyDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LanDs2Icon = function LanDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10554,18 +10137,18 @@ var LanDs2Icon = function LanDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LanDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LandscapeDs2Icon = function LandscapeDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10577,18 +10160,18 @@ var LandscapeDs2Icon = function LandscapeDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LandscapeDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LangageDs2Icon = function LangageDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10600,18 +10183,18 @@ var LangageDs2Icon = function LangageDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LangageDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LaptopMacDs2Icon = function LaptopMacDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10623,18 +10206,18 @@ var LaptopMacDs2Icon = function LaptopMacDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LaptopMacDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LayersDs2Icon = function LayersDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10646,18 +10229,18 @@ var LayersDs2Icon = function LayersDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LayersDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LinkDs2Icon = function LinkDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10669,18 +10252,18 @@ var LinkDs2Icon = function LinkDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LinkDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ListAltDs2Icon = function ListAltDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10692,18 +10275,18 @@ var ListAltDs2Icon = function ListAltDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ListAltDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LocalPoliceDs2Icon = function LocalPoliceDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10715,18 +10298,18 @@ var LocalPoliceDs2Icon = function LocalPoliceDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LocalPoliceDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LocationOnDs2Icon = function LocationOnDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10738,18 +10321,18 @@ var LocationOnDs2Icon = function LocationOnDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LocationOnDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LockOpenDs2Icon = function LockOpenDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10761,18 +10344,18 @@ var LockOpenDs2Icon = function LockOpenDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LockOpenDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LockDs2Icon = function LockDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10784,18 +10367,18 @@ var LockDs2Icon = function LockDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LockDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LoginDs2Icon = function LoginDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10807,18 +10390,18 @@ var LoginDs2Icon = function LoginDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LoginDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var MailDs2Icon = function MailDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10830,18 +10413,18 @@ var MailDs2Icon = function MailDs2Icon(_ref) {
     fill: color
   }));
 };
-
 MailDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var MarkEmailReadDs2Icon = function MarkEmailReadDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10853,18 +10436,18 @@ var MarkEmailReadDs2Icon = function MarkEmailReadDs2Icon(_ref) {
     fill: color
   }));
 };
-
 MarkEmailReadDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var MenuDs2Icon = function MenuDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10876,18 +10459,18 @@ var MenuDs2Icon = function MenuDs2Icon(_ref) {
     fill: color
   }));
 };
-
 MenuDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FontDownloadDs2Icon = function FontDownloadDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10899,18 +10482,18 @@ var FontDownloadDs2Icon = function FontDownloadDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FontDownloadDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatAlignLeftDs2Icon = function FormatAlignLeftDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10922,18 +10505,18 @@ var FormatAlignLeftDs2Icon = function FormatAlignLeftDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatAlignLeftDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatBoldDs2Icon = function FormatBoldDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10945,18 +10528,18 @@ var FormatBoldDs2Icon = function FormatBoldDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatBoldDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatClearDs2Icon = function FormatClearDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10968,18 +10551,18 @@ var FormatClearDs2Icon = function FormatClearDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatClearDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatIndentDecreaseDs2Icon = function FormatIndentDecreaseDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -10991,18 +10574,18 @@ var FormatIndentDecreaseDs2Icon = function FormatIndentDecreaseDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatIndentDecreaseDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatIndentIncreaseDs2Icon = function FormatIndentIncreaseDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11014,18 +10597,18 @@ var FormatIndentIncreaseDs2Icon = function FormatIndentIncreaseDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatIndentIncreaseDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatItalicDs2Icon = function FormatItalicDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11037,18 +10620,18 @@ var FormatItalicDs2Icon = function FormatItalicDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatItalicDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatListBulletedDs2Icon = function FormatListBulletedDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11060,18 +10643,18 @@ var FormatListBulletedDs2Icon = function FormatListBulletedDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatListBulletedDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatListNumberedDs2Icon = function FormatListNumberedDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11083,18 +10666,18 @@ var FormatListNumberedDs2Icon = function FormatListNumberedDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatListNumberedDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FormatUnderlineDs2Icon = function FormatUnderlineDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11106,18 +10689,18 @@ var FormatUnderlineDs2Icon = function FormatUnderlineDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FormatUnderlineDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ForumDs2Icon = function ForumDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11129,18 +10712,18 @@ var ForumDs2Icon = function ForumDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ForumDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var GridOnDs2Icon = function GridOnDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11152,18 +10735,18 @@ var GridOnDs2Icon = function GridOnDs2Icon(_ref) {
     fill: color
   }));
 };
-
 GridOnDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var GroupAddDs2Icon = function GroupAddDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11175,18 +10758,18 @@ var GroupAddDs2Icon = function GroupAddDs2Icon(_ref) {
     fill: color
   }));
 };
-
 GroupAddDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var GroupDs2Icon = function GroupDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11198,18 +10781,18 @@ var GroupDs2Icon = function GroupDs2Icon(_ref) {
     fill: color
   }));
 };
-
 GroupDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var HandshakeDs2Icon = function HandshakeDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11221,18 +10804,18 @@ var HandshakeDs2Icon = function HandshakeDs2Icon(_ref) {
     fill: color
   }));
 };
-
 HandshakeDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var HistoryDs2Icon = function HistoryDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11244,18 +10827,18 @@ var HistoryDs2Icon = function HistoryDs2Icon(_ref) {
     fill: color
   }));
 };
-
 HistoryDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var HowToRegDs2Icon = function HowToRegDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11267,18 +10850,18 @@ var HowToRegDs2Icon = function HowToRegDs2Icon(_ref) {
     fill: color
   }));
 };
-
 HowToRegDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var HubDs2Icon = function HubDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11290,18 +10873,18 @@ var HubDs2Icon = function HubDs2Icon(_ref) {
     fill: color
   }));
 };
-
 HubDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DrawDs2Icon = function DrawDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11313,18 +10896,18 @@ var DrawDs2Icon = function DrawDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DrawDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var EditNoteDs2Icon = function EditNoteDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11336,18 +10919,18 @@ var EditNoteDs2Icon = function EditNoteDs2Icon(_ref) {
     fill: color
   }));
 };
-
 EditNoteDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var EditDs2Icon = function EditDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11359,18 +10942,18 @@ var EditDs2Icon = function EditDs2Icon(_ref) {
     fill: color
   }));
 };
-
 EditDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var EqualizerDs2Icon = function EqualizerDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11382,18 +10965,18 @@ var EqualizerDs2Icon = function EqualizerDs2Icon(_ref) {
     fill: color
   }));
 };
-
 EqualizerDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ErrorDs2Icon = function ErrorDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11405,18 +10988,18 @@ var ErrorDs2Icon = function ErrorDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ErrorDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var EuroSymbolDs2Icon = function EuroSymbolDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11428,18 +11011,18 @@ var EuroSymbolDs2Icon = function EuroSymbolDs2Icon(_ref) {
     fill: color
   }));
 };
-
 EuroSymbolDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var EventAvailableDs2Icon = function EventAvailableDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11451,18 +11034,18 @@ var EventAvailableDs2Icon = function EventAvailableDs2Icon(_ref) {
     fill: color
   }));
 };
-
 EventAvailableDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var EventDs2Icon = function EventDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11474,18 +11057,18 @@ var EventDs2Icon = function EventDs2Icon(_ref) {
     fill: color
   }));
 };
-
 EventDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ExpandLessDs2Icon = function ExpandLessDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11497,18 +11080,18 @@ var ExpandLessDs2Icon = function ExpandLessDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ExpandLessDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ExploreDs2Icon = function ExploreDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11520,18 +11103,18 @@ var ExploreDs2Icon = function ExploreDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ExploreDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FaceDs2Icon = function FaceDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11543,18 +11126,18 @@ var FaceDs2Icon = function FaceDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FaceDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FavouriteDs2Icon = function FavouriteDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11566,18 +11149,18 @@ var FavouriteDs2Icon = function FavouriteDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FavouriteDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FileDownloadDs2Icon = function FileDownloadDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11589,18 +11172,18 @@ var FileDownloadDs2Icon = function FileDownloadDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FileDownloadDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FilterAltDs2Icon = function FilterAltDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11612,18 +11195,18 @@ var FilterAltDs2Icon = function FilterAltDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FilterAltDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FitnessCenterDs2Icon = function FitnessCenterDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11635,18 +11218,18 @@ var FitnessCenterDs2Icon = function FitnessCenterDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FitnessCenterDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FlashOnDs2Icon = function FlashOnDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11658,18 +11241,18 @@ var FlashOnDs2Icon = function FlashOnDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FlashOnDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FolderOpenDs2Icon = function FolderOpenDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11681,18 +11264,18 @@ var FolderOpenDs2Icon = function FolderOpenDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FolderOpenDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FolderSharedDs2Icon = function FolderSharedDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11704,18 +11287,18 @@ var FolderSharedDs2Icon = function FolderSharedDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FolderSharedDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var FolderDs2Icon = function FolderDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11727,18 +11310,18 @@ var FolderDs2Icon = function FolderDs2Icon(_ref) {
     fill: color
   }));
 };
-
 FolderDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ChatDs2Icon = function ChatDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11750,18 +11333,18 @@ var ChatDs2Icon = function ChatDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ChatDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CheckBoxDs2Icon = function CheckBoxDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11773,18 +11356,18 @@ var CheckBoxDs2Icon = function CheckBoxDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CheckBoxDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CheckCircleDs2Icon = function CheckCircleDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11796,18 +11379,18 @@ var CheckCircleDs2Icon = function CheckCircleDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CheckCircleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CheckDs2Icon = function CheckDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11819,18 +11402,18 @@ var CheckDs2Icon = function CheckDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CheckDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ChevronLeftDs2Icon = function ChevronLeftDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11842,18 +11425,18 @@ var ChevronLeftDs2Icon = function ChevronLeftDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ChevronLeftDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CircleNotificationsDs2Icon = function CircleNotificationsDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11865,18 +11448,18 @@ var CircleNotificationsDs2Icon = function CircleNotificationsDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CircleNotificationsDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CloseDs2Icon = function CloseDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11888,18 +11471,18 @@ var CloseDs2Icon = function CloseDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CloseDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ColorizeDs2Icon = function ColorizeDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11911,18 +11494,18 @@ var ColorizeDs2Icon = function ColorizeDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ColorizeDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ConstructionDs2Icon = function ConstructionDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11934,18 +11517,18 @@ var ConstructionDs2Icon = function ConstructionDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ConstructionDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ContactPageDs2Icon = function ContactPageDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11957,18 +11540,18 @@ var ContactPageDs2Icon = function ContactPageDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ContactPageDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ContentCopyDs2Icon = function ContentCopyDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -11980,18 +11563,18 @@ var ContentCopyDs2Icon = function ContentCopyDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ContentCopyDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ContentPasteDs2Icon = function ContentPasteDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12003,18 +11586,18 @@ var ContentPasteDs2Icon = function ContentPasteDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ContentPasteDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ControlPointDuplicateDs2Icon = function ControlPointDuplicateDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12026,18 +11609,18 @@ var ControlPointDuplicateDs2Icon = function ControlPointDuplicateDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ControlPointDuplicateDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CreditCardDs2Icon = function CreditCardDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12049,18 +11632,18 @@ var CreditCardDs2Icon = function CreditCardDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CreditCardDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DeleteDs2Icon = function DeleteDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12072,18 +11655,18 @@ var DeleteDs2Icon = function DeleteDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DeleteDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DescriptionDs2Icon = function DescriptionDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12095,18 +11678,18 @@ var DescriptionDs2Icon = function DescriptionDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DescriptionDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DoNotDisturbOnDs2Icon = function DoNotDisturbOnDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12118,18 +11701,18 @@ var DoNotDisturbOnDs2Icon = function DoNotDisturbOnDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DoNotDisturbOnDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DoneAllDs2Icon = function DoneAllDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12141,18 +11724,18 @@ var DoneAllDs2Icon = function DoneAllDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DoneAllDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DraftDs2Icon = function DraftDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12164,18 +11747,18 @@ var DraftDs2Icon = function DraftDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DraftDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AddCircleDs2Icon = function AddCircleDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12187,18 +11770,18 @@ var AddCircleDs2Icon = function AddCircleDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AddCircleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AddDs2Icon = function AddDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12210,18 +11793,18 @@ var AddDs2Icon = function AddDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AddDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AddsClickDs2Icon = function AddsClickDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12233,18 +11816,18 @@ var AddsClickDs2Icon = function AddsClickDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AddsClickDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AlarmDs2Icon = function AlarmDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12256,18 +11839,18 @@ var AlarmDs2Icon = function AlarmDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AlarmDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AnalyticsDs2Icon = function AnalyticsDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12279,18 +11862,18 @@ var AnalyticsDs2Icon = function AnalyticsDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AnalyticsDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ApartmentDs2Icon = function ApartmentDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12302,18 +11885,18 @@ var ApartmentDs2Icon = function ApartmentDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ApartmentDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AppsDs2Icon = function AppsDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12325,18 +11908,18 @@ var AppsDs2Icon = function AppsDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AppsDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ArrowForwardIosDs2Icon = function ArrowForwardIosDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12348,18 +11931,18 @@ var ArrowForwardIosDs2Icon = function ArrowForwardIosDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ArrowForwardIosDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AssignmentIndDs2Icon = function AssignmentIndDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12371,18 +11954,18 @@ var AssignmentIndDs2Icon = function AssignmentIndDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AssignmentIndDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AssistantDs2Icon = function AssistantDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12394,18 +11977,18 @@ var AssistantDs2Icon = function AssistantDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AssistantDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AttachFileDs2Icon = function AttachFileDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12417,18 +12000,18 @@ var AttachFileDs2Icon = function AttachFileDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AttachFileDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AutoRenewDs2Icon = function AutoRenewDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12440,18 +12023,18 @@ var AutoRenewDs2Icon = function AutoRenewDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AutoRenewDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var BarChartDs2Icon = function BarChartDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12463,18 +12046,18 @@ var BarChartDs2Icon = function BarChartDs2Icon(_ref) {
     fill: color
   }));
 };
-
 BarChartDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var BatteryDs2Icon = function BatteryDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12486,18 +12069,18 @@ var BatteryDs2Icon = function BatteryDs2Icon(_ref) {
     fill: color
   }));
 };
-
 BatteryDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var BlockDs2Icon = function BlockDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12509,18 +12092,18 @@ var BlockDs2Icon = function BlockDs2Icon(_ref) {
     fill: color
   }));
 };
-
 BlockDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var BookmarkDs2Icon = function BookmarkDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12532,18 +12115,18 @@ var BookmarkDs2Icon = function BookmarkDs2Icon(_ref) {
     fill: color
   }));
 };
-
 BookmarkDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CallSplitDs2Icon = function CallSplitDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12555,18 +12138,18 @@ var CallSplitDs2Icon = function CallSplitDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CallSplitDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CallDs2Icon = function CallDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12578,18 +12161,18 @@ var CallDs2Icon = function CallDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CallDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CampaignDs2Icon = function CampaignDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12601,18 +12184,18 @@ var CampaignDs2Icon = function CampaignDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CampaignDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CancelDs2Icon = function CancelDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12624,18 +12207,18 @@ var CancelDs2Icon = function CancelDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CancelDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var ChatBubbleDs2Icon = function ChatBubbleDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12647,18 +12230,18 @@ var ChatBubbleDs2Icon = function ChatBubbleDs2Icon(_ref) {
     fill: color
   }));
 };
-
 ChatBubbleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CelebrationDs2Icon = function CelebrationDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12670,18 +12253,18 @@ var CelebrationDs2Icon = function CelebrationDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CelebrationDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AttachMoneyDs2Icon = function AttachMoneyDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12693,18 +12276,18 @@ var AttachMoneyDs2Icon = function AttachMoneyDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AttachMoneyDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var CurrencyPoundDs2Icon = function CurrencyPoundDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12716,18 +12299,18 @@ var CurrencyPoundDs2Icon = function CurrencyPoundDs2Icon(_ref) {
     fill: color
   }));
 };
-
 CurrencyPoundDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DragIndicatorDs2Icon = function DragIndicatorDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12739,18 +12322,18 @@ var DragIndicatorDs2Icon = function DragIndicatorDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DragIndicatorDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AutopayDs2Icon = function AutopayDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12762,18 +12345,18 @@ var AutopayDs2Icon = function AutopayDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AutopayDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var LightBulbDs2Icon = function LightBulbDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12785,18 +12368,18 @@ var LightBulbDs2Icon = function LightBulbDs2Icon(_ref) {
     fill: color
   }));
 };
-
 LightBulbDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var DeleteSweepDs2Icon = function DeleteSweepDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12808,18 +12391,18 @@ var DeleteSweepDs2Icon = function DeleteSweepDs2Icon(_ref) {
     fill: color
   }));
 };
-
 DeleteSweepDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var AmendDs2Icon = function AmendDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12831,18 +12414,18 @@ var AmendDs2Icon = function AmendDs2Icon(_ref) {
     fill: color
   }));
 };
-
 AmendDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var NumbersDs2Icon = function NumbersDs2Icon(_ref) {
   var _ref$color = _ref.color,
-      color = _ref$color === void 0 ? "#2B435E" : _ref$color,
-      _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    color = _ref$color === void 0 ? "#2B435E" : _ref$color,
+    _ref$size = _ref.size,
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12854,16 +12437,16 @@ var NumbersDs2Icon = function NumbersDs2Icon(_ref) {
     fill: color
   }));
 };
-
 NumbersDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
 var GoogleDs2Icon = function GoogleDs2Icon(_ref) {
   var _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 24 : _ref$size;
+    size = _ref$size === void 0 ? 24 : _ref$size;
   return /*#__PURE__*/React__default["default"].createElement(Svg__default["default"], {
     width: size,
     height: size,
@@ -12884,10 +12467,10 @@ var GoogleDs2Icon = function GoogleDs2Icon(_ref) {
     d: "M12.755 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C18.705 1.19 15.995 0 12.755 0c-4.69 0-8.74 2.7-10.71 6.62l3.98 3.09c.95-2.85 3.6-4.96 6.73-4.96Z"
   }));
 };
-
 GoogleDs2Icon.propTypes = {
   color: PropTypes__default["default"].oneOfType([PropTypes__default["default"].string, PropTypes__default["default"].number // used for null
   ]),
+
   size: PropTypes__default["default"].number
 };
 
@@ -13155,6 +12738,7 @@ exports.PlayCircleIcon = PlayCircleIcon;
 exports.PlayIcon = PlayIcon;
 exports.PlaylistAddCheckDs2Icon = PlaylistAddCheckDs2Icon;
 exports.PlusIcon = PlusIcon;
+exports.PreviewDs2Icon = PreviewDs2Icon;
 exports.PublicDs2Icon = PublicDs2Icon;
 exports.PublishDs2Icon = PublishDs2Icon;
 exports.PublishIcon = PublishIcon;
