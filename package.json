@@ -8,7 +8,7 @@
     "registry": "https://gitlab.com/api/v4/projects/30455429/packages/npm/"
   },
   "repository": "git://gitlab.com/flatchr/shared/icons",
-  "version": "2.0.4",
+  "version": "2.0.6",
   "description": "All the Flatchr™'s icons 🐙",
   "author": "Benjamin Relat <benjamin@flatchr.io>",
   "license": "MIT",
@@ -96,7 +96,7 @@
     "prop-types": "^15.8.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-native": "^0.66.0",
+    "react-native": "0.71",
     "react-native-svg": "^12.1.1",
     "react-native-web": "^0.17.5"
   }
