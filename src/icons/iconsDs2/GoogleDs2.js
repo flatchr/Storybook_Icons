@@ -1,5 +1,4 @@
 import React from 'react';
-import Svg, { Path, Rect } from 'react-native-svg';
 import PropTypes from 'prop-types';
 import { theme } from '@flatchr/system-design';
 
@@ -8,7 +7,7 @@ const GoogleDs2Icon = ({
 }) => {
 
   return (
-    <Svg
+    <svg
       width={size}
       height={size}
       viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +28,7 @@ const GoogleDs2Icon = ({
         fill="#EA4335"
         d="M12.755 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C18.705 1.19 15.995 0 12.755 0c-4.69 0-8.74 2.7-10.71 6.62l3.98 3.09c.95-2.85 3.6-4.96 6.73-4.96Z"
       />
-    </Svg>
+    </svg>
   );
 };
 

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { LinearGradient, ClipPath } from "react-native-svg";
 
 const HalloweenVariant = () => (
   <svg
@@ -161,7 +160,7 @@ const HalloweenVariant = () => (
       />
     </g>
     <defs>
-      <LinearGradient
+      <linearGradient
         id="b"
         x1={62.781}
         x2={62.741}
@@ -387,10 +386,10 @@ const HalloweenVariant = () => (
         <stop offset={0.992} stopColor="#FAB745" />
         <stop offset={0.996} stopColor="#FAB846" />
         <stop offset={1} stopColor="#FABA47" />
-      </LinearGradient>
-      <ClipPath id="a">
+      </linearGradient>
+      <clipPath id="a">
         <path fill="#fff" d="M45 35h35v36.284H45z" />
-      </ClipPath>
+      </clipPath>
     </defs>
   </svg>
 );

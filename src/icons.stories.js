@@ -298,7 +298,7 @@ const GiftIconStory = args => (
 GiftIconStory.storyName = 'Gift';
 
 const CircleIconStory = args => (
-  <CircleIcon {...args} />
+  <circleIcon {...args} />
 );
 CircleIconStory.storyName = 'Circle';
 
