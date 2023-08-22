@@ -862,7 +862,7 @@ const ChevronRightDs2IconStory = args => (
 ChevronRightDs2IconStory.storyName = 'V2 Chevron Right';
 
 const CircleNotificationsDs2IconStory = args => (
-  <CircleNotificationsDs2Icon {...args} />
+  <circleNotificationsDs2Icon {...args} />
 );
 CircleNotificationsDs2IconStory.storyName = 'V2 Circle Notifications';
 
